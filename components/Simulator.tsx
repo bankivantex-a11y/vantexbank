@@ -8,7 +8,7 @@ import { DURATION_OPTIONS, fmt } from '@/lib/loan';
 export default function Simulator() {
   const { amount, setAmount, months, setMonths, loan, openModal } = useAppState();
 
-  const rangePct = ((amount - 1000) / 99000) * 100;
+  const rangePct = ((amount - 1000) / 799000) * 100;
 
   const firstPaymentLabel = useMemo(() => {
     const fp = new Date();
@@ -41,7 +41,7 @@ export default function Simulator() {
                 <input
                   type="range"
                   min={1000}
-                  max={100000}
+                  max={800000}
                   step={500}
                   value={amount}
                   onChange={(e) => setAmount(+e.target.value)}
@@ -51,7 +51,7 @@ export default function Simulator() {
                 />
                 <div className="range-minmax">
                   <span>1 000 €</span>
-                  <span>100 000 €</span>
+                  <span>800 000 €</span>
                 </div>
               </div>
               {/* Duration */}
