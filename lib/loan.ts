@@ -14,8 +14,14 @@ export function calcLoan(amount: number, months: number): LoanResult {
   return { monthly, total: monthly * n, interest: monthly * n - amount };
 }
 
-export function fmt(n: number): string {
-  return new Intl.NumberFormat('fr-FR', { maximumFractionDigits: 0 }).format(Math.round(n)) + ' €';
+export function fmt(n: number, locale: string = 'FR'): string {
+  const l = locale === 'EN' ? 'en-US' : locale === 'DE' ? 'de-DE' : locale === 'ES' ? 'es-ES' : 'fr-FR';
+  const currency = locale === 'KW' ? 'KWD' : 'EUR';
+  return new Intl.NumberFormat(l, {
+    style: 'currency',
+    currency: currency,
+    maximumFractionDigits: 0
+  }).format(Math.round(n));
 }
 
 export const DURATION_OPTIONS = [

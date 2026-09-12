@@ -17,5 +17,43 @@
     "stat_clients": "Clientes satisfechos",
     "stat_rate": "Tasa anual fija",
     "stat_guarantee": "Respuesta garantizada"
+  },
+  "sim": {
+    "title": "Calcule sus cuotas mensuales",
+    "desc": "Ajuste el monto y la duración para ver instantáneamente el costo real de su financiamiento.",
+    "card_title": "Mi financiamiento",
+    "card_sub": "Tasa anual fija: 2,75% · TAE indicativo",
+    "amount_label": "Monto deseado",
+    "duration_label": "Plazo de reembolso",
+    "cta": "Hacer mi solicitud de préstamo →",
+    "res_monthly": "Cuota mensual estimada",
+    "res_total": "Monto total a devolver",
+    "res_interest": "Costo total de intereses",
+    "res_badge": "Tasa fija 2,75% — Calculada según su plazo",
+    "mini_capital": "Capital prestado",
+    "mini_rate": "Tasa mensual",
+    "mini_duration": "Duración elegida",
+    "mini_first": "1ra cuota",
+    "disclaimer": "* Simulación indicativa. TAE definitiva especificada en la oferta del contrato. Sujeto a aceptación por parte de Vantex Bank."
+  },
+  "trust": {
+    "tp_sub": "Basado en 3.247 opiniones verificadas",
+    "data_title": "Datos seguros",
+    "data_sub": "Cifrado SSL de 256 bits",
+    "agree_title": "Institución autorizada",
+    "agree_sub": "Autoridad Bancaria de la UE",
+    "fees_title": "Cero comisiones ocultas",
+    "fees_sub": "Transparencia total"
+  },
+  "steps": {
+    "label": "Nuestro proceso",
+    "title": "Su préstamo en 3 sencillos pasos",
+    "desc": "Un proceso 100% digital, seguro y transparente para apoyarte de principio a fin.",
+    "s1_title": "Simular y completar",
+    "s1_desc": "Utilice nuestro simulador interactivo, elija su monto y plazo, luego complete su solicitud en línea en 10 minutos.",
+    "s2_title": "Subir documentos",
+    "s2_desc": "Suba sus documentos justificativos de forma segura (DNI, nóminas). Nuestro equipo analiza su expediente en 48 horas.",
+    "s3_title": "Recibir respuesta",
+    "s3_desc": "Se le notificará por correo electrónico. En caso de aprobación, firma electrónicamente y los fondos se abonan en un plazo de 72 horas hábiles."
   }
 }

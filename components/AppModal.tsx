@@ -14,7 +14,7 @@ const DOCS = [
 ] as const;
 
 export default function AppModal() {
-  const { activeModal, closeModal, amount, months, loan } = useAppState();
+  const { activeModal, closeModal, amount, months, loan, locale } = useAppState();
   const isOpen = activeModal === 'app';
 
   const [step, setStep] = useState<Step>(1);
@@ -278,11 +278,11 @@ export default function AppModal() {
                 </div>
                 <div className="sum-row">
                   <span className="sum-lbl">Mensualité estimée</span>
-                  <span className="sum-val g">{fmt(loan.monthly)}/mois</span>
+                  <span className="sum-val g">{fmt(loan.monthly, locale)}/mois</span>
                 </div>
                 <div className="sum-row">
                   <span className="sum-lbl">Coût total des intérêts</span>
-                  <span className="sum-val">{fmt(loan.interest)}</span>
+                  <span className="sum-val">{fmt(loan.interest, locale)}</span>
                 </div>
               </div>
 

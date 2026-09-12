@@ -17,5 +17,69 @@
     "stat_clients": "Clients satisfaits",
     "stat_rate": "Taux annuel fixe",
     "stat_guarantee": "Réponse garantie"
+  },
+  "sim": {
+    "title": "Calculez vos mensualités",
+    "desc": "Ajustez le montant et la durée pour voir instantanément le coût réel de votre financement.",
+    "card_title": "Mon financement",
+    "card_sub": "Taux annuel fixe : 2,75% · TAEG indicatif",
+    "amount_label": "Montant souhaité",
+    "duration_label": "Durée de remboursement",
+    "cta": "Faire ma demande de prêt →",
+    "res_monthly": "Mensualité estimée",
+    "res_total": "Montant total à rembourser",
+    "res_interest": "Coût total des intérêts",
+    "res_badge": "Taux fixe 2,75% — Calculé sur votre durée",
+    "mini_capital": "Capital emprunté",
+    "mini_rate": "Taux mensuel",
+    "mini_duration": "Durée choisie",
+    "mini_first": "1ère échéance",
+    "disclaimer": "* Simulation indicative. TAEG définitif précisé dans l'offre de contrat. Sous réserve d'acceptation par Vantex Bank."
+  },
+  "trust": {
+    "tp_sub": "Basé sur 3 247 avis vérifiés",
+    "data_title": "Données sécurisées",
+    "data_sub": "Chiffrement SSL 256-bit",
+    "agree_title": "Établissement agréé",
+    "agree_sub": "Autorité bancaire UE",
+    "fees_title": "Zéro frais cachés",
+    "fees_sub": "Transparence totale"
+  },
+  "steps": {
+    "label": "Notre processus",
+    "title": "Votre prêt en 3 étapes simples",
+    "desc": "Un parcours 100% digital, sécurisé et transparent pour vous accompagner de A à Z.",
+    "s1_title": "Simulez & remplissez",
+    "s1_desc": "Utilisez notre simulateur interactif, choisissez votre montant et votre durée, puis complétez votre dossier en ligne en 10 minutes.",
+    "s2_title": "Déposez vos documents",
+    "s2_desc": "Téléchargez vos justificatifs en toute sécurité (pièce d'identité, bulletins de salaire). Notre équipe analyse votre dossier sous 48h.",
+    "s3_title": "Recevez votre réponse",
+    "s3_desc": "Vous êtes notifié par e-mail. En cas d'accord, vous signez électroniquement et les fonds sont versés sous 72 heures ouvrées."
+  },
+  "services": {
+    "label": "Nos Services",
+    "personal": {
+      "title": "Prêt Personnel",
+      "desc": "Vous avez un besoin d’argent pour financer un ou plusieurs projets ? Le prêt personnel permet d’emprunter le montant souhaité et de le rembourser à votre rythme.",
+      "mod_title": "Modalités",
+      "mod_rate": "Taux",
+      "mod_amount": "Montant",
+      "mod_dur": "Durée",
+      "adv_title": "Nos avantages",
+      "sol_title": "Une solution simple",
+      "sol_desc": "Chez Vantex Bank, vous réalisez votre demande de prêt personnel en ligne et obtenez une réponse de principe immédiate. En cas d’acceptation, il ne vous reste plus qu’à signer électroniquement votre contrat et à télécharger vos pièces justificatives.",
+      "sim_title": "Simulez votre prêt personnel",
+      "sim_desc": "Obtenez une estimation précise en quelques secondes."
+    },
+    "mortgage": "Prêt immobilier",
+    "business": "Prêt professionnel",
+    "debt": "Rachat de crédit"
+  },
+  "footer": {
+    "assist": "Assistance",
+    "legal": "Légal",
+    "rights": "Tous droits réservés",
+    "accessibility": "Accessibilité",
+    "sitemap": "Plan du site"
   }
 }

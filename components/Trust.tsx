@@ -1,8 +1,11 @@
 import Reveal from './Reveal';
+import { useAppState } from './AppState';
 
 const starPath = 'M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z';
 
 export default function Trust() {
+  const { t } = useAppState();
+
   return (
     <section id="trust">
       <div className="container">
@@ -20,7 +23,7 @@ export default function Trust() {
             </div>
             <div>
               <div className="tp-score">4,8 / 5</div>
-              <div className="tp-sub">Basé sur 3 247 avis vérifiés</div>
+              <div className="tp-sub">{t('trust.tp_sub')}</div>
             </div>
           </Reveal>
           <Reveal delay={2} className="trust-badges">
@@ -31,8 +34,8 @@ export default function Trust() {
                 </svg>
               </div>
               <div>
-                <div className="tb-title">Données sécurisées</div>
-                <div className="tb-sub">Chiffrement SSL 256-bit</div>
+                <div className="tb-title">{t('trust.data_title')}</div>
+                <div className="tb-sub">{t('trust.data_sub')}</div>
               </div>
             </div>
             <div className="trust-badge">
@@ -43,8 +46,8 @@ export default function Trust() {
                 </svg>
               </div>
               <div>
-                <div className="tb-title">Établissement agréé</div>
-                <div className="tb-sub">Autorité bancaire UE</div>
+                <div className="tb-title">{t('trust.agree_title')}</div>
+                <div className="tb-sub">{t('trust.agree_sub')}</div>
               </div>
             </div>
             <div className="trust-badge">
@@ -56,8 +59,8 @@ export default function Trust() {
                 </svg>
               </div>
               <div>
-                <div className="tb-title">Zéro frais cachés</div>
-                <div className="tb-sub">Transparence totale</div>
+                <div className="tb-title">{t('trust.fees_title')}</div>
+                <div className="tb-sub">{t('trust.fees_sub')}</div>
               </div>
             </div>
           </Reveal>

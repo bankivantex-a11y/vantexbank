@@ -17,5 +17,43 @@
     "stat_clients": "Zufriedene Kunden",
     "stat_rate": "Fester Jahreszins",
     "stat_guarantee": "Garantierte Antwort"
+  },
+  "sim": {
+    "title": "Berechnen Sie Ihre monatlichen Raten",
+    "desc": "Passen Sie Betrag und Laufzeit an, um sofort die tatsächlichen Kosten Ihrer Finanzierung zu sehen.",
+    "card_title": "Meine Finanzierung",
+    "card_sub": "Fester Jahreszins: 2,75% · Indikativer effektiver Jahreszins",
+    "amount_label": "Wunschbetrag",
+    "duration_label": "Rückzahlungsdauer",
+    "cta": "Meinen Kreditantrag stellen →",
+    "res_monthly": "Geschätzte monatliche Rate",
+    "res_total": "Gesamtbetrag der Rückzahlung",
+    "res_interest": "Gesamtkosten der Zinsen",
+    "res_badge": "Fester Zinssatz 2,75% — Berechnet auf Ihre Laufzeit",
+    "mini_capital": "Gelehenes Kapital",
+    "mini_rate": "Monatlicher Zinssatz",
+    "mini_duration": "Gewählte Laufzeit",
+    "mini_first": "1. Rate",
+    "disclaimer": "* Unverbindliche Simulation. Endgültiger effektiver Jahreszins im Vertragsangebot angegeben. Vorbehaltlich der Annahme durch die Vantex Bank."
+  },
+  "trust": {
+    "tp_sub": "Basierend auf 3.247 verifizierten Bewertungen",
+    "data_title": "Sichere Daten",
+    "data_sub": "256-Bit-SSL-Verschlüsselung",
+    "agree_title": "Zugelassenes Institut",
+    "agree_sub": "EU-Bankenaufsicht",
+    "fees_title": "Null versteckte Gebühren",
+    "fees_sub": "Vollständige Transparenz"
+  },
+  "steps": {
+    "label": "Unser Prozess",
+    "title": "Ihr Kredit in 3 einfachen Schritten",
+    "desc": "Ein 100% digitaler, sicherer und transparenter Prozess, der Sie von Anfang bis Ende unterstützt.",
+    "s1_title": "Simulieren & Ausfüllen",
+    "s1_desc": "Nutzen Sie unseren interaktiven Simulator, wählen Sie Betrag und Laufzeit und füllen Sie Ihren Antrag online in 10 Minuten aus.",
+    "s2_title": "Dokumente hochladen",
+    "s2_desc": "Laden Sie Ihre Belege sicher hoch (Personalausweis, Gehaltsabrechnungen). Unser Team analysiert Ihre Unterlagen innerhalb von 48 Stunden.",
+    "s3_title": "Antwort erhalten",
+    "s3_desc": "Sie werden per E-Mail benachrichtigt. Im Falle einer Zusage unterzeichnen Sie elektronisch und die Gelder werden innerhalb von 72 Werktunden ausgezahlt."
   }
 }

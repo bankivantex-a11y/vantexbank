@@ -9,27 +9,23 @@ export default function CookiesPage() {
           <h1 className="sec-title">RGPD & Cookies</h1>
           <div className="legal-content" style={{ marginTop: 40, maxWidth: 800 }}>
             <p>
-              Chez Vantex Bank, nous accordons une importance capitale à la protection de vos données personnelles
-              et à la transparence de nos pratiques en matière de traceurs (cookies).
+              Chez Vantex Bank (SAS Cap Au Nord), nous accordons une importance capitale à la protection de vos données personnelles.
+              En tant qu'intermédiaire enregistré sous le numéro <strong>ORIAS 14807766</strong>, nous respectons scrupuleusement les normes européennes.
             </p>
 
-            <h3>1. Qu&apos;est-ce qu&apos;un cookie ?</h3>
+            <h3>1. Utilisation des données (RGPD)</h3>
             <p>
-              Un cookie est un petit fichier texte déposé sur votre terminal (ordinateur, tablette ou mobile) lors
-              de la consultation d&apos;un site internet. Il permet à son émetteur d&apos;identifier le terminal dans lequel
-              il est enregistré, pendant la durée de validité du cookie.
+              Les informations recueillies lors de votre demande (montant du prêt, informations personnelles, pièces justificatives) sont traitées uniquement pour analyser votre capacité de remboursement et traiter votre dossier.
             </p>
 
-            <h3>2. Utilisation des données (RGPD)</h3>
+            <h3>2. Signature électronique</h3>
             <p>
-              Conformément au Règlement Général sur la Protection des Données (RGPD), les informations recueillies
-              sur ce site (via les formulaires de simulation ou de contact) sont traitées pour répondre à vos demandes.
+              Nous utilisons des systèmes de signature électronique certifiés pour garantir l'intégrité de vos contrats de crédit.
             </p>
 
             <h3>3. Vos droits</h3>
             <p>
-              Vous disposez d&apos;un droit d&apos;accès, de rectification, d&apos;opposition et de suppression des données vous
-              concernant. Pour exercer ces droits, vous pouvez nous contacter via notre formulaire de contact.
+              Conformément au RGPD, vous disposez d'un droit d'accès et de rectification. Pour toute demande, contactez notre assistance dédiée.
             </p>
           </div>
         </Reveal>

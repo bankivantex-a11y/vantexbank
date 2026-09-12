@@ -1,50 +1,44 @@
+'use client';
+
 import Reveal from '@/components/Reveal';
 import Simulator from '@/components/Simulator';
+import { useAppState } from '@/components/AppState';
 
 export default function PretProfessionnelPage() {
+  const { t } = useAppState();
+
   return (
     <div>
       <section className="section" style={{ paddingTop: 90 }}>
         <div className="container">
           <Reveal>
-            <div className="sec-label">Nos Services</div>
-            <h1 className="sec-title">Prêt Professionnel</h1>
+            <div className="sec-label">Solutions Business</div>
+            <h1 className="sec-title">{t('services.business')}</h1>
             <p className="sec-desc">
-              Boostez votre activité. Financement de matériel, besoin en fonds de roulement ou acquisition de locaux, Vantex Bank soutient les entrepreneurs.
+              Besoin de trésorerie, de nouveau matériel ou de locaux ? Vantex Bank accompagne les entrepreneurs et les PME.
             </p>
           </Reveal>
 
           <div className="hero-inner" style={{ minHeight: 'auto', gap: 40, padding: '40px 0' }}>
             <Reveal>
-              <div style={{ padding: 32, background: 'var(--bg)', borderRadius: 24, border: '1px solid var(--border)' }}>
-                <h3 style={{ marginBottom: 20, fontSize: 24 }}>Solutions Pro</h3>
-                <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 12 }}>
-                  <li style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid var(--border)', paddingBottom: 8 }}>
-                    <span style={{ color: 'var(--muted)' }}>Taux</span>
-                    <strong>Taux préférentiels</strong>
-                  </li>
-                  <li style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid var(--border)', paddingBottom: 8 }}>
-                    <span style={{ color: 'var(--muted)' }}>Montant</span>
-                    <strong>Sur mesure</strong>
-                  </li>
-                  <li style={{ display: 'flex', justifyContent: 'space-between', paddingBottom: 8 }}>
-                    <span style={{ color: 'var(--muted)' }}>Décision</span>
-                    <strong>Rapide & Pro</strong>
-                  </li>
+              <div style={{ padding: 24, background: 'var(--bg)', borderRadius: 20 }}>
+                <h3 style={{ marginBottom: 16 }}>Financement Pro</h3>
+                <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 10, fontSize: 15 }}>
+                  <li>• Prêt matériel & équipement</li>
+                  <li>• Financement de stock & BFR</li>
+                  <li>• Acquisition de murs commerciaux</li>
+                  <li>• <strong>Réponse de principe sous 72h</strong></li>
                 </ul>
               </div>
             </Reveal>
 
             <Reveal delay={2}>
-              <div style={{ padding: 32, background: 'var(--navy)', color: '#fff', borderRadius: 24 }}>
-                <h3 style={{ marginBottom: 16, color: '#fff' }}>Partenaire Business</h3>
-                <p style={{ opacity: 0.8, fontSize: 15, lineHeight: 1.7 }}>
-                  Parce que chaque entreprise est unique, nos conseillers pro étudient votre business plan pour vous proposer le financement le plus adapté à votre croissance.
+              <div style={{ padding: 24, border: '2px solid var(--border)', borderRadius: 20 }}>
+                <h3 style={{ marginBottom: 16 }}>Expertise Pro</h3>
+                <p style={{ fontSize: 14, color: 'var(--muted)', lineHeight: 1.6 }}>
+                  Un conseiller dédié analyse votre projet pour vous proposer une structure de prêt adaptée à votre cycle d'exploitation.
                 </p>
-                <div style={{ marginTop: 24, padding: 16, background: 'rgba(255,255,255,0.05)', borderRadius: 12 }}>
-                  <small style={{ opacity: 0.6 }}>ORIAS</small>
-                  <div style={{ fontSize: 20, fontWeight: 'bold' }}>14807766</div>
-                </div>
+                <div style={{ marginTop: 16, fontSize: 13, fontWeight: 'bold' }}>SAS Cap Au Nord - ORIAS 14807766</div>
               </div>
             </Reveal>
           </div>

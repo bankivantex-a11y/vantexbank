@@ -1,17 +1,22 @@
+'use client';
+
 import Reveal from '@/components/Reveal';
 import Image from 'next/image';
+import { useAppState } from '@/components/AppState';
 
 export default function AboutPage() {
+  const { t } = useAppState();
+
   return (
     <div>
       <section className="section" style={{ paddingTop: 90, paddingBottom: 40 }}>
         <div className="container">
           <div className="hero-inner" style={{ alignItems: 'center', minHeight: 'auto', paddingTop: 0, paddingBottom: 0 }}>
             <Reveal>
-              <div className="sec-label">À Propos de Nous</div>
-              <h1 className="hero-title">Une équipe de professionnels pour un soutien complet.</h1>
+              <div className="sec-label">{t('nav.about')}</div>
+              <h1 className="hero-title">{t('hero.title').split(',')[0]} - {t('nav.about')}</h1>
               <p className="hero-desc">
-                Depuis 2004, notre équipe s'est forgée une solide réputation grâce à son expertise et à la qualité de ses services. Au fil des années, nous avons œuvré avec diligence pour offrir à nos clients une expérience exceptionnelle.
+                {t('hero.desc')}
               </p>
               <div className="hero-stats" style={{ marginTop: 32 }}>
                 <div className="stat-item">

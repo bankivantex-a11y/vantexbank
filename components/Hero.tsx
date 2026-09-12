@@ -5,7 +5,7 @@ import { useAppState } from './AppState';
 import AnimatedCounter from './AnimatedCounter';
 
 export default function Hero() {
-  const { openModal } = useAppState();
+  const { openModal, t } = useAppState();
 
   return (
     <section id="hero">
@@ -14,17 +14,16 @@ export default function Hero() {
           {/* Left content */}
           <div>
             <h1 className="hero-title">
-              Votre prêt en ligne,
+              {t('hero.title').split(',')[0]},
               <br />
-              <span className="hl">simple &amp; rapide</span>
+              <span className="hl">{t('hero.title').split(',')[1]}</span>
             </h1>
             <p className="hero-desc">
-              Vantex Bank vous accompagne dans tous vos projets de vie. Obtenez votre financement en quelques
-              étapes, sans file d&apos;attente, 100% en ligne.
+              {t('hero.desc')}
             </p>
             <div className="hero-buttons">
               <button className="btn-primary" onClick={() => openModal('auth')}>
-                Demander mon prêt
+                {t('hero.cta_apply')}
               </button>
               <button
                 className="btn-outline"
@@ -34,7 +33,7 @@ export default function Hero() {
                   <circle cx="12" cy="12" r="10" />
                   <polyline points="12 8 12 12 14 14" />
                 </svg>
-                Simuler mon prêt
+                {t('hero.cta_sim')}
               </button>
             </div>
             <div className="hero-stats">
@@ -42,19 +41,19 @@ export default function Hero() {
                 <span className="stat-value">
                   <AnimatedCounter target={76923} />
                 </span>
-                <span className="stat-label">Clients satisfaits</span>
+                <span className="stat-label">{t('hero.stat_clients')}</span>
               </div>
               <div className="stat-div"></div>
               <div className="stat-item">
                 <span className="stat-value">
                   2,75<small style={{ fontSize: 18 }}>%</small>
                 </span>
-                <span className="stat-label">Taux annuel fixe</span>
+                <span className="stat-label">{t('hero.stat_rate')}</span>
               </div>
               <div className="stat-div"></div>
               <div className="stat-item">
                 <span className="stat-value">48h</span>
-                <span className="stat-label">Réponse garantie</span>
+                <span className="stat-label">{t('hero.stat_guarantee')}</span>
               </div>
             </div>
           </div>

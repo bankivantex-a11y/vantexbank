@@ -17,5 +17,69 @@
     "stat_clients": "Satisfied clients",
     "stat_rate": "Fixed annual rate",
     "stat_guarantee": "Guaranteed response"
+  },
+  "sim": {
+    "title": "Calculate your monthly payments",
+    "desc": "Adjust the amount and duration to instantly see the real cost of your financing.",
+    "card_title": "My financing",
+    "card_sub": "Fixed annual rate: 2.75% · Indicative APR",
+    "amount_label": "Desired amount",
+    "duration_label": "Repayment term",
+    "cta": "Submit my loan request →",
+    "res_monthly": "Estimated monthly payment",
+    "res_total": "Total amount to be repaid",
+    "res_interest": "Total cost of interest",
+    "res_badge": "Fixed rate 2.75% — Calculated on your term",
+    "mini_capital": "Borrowed capital",
+    "mini_rate": "Monthly rate",
+    "mini_duration": "Chosen duration",
+    "mini_first": "1st installment",
+    "disclaimer": "* Indicative simulation. Final APR specified in the contract offer. Subject to acceptance by Vantex Bank."
+  },
+  "trust": {
+    "tp_sub": "Based on 3,247 verified reviews",
+    "data_title": "Secure data",
+    "data_sub": "256-bit SSL encryption",
+    "agree_title": "Licensed institution",
+    "agree_sub": "EU Banking Authority",
+    "fees_title": "Zero hidden fees",
+    "fees_sub": "Total transparency"
+  },
+  "steps": {
+    "label": "Our process",
+    "title": "Your loan in 3 simple steps",
+    "desc": "A 100% digital, secure and transparent process to support you from start to finish.",
+    "s1_title": "Simulate & Fill",
+    "s1_desc": "Use our interactive simulator, choose your amount and term, then complete your application online in 10 minutes.",
+    "s2_title": "Upload your documents",
+    "s2_desc": "Safely upload your supporting documents (ID, pay slips). Our team analyzes your file within 48 hours.",
+    "s3_title": "Receive your response",
+    "s3_desc": "You are notified by email. In case of approval, you sign electronically and funds are paid within 72 working hours."
+  },
+  "services": {
+    "label": "Our Services",
+    "personal": {
+      "title": "Personal Loan",
+      "desc": "Do you need money to finance one or more projects? The personal loan allows you to borrow the desired amount and repay it at your own pace.",
+      "mod_title": "Terms",
+      "mod_rate": "Rate",
+      "mod_amount": "Amount",
+      "mod_dur": "Duration",
+      "adv_title": "Our advantages",
+      "sol_title": "A simple solution",
+      "sol_desc": "At Vantex Bank, you make your personal loan application online and get an immediate decision in principle. In case of acceptance, all you have to do is electronically sign your contract and upload your supporting documents.",
+      "sim_title": "Simulate your personal loan",
+      "sim_desc": "Get a precise estimate in seconds."
+    },
+    "mortgage": "Mortgage Loan",
+    "business": "Business Loan",
+    "debt": "Debt consolidation"
+  },
+  "footer": {
+    "assist": "Assistance",
+    "legal": "Legal",
+    "rights": "All rights reserved",
+    "accessibility": "Accessibility",
+    "sitemap": "Sitemap"
   }
 }

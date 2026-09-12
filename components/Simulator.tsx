@@ -6,15 +6,15 @@ import { useAppState } from './AppState';
 import { DURATION_OPTIONS, fmt } from '@/lib/loan';
 
 export default function Simulator() {
-  const { amount, setAmount, months, setMonths, loan, openModal } = useAppState();
+  const { amount, setAmount, months, setMonths, loan, openModal, t, locale } = useAppState();
 
   const rangePct = ((amount - 1000) / 799000) * 100;
 
   const firstPaymentLabel = useMemo(() => {
     const fp = new Date();
     fp.setMonth(fp.getMonth() + 1);
-    return fp.toLocaleDateString('fr-FR', { month: 'short', year: 'numeric' });
-  }, []);
+    return fp.toLocaleDateString(locale === 'EN' ? 'en-US' : 'fr-FR', { month: 'short', year: 'numeric' });
+  }, [locale]);
 
   return (
     <section id="simulator" className="section">
@@ -22,21 +22,21 @@ export default function Simulator() {
         <div className="sim-inner">
           {/* Controls */}
           <Reveal>
-            <div className="sec-label">Simulateur de prêt</div>
+            <div className="sec-label">{t('nav.sim')}</div>
             <h2 className="sec-title" style={{ marginBottom: 8 }}>
-              Calculez vos mensualités
+              {t('sim.title')}
             </h2>
             <p className="sec-desc" style={{ marginBottom: 36 }}>
-              Ajustez le montant et la durée pour voir instantanément le coût réel de votre financement.
+              {t('sim.desc')}
             </p>
             <div className="sim-card">
-              <div className="sim-card-title">Mon financement</div>
-              <div className="sim-card-sub">Taux annuel fixe : 2,75% · TAEG indicatif</div>
+              <div className="sim-card-title">{t('sim.card_title')}</div>
+              <div className="sim-card-sub">{t('sim.card_sub')}</div>
               {/* Range */}
               <div className="range-group">
                 <div className="range-top">
-                  <span className="range-lbl">Montant souhaité</span>
-                  <span className="range-val">{fmt(amount)}</span>
+                  <span className="range-lbl">{t('sim.amount_label')}</span>
+                  <span className="range-val">{fmt(amount, locale)}</span>
                 </div>
                 <input
                   type="range"
@@ -50,12 +50,12 @@ export default function Simulator() {
                   }}
                 />
                 <div className="range-minmax">
-                  <span>1 000 €</span>
-                  <span>800 000 €</span>
+                  <span>{fmt(1000, locale)}</span>
+                  <span>{fmt(800000, locale)}</span>
                 </div>
               </div>
               {/* Duration */}
-              <div className="dur-lbl">Durée de remboursement</div>
+              <div className="dur-lbl">{t('sim.duration_label')}</div>
               <div className="dur-pills">
                 {DURATION_OPTIONS.map((opt) => (
                   <button
@@ -68,7 +68,7 @@ export default function Simulator() {
                 ))}
               </div>
               <button className="btn-sim" onClick={() => openModal('auth')}>
-                Faire ma demande de prêt →
+                {t('sim.cta')}
               </button>
             </div>
           </Reveal>
@@ -76,49 +76,48 @@ export default function Simulator() {
           {/* Results */}
           <Reveal delay={2} className="sim-results">
             <div className="result-main">
-              <div className="res-lbl">Mensualité estimée</div>
-              <div className="res-val">{fmt(loan.monthly)}</div>
+              <div className="res-lbl">{t('sim.res_monthly')}</div>
+              <div className="res-val">{fmt(loan.monthly, locale)}</div>
               <div className="res-sub">
-                par mois pendant <span>{months} mois</span>
+                {t('sim.mini_duration')}: <span>{months} mois</span>
               </div>
               <div className="res-grid">
                 <div className="res-item">
-                  <div className="res-item-lbl">Montant total à rembourser</div>
-                  <div className="res-item-val">{fmt(loan.total)}</div>
+                  <div className="res-item-lbl">{t('sim.res_total')}</div>
+                  <div className="res-item-val">{fmt(loan.total, locale)}</div>
                 </div>
                 <div className="res-item">
-                  <div className="res-item-lbl">Coût total des intérêts</div>
-                  <div className="res-item-val g">{fmt(loan.interest)}</div>
+                  <div className="res-item-lbl">{t('sim.res_interest')}</div>
+                  <div className="res-item-val g">{fmt(loan.interest, locale)}</div>
                 </div>
               </div>
               <div className="res-badge">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={3}>
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                Taux fixe 2,75% — Calculé sur votre durée
+                {t('sim.res_badge')}
               </div>
             </div>
             <div className="result-mini-grid">
               <div className="result-mini">
-                <div className="mini-lbl">Capital emprunté</div>
-                <div className="mini-val b">{fmt(amount)}</div>
+                <div className="mini-lbl">{t('sim.mini_capital')}</div>
+                <div className="mini-val b">{fmt(amount, locale)}</div>
               </div>
               <div className="result-mini">
-                <div className="mini-lbl">Taux mensuel</div>
+                <div className="mini-lbl">{t('sim.mini_rate')}</div>
                 <div className="mini-val">0,229%</div>
               </div>
               <div className="result-mini">
-                <div className="mini-lbl">Durée choisie</div>
+                <div className="mini-lbl">{t('sim.mini_duration')}</div>
                 <div className="mini-val">{months} mois</div>
               </div>
               <div className="result-mini">
-                <div className="mini-lbl">1ère échéance</div>
+                <div className="mini-lbl">{t('sim.mini_first')}</div>
                 <div className="mini-val">{firstPaymentLabel}</div>
               </div>
             </div>
             <p style={{ fontSize: 11, color: 'var(--muted)', lineHeight: 1.6 }}>
-              * Simulation indicative. TAEG définitif précisé dans l&apos;offre de contrat. Sous réserve
-              d&apos;acceptation par Vantex Bank.
+              {t('sim.disclaimer')}
             </p>
           </Reveal>
         </div>

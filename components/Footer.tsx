@@ -1,8 +1,11 @@
 'use client';
 
 import SmartLink from './SmartLink';
+import { useAppState } from './AppState';
 
 export default function Footer() {
+  const { t } = useAppState();
+
   return (
     <footer>
       <div className="container">
@@ -15,24 +18,23 @@ export default function Footer() {
               </span>
             </SmartLink>
             <p className="footer-desc">
-              Vantex Bank, votre partenaire financier en ligne. Prêts personnels, professionnels et immobiliers au
-              meilleur taux, pour les résidents d&apos;Europe et d&apos;Asie.
+              Vantex Bank, {t('hero.desc').substring(0, 100)}...
             </p>
           </div>
           <div>
-            <div className="footer-head">Services</div>
+            <div className="footer-head">{t('services.label')}</div>
             <ul className="footer-links">
               <li>
-                <SmartLink href="/simulateur">Prêt personnel</SmartLink>
+                <SmartLink href="/pret-personnel">{t('services.personal.title')}</SmartLink>
               </li>
               <li>
-                <SmartLink href="/simulateur">Prêt immobilier</SmartLink>
+                <SmartLink href="/pret-immobilier">{t('services.mortgage')}</SmartLink>
               </li>
               <li>
-                <SmartLink href="/simulateur">Prêt professionnel</SmartLink>
+                <SmartLink href="/pret-professionnel">{t('services.business')}</SmartLink>
               </li>
               <li>
-                <SmartLink href="/simulateur">Rachat de crédit</SmartLink>
+                <SmartLink href="/rachat-credit">{t('services.debt')}</SmartLink>
               </li>
             </ul>
           </div>
@@ -40,16 +42,16 @@ export default function Footer() {
             <div className="footer-head">Assistance</div>
             <ul className="footer-links">
               <li>
-                <SmartLink href="/aide">Centre d&apos;aide</SmartLink>
+                <SmartLink href="/aide">{t('nav.how')}</SmartLink>
               </li>
               <li>
-                <SmartLink href="/contact">Contactez-nous</SmartLink>
+                <SmartLink href="/contact">{t('nav.contact')}</SmartLink>
               </li>
               <li>
                 <SmartLink href="/aide">FAQ</SmartLink>
               </li>
               <li>
-                <SmartLink href="/simulateur">Simulateur</SmartLink>
+                <SmartLink href="/simulateur">{t('nav.sim')}</SmartLink>
               </li>
             </ul>
           </div>
@@ -73,7 +75,7 @@ export default function Footer() {
         </div>
         <div className="footer-bottom">
           <span className="footer-copy">
-            © 2026 Vantex Bank. Tous droits réservés. Établissement de crédit agréé — Capital social : 50 000 000 €.
+            © 2026 Vantex Bank. Tous droits réservés. SAS Cap Au Nord — ORIAS 14807766.
           </span>
           <div className="footer-legal">
             <SmartLink href="/mentions-legales">Accessibilité</SmartLink>

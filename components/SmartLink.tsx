@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useAppState } from './AppState';
 import { ReactNode } from 'react';
@@ -17,20 +16,21 @@ export default function SmartLink({ href, children, className, onClick }: SmartL
   const { triggerLoading } = useAppState();
 
   const handleClick = (e: React.MouseEvent) => {
-    // If it's a simple anchor or same page, don't trigger loading unless requested
+    // Si c'est une ancre interne (#), on laisse le comportement par défaut
     if (href.startsWith('#')) return;
 
     e.preventDefault();
     if (onClick) onClick();
 
     triggerLoading(() => {
-      router.push(href);
+      // Forcer un rechargement complet de la page vers la nouvelle URL
+      window.location.href = href;
     });
   };
 
   return (
-    <Link href={href} className={className} onClick={handleClick}>
+    <a href={href} className={className} onClick={handleClick}>
       {children}
-    </Link>
+    </a>
   );
 }

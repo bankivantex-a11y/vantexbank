@@ -5,7 +5,7 @@ import { useAppState } from './AppState';
 import SmartLink from './SmartLink';
 
 export default function Navbar() {
-  const { openModal } = useAppState();
+  const { openModal, locale, setLocale, t } = useAppState();
   const [scrolled, setScrolled] = useState(false);
   const [hiddenCta, setHiddenCta] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -41,28 +41,40 @@ export default function Navbar() {
           </SmartLink>
           <ul className={`nav-links ${mobileMenuOpen ? 'active' : ''}`}>
             <li>
-              <SmartLink href="/fonctionnement" onClick={() => setMobileMenuOpen(false)}>Fonctionnement</SmartLink>
+              <SmartLink href="/fonctionnement" onClick={() => setMobileMenuOpen(false)}>{t('nav.how')}</SmartLink>
             </li>
             <li>
-              <SmartLink href="/simulateur" onClick={() => setMobileMenuOpen(false)}>Simulateur</SmartLink>
+              <div className="nav-dropdown">
+                <span className="nav-link-with-icon">Services <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 9l6 6 6-6"/></svg></span>
+                <div className="dropdown-content">
+                  <SmartLink href="/pret-personnel" onClick={() => setMobileMenuOpen(false)}>{t('services.personal.title')}</SmartLink>
+                  <SmartLink href="/pret-immobilier" onClick={() => setMobileMenuOpen(false)}>{t('services.mortgage')}</SmartLink>
+                  <SmartLink href="/pret-professionnel" onClick={() => setMobileMenuOpen(false)}>{t('services.business')}</SmartLink>
+                  <SmartLink href="/rachat-credit" onClick={() => setMobileMenuOpen(false)}>{t('services.debt')}</SmartLink>
+                </div>
+              </div>
             </li>
             <li>
-              <SmartLink href="/conditions" onClick={() => setMobileMenuOpen(false)}>Conditions</SmartLink>
+              <SmartLink href="/simulateur" onClick={() => setMobileMenuOpen(false)}>{t('nav.sim')}</SmartLink>
             </li>
             <li>
-              <SmartLink href="/temoignages" onClick={() => setMobileMenuOpen(false)}>Témoignages</SmartLink>
+              <SmartLink href="/conditions" onClick={() => setMobileMenuOpen(false)}>{t('nav.cond')}</SmartLink>
             </li>
             <li>
-              <SmartLink href="/a-propos" onClick={() => setMobileMenuOpen(false)}>À Propos</SmartLink>
+              <SmartLink href="/temoignages" onClick={() => setMobileMenuOpen(false)}>{t('nav.testi')}</SmartLink>
             </li>
             <li>
-              <SmartLink href="/contact" onClick={() => setMobileMenuOpen(false)}>Contact</SmartLink>
+              <SmartLink href="/a-propos" onClick={() => setMobileMenuOpen(false)}>{t('nav.about')}</SmartLink>
+            </li>
+            <li>
+              <SmartLink href="/contact" onClick={() => setMobileMenuOpen(false)}>{t('nav.contact')}</SmartLink>
             </li>
             <li className="mobile-only" style={{ padding: '20px 0' }}>
               <select
                 className="form-select"
                 style={{ width: '100%', padding: '10px' }}
-                defaultValue="FR"
+                value={locale}
+                onChange={(e) => setLocale(e.target.value as any)}
               >
                 <option value="FR">🇫🇷 Français</option>
                 <option value="EN">🇬🇧 English</option>
@@ -76,12 +88,12 @@ export default function Navbar() {
             </li>
             <li className="mobile-only">
               <button className="btn-ghost" style={{ width: '100%', textAlign: 'left', padding: '20px 0' }} onClick={() => { openModal('auth'); setMobileMenuOpen(false); }}>
-                Se connecter
+                {t('nav.login')}
               </button>
             </li>
             <li className="mobile-only" style={{ borderBottom: 'none', paddingTop: '20px' }}>
               <button className="btn-full" onClick={() => { openModal('auth'); setMobileMenuOpen(false); }}>
-                Demander un prêt
+                {t('nav.apply')}
               </button>
             </li>
           </ul>
@@ -89,7 +101,8 @@ export default function Navbar() {
             <select
               className="form-select"
               style={{ width: 'auto', padding: '5px 30px 5px 10px', fontSize: '12px', border: '1px solid var(--border)', backgroundPosition: 'right 8px center' }}
-              defaultValue="FR"
+              value={locale}
+              onChange={(e) => setLocale(e.target.value as any)}
             >
               <option value="FR">🇫🇷 FR</option>
               <option value="EN">🇬🇧 EN</option>
@@ -101,7 +114,7 @@ export default function Navbar() {
               <option value="IT">🇮🇹 IT</option>
             </select>
             <button id="navCta" className={hiddenCta ? 'hidden-cta' : ''} onClick={() => openModal('auth')}>
-              Demander un prêt
+              {t('nav.apply')}
             </button>
             <button className="nav-toggle" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} aria-label="Toggle menu">
               {mobileMenuOpen ? (
