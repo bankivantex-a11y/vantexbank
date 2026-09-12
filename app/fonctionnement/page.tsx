@@ -20,14 +20,22 @@ export default function FonctionnementPage() {
           <Steps />
 
           <div className="reveal visible" style={{ marginTop: 40, padding: 40, background: 'var(--bg)', borderRadius: 24 }}>
-            <h2 className="step-title" style={{ fontSize: 28 }}>Un accompagnement sur mesure</h2>
+            <h2 className="step-title" style={{ fontSize: 28 }}>Une solution en cas de dépenses imprévues</h2>
             <p className="step-desc" style={{ fontSize: 16, maxWidth: 800 }}>
-              Contrairement aux banques traditionnelles, Vantex Bank utilise des algorithmes d'analyse en temps réel
-              couplés à une expertise humaine. Cela nous permet de vous donner une réponse de principe immédiate
-              et une validation définitive sous 48 heures ouvrées.
+              L'un des cas les plus fréquents est la survenue d'une dépense imprévue. Une panne de voiture, une réparation urgente dans le logement, le remplacement d'un appareil électroménager indispensable ou encore une facture inattendue peuvent rapidement déséquilibrer un budget.
               <br /><br />
-              Dès la signature de votre contrat électronique, les fonds sont débloqués et transférés sur votre compte
-              bancaire en 72 heures maximum. Aucun frais de dossier caché, aucune mauvaise surprise.
+              Lorsque ces dépenses ne peuvent pas attendre la prochaine rentrée d'argent, un mini crédit permet de disposer rapidement des fonds nécessaires pour faire face à la situation.
+              <br /><br />
+              Le mini crédit peut également servir à financer de nombreux autres achats de faibles montants :
+            </p>
+            <ul style={{ color: 'var(--muted)', marginTop: 16, paddingLeft: 20, lineHeight: 1.8 }}>
+              <li>Un ordinateur ou smartphone</li>
+              <li>Un vélo ou du mobilier</li>
+              <li>Un appareil électroménager</li>
+              <li>Une formation ou un voyage</li>
+            </ul>
+            <p className="step-desc" style={{ fontSize: 16, maxWidth: 800, marginTop: 24 }}>
+              Dans ce type de situation, le mini crédit permet d’étaler une dépense dans le temps sans avoir à mobiliser immédiatement son épargne. Il constitue ainsi une solution pratique pour concrétiser un projet tout en préservant votre budget.
             </p>
           </div>
         </div>

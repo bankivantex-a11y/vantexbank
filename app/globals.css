@@ -189,12 +189,6 @@
       animation: slideUp .6s ease .1s both;
     }
     .hero-title .hl { color: var(--blue); position: relative; display: inline-block; }
-    .hero-title .hl::after {
-      content: ''; position: absolute; bottom: 4px; left: 0; right: 0;
-      height: 4px; background: var(--gold); border-radius: 2px;
-      transform: scaleX(0); transform-origin: left;
-      animation: underlineGrow .8s ease .9s forwards;
-    }
     .hero-desc {
       font-size: 17px; color: var(--muted); max-width: 480px; line-height: 1.75;
       margin-bottom: 40px; animation: slideUp .6s ease .2s both;
@@ -793,7 +787,7 @@
 
       .section           { padding: 64px 0; }
       .hero-title        { font-size: 38px; }
-      .hero-visual       { transform: scale(0.75); margin-top: -20px; }
+      .hero-visual       { transform: scale(0.75); margin-top: 80px; justify-content: center; }
       .fc1               { right: -40px; }
       .fc2               { left: -40px; }
       .hero-person       { display: none; }
@@ -824,7 +818,7 @@
 
     @media (max-width: 480px) {
       .hero-title        { font-size: 32px; }
-      .hero-visual       { transform: scale(0.6); margin-top: -60px; margin-bottom: -60px; }
+      .hero-visual       { transform: scale(0.6); margin-top: 80px; margin-bottom: 40px; }
       .hero-buttons      { flex-direction: column; width: 100%; }
       .hero-buttons button { width: 100%; justify-content: center; }
       .nav-logo-text     { font-size: 18px; }

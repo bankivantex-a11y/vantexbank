@@ -1,15 +1,17 @@
+import Link from 'next/link';
+
 export default function Footer() {
   return (
     <footer>
       <div className="container">
         <div className="footer-grid">
           <div>
-            <div className="nav-logo">
+            <Link href="/" className="nav-logo">
               <div className="nav-logo-icon">V</div>
               <span className="nav-logo-text">
                 Vantex <span>Bank</span>
               </span>
-            </div>
+            </Link>
             <p className="footer-desc">
               Vantex Bank, votre partenaire financier en ligne. Prêts personnels, professionnels et immobiliers au
               meilleur taux, pour les résidents d&apos;Europe et d&apos;Asie.
@@ -19,16 +21,16 @@ export default function Footer() {
             <div className="footer-head">Services</div>
             <ul className="footer-links">
               <li>
-                <a href="#">Prêt personnel</a>
+                <Link href="/simulateur">Prêt personnel</Link>
               </li>
               <li>
-                <a href="#">Prêt immobilier</a>
+                <Link href="/simulateur">Prêt immobilier</Link>
               </li>
               <li>
-                <a href="#">Prêt professionnel</a>
+                <Link href="/simulateur">Prêt professionnel</Link>
               </li>
               <li>
-                <a href="#">Rachat de crédit</a>
+                <Link href="/simulateur">Rachat de crédit</Link>
               </li>
             </ul>
           </div>
@@ -36,16 +38,16 @@ export default function Footer() {
             <div className="footer-head">Assistance</div>
             <ul className="footer-links">
               <li>
-                <a href="/aide">Centre d&apos;aide</a>
+                <Link href="/aide">Centre d&apos;aide</Link>
               </li>
               <li>
-                <a href="/contact">Contactez-nous</a>
+                <Link href="/contact">Contactez-nous</Link>
               </li>
               <li>
-                <a href="/a-propos">À propos</a>
+                <Link href="/a-propos">À propos</Link>
               </li>
               <li>
-                <a href="/simulateur">Simulateur</a>
+                <Link href="/simulateur">Simulateur</Link>
               </li>
             </ul>
           </div>
@@ -53,16 +55,16 @@ export default function Footer() {
             <div className="footer-head">Légal</div>
             <ul className="footer-links">
               <li>
-                <a href="#">Mentions légales</a>
+                <Link href="/conditions">Mentions légales</Link>
               </li>
               <li>
-                <a href="#">RGPD &amp; Cookies</a>
+                <Link href="/conditions">RGPD &amp; Cookies</Link>
               </li>
               <li>
-                <a href="#">Conditions générales</a>
+                <Link href="/conditions">Conditions générales</Link>
               </li>
               <li>
-                <a href="#">Politique de confidentialité</a>
+                <Link href="/conditions">Politique de confidentialité</Link>
               </li>
             </ul>
           </div>
@@ -72,9 +74,9 @@ export default function Footer() {
             © 2026 Vantex Bank. Tous droits réservés. Établissement de crédit agréé — Capital social : 50 000 000 €.
           </span>
           <div className="footer-legal">
-            <a href="#">Accessibilité</a>
-            <a href="#">Cookies</a>
-            <a href="#">Plan du site</a>
+            <Link href="/aide">Accessibilité</Link>
+            <Link href="/aide">Cookies</Link>
+            <Link href="/aide">Plan du site</Link>
           </div>
         </div>
       </div>

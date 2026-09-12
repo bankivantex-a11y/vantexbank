@@ -9,13 +9,13 @@ export default function AboutPage() {
           <div className="hero-inner" style={{ alignItems: 'center', minHeight: 'auto', paddingTop: 0, paddingBottom: 0 }}>
             <Reveal>
               <div className="sec-label">À Propos de Nous</div>
-              <h1 className="hero-title">Redéfinir la banque pour l'ère numérique.</h1>
+              <h1 className="hero-title">Une équipe de professionnels pour un soutien complet.</h1>
               <p className="hero-desc">
-                Fondée en 2024, Vantex Bank est née d'une vision simple : rendre le crédit accessible, transparent et rapide pour tous. Nous combinons technologie de pointe et service client humain.
+                Depuis 2004, notre équipe s'est forgée une solide réputation grâce à son expertise et à la qualité de ses services. Au fil des années, nous avons œuvré avec diligence pour offrir à nos clients une expérience exceptionnelle.
               </p>
               <div className="hero-stats" style={{ marginTop: 32 }}>
                 <div className="stat-item">
-                  <span className="stat-value">2024</span>
+                  <span className="stat-value">2004</span>
                   <span className="stat-label">Année de création</span>
                 </div>
                 <div className="stat-div"></div>
@@ -46,7 +46,13 @@ export default function AboutPage() {
             <Reveal>
               <h2 className="sec-title">Notre Mission</h2>
               <p className="sec-desc" style={{ maxWidth: 800 }}>
-                Chez Vantex Bank, nous croyons que chaque projet mérite une chance d'être financé. Que ce soit pour l'achat d'une maison, le lancement d'une entreprise ou un projet personnel, nous nous engageons à fournir des solutions de prêt équitables et adaptées à chaque profil.
+                Fondée avec l'ambition d'être un spécialiste du crédit rapide et du financement des particuliers, notre mission est d’accompagner chaque emprunteur vers la solution la plus adaptée à son projet et à sa situation.
+                <br /><br />
+                Vantex Bank (SAS Cap Au Nord) est un intermédiaire enregistré à l'ORIAS sous le numéro 14006971 en qualité de mandataire non exclusif en opérations de banque et en services de paiement (MOBSP).
+                <br /><br />
+                <small style={{ color: 'var(--muted)' }}>
+                  Rappel légal : Aucun versement de quelque nature que ce soit ne peut être exigé d'un particulier avant l'obtention d'un ou plusieurs prêts d'argent.
+                </small>
               </p>
             </Reveal>
           </div>

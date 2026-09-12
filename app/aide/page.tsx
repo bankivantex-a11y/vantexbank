@@ -2,20 +2,16 @@ import Reveal from '@/components/Reveal';
 
 const faqs = [
   {
-    q: "Quels sont les documents nécessaires pour ma demande ?",
-    a: "Pour traiter votre dossier, nous avons besoin d'une pièce d'identité valide, de vos trois derniers bulletins de salaire et de vos trois derniers relevés de compte bancaire. Ces documents peuvent être téléchargés directement dans votre espace sécurisé."
+    q: "Comment obtenir un mini crédit rapidement ?",
+    a: "La demande de mini crédit s'effectue directement en ligne. Il vous suffit de compléter votre dossier et de transmettre les informations demandées. Pour accélérer le versement des fonds, il est recommandé de signer votre contrat le plus vite possible."
   },
   {
-    q: "Quel est le délai de réponse pour un prêt ?",
-    a: "Vantex Bank s'engage à vous fournir une réponse de principe immédiate après votre simulation en ligne. La validation définitive de votre dossier intervient sous 48 heures ouvrées après réception des pièces justificatives complètes."
+    q: "Quels sont les taux d'un mini crédit ?",
+    a: "Le taux d'un mini crédit dépend notamment du montant emprunté et de la durée de remboursement. Avant toute souscription, il est important de vérifier le TAEG, le montant des échéances ainsi que le coût total du crédit qui figurent sur le contrat."
   },
   {
-    q: "Puis-je rembourser mon prêt par anticipation ?",
-    a: "Oui, vous pouvez rembourser tout ou partie de votre crédit par anticipation à tout moment. Conformément à notre politique de transparence, aucun frais de remboursement anticipé n'est appliqué pour les montants inférieurs à 10 000 €."
-  },
-  {
-    q: "Comment sont calculés les taux d'intérêt ?",
-    a: "Nos taux sont fixes et garantis pendant toute la durée du contrat. Ils dépendent du montant emprunté, de la durée de remboursement et de votre situation financière globale. Le taux actuel de référence est de 2,75%."
+    q: "Quel salaire faut-il pour obtenir un mini crédit ?",
+    a: "Il n'existe pas de salaire minimum pour obtenir un mini crédit. L'étude du dossier prend en compte l'ensemble de la situation financière du client, notamment ses revenus, ses charges et sa capacité de remboursement."
   },
   {
     q: "Mes données personnelles sont-elles en sécurité ?",

@@ -3,7 +3,7 @@ import Reveal from './Reveal';
 
 const items = [
   { strong: 'Être majeur(e)', text: '— Avoir au minimum 18 ans révolus à la date de la demande' },
-  { strong: 'Résidence éligible', text: "— Être résident(e) dans un pays d'Europe ou d'Asie" },
+  { strong: 'Résidence éligible', text: "— Être résident(e) en Europe, Asie (Koweït...), ou Australie" },
   {
     strong: 'Revenus fixes mensuels',
     text: '— Justifier d\'une rémunération régulière (CDI, fonctionnaire, indépendant, retraité…)',

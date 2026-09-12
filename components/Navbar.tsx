@@ -58,6 +58,17 @@ export default function Navbar() {
             <li>
               <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
             </li>
+            <li className="mobile-only" style={{ padding: '20px 0' }}>
+              <select
+                className="form-select"
+                style={{ width: '100%', padding: '10px' }}
+                defaultValue="FR"
+              >
+                <option value="FR">🇫🇷 Français</option>
+                <option value="EN">🇬🇧 English</option>
+                <option value="KW">🇰🇼 Kowat</option>
+              </select>
+            </li>
             <li className="mobile-only">
               <button className="btn-ghost" style={{ width: '100%', textAlign: 'left', padding: '20px 0' }} onClick={() => { openModal('auth'); setMobileMenuOpen(false); }}>
                 Se connecter
@@ -70,6 +81,15 @@ export default function Navbar() {
             </li>
           </ul>
           <div className="nav-actions">
+            <select
+              className="form-select"
+              style={{ width: 'auto', padding: '5px 30px 5px 10px', fontSize: '12px', border: '1px solid var(--border)', backgroundPosition: 'right 8px center' }}
+              defaultValue="FR"
+            >
+              <option value="FR">🇫🇷 FR</option>
+              <option value="EN">🇬🇧 EN</option>
+              <option value="KW">🇰🇼 KW</option>
+            </select>
             <button id="navCta" className={hiddenCta ? 'hidden-cta' : ''} onClick={() => openModal('auth')}>
               Demander un prêt
             </button>

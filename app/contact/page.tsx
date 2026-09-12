@@ -18,9 +18,9 @@ export default function ContactPage() {
           <div className="sim-inner">
             <Reveal>
               <div className="sec-label">Contactez-nous</div>
-              <h1 className="sec-title">Une question ?<br />Notre équipe est là.</h1>
+              <h1 className="sec-title">Une ligne toujours ouverte pour vous.</h1>
               <p className="sec-desc">
-                Vous avez besoin d'aide pour votre simulation ou vous souhaitez suivre votre dossier en cours ? Remplissez le formulaire ou utilisez nos coordonnées directes.
+                Vous pouvez discuter avec nous en direct à tout moment par chat, par téléphone ou via notre site web. Écrivez-nous ou appelez-nous ; nos lignes sont toujours ouvertes.
               </p>
 
               <div style={{ marginTop: 40, display: 'flex', flexDirection: 'column', gap: 24 }}>
@@ -70,27 +70,21 @@ export default function ContactPage() {
                     <h3 className="sim-card-title">Envoyez-nous un message</h3>
                     <p className="sim-card-sub">Tous les champs sont obligatoires.</p>
                     <div className="form-group">
-                      <label className="form-label">Nom complet</label>
-                      <input type="text" className="form-input" placeholder="Jean Dupont" required />
+                      <label className="form-label">Nom et prénom *</label>
+                      <div className="form-row">
+                        <input type="text" className="form-input" placeholder="Prénoms" required />
+                        <input type="text" className="form-input" placeholder="Nom de famille" required />
+                      </div>
                     </div>
                     <div className="form-group">
-                      <label className="form-label">Email</label>
-                      <input type="email" className="form-input" placeholder="jean@exemple.com" required />
+                      <label className="form-label">Adresse e-mail *</label>
+                      <input type="email" className="form-input" placeholder="Adresse électronique" required />
                     </div>
                     <div className="form-group">
-                      <label className="form-label">Sujet</label>
-                      <select className="form-select">
-                        <option>Question sur mon prêt</option>
-                        <option>Problème technique</option>
-                        <option>Réclamation</option>
-                        <option>Autre</option>
-                      </select>
+                      <label className="form-label">votre message</label>
+                      <textarea className="form-input" style={{ minHeight: 120, resize: 'vertical' }} placeholder="Nouvelles" required></textarea>
                     </div>
-                    <div className="form-group">
-                      <label className="form-label">Votre message</label>
-                      <textarea className="form-input" style={{ minHeight: 120, resize: 'vertical' }} placeholder="Comment pouvons-nous vous aider ?" required></textarea>
-                    </div>
-                    <button type="submit" className="btn-sim">Envoyer le message →</button>
+                    <button type="submit" className="btn-sim">Envoyer →</button>
                   </form>
                 )}
               </div>

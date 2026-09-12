@@ -40,7 +40,7 @@ export default function Hero() {
             <div className="hero-stats">
               <div className="stat-item">
                 <span className="stat-value">
-                  <AnimatedCounter target={50000} />
+                  <AnimatedCounter target={76923} />
                 </span>
                 <span className="stat-label">Clients satisfaits</span>
               </div>

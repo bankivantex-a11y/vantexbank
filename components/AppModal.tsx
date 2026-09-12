@@ -162,6 +162,14 @@ export default function AppModal() {
                 <label className="form-label">Nationalité</label>
                 <select className="form-select" defaultValue="Française">
                   <option>Française</option>
+                  <option>Koweïtienne</option>
+                  <option>Slovène</option>
+                  <option>Espagnole</option>
+                  <option>Lituanienne</option>
+                  <option>Allemande</option>
+                  <option>Italienne</option>
+                  <option>Croate</option>
+                  <option>Australienne</option>
                   <option>Belge</option>
                   <option>Suisse</option>
                   <option>Autre</option>
