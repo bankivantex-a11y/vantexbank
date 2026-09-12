@@ -1,0 +1,21 @@
+{
+  "nav": {
+    "how": "How it works",
+    "sim": "Simulator",
+    "cond": "Conditions",
+    "testi": "Testimonials",
+    "about": "About Us",
+    "contact": "Contact",
+    "apply": "Apply for a loan",
+    "login": "Login"
+  },
+  "hero": {
+    "title": "Your online loan, simple & fast",
+    "desc": "Vantex Bank supports you in all your life projects. Get your financing in a few steps, no waiting lines, 100% online.",
+    "cta_apply": "Apply for my loan",
+    "cta_sim": "Simulate my loan",
+    "stat_clients": "Satisfied clients",
+    "stat_rate": "Fixed annual rate",
+    "stat_guarantee": "Guaranteed response"
+  }
+}

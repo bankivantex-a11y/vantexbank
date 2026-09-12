@@ -1,0 +1,21 @@
+{
+  "nav": {
+    "how": "Cómo funciona",
+    "sim": "Simulador",
+    "cond": "Condiciones",
+    "testi": "Testimonios",
+    "about": "Sobre nosotros",
+    "contact": "Contacto",
+    "apply": "Solicitar préstamo",
+    "login": "Iniciar sesión"
+  },
+  "hero": {
+    "title": "Su préstamo en línea, simple y rápido",
+    "desc": "Vantex Bank le acompaña en todos sus proyectos de vida. Obtenga su financiación en unos pocos pasos, sin colas, 100% online.",
+    "cta_apply": "Solicitar mi préstamo",
+    "cta_sim": "Simular mi préstamo",
+    "stat_clients": "Clientes satisfechos",
+    "stat_rate": "Tasa anual fija",
+    "stat_guarantee": "Respuesta garantizada"
+  }
+}

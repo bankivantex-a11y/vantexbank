@@ -1,0 +1,21 @@
+{
+  "nav": {
+    "how": "Wie es funktioniert",
+    "sim": "Simulator",
+    "cond": "Bedingungen",
+    "testi": "Referenzen",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "apply": "Kredit beantragen",
+    "login": "Anmelden"
+  },
+  "hero": {
+    "title": "Ihr Online-Kredit, einfach & schnell",
+    "desc": "Vantex Bank begleitet Sie bei all Ihren Lebensprojekten. Holen Sie sich Ihre Finanzierung in wenigen Schritten, ohne Warteschlangen, 100% online.",
+    "cta_apply": "Meinen Kredit beantragen",
+    "cta_sim": "Meinen Kredit simulieren",
+    "stat_clients": "Zufriedene Kunden",
+    "stat_rate": "Fester Jahreszins",
+    "stat_guarantee": "Garantierte Antwort"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "nav": {
+    "how": "Fonctionnement",
+    "sim": "Simulateur",
+    "cond": "Conditions",
+    "testi": "Témoignages",
+    "about": "À Propos",
+    "contact": "Contact",
+    "apply": "Demander un prêt",
+    "login": "Se connecter"
+  },
+  "hero": {
+    "title": "Votre prêt en ligne, simple & rapide",
+    "desc": "Vantex Bank vous accompagne dans tous vos projets de vie. Obtenez votre financement en quelques étapes, sans file d'attente, 100% en ligne.",
+    "cta_apply": "Demander mon prêt",
+    "cta_sim": "Simuler mon prêt",
+    "stat_clients": "Clients satisfaits",
+    "stat_rate": "Taux annuel fixe",
+    "stat_guarantee": "Réponse garantie"
+  }
+}
