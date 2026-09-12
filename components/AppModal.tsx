@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import Link from 'next/link';
 import { useAppState } from './AppState';
 import { fmt } from '@/lib/loan';
 
@@ -308,8 +309,8 @@ export default function AppModal() {
                   onChange={(e) => setChecks((c) => ({ ...c, chk1: e.target.checked }))}
                 />
                 <label className="check-lbl" htmlFor="chk1">
-                  J&apos;ai lu et j&apos;accepte les <a href="#">Conditions Générales</a> et la{' '}
-                  <a href="#">Politique de confidentialité</a> de Vantex Bank.
+                  J&apos;ai lu et j&apos;accepte les <Link href="/conditions-generales">Conditions Générales</Link> et la{' '}
+                  <Link href="/confidentialite">Politique de confidentialité</Link> de Vantex Bank.
                 </label>
               </div>
               <div className="check-group">

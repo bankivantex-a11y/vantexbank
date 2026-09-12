@@ -821,6 +821,27 @@
       .res-val           { font-size: 36px; }
     }
 
+    /* Legal Pages Content */
+    .legal-content h3 {
+      margin: 32px 0 16px;
+      color: var(--navy);
+      font-size: 20px;
+    }
+    .legal-content p {
+      color: var(--muted);
+      margin-bottom: 16px;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+    .legal-content ul {
+      margin-bottom: 16px;
+      padding-left: 20px;
+      color: var(--muted);
+    }
+    .legal-content li {
+      margin-bottom: 8px;
+    }
+
     @media (max-width: 480px) {
       .hero-title        { font-size: 32px; }
       .hero-visual       { transform: scale(0.6); margin-top: 80px; margin-bottom: 40px; }

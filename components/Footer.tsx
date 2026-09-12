@@ -55,16 +55,16 @@ export default function Footer() {
             <div className="footer-head">Légal</div>
             <ul className="footer-links">
               <li>
-                <a href="#">Mentions légales</a>
+                <Link href="/mentions-legales">Mentions légales</Link>
               </li>
               <li>
-                <a href="#">RGPD &amp; Cookies</a>
+                <Link href="/cookies">RGPD &amp; Cookies</Link>
               </li>
               <li>
-                <a href="#">Conditions générales</a>
+                <Link href="/conditions-generales">Conditions générales</Link>
               </li>
               <li>
-                <a href="#">Politique de confidentialité</a>
+                <Link href="/confidentialite">Politique de confidentialité</Link>
               </li>
             </ul>
           </div>

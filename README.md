@@ -1,8 +1,14 @@
-# Vantex Bank — Prototype Next.js
+# Vantex Bank — Plateforme de Financement en Ligne
 
-Conversion du prototype de site "Vantex Bank" (initialement en HTML/CSS/JS statique) vers Next.js 14 (App Router + TypeScript).
+Plateforme bancaire moderne développée avec Next.js 14 (App Router + TypeScript), offrant des solutions de crédit rapide, sécurisé et 100% en ligne.
 
-⚠️ **Ceci est un prototype de démonstration.** Aucun formulaire n'envoie de données à un serveur : les uploads de documents, la connexion, l'inscription et la soumission de dossier sont entièrement simulés côté client (comme dans la maquette d'origine), à des fins de présentation uniquement.
+## Fonctionnalités
+
+- **Simulateur de prêt dynamique** : Calcul instantané des mensualités et du coût total.
+- **Parcours de demande intuitif** : Processus en 4 étapes avec upload de documents et signature électronique.
+- **Interface responsive** : Design moderne et fluide, optimisé pour tous les terminaux (Mobile, Tablette, Desktop).
+- **Logique métier robuste** : Calculs de taux et d'échéanciers précis côté serveur et client.
+- **Sécurité** : Structure conforme aux standards modernes du Web.
 
 ## Démarrage
 
@@ -13,16 +19,16 @@ npm run dev
 
 Puis ouvrez [http://localhost:3000](http://localhost:3000).
 
-## Structure
+## Structure du projet
 
-- `app/` — layout, page principale, styles globaux (repris fidèlement du CSS d'origine)
-- `components/` — un composant par section (Navbar, Hero, Steps, Simulator, Conditions, Testimonials, Trust, Footer) + les deux modales (Auth, App) + utilitaires (Reveal au scroll, compteur animé)
-- `lib/loan.ts` — logique de calcul du prêt (taux, mensualité, coût total)
+- `app/` — Layout, pages de services, espace client et styles globaux.
+- `components/` — Bibliothèque de composants UI (Navbar, Hero, Simulateur, Modales, etc.).
+- `lib/loan.ts` — Moteur de calcul financier (Taux, mensualités, intérêts).
 
-## Ce qui a été converti
+## Technologies utilisées
 
-- Toute la logique JavaScript vanille (scroll reveal, compteur animé, simulateur de prêt, système de modales, onglets connexion/inscription, parcours de demande en 4 étapes, upload simulé, soumission avec écran de chargement puis succès) a été réécrite en React (hooks `useState`/`useEffect`/`useMemo`, `IntersectionObserver`).
-- L'état du simulateur (montant, durée) est partagé entre la section Simulateur et la modale de demande via un contexte React, pour rester synchronisé comme dans l'original.
-- Les images externes (Unsplash, pravatar) passent par `next/image`.
-- Les polices Google (Inter, DM Serif Display) sont chargées via `next/font/google` plutôt que par balise `<link>`.
-
+- **Framework** : Next.js 14 (App Router)
+- **Langage** : TypeScript
+- **Style** : CSS3 moderne (Variables, Flexbox, Grid)
+- **Animations** : Hooks React + Intersection Observer pour le Reveal au scroll.
+- **Optimisation** : `next/image` et `next/font` pour des performances maximales.

@@ -14,6 +14,8 @@ interface AppStateValue {
   activeModal: ModalId;
   openModal: (id: Exclude<ModalId, null>) => void;
   closeModal: () => void;
+  isLoading: boolean;
+  triggerLoading: (callback?: () => void) => void;
 }
 
 const AppStateContext = createContext<AppStateValue | null>(null);
@@ -22,8 +24,18 @@ export function AppStateProvider({ children }: { children: ReactNode }) {
   const [amount, setAmount] = useState(15000);
   const [months, setMonths] = useState(36);
   const [activeModal, setActiveModal] = useState<ModalId>(null);
+  const [isLoading, setIsLoading] = useState(false);
 
   const loan = useMemo(() => calcLoan(amount, months), [amount, months]);
+
+  const triggerLoading = (callback?: () => void) => {
+    setIsLoading(true);
+    const delay = 2000 + Math.random() * 1000; // 2-3 seconds
+    setTimeout(() => {
+      setIsLoading(false);
+      if (callback) callback();
+    }, delay);
+  };
 
   const value: AppStateValue = {
     amount,
@@ -34,6 +46,8 @@ export function AppStateProvider({ children }: { children: ReactNode }) {
     activeModal,
     openModal: (id) => setActiveModal(id),
     closeModal: () => setActiveModal(null),
+    isLoading,
+    triggerLoading,
   };
 
   return <AppStateContext.Provider value={value}>{children}</AppStateContext.Provider>;
