@@ -34,7 +34,7 @@ export default function HelpCenterPage() {
 
           <div style={{ marginTop: 60, display: 'flex', flexDirection: 'column', gap: 24, maxWidth: 800 }}>
             {faqs.map((faq, index) => (
-              <Reveal key={index} delay={((index % 4) + 1) as 1 | 2 | 3 | 4}>
+              <Reveal key={index} delay={(index % 4) + 1}>
                 <div style={{
                   padding: 24,
                   background: 'var(--bg)',

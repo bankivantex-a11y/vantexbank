@@ -53,7 +53,7 @@ export default function Steps() {
         </div>
         <div className="steps-grid">
           {steps.map((s, i) => (
-            <Reveal key={s.num} delay={(i + 1) as 1 | 2 | 3} className="step-card">
+            <Reveal key={s.num} delay={i + 1} className="step-card">
               <div className="step-ico-wrap">
                 <span className="step-num">{s.num}</span>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>

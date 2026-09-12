@@ -6,7 +6,7 @@ interface RevealProps {
   children: ReactNode;
   className?: string;
   direction?: 'up' | 'right';
-  delay?: 1 | 2 | 3 | 4;
+  delay?: number;
 }
 
 export default function Reveal({ children, className = '', direction = 'up', delay }: RevealProps) {
