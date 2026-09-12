@@ -3,19 +3,19 @@ import Reveal from '@/components/Reveal';
 const faqs = [
   {
     q: "Comment obtenir un mini crédit rapidement ?",
-    a: "La demande de mini crédit s'effectue directement en ligne. Il vous suffit de compléter votre dossier et de transmettre les informations demandées. Pour accélérer le versement des fonds, il est recommandé de signer votre contrat le plus vite possible."
+    a: "La demande de mini crédit s'effectue directement en ligne sur Vantex Bank. Il vous suffit de compléter votre dossier et de transmettre les informations demandées. Pour accélérer le versement des fonds, il est recommandé de signer votre contrat électroniquement le plus vite possible."
   },
   {
     q: "Quels sont les taux d'un mini crédit ?",
-    a: "Le taux d'un mini crédit dépend notamment du montant emprunté et de la durée de remboursement. Avant toute souscription, il est important de vérifier le TAEG, le montant des échéances ainsi que le coût total du crédit qui figurent sur le contrat."
+    a: "Le taux d'un mini crédit dépend notamment du montant emprunté et de la durée de remboursement. Avant toute souscription, il est important de vérifier le TAEG, le montant des échéances ainsi que le coût total du crédit qui figurent sur votre contrat personnalisé."
   },
   {
     q: "Quel salaire faut-il pour obtenir un mini crédit ?",
-    a: "Il n'existe pas de salaire minimum pour obtenir un mini crédit. L'étude du dossier prend en compte l'ensemble de la situation financière du client, notamment ses revenus, ses charges et sa capacité de remboursement."
+    a: "Il n'existe pas de salaire minimum strict pour obtenir un mini crédit chez nous. L'étude du dossier prend en compte l'ensemble de votre situation financière, notamment vos revenus, vos charges et votre capacité de remboursement globale."
   },
   {
-    q: "Mes données personnelles sont-elles en sécurité ?",
-    a: "La sécurité est notre priorité absolue. Vos données sont chiffrées selon les standards bancaires les plus stricts (SSL 256-bit) et nous respectons scrupuleusement le RGPD. Aucune donnée n'est vendue à des tiers."
+    q: "Une solution en cas de dépenses imprévues ?",
+    a: "Le mini crédit est idéal pour faire face à une dépense imprévue (panne de voiture, réparation urgente, facture inattendue) ou pour financer un petit achat (ordinateur, smartphone, voyage) sans mobiliser immédiatement votre épargne."
   }
 ];
 

@@ -19,13 +19,28 @@ export default function ConditionsGeneralesPage() {
               par Vantex Bank.
             </p>
 
-            <h3>2. Utilisation du service</h3>
+            <h3>2. Modalités du prêt personnel</h3>
             <p>
-              L&apos;utilisateur s&apos;engage à fournir des informations exactes lors de l&apos;utilisation du simulateur de
-              prêt. Toute fausse déclaration pourra entraîner le refus du dossier.
+              Le prêt personnel Vantex Bank permet d'emprunter le montant souhaité pour financer vos projets et de le rembourser à votre rythme selon les conditions suivantes :
             </p>
+            <ul>
+              <li><strong>Taux :</strong> TAEG fixe compétitif.</li>
+              <li><strong>Montant :</strong> De 500 € à 75 000 €.</li>
+              <li><strong>Durée :</strong> De 12 à 72 mois.</li>
+            </ul>
 
-            <h3>3. Crédit</h3>
+            <h3>3. Avantages</h3>
+            <p>
+              En choisissant Vantex Bank, vous bénéficiez de :
+            </p>
+            <ul>
+              <li>Formulaire de demande en ligne rapide (environ 4 minutes).</li>
+              <li>Réponse de principe immédiate après étude simplifiée.</li>
+              <li>Justificatifs dématérialisés et signature électronique sécurisée.</li>
+              <li>Assistance personnalisée si besoin.</li>
+            </ul>
+
+            <h3>4. Crédit</h3>
             <p>
               <strong>Un crédit vous engage et doit être remboursé. Vérifiez vos capacités de remboursement avant de vous engager.</strong>
             </p>

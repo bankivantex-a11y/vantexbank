@@ -66,7 +66,12 @@ export default function Navbar() {
               >
                 <option value="FR">🇫🇷 Français</option>
                 <option value="EN">🇬🇧 English</option>
-                <option value="KW">🇰🇼 Kowat</option>
+                <option value="KW">🇰🇼 Koweït / Kowace</option>
+                <option value="SL">🇸🇮 Slovénie</option>
+                <option value="ES">🇪🇸 Espagne</option>
+                <option value="LT">🇱🇹 Lituanie</option>
+                <option value="DE">🇩🇪 Allemagne</option>
+                <option value="IT">🇮🇹 Italie</option>
               </select>
             </li>
             <li className="mobile-only">
@@ -89,6 +94,11 @@ export default function Navbar() {
               <option value="FR">🇫🇷 FR</option>
               <option value="EN">🇬🇧 EN</option>
               <option value="KW">🇰🇼 KW</option>
+              <option value="SL">🇸🇮 SL</option>
+              <option value="ES">🇪🇸 ES</option>
+              <option value="LT">🇱🇹 LT</option>
+              <option value="DE">🇩🇪 DE</option>
+              <option value="IT">🇮🇹 IT</option>
             </select>
             <button id="navCta" className={hiddenCta ? 'hidden-cta' : ''} onClick={() => openModal('auth')}>
               Demander un prêt

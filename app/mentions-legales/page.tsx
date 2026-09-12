@@ -16,10 +16,11 @@ export default function MentionsLegalesPage() {
 
             <h3>2. Éditeur</h3>
             <p>
-              Vantex Bank S.A.<br />
+              Vantex Bank (SAS Cap Au Nord)<br />
               Capital social : 50 000 000 €<br />
-              Siège social : 123 Avenue de la Finance, 75008 Paris, France<br />
-              Immatriculée au RCS de Paris sous le numéro 123 456 789.
+              Siège social : 12 Avenue de la Banque, 75008 Paris, France<br />
+              Enregistré à l'ORIAS sous le numéro <strong>14807766</strong>.<br />
+              Immatriculée au RCS sous le numéro 123 456 789.
             </p>
 
             <h3>3. Hébergement</h3>

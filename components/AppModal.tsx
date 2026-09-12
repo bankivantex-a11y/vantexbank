@@ -297,8 +297,8 @@ export default function AppModal() {
                 constitue pas un engagement contractuel de la part de Vantex Bank. L&apos;offre définitive sera émise
                 après analyse du dossier complet. Le TAEG définitif sera précisé dans l&apos;offre de crédit.
                 L&apos;Emprunteur dispose d&apos;un délai de rétractation légal de 14 jours calendaires à compter de la
-                signature de l&apos;offre définitive. Vantex Bank — Établissement de crédit agréé. Capital social : 50
-                000 000 €. Siège social : 12 Avenue de la Banque, 75008 Paris, France.
+                signature de l&apos;offre définitive. Vantex Bank (SAS Cap Au Nord) — Intermédiaire enregistré à l'ORIAS sous le numéro 14807766.
+                Capital social : 50 000 000 €. Siège social : 12 Avenue de la Banque, 75008 Paris, France.
               </div>
 
               <div className="check-group">

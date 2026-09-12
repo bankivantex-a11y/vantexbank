@@ -45,15 +45,22 @@ export default function AboutPage() {
           <div style={{ marginTop: 40 }}>
             <Reveal>
               <h2 className="sec-title">Notre Mission</h2>
-              <p className="sec-desc" style={{ maxWidth: 800 }}>
-                Fondée avec l'ambition d'être un spécialiste du crédit rapide et du financement des particuliers, notre mission est d’accompagner chaque emprunteur vers la solution la plus adaptée à son projet et à sa situation.
-                <br /><br />
-                Vantex Bank (SAS Cap Au Nord) est un intermédiaire enregistré à l'ORIAS sous le numéro 14006971 en qualité de mandataire non exclusif en opérations de banque et en services de paiement (MOBSP).
-                <br /><br />
-                <small style={{ color: 'var(--muted)' }}>
-                  Rappel légal : Aucun versement de quelque nature que ce soit ne peut être exigé d'un particulier avant l'obtention d'un ou plusieurs prêts d'argent.
-                </small>
-              </p>
+              <div className="sec-desc" style={{ maxWidth: 800 }}>
+                <p>
+                  Fondée avec l'ambition d'être un spécialiste du crédit rapide et du financement des particuliers, notre mission est d’accompagner chaque emprunteur vers la solution la plus adaptée à son projet et à sa situation.
+                </p>
+                <p style={{ marginTop: 16 }}>
+                  Chez Vantex Bank, vous réalisez votre demande de prêt personnel en ligne et obtenez une réponse de principe immédiate. Notre objectif est simple : vous accompagner à chaque étape pour faciliter et accélérer l'obtention de votre financement.
+                </p>
+                <p style={{ marginTop: 24, padding: '20px', background: 'var(--bg)', borderRadius: '12px', border: '1px solid var(--border)' }}>
+                  <strong>Vantex Bank (SAS Cap Au Nord)</strong> est un intermédiaire enregistré à l'<strong>ORIAS sous le numéro 14807766</strong> en qualité de mandataire non exclusif en opérations de banque et en services de paiement (MOBSP).
+                </p>
+                <p style={{ marginTop: 16 }}>
+                  <small style={{ color: 'var(--muted)' }}>
+                    Rappel légal : Aucun versement de quelque nature que ce soit ne peut être exigé d'un particulier avant l'obtention d'un ou plusieurs prêts d'argent.
+                  </small>
+                </p>
+              </div>
             </Reveal>
           </div>
         </div>
