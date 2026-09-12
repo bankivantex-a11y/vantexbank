@@ -70,7 +70,7 @@ export default function Hero() {
                   <div className="phone-content">
                     <div>
                       <div className="phone-greeting">Bonjour 👋</div>
-                      <div className="phone-name">Alexandre Martin</div>
+                      <div className="phone-name">Thomas Müller</div>
                     </div>
                     <div>
                       <div className="phone-bal-lbl">Solde disponible</div>

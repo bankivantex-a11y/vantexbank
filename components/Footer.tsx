@@ -21,16 +21,16 @@ export default function Footer() {
             <div className="footer-head">Services</div>
             <ul className="footer-links">
               <li>
-                <Link href="/simulateur">Prêt personnel</Link>
+                <a href="#">Prêt personnel</a>
               </li>
               <li>
-                <Link href="/simulateur">Prêt immobilier</Link>
+                <a href="#">Prêt immobilier</a>
               </li>
               <li>
-                <Link href="/simulateur">Prêt professionnel</Link>
+                <a href="#">Prêt professionnel</a>
               </li>
               <li>
-                <Link href="/simulateur">Rachat de crédit</Link>
+                <a href="#">Rachat de crédit</a>
               </li>
             </ul>
           </div>
@@ -44,7 +44,7 @@ export default function Footer() {
                 <Link href="/contact">Contactez-nous</Link>
               </li>
               <li>
-                <Link href="/a-propos">À propos</Link>
+                <Link href="/aide">FAQ</Link>
               </li>
               <li>
                 <Link href="/simulateur">Simulateur</Link>
@@ -55,16 +55,16 @@ export default function Footer() {
             <div className="footer-head">Légal</div>
             <ul className="footer-links">
               <li>
-                <Link href="/conditions">Mentions légales</Link>
+                <a href="#">Mentions légales</a>
               </li>
               <li>
-                <Link href="/conditions">RGPD &amp; Cookies</Link>
+                <a href="#">RGPD &amp; Cookies</a>
               </li>
               <li>
-                <Link href="/conditions">Conditions générales</Link>
+                <a href="#">Conditions générales</a>
               </li>
               <li>
-                <Link href="/conditions">Politique de confidentialité</Link>
+                <a href="#">Politique de confidentialité</a>
               </li>
             </ul>
           </div>
@@ -74,9 +74,9 @@ export default function Footer() {
             © 2026 Vantex Bank. Tous droits réservés. Établissement de crédit agréé — Capital social : 50 000 000 €.
           </span>
           <div className="footer-legal">
-            <Link href="/aide">Accessibilité</Link>
-            <Link href="/aide">Cookies</Link>
-            <Link href="/aide">Plan du site</Link>
+            <a href="#">Accessibilité</a>
+            <a href="#">Cookies</a>
+            <a href="#">Plan du site</a>
           </div>
         </div>
       </div>
