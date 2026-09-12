@@ -13,10 +13,6 @@ export default function Hero() {
         <div className="hero-inner">
           {/* Left content */}
           <div>
-            <div className="hero-badge">
-              <span className="hero-badge-dot"></span>
-              Taux garanti à 2,75% / an · Réponse sous 48h
-            </div>
             <h1 className="hero-title">
               Votre prêt en ligne,
               <br />

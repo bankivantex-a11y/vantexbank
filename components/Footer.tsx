@@ -36,16 +36,16 @@ export default function Footer() {
             <div className="footer-head">Assistance</div>
             <ul className="footer-links">
               <li>
-                <a href="#">Centre d&apos;aide</a>
+                <a href="/aide">Centre d&apos;aide</a>
               </li>
               <li>
-                <a href="#">Contactez-nous</a>
+                <a href="/contact">Contactez-nous</a>
               </li>
               <li>
-                <a href="#">FAQ</a>
+                <a href="/a-propos">À propos</a>
               </li>
               <li>
-                <a href="#simulator">Simulateur</a>
+                <a href="/simulateur">Simulateur</a>
               </li>
             </ul>
           </div>

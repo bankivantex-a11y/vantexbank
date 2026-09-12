@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { useAppState } from './AppState';
+import Link from 'next/link';
 
 export default function Navbar() {
   const { openModal } = useAppState();
@@ -32,35 +33,43 @@ export default function Navbar() {
     <nav id="navbar" className={`${scrolled ? 'scrolled' : ''} ${mobileMenuOpen ? 'mobile-open' : ''}`}>
       <div className="container">
         <div className="nav-inner">
-          <a href="#" className="nav-logo">
+          <Link href="/" className="nav-logo" onClick={() => setMobileMenuOpen(false)}>
             <div className="nav-logo-icon">V</div>
             <span className="nav-logo-text">
               Vantex <span>Bank</span>
             </span>
-          </a>
+          </Link>
           <ul className={`nav-links ${mobileMenuOpen ? 'active' : ''}`}>
             <li>
-              <a href="#steps" onClick={() => setMobileMenuOpen(false)}>Fonctionnement</a>
+              <Link href="/fonctionnement" onClick={() => setMobileMenuOpen(false)}>Fonctionnement</Link>
             </li>
             <li>
-              <a href="#simulator" onClick={() => setMobileMenuOpen(false)}>Simulateur</a>
+              <Link href="/simulateur" onClick={() => setMobileMenuOpen(false)}>Simulateur</Link>
             </li>
             <li>
-              <a href="#conditions" onClick={() => setMobileMenuOpen(false)}>Conditions</a>
+              <Link href="/conditions" onClick={() => setMobileMenuOpen(false)}>Conditions</Link>
             </li>
             <li>
-              <a href="#testimonials" onClick={() => setMobileMenuOpen(false)}>Témoignages</a>
+              <Link href="/temoignages" onClick={() => setMobileMenuOpen(false)}>Témoignages</Link>
+            </li>
+            <li>
+              <Link href="/a-propos" onClick={() => setMobileMenuOpen(false)}>À Propos</Link>
+            </li>
+            <li>
+              <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
             </li>
             <li className="mobile-only">
-              <button className="btn-ghost" onClick={() => { openModal('auth'); setMobileMenuOpen(false); }}>
+              <button className="btn-ghost" style={{ width: '100%', textAlign: 'left', padding: '20px 0' }} onClick={() => { openModal('auth'); setMobileMenuOpen(false); }}>
                 Se connecter
+              </button>
+            </li>
+            <li className="mobile-only" style={{ borderBottom: 'none', paddingTop: '20px' }}>
+              <button className="btn-full" onClick={() => { openModal('auth'); setMobileMenuOpen(false); }}>
+                Demander un prêt
               </button>
             </li>
           </ul>
           <div className="nav-actions">
-            <button className="btn-ghost desktop-only" onClick={() => openModal('auth')}>
-              Se connecter
-            </button>
             <button id="navCta" className={hiddenCta ? 'hidden-cta' : ''} onClick={() => openModal('auth')}>
               Demander un prêt
             </button>

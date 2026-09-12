@@ -1,6 +1,11 @@
 import type { Metadata } from 'next';
 import { DM_Serif_Display, Inter } from 'next/font/google';
 import './globals.css';
+import { AppStateProvider } from '@/components/AppState';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
+import AuthModal from '@/components/AuthModal';
+import AppModal from '@/components/AppModal';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -26,7 +31,15 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="fr" className={`${inter.variable} ${dmSerif.variable}`}>
-      <body>{children}</body>
+      <body>
+        <AppStateProvider>
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+          <AuthModal />
+          <AppModal />
+        </AppStateProvider>
+      </body>
     </html>
   );
 }
