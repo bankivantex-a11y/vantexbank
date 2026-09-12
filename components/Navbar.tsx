@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { useAppState } from './AppState';
-import Link from 'next/link';
+import SmartLink from './SmartLink';
 
 export default function Navbar() {
   const { openModal } = useAppState();
@@ -33,30 +33,30 @@ export default function Navbar() {
     <nav id="navbar" className={`${scrolled ? 'scrolled' : ''} ${mobileMenuOpen ? 'mobile-open' : ''}`}>
       <div className="container">
         <div className="nav-inner">
-          <Link href="/" className="nav-logo" onClick={() => setMobileMenuOpen(false)}>
+          <SmartLink href="/" className="nav-logo" onClick={() => setMobileMenuOpen(false)}>
             <div className="nav-logo-icon">V</div>
             <span className="nav-logo-text">
               Vantex <span>Bank</span>
             </span>
-          </Link>
+          </SmartLink>
           <ul className={`nav-links ${mobileMenuOpen ? 'active' : ''}`}>
             <li>
-              <Link href="/fonctionnement" onClick={() => setMobileMenuOpen(false)}>Fonctionnement</Link>
+              <SmartLink href="/fonctionnement" onClick={() => setMobileMenuOpen(false)}>Fonctionnement</SmartLink>
             </li>
             <li>
-              <Link href="/simulateur" onClick={() => setMobileMenuOpen(false)}>Simulateur</Link>
+              <SmartLink href="/simulateur" onClick={() => setMobileMenuOpen(false)}>Simulateur</SmartLink>
             </li>
             <li>
-              <Link href="/conditions" onClick={() => setMobileMenuOpen(false)}>Conditions</Link>
+              <SmartLink href="/conditions" onClick={() => setMobileMenuOpen(false)}>Conditions</SmartLink>
             </li>
             <li>
-              <Link href="/temoignages" onClick={() => setMobileMenuOpen(false)}>Témoignages</Link>
+              <SmartLink href="/temoignages" onClick={() => setMobileMenuOpen(false)}>Témoignages</SmartLink>
             </li>
             <li>
-              <Link href="/a-propos" onClick={() => setMobileMenuOpen(false)}>À Propos</Link>
+              <SmartLink href="/a-propos" onClick={() => setMobileMenuOpen(false)}>À Propos</SmartLink>
             </li>
             <li>
-              <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
+              <SmartLink href="/contact" onClick={() => setMobileMenuOpen(false)}>Contact</SmartLink>
             </li>
             <li className="mobile-only" style={{ padding: '20px 0' }}>
               <select

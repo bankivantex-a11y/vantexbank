@@ -6,6 +6,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import AuthModal from '@/components/AuthModal';
 import AppModal from '@/components/AppModal';
+import LoadingOverlay from '@/components/LoadingOverlay';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -33,6 +34,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="fr" className={`${inter.variable} ${dmSerif.variable}`}>
       <body>
         <AppStateProvider>
+          <LoadingOverlay />
           <Navbar />
           <main>{children}</main>
           <Footer />
