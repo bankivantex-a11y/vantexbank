@@ -1,4 +1,40 @@
 {
+  "home": {
+    "amounts_title": "Looking for a specific amount?",
+    "duration_label": "Repayment period: 12 to 36 months",
+    "learn_more": "Learn more →",
+    "solutions_title": "Looking for a specific solution?",
+    "solutions": {
+      "no_proof_title": "Credit without proof",
+      "no_proof_desc": "Can one get a credit quickly without proof?",
+      "online_title": "Online loan",
+      "online_desc": "Doing the entire credit process online saves time.",
+      "no_refusal_title": "Credit without refusal",
+      "no_refusal_desc": "What solution to get an express credit without refusal?",
+      "immediate_title": "Immediate credit",
+      "immediate_desc": "What to do when your financing need cannot wait?",
+      "read_article": "Read article →"
+    },
+    "how_fast": {
+      "title": "How does Vantex Bank's fast credit work?",
+      "desc1": "The fastest credit is obtained online. It is now the preferred solution for financing a project, facing an unexpected expense or quickly obtaining additional cash flow.",
+      "desc2": "However, when a financing need becomes urgent, the hardest part is not always getting the money. It's often identifying the body capable of accepting the request and validating the file as quickly as possible.",
+      "desc3": "As a specialist in fast credit, Vantex Bank has developed a solution that allows multiple organizations to be queried from a single form. This approach saves valuable time.",
+      "desc4": "And to make the steps even simpler, once the credit is accepted, the client only has to provide their supporting documents online and sign their contract electronically. It is this method that makes it possible to obtain credit as quickly as possible.",
+      "cta": "ACCESS THE LOAN FORM"
+    },
+    "faq_title": "FAQ on fast credit",
+    "faq": {
+      "q1": "What is the difference between fast credit and express credit?",
+      "a1": "The terms fast credit and express credit mean the same thing. They are commercial names used to talk about a credit whose request, study of the file and response are accelerated thanks to simplified digital paths.",
+      "q2": "What is the fastest credit to get?",
+      "a2": "When it's already open, revolving credit is often the fastest financing. For a new application, an online personal loan usually constitutes the best compromise between speed, amount that can be borrowed and cost of financing.",
+      "q3": "Can I get a fast credit online?",
+      "a3": "Yes. At Vantex Bank, it is possible to fill out a form, receive a decision in principle, sign the contract electronically and transmit supporting documents without traveling.",
+      "q4": "How long does it take to get a response?",
+      "a4": "The study of your file starts as soon as the form is submitted. A decision in principle is generally immediate, and the final validation occurs within 24h to 48h after receipt of the supporting documents."
+    }
+  },
   "nav": {
     "how": "How it works",
     "services": "Services",

@@ -14,6 +14,8 @@ export default function AppModal() {
   const [step, setStep] = useState<Step>(1);
   const [transitioning, setTransitioning] = useState(false);
   const [uploaded, setUploaded] = useState<Record<string, boolean>>({});
+  const [uploading, setUploading] = useState<Record<string, boolean>>({});
+  const fileInputRefs = useRef<Record<string, HTMLInputElement | null>>({});
   const [checks, setChecks] = useState({ chk1: false, chk2: false, chk3: false });
   const [submitting, setSubmitting] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
@@ -51,8 +53,22 @@ export default function AppModal() {
     }, 800);
   }
 
-  function simulateUpload(key: string) {
-    setUploaded((prev) => ({ ...prev, [key]: true }));
+  function handleFileChange(key: string, e: React.ChangeEvent<HTMLInputElement>) {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    setUploading((prev) => ({ ...prev, [key]: true }));
+    setUploaded((prev) => ({ ...prev, [key]: false }));
+
+    // Simulate network delay
+    setTimeout(() => {
+      setUploading((prev) => ({ ...prev, [key]: false }));
+      setUploaded((prev) => ({ ...prev, [key]: true }));
+    }, 1500);
+  }
+
+  function triggerUpload(key: string) {
+    fileInputRefs.current[key]?.click();
   }
 
   function submitApplication() {
@@ -215,8 +231,25 @@ export default function AppModal() {
               </p>
 
               {DOCS.map((doc) => (
-                <div className="upload-zone" key={doc.key} onClick={() => simulateUpload(doc.key)}>
-                  {uploaded[doc.key] ? (
+                <div
+                  className={`upload-zone ${uploading[doc.key] ? 'uploading' : ''}`}
+                  key={doc.key}
+                  onClick={() => !uploading[doc.key] && triggerUpload(doc.key)}
+                >
+                  <input
+                    type="file"
+                    style={{ display: 'none' }}
+                    ref={(el) => (fileInputRefs.current[doc.key] = el)}
+                    onChange={(e) => handleFileChange(doc.key, e)}
+                    accept=".pdf,.jpg,.jpeg,.png"
+                  />
+
+                  {uploading[doc.key] ? (
+                    <div className="loading-wrap" style={{ padding: '0', gap: '10px' }}>
+                      <div className="spinner" style={{ width: '30px', height: '30px', borderWidth: '3px' }}></div>
+                      <div className="upload-lbl">{t('app.loading')}</div>
+                    </div>
+                  ) : uploaded[doc.key] ? (
                     <>
                       <div className="upload-ico" style={{ background: 'rgba(16,185,129,.1)' }}>
                         <svg viewBox="0 0 24 24" fill="none" stroke="#10B981" strokeWidth={2.5} width={24} height={24}>
@@ -248,7 +281,12 @@ export default function AppModal() {
                 <button className="btn-full btn-back" onClick={() => goToStep(1)}>
                   ← {t('common.back')}
                 </button>
-                <button className="btn-full" onClick={() => goToStep(3)}>
+                <button
+                  className="btn-full"
+                  onClick={() => goToStep(3)}
+                  disabled={!uploaded.id || !uploaded.payslips || !uploaded.statements}
+                  style={{ opacity: (!uploaded.id || !uploaded.payslips || !uploaded.statements) ? 0.5 : 1 }}
+                >
                   {t('common.continue')} →
                 </button>
               </div>

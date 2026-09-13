@@ -1,4 +1,40 @@
 {
+  "home": {
+    "amounts_title": "Vous recherchez un montant spécifique ?",
+    "duration_label": "Durée de remboursement : 12 à 36 mois",
+    "learn_more": "En savoir plus →",
+    "solutions_title": "Vous recherchez une solution spécifique ?",
+    "solutions": {
+      "no_proof_title": "Crédit sans justificatif",
+      "no_proof_desc": "Peut-on obtenir un crédit rapidement sans justificatif ?",
+      "online_title": "Prêt en ligne",
+      "online_desc": "Faire l'ensemble de sa démarche de crédit en ligne permet de gagner du temps.",
+      "no_refusal_title": "Crédit sans refus",
+      "no_refusal_desc": "Quelle solution pour obtenir un crédit express et sans refus ?",
+      "immediate_title": "Crédit immédiat",
+      "immediate_desc": "Que faire lorsque votre besoin de financement ne peut pas attendre ?",
+      "read_article": "Lire l'article →"
+    },
+    "how_fast": {
+      "title": "Comment fonctionne le crédit rapide de Vantex Bank ?",
+      "desc1": "Le crédit le plus rapide s'obtient en ligne. C'est aujourd'hui la solution privilégiée pour financer un projet, faire face à une dépense imprévue ou obtenir rapidement une trésorerie complémentaire.",
+      "desc2": "Pourtant, lorsqu'un besoin de financement devient urgent, le plus difficile n'est pas toujours d'obtenir l'argent. Il s'agit souvent d'identifier l'organisme capable d'accepter la demande et de valider le dossier dans les meilleurs délais.",
+      "desc3": "En tant que spécialiste du crédit rapide, Vantex Bank a développé une solution qui permet d'interroger plusieurs organismes à partir d'un seul formulaire. Cette approche fait gagner un temps précieux.",
+      "desc4": "Et pour rendre les démarches plus simples encore, une fois le crédit accepté, le client n'a plus qu'à fournir ses justificatifs en ligne et à signer électroniquement son contrat. C'est cette méthode qui permet d'obtenir son crédit le plus rapidement possible.",
+      "cta": "ACCÉDER AU FORMULAIRE DE CRÉDIT"
+    },
+    "faq_title": "FAQ sur le crédit rapide",
+    "faq": {
+      "q1": "Quelle différence entre crédit rapide et crédit express ?",
+      "a1": "Les expressions crédit rapide et crédit express désignent la même chose. Ce sont des appellations commerciales utilisées pour parler d'un crédit dont la demande, l'étude du dossier et la réponse sont accélérées grâce à des parcours numériques simplifiés.",
+      "q2": "Quel est le crédit le plus rapide à obtenir ?",
+      "a2": "Lorsqu'il est déjà ouvert, le crédit renouvelable est souvent le financement le plus rapide. Pour une nouvelle demande, le prêt personnel en ligne constitue généralement le meilleur compromis entre rapidité, montant empruntable et coût du financement.",
+      "q3": "Peut-on obtenir un crédit rapide en ligne ?",
+      "a3": "Oui. Chez Vantex Bank, il est possible de remplir un formulaire, recevoir une réponse de principe, signer électroniquement le contrat et transmettre les justificatifs sans se déplacer.",
+      "q4": "Combien de temps faut-il pour obtenir une réponse ?",
+      "a4": "L'étude de votre dossier commence dès la soumission du formulaire. Une réponse de principe est généralement immédiate, et la validation définitive intervient sous 24h à 48h après réception des pièces justificatives."
+    }
+  },
   "nav": {
     "how": "Fonctionnement",
     "services": "Services",
