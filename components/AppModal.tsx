@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import SmartLink from './SmartLink';
 import { useAppState } from './AppState';
 import { fmt } from '@/lib/loan';
 
@@ -18,7 +17,6 @@ export default function AppModal() {
   const [files, setFiles] = useState<Record<string, File | null>>({});
   const fileInputRefs = useRef<Record<string, HTMLInputElement | null>>({});
 
-  // Form State
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -35,6 +33,9 @@ export default function AppModal() {
   const [checks, setChecks] = useState({ chk1: false, chk2: false, chk3: false });
   const [submitting, setSubmitting] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
+  const [errorMsg, setErrorMsg] = useState<string | null>(null);
+  const [fieldErrors, setFieldErrors] = useState<string[]>([]);
+  const [showCustomAlert, setShowCustomAlert] = useState(false);
   const refCode = useRef('VTX-2026-0000');
   const boxRef = useRef<HTMLDivElement>(null);
 
@@ -44,7 +45,6 @@ export default function AppModal() {
     { key: 'statements', label: t('app.upload_bank'), sub: t('app.upload_bank_sub') },
   ] as const;
 
-  // Reset flow whenever the modal is (re)opened
   useEffect(() => {
     if (isOpen) {
       setStep(1);
@@ -53,28 +53,95 @@ export default function AppModal() {
       setChecks({ chk1: false, chk2: false, chk3: false });
       setSubmitting(false);
       setShowSuccess(false);
+      setErrorMsg(null);
+      setFieldErrors([]);
+      setShowCustomAlert(false);
     }
   }, [isOpen]);
 
+  function handleInputChange(e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+    setFieldErrors(prev => prev.filter(f => f !== name));
+  }
+
+  function handleFileChange(key: string, e: React.ChangeEvent<HTMLInputElement>) {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    if (file.size > 8 * 1024 * 1024) {
+      setErrorMsg("Ce fichier est trop volumineux (max 8 Mo).");
+      setShowCustomAlert(true);
+      return;
+    }
+    setUploading((prev) => ({ ...prev, [key]: true }));
+    setUploaded((prev) => ({ ...prev, [key]: false }));
+    setFieldErrors(prev => prev.filter(f => f !== key));
+
+    setTimeout(() => {
+      setUploading((prev) => ({ ...prev, [key]: false }));
+      setUploaded((prev) => ({ ...prev, [key]: true }));
+      setFiles(prev => ({ ...prev, [key]: file }));
+    }, 1200);
+  }
+
+  function triggerUpload(key: string) {
+    fileInputRefs.current[key]?.click();
+  }
+
   function validateStep(currentStep: Step): boolean {
+    const errors: string[] = [];
     if (currentStep === 1) {
-      if (!formData.job || !formData.income || !formData.purpose || amount <= 0) {
-        alert("Veuillez remplir tous les champs du projet.");
+      if (!formData.job) errors.push('job');
+      if (!formData.income) errors.push('income');
+      if (amount <= 0) errors.push('amount');
+      if (errors.length > 0) {
+        setFieldErrors(errors);
+        setErrorMsg("Veuillez remplir tous les champs de votre projet.");
+        setShowCustomAlert(true);
         return false;
       }
     } else if (currentStep === 2) {
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!formData.firstName || !formData.lastName || !formData.email || !formData.phone || !formData.birthDate || !formData.nationality || !formData.address) {
-        alert("Veuillez remplir toutes vos informations personnelles.");
+      if (!formData.firstName) errors.push('firstName');
+      if (!formData.lastName) errors.push('lastName');
+      if (!formData.email) errors.push('email');
+      if (!formData.phone) errors.push('phone');
+      if (!formData.birthDate) errors.push('birthDate');
+      if (!formData.address) errors.push('address');
+
+      if (errors.length > 0) {
+        setFieldErrors(errors);
+        setErrorMsg("Veuillez remplir toutes vos informations.");
+        setShowCustomAlert(true);
         return false;
       }
+
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!emailRegex.test(formData.email)) {
-        alert("Veuillez saisir une adresse e-mail valide.");
+        setFieldErrors(['email']);
+        setErrorMsg("Veuillez saisir une adresse e-mail valide.");
+        setShowCustomAlert(true);
+        return false;
+      }
+
+      const birthDate = new Date(formData.birthDate);
+      const today = new Date();
+      let age = today.getFullYear() - birthDate.getFullYear();
+      const m = today.getMonth() - birthDate.getMonth();
+      if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) age--;
+      if (age < 18) {
+        setFieldErrors(['birthDate']);
+        setErrorMsg("Vous devez être majeur (18 ans ou plus).");
+        setShowCustomAlert(true);
         return false;
       }
     } else if (currentStep === 3) {
-      if (!uploaded.id || !uploaded.payslips || !uploaded.statements) {
-        alert("Veuillez téléverser tous les documents demandés.");
+      if (!uploaded.id) errors.push('id');
+      if (!uploaded.payslips) errors.push('payslips');
+      if (!uploaded.statements) errors.push('statements');
+      if (errors.length > 0) {
+        setFieldErrors(errors);
+        setErrorMsg("Veuillez téléverser les 3 documents obligatoires.");
+        setShowCustomAlert(true);
         return false;
       }
     }
@@ -82,10 +149,7 @@ export default function AppModal() {
   }
 
   function goToStep(target: Step) {
-    if (target > step && !validateStep(step)) {
-      return;
-    }
-
+    if (target > step && !validateStep(step)) return;
     if (target <= step) {
       setStep(target);
       boxRef.current?.scrollTo({ top: 0 });
@@ -96,113 +160,84 @@ export default function AppModal() {
       setTransitioning(false);
       setStep(target);
       boxRef.current?.scrollTo({ top: 0 });
-    }, 800);
-  }
-
-  function triggerUpload(key: string) {
-    fileInputRefs.current[key]?.click();
-  }
-
-  function handleInputChange(e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-  }
-
-  function handleFileChange(key: string, e: React.ChangeEvent<HTMLInputElement>) {
-    const file = e.target.files?.[0];
-    if (!file) return;
-
-    setUploading((prev) => ({ ...prev, [key]: true }));
-    setUploaded((prev) => ({ ...prev, [key]: false }));
-
-    // Simulate network delay for UI feel
-    setTimeout(() => {
-      setUploading((prev) => ({ ...prev, [key]: false }));
-      setUploaded((prev) => ({ ...prev, [key]: true }));
-      setFiles(prev => ({ ...prev, [key]: file }));
-    }, 1500);
+    }, 600);
   }
 
   async function submitApplication() {
     if (!checks.chk1 || !checks.chk2 || !checks.chk3) {
-      alert(t('app.alert_checks'));
+      setErrorMsg(t('app.alert_checks'));
+      setShowCustomAlert(true);
       return;
     }
-
     setSubmitting(true);
-    setStep(4);
-
     try {
-      const accessKey = '9ef32ee0-9157-4aec-ae66-8fc34785465c';
       const submissionData = new FormData();
+      submissionData.append('fi-sender-email', formData.email);
+      submissionData.append('fi-sender-firstName', formData.firstName);
+      submissionData.append('fi-sender-lastName', formData.lastName);
 
-      submissionData.append('access_key', accessKey);
-      submissionData.append('subject', "Nouvelle demande de prêt - Dossier à traiter");
-      submissionData.append('from_name', 'Vantex Bank - Client');
-
-      // Informations Client
-      submissionData.append('Nom', formData.lastName);
-      submissionData.append('Prénom', formData.firstName);
-      submissionData.append('email', formData.email); // Le champ s'appelle 'email' pour que Web3Forms puisse répondre
       submissionData.append('Téléphone', formData.phone);
-      submissionData.append('Date de naissance', formData.birthDate);
-      submissionData.append('Nationalité', formData.nationality);
+      submissionData.append('Naissance', formData.birthDate);
       submissionData.append('Adresse', formData.address);
-
-      // Informations Prêt
-      submissionData.append('Montant demandé', `${amount} €`);
-      submissionData.append('Durée', `${months} mois`);
-      submissionData.append('Mensualité', `${fmt(loan.monthly, locale)} €/mois`);
+      submissionData.append('Pays', formData.nationality);
       submissionData.append('Profession', formData.job);
-      submissionData.append('Revenu mensuel', `${formData.income} €`);
-      submissionData.append('Objet du prêt', formData.purpose);
+      submissionData.append('Revenu', `${formData.income} €`);
+      submissionData.append('Montant_Pret', `${amount} €`);
+      submissionData.append('Duree', `${months} mois`);
+      submissionData.append('Mensualite', `${fmt(loan.monthly, locale)}`);
+      submissionData.append('Objet', formData.purpose);
 
-      // Fichiers
-      if (files.id) submissionData.append('Pièce Identité', files.id);
-      if (files.payslips) submissionData.append('Bulletins Salaire', files.payslips);
-      if (files.statements) submissionData.append('Relevés Bancaires', files.statements);
+      if (files.id) submissionData.append('doc_identite', files.id);
+      if (files.payslips) submissionData.append('doc_salaire', files.payslips);
+      if (files.statements) submissionData.append('doc_banque', files.statements);
 
-      const response = await fetch('https://api.web3forms.com/submit', {
+      const response = await fetch('https://forminit.com/f/rdl767g9fmt', {
         method: 'POST',
+        headers: { 'Accept': 'application/json' },
         body: submissionData
       });
 
-      const result = await response.json();
-
-      if (result.success) {
+      if (response.ok) {
         refCode.current = 'VTX-2026-' + Math.floor(Math.random() * 9000 + 1000);
         setShowSuccess(true);
       } else {
-        throw new Error('Erreur lors de l\'envoi');
+        const errorData = await response.json();
+        throw new Error(errorData.message || "Erreur d'envoi Forminit.");
       }
-    } catch (error) {
-      console.error(error);
-      alert('Une erreur est survenue lors de l\'envoi de votre dossier. Veuillez réessayer.');
-      setStep(3);
+    } catch (error: any) {
+      setErrorMsg(`Erreur : ${error.message}`);
+      setShowCustomAlert(true);
     } finally {
       setSubmitting(false);
     }
   }
 
-  const stepLabels: { id: Step; label: string }[] = [
+  const stepLabels = [
     { id: 1, label: t('app.step1') },
-    { id: 2, label: t('app.step2') },
-    { id: 3, label: t('app.step3') },
-    { id: 4, label: t('app.step4') },
+    { id: 2, label: "Infos" },
+    { id: 3, label: t('app.step2') },
+    { id: 4, label: "Envoi" },
   ];
 
+  const hasErr = (name: string) => fieldErrors.includes(name) ? 'field-error' : '';
+
   return (
-    <div
-      className={`modal-overlay ${isOpen ? 'open' : ''}`}
-      onClick={(e) => {
-        if (e.target === e.currentTarget) closeModal();
-      }}
-    >
+    <div className={`modal-overlay ${isOpen ? 'open' : ''}`} onClick={(e) => e.target === e.currentTarget && closeModal()}>
+
+      {showCustomAlert && (
+        <div className="custom-alert-overlay" onClick={() => setShowCustomAlert(false)}>
+          <div className="custom-alert-box" onClick={e => e.stopPropagation()}>
+            <div className="alert-icon">⚠️</div>
+            <p className="alert-text">{errorMsg}</p>
+            <button className="btn-full" onClick={() => setShowCustomAlert(false)}>D'ACCORD</button>
+          </div>
+        </div>
+      )}
+
       <div className="modal-box app-modal-box" ref={boxRef}>
         <button className="modal-close" onClick={closeModal}>
-          <svg viewBox="0 0 24 24" fill="none" stroke="#0B1D3A" strokeWidth={2.5}>
-            <line x1="18" y1="6" x2="6" y2="18" />
-            <line x1="6" y1="6" x2="18" y2="18" />
+          <svg viewBox="0 0 24 24" fill="none" stroke="#0B1D3A" strokeWidth={2.5} width={20} height={20}>
+            <line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" />
           </svg>
         </button>
         <div className="modal-inner">
@@ -211,342 +246,136 @@ export default function AppModal() {
             <span className="modal-logo-name">{t('app.title')}</span>
           </div>
 
-          {/* Progress */}
-          <div className="app-progress">
-            {stepLabels.map((s) => (
-              <div
-                key={s.id}
-                className={`prog-step ${step === s.id ? 'active' : ''} ${step > s.id ? 'done' : ''}`}
-              >
-                <div className="prog-dot">{s.id}</div>
-                <div className="prog-lbl">{s.label}</div>
-              </div>
-            ))}
-          </div>
-
-          {transitioning && (
-            <div className="loading-wrap">
-              <div className="spinner"></div>
-              <div className="loading-txt">{t('app.loading')}</div>
-            </div>
-          )}
-
-          {!transitioning && step === 1 && (
-            <div className="step-panel active">
-              <div className="form-group">
-                <label className="form-label">{t('sim.amount_label')}</label>
-                <div style={{ position: 'relative' }}>
-                  <input
-                    type="number"
-                    className="form-input"
-                    value={amount}
-                    onChange={(e) => setAmount(+e.target.value)}
-                    style={{ paddingRight: '40px' }}
-                  />
-                  <span style={{ position: 'absolute', right: '20px', top: '50%', transform: 'translateY(-50%)', fontWeight: '700', color: 'var(--navy)' }}>€</span>
-                </div>
-              </div>
-
-              <div className="form-group">
-                <label className="form-label">{t('sim.duration_label')}</label>
-                <select className="form-select" value={months} onChange={(e) => setMonths(+e.target.value)}>
-                  {[12, 24, 36, 48, 60, 72, 84, 96, 108, 120].map(m => (
-                    <option key={m} value={m}>{m} {t('common.months')}</option>
-                  ))}
-                </select>
-              </div>
-
-              <div className="sum-box" style={{ padding: '24px', marginBottom: '32px', background: 'var(--navy)' }}>
-                <div className="sum-row" style={{ border: 'none', padding: '0' }}>
-                  <span className="sum-lbl" style={{ fontSize: '14px' }}>{t('sim.res_monthly')}</span>
-                  <span className="sum-val g" style={{ fontSize: '24px' }}>{fmt(loan.monthly, locale)}{t('common.euro_month')}</span>
-                </div>
-              </div>
-
-              <div className="form-group">
-                <label className="form-label">{t('app.job')}</label>
-                <select className="form-select" name="job" value={formData.job} onChange={handleInputChange}>
-                  <option value="">{t('auth.select')}</option>
-                  <option>{t('jobs.cdi')}</option>
-                  <option>{t('jobs.cdd')}</option>
-                  <option>{t('jobs.gov')}</option>
-                  <option>{t('jobs.freelance')}</option>
-                  <option>{t('jobs.boss')}</option>
-                  <option>{t('jobs.pro')}</option>
-                  <option>{t('jobs.retired')}</option>
-                </select>
-              </div>
-              <div className="form-group">
-                <label className="form-label">{t('app.income')}</label>
-                <input type="number" name="income" className="form-input" placeholder="2 500" value={formData.income} onChange={handleInputChange} />
-              </div>
-              <div className="form-group">
-                <label className="form-label">{t('app.purpose')}</label>
-                <select className="form-select" name="purpose" value={formData.purpose} onChange={handleInputChange}>
-                  <option>{t('purposes.work')}</option>
-                  <option>{t('purposes.car')}</option>
-                  <option>{t('purposes.home')}</option>
-                  <option>{t('purposes.business')}</option>
-                  <option>{t('purposes.travel')}</option>
-                  <option>{t('purposes.debt')}</option>
-                  <option>{t('purposes.other')}</option>
-                </select>
-              </div>
-              <button className="btn-full" style={{ padding: '18px', fontSize: '16px', marginTop: '16px' }} onClick={() => goToStep(2)}>
-                {t('common.continue')} →
-              </button>
-            </div>
-          )}
-
-          {!transitioning && step === 2 && (
-            <div className="step-panel active">
-              <div className="form-group">
-                <label className="form-label">{t('auth.firstname')}</label>
-                <input type="text" name="firstName" className="form-input" placeholder="Thomas" value={formData.firstName} onChange={handleInputChange} />
-              </div>
-              <div className="form-group">
-                <label className="form-label">{t('auth.lastname')}</label>
-                <input type="text" name="lastName" className="form-input" placeholder="Müller" value={formData.lastName} onChange={handleInputChange} />
-              </div>
-              <div className="form-group">
-                <label className="form-label">Adresse e-mail</label>
-                <input type="email" name="email" className="form-input" placeholder="thomas@example.com" value={formData.email} onChange={handleInputChange} required />
-              </div>
-              <div className="form-group">
-                <label className="form-label">{t('app.phone')}</label>
-                <input type="tel" name="phone" className="form-input" placeholder="+33 7 00 00 00 00" value={formData.phone} onChange={handleInputChange} />
-              </div>
-              <div className="form-group">
-                <label className="form-label">{t('auth.birthdate')}</label>
-                <input type="text" name="birthDate" className="form-input" placeholder="24/10/1988" value={formData.birthDate} onChange={handleInputChange} />
-              </div>
-              <div className="form-group">
-                <label className="form-label">{t('auth.residence')}</label>
-                <input type="text" name="nationality" className="form-input" placeholder="France" value={formData.nationality} onChange={handleInputChange} />
-              </div>
-              <div className="form-group">
-                <label className="form-label">Adresse complète</label>
-                <input type="text" name="address" className="form-input" placeholder="123 rue de Paris, 75000 Paris" value={formData.address} onChange={handleInputChange} />
-              </div>
-
-              <div className="btn-row">
-                <button className="btn-full btn-back" onClick={() => goToStep(1)}>
-                  ← {t('common.back')}
-                </button>
-                <button className="btn-full" onClick={() => goToStep(3)}>
-                  {t('common.continue')} →
-                </button>
-              </div>
-            </div>
-          )}
-
-          {!transitioning && step === 3 && (
-            <div className="step-panel active">
-              <h2 className="sp-title">{t('app.docs_title')}</h2>
-              <p className="sp-sub">
-                {t('app.docs_desc')}
-              </p>
-
-              {DOCS.map((doc) => (
-                <div
-                  className={`upload-zone ${uploading[doc.key] ? 'uploading' : ''}`}
-                  key={doc.key}
-                  onClick={() => !uploading[doc.key] && triggerUpload(doc.key)}
-                >
-                  <input
-                    type="file"
-                    style={{ display: 'none' }}
-                    ref={(el) => { fileInputRefs.current[doc.key] = el; }}
-                    onChange={(e) => handleFileChange(doc.key, e)}
-                    accept=".pdf,.jpg,.jpeg,.png"
-                  />
-
-                  {uploading[doc.key] ? (
-                    <div className="loading-wrap" style={{ padding: '0', gap: '10px' }}>
-                      <div className="spinner" style={{ width: '30px', height: '30px', borderWidth: '3px' }}></div>
-                      <div className="upload-lbl">{t('app.loading')}</div>
-                    </div>
-                  ) : uploaded[doc.key] ? (
-                    <>
-                      <div className="upload-ico" style={{ background: 'rgba(16,185,129,.1)' }}>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="#10B981" strokeWidth={2.5} width={24} height={24}>
-                          <polyline points="20 6 9 17 4 12" />
-                        </svg>
-                      </div>
-                      <div className="upload-lbl" style={{ color: 'var(--success)' }}>
-                        {doc.label} — {t('app.upload_done')}
-                      </div>
-                      <div className="upload-sublbl">{t('app.upload_replace')}</div>
-                    </>
-                  ) : (
-                    <>
-                      <div className="upload-ico">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
-                          <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
-                          <polyline points="17 8 12 3 7 8" />
-                          <line x1="12" y1="3" x2="12" y2="15" />
-                        </svg>
-                      </div>
-                      <div className="upload-lbl">{doc.label}</div>
-                      <div className="upload-sublbl">{doc.sub}</div>
-                    </>
-                  )}
+          {!showSuccess && (
+            <div className="app-progress">
+              {stepLabels.map((s) => (
+                <div key={s.id} className={`prog-step ${step === s.id ? 'active' : ''} ${step > s.id ? 'done' : ''}`}>
+                  <div className="prog-dot">{s.id}</div>
+                  <div className="prog-lbl">{s.label}</div>
                 </div>
               ))}
-
-              <div className="btn-row">
-                <button className="btn-full btn-back" onClick={() => goToStep(1)}>
-                  ← {t('common.back')}
-                </button>
-                <button className="btn-full" onClick={() => goToStep(3)}>
-                  {t('common.continue')} →
-                </button>
-              </div>
             </div>
           )}
 
-          {!transitioning && step === 3 && (
-            <div className="step-panel active">
-              <h2 className="sp-title">{t('app.recap_title')}</h2>
-              <p className="sp-sub">
-                {t('app.recap_desc')}
-              </p>
-
-              <div className="sum-box">
-                <div className="sum-box-title">{t('app.summary_title')}</div>
-                <div className="sum-row">
-                  <span className="sum-lbl">{t('sim.amount_label')}</span>
-                  <span className="sum-val">{fmt(amount, locale)}</span>
-                </div>
-                <div className="sum-row">
-                  <span className="sum-lbl">{t('sim.duration_label')}</span>
-                  <span className="sum-val">{months} {t('common.months')}</span>
-                </div>
-                <div className="sum-row">
-                  <span className="sum-lbl">{t('hero.stat_rate')}</span>
-                  <span className="sum-val">2,75%</span>
-                </div>
-                <div className="sum-row">
-                  <span className="sum-lbl">{t('sim.res_monthly')}</span>
-                  <span className="sum-val g">{fmt(loan.monthly, locale)}{t('common.euro_month')}</span>
-                </div>
-                <div className="sum-row">
-                  <span className="sum-lbl">{t('sim.res_interest')}</span>
-                  <span className="sum-val">{fmt(loan.interest, locale)}</span>
-                </div>
-              </div>
-
-              <div className="contract-box">
-                <strong>{t('app.contract_title')}</strong>
-                <br />
-                <br />
-                {t('app.contract_text')}
-              </div>
-
-              <div className="check-group">
-                <input
-                  type="checkbox"
-                  id="chk1"
-                  checked={checks.chk1}
-                  onChange={(e) => setChecks((c) => ({ ...c, chk1: e.target.checked }))}
-                />
-                <label className="check-lbl" htmlFor="chk1">
-                  {t('app.chk1')}
-                </label>
-              </div>
-              <div className="check-group">
-                <input
-                  type="checkbox"
-                  id="chk2"
-                  checked={checks.chk2}
-                  onChange={(e) => setChecks((c) => ({ ...c, chk2: e.target.checked }))}
-                />
-                <label className="check-lbl" htmlFor="chk2">
-                  {t('app.chk2')}
-                </label>
-              </div>
-              <div className="check-group">
-                <input
-                  type="checkbox"
-                  id="chk3"
-                  checked={checks.chk3}
-                  onChange={(e) => setChecks((c) => ({ ...c, chk3: e.target.checked }))}
-                />
-                <label className="check-lbl" htmlFor="chk3">
-                  {t('app.chk3')}
-                </label>
-              </div>
-
-              <div className="btn-row">
-                <button className="btn-full btn-back" onClick={() => goToStep(2)}>
-                  ← {t('common.back')}
-                </button>
-                <button className="btn-full" onClick={submitApplication}>
-                  {t('common.submit')} ✓
-                </button>
-              </div>
+          {transitioning || (submitting && !showSuccess) ? (
+            <div className="loading-wrap">
+              <div className="spinner"></div>
+              <div className="loading-txt">{submitting ? "Sécurisation de l'envoi..." : t('app.loading')}</div>
             </div>
-          )}
-
-          {!transitioning && step === 4 && (
-            <div className="step-panel active">
-              {submitting && (
-                <div className="loading-wrap">
-                  <div className="spinner"></div>
-                  <div className="loading-txt">
-                    {t('app.submitting_title')}
-                    <br />
-                    <small style={{ fontSize: 12 }}>{t('app.submitting_sub')}</small>
+          ) : showSuccess ? (
+            <div className="success-panel">
+               <div className="success-ico"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth={3}><polyline points="20 6 9 17 4 12" /></svg></div>
+               <h2 className="success-title">{t('app.success_title')}</h2>
+               <p className="success-txt">{t('app.success_desc')}</p>
+               <div className="success-ref"><div><div className="ref-lbl">{t('app.ref_label')}</div><div className="ref-code">{refCode.current}</div></div></div>
+               <button className="btn-full" onClick={closeModal}>{t('app.home_btn')}</button>
+            </div>
+          ) : (
+            <>
+              {step === 1 && (
+                <div className="step-panel active">
+                  <div className="form-group">
+                    <label className="form-label">{t('sim.amount_label')}</label>
+                    <div style={{ position: 'relative' }}>
+                      <input type="number" className={`form-input ${hasErr('amount')}`} value={amount} onChange={(e) => setAmount(+e.target.value)} />
+                      <span style={{ position: 'absolute', right: '20px', top: '50%', transform: 'translateY(-50%)', fontWeight: '700' }}>€</span>
+                    </div>
                   </div>
-                  <div className="loading-bar-wrap">
-                    <div className="loading-bar"></div>
+                  <div className="form-group">
+                    <label className="form-label">{t('sim.duration_label')}</label>
+                    <select className="form-select" value={months} onChange={(e) => setMonths(+e.target.value)}>
+                      {[12, 24, 36, 48, 60, 72, 84, 96, 108, 120].map(m => <option key={m} value={m}>{m} {t('common.months')}</option>)}
+                    </select>
                   </div>
+                  <div className="sum-box" style={{ background: 'var(--navy)', color: '#fff', padding: '24px', borderRadius: '14px', marginBottom: '32px' }}>
+                    <div className="sum-row" style={{ border: 'none', padding: '0', justifyContent: 'space-between', display: 'flex', alignItems: 'center' }}>
+                      <span style={{ fontSize: '15px', opacity: 0.8 }}>{t('sim.res_monthly')}</span>
+                      <span style={{ color: 'var(--gold)', fontWeight: '700', fontSize: '24px' }}>{fmt(loan.monthly, locale)} / mois</span>
+                    </div>
+                  </div>
+                  <div className="form-group">
+                    <label className="form-label">{t('app.job')}</label>
+                    <select className={`form-select ${hasErr('job')}`} name="job" value={formData.job} onChange={handleInputChange}>
+                      <option value="">{t('auth.select')}</option>
+                      <option>{t('jobs.cdi')}</option><option>{t('jobs.cdd')}</option><option>{t('jobs.gov')}</option><option>{t('jobs.freelance')}</option><option>{t('jobs.boss')}</option><option>{t('jobs.retired')}</option>
+                    </select>
+                  </div>
+                  <div className="form-group">
+                    <label className="form-label">Revenu mensuel net (€)</label>
+                    <input type="number" name="income" className={`form-input ${hasErr('income')}`} placeholder="2 500" value={formData.income} onChange={handleInputChange} />
+                  </div>
+                  <button className="btn-full" style={{ padding: '18px', fontSize: '16px' }} onClick={() => goToStep(2)}>{t('common.continue')} →</button>
                 </div>
               )}
 
-              {showSuccess && (
-                <div className="success-panel">
-                  <div className="success-ico">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5}>
-                      <polyline points="20 6 9 17 4 12" />
-                    </svg>
+              {step === 2 && (
+                <div className="step-panel active">
+                  <div className="form-group">
+                    <label className="form-label">{t('auth.firstname')}</label>
+                    <input type="text" name="firstName" className={`form-input ${hasErr('firstName')}`} placeholder="Thomas" value={formData.firstName} onChange={handleInputChange} />
                   </div>
-                  <h2 className="success-title">{t('app.success_title')}</h2>
-                  <p className="success-txt">
-                    {t('app.success_desc')}
-                  </p>
-                  <div className="success-ref">
-                    <div>
-                      <div className="ref-lbl">{t('app.ref_label')}</div>
-                      <div className="ref-code">{refCode.current}</div>
-                    </div>
+                  <div className="form-group">
+                    <label className="form-label">{t('auth.lastname')}</label>
+                    <input type="text" name="lastName" className={`form-input ${hasErr('lastName')}`} placeholder="Müller" value={formData.lastName} onChange={handleInputChange} />
                   </div>
-                  <div className="success-next">
-                    <div className="sn-item">
-                      <div className="sn-num">1</div>
-                      <div className="sn-txt">
-                        {t('app.next1')}
-                      </div>
-                    </div>
-                    <div className="sn-item">
-                      <div className="sn-num">2</div>
-                      <div className="sn-txt">
-                        {t('app.next2')}
-                      </div>
-                    </div>
-                    <div className="sn-item">
-                      <div className="sn-num">3</div>
-                      <div className="sn-txt">
-                        {t('app.next3')}
-                      </div>
-                    </div>
+                  <div className="form-group">
+                    <label className="form-label">{t('auth.email_label')}</label>
+                    <input type="email" name="email" className={`form-input ${hasErr('email')}`} placeholder="thomas@email.com" value={formData.email} onChange={handleInputChange} />
                   </div>
-                  <button className="btn-full" onClick={closeModal}>
-                    {t('app.home_btn')}
-                  </button>
+                  <div className="form-group">
+                    <label className="form-label">{t('app.phone')}</label>
+                    <input type="tel" name="phone" className={`form-input ${hasErr('phone')}`} placeholder="+33 7 00 00 00 00" value={formData.phone} onChange={handleInputChange} />
+                  </div>
+                  <div className="form-group">
+                    <label className="form-label">{t('auth.birthdate')}</label>
+                    <input type="date" name="birthDate" className={`form-input ${hasErr('birthDate')}`} value={formData.birthDate} onChange={handleInputChange} />
+                  </div>
+                  <div className="form-group">
+                    <label className="form-label">Adresse complète</label>
+                    <input type="text" name="address" className={`form-input ${hasErr('address')}`} placeholder="123 rue de Paris, 75000 Paris" value={formData.address} onChange={handleInputChange} />
+                  </div>
+                  <div className="btn-row"><button className="btn-full btn-back" onClick={() => setStep(1)}>← {t('common.back')}</button><button className="btn-full" onClick={() => goToStep(3)}>{t('common.continue')} →</button></div>
                 </div>
               )}
-            </div>
+
+              {step === 3 && (
+                <div className="step-panel active">
+                  <h2 className="sp-title">{t('app.docs_title')}</h2>
+                  <p className="sp-sub">{t('app.docs_desc')}</p>
+                  {DOCS.map((doc) => (
+                    <div className={`upload-zone ${uploading[doc.key] ? 'uploading' : ''} ${hasErr(doc.key)}`} key={doc.key} onClick={() => !uploading[doc.key] && triggerUpload(doc.key)}>
+                      <input type="file" style={{ display: 'none' }} ref={(el) => { fileInputRefs.current[doc.key] = el; }} onChange={(e) => handleFileChange(doc.key, e)} accept=".pdf,.jpg,.jpeg,.png" />
+                      {uploading[doc.key] ? <div className="spinner" style={{ width: '24px', height: '24px' }}></div> : uploaded[doc.key] ? <div style={{ color: 'var(--success)', fontWeight: '700' }}>✓ {t('app.upload_done')}</div> : <div><div className="upload-lbl">{doc.label}</div><div className="upload-sublbl">{doc.sub}</div></div>}
+                    </div>
+                  ))}
+                  <div className="btn-row"><button className="btn-full btn-back" onClick={() => setStep(2)}>← {t('common.back')}</button><button className="btn-full" onClick={() => goToStep(4)}>{t('common.continue')} →</button></div>
+                </div>
+              )}
+
+              {step === 4 && (
+                <div className="step-panel active">
+                  <h2 className="sp-title">{t('app.recap_title')}</h2>
+                  <div className="sum-box" style={{ background: '#F8FAFC', border: '1px solid var(--border)', padding: '24px', borderRadius: '14px', marginBottom: '24px' }}>
+                    <div className="sum-row" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '14px', paddingBottom: '12px', borderBottom: '1px solid #E2E8F0' }}>
+                      <span style={{ color: 'var(--muted)', fontSize: '14px' }}>Prêt :</span>
+                      <strong style={{ color: 'var(--navy)', fontSize: '15px' }}>{amount.toLocaleString()} € / {months} mois</strong>
+                    </div>
+                    <div className="sum-row" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '14px', paddingBottom: '12px', borderBottom: '1px solid #E2E8F0' }}>
+                      <span style={{ color: 'var(--muted)', fontSize: '14px' }}>Mensualité :</span>
+                      <strong style={{ color: 'var(--blue)', fontSize: '16px' }}>{fmt(loan.monthly, locale)}</strong>
+                    </div>
+                    <div className="sum-row" style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                      <span style={{ color: 'var(--muted)', fontSize: '14px' }}>Email :</span>
+                      <strong style={{ color: 'var(--navy)', fontSize: '14px', wordBreak: 'break-all' }}>{formData.email}</strong>
+                    </div>
+                  </div>
+                  <div className="check-group"><input type="checkbox" id="c1" checked={checks.chk1} onChange={e => setChecks(p => ({ ...p, chk1: e.target.checked }))}/><label htmlFor="c1" className="check-lbl">{t('app.chk1')}</label></div>
+                  <div className="check-group"><input type="checkbox" id="c2" checked={checks.chk2} onChange={e => setChecks(p => ({ ...p, chk2: e.target.checked }))}/><label htmlFor="c2" className="check-lbl">{t('app.chk2')}</label></div>
+                  <div className="check-group"><input type="checkbox" id="c3" checked={checks.chk3} onChange={e => setChecks(p => ({ ...p, chk3: e.target.checked }))}/><label htmlFor="c3" className="check-lbl">{t('app.chk3')}</label></div>
+                  <div className="btn-row"><button className="btn-full btn-back" onClick={() => setStep(3)}>← {t('common.back')}</button><button className="btn-full" onClick={submitApplication}>{t('common.submit')} ✓</button></div>
+                </div>
+              )}
+            </>
           )}
         </div>
       </div>
