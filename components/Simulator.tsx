@@ -67,7 +67,7 @@ export default function Simulator() {
                   </button>
                 ))}
               </div>
-              <button className="btn-sim" onClick={() => openModal('auth')}>
+              <button className="btn-sim" onClick={() => openModal('app')}>
                 {t('sim.cta')}
               </button>
             </div>

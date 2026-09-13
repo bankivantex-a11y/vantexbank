@@ -22,7 +22,7 @@ export default function Hero() {
               {t('hero.desc')}
             </p>
             <div className="hero-buttons">
-              <button className="btn-primary" onClick={() => openModal('auth')}>
+              <button className="btn-primary" onClick={() => openModal('app')}>
                 {t('hero.cta_apply')}
               </button>
               <button
