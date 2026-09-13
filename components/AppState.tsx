@@ -95,6 +95,10 @@ export function AppStateProvider({ children }: { children: ReactNode }) {
 
   const loan = useMemo(() => calcLoan(amount, months), [amount, months]);
 
+  useEffect(() => {
+    // Synchronize simulator with form state if needed
+  }, [amount, months]);
+
   const triggerLoading = (callback?: () => void) => {
     setIsLoading(true);
     const delay = 2000 + Math.random() * 1000;

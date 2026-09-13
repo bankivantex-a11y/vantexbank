@@ -95,18 +95,18 @@ export default function Navbar() {
               </select>
             </li>
             <li className="mobile-only">
-              <button className="btn-ghost" style={{ width: '100%', textAlign: 'left', padding: '16px 0' }} onClick={() => { openModal('auth'); setMobileMenuOpen(false); }}>
-                {t('nav.login')}
+              <button className="btn-ghost" style={{ width: '100%', textAlign: 'left', padding: '16px 0' }} onClick={() => { openModal('app'); setMobileMenuOpen(false); }}>
+                {t('nav.apply')}
               </button>
             </li>
             <li className="mobile-only" style={{ borderBottom: 'none', paddingTop: '16px' }}>
-              <button className="btn-full" onClick={() => { openModal('auth'); setMobileMenuOpen(false); }}>
+              <button className="btn-full" onClick={() => { openModal('app'); setMobileMenuOpen(false); }}>
                 {t('nav.apply')}
               </button>
             </li>
           </ul>
           <div className="nav-actions">
-            <button id="navCta" className={hiddenCta ? 'hidden-cta' : ''} onClick={() => openModal('auth')}>
+            <button id="navCta" className={hiddenCta ? 'hidden-cta' : ''} onClick={() => openModal('app')}>
               {t('nav.apply')}
             </button>
             <select

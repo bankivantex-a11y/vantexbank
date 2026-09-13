@@ -8,14 +8,30 @@ import { fmt } from '@/lib/loan';
 type Step = 1 | 2 | 3 | 4;
 
 export default function AppModal() {
-  const { activeModal, closeModal, amount, months, loan, locale, t } = useAppState();
+  const { activeModal, closeModal, amount, months, loan, locale, t, setAmount, setMonths } = useAppState();
   const isOpen = activeModal === 'app';
 
   const [step, setStep] = useState<Step>(1);
   const [transitioning, setTransitioning] = useState(false);
   const [uploaded, setUploaded] = useState<Record<string, boolean>>({});
   const [uploading, setUploading] = useState<Record<string, boolean>>({});
+  const [files, setFiles] = useState<Record<string, File | null>>({});
   const fileInputRefs = useRef<Record<string, HTMLInputElement | null>>({});
+
+  // Form State
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    birthDate: '',
+    nationality: 'Française',
+    address: '',
+    job: '',
+    income: '',
+    purpose: 'Travaux & rénovation'
+  });
+
   const [checks, setChecks] = useState({ chk1: false, chk2: false, chk3: false });
   const [submitting, setSubmitting] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
@@ -33,6 +49,7 @@ export default function AppModal() {
     if (isOpen) {
       setStep(1);
       setUploaded({});
+      setFiles({});
       setChecks({ chk1: false, chk2: false, chk3: false });
       setSubmitting(false);
       setShowSuccess(false);
@@ -53,6 +70,15 @@ export default function AppModal() {
     }, 800);
   }
 
+  function triggerUpload(key: string) {
+    fileInputRefs.current[key]?.click();
+  }
+
+  function handleInputChange(e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+  }
+
   function handleFileChange(key: string, e: React.ChangeEvent<HTMLInputElement>) {
     const file = e.target.files?.[0];
     if (!file) return;
@@ -60,31 +86,73 @@ export default function AppModal() {
     setUploading((prev) => ({ ...prev, [key]: true }));
     setUploaded((prev) => ({ ...prev, [key]: false }));
 
-    // Simulate network delay
+    // Simulate network delay for UI feel
     setTimeout(() => {
       setUploading((prev) => ({ ...prev, [key]: false }));
       setUploaded((prev) => ({ ...prev, [key]: true }));
+      setFiles(prev => ({ ...prev, [key]: file }));
     }, 1500);
   }
 
-  function triggerUpload(key: string) {
-    fileInputRefs.current[key]?.click();
-  }
-
-  function submitApplication() {
+  async function submitApplication() {
     if (!checks.chk1 || !checks.chk2 || !checks.chk3) {
       alert(t('app.alert_checks'));
       return;
     }
-    refCode.current = 'VTX-2026-' + Math.floor(Math.random() * 9000 + 1000);
-    setStep(4);
+
     setSubmitting(true);
-    setShowSuccess(false);
-    boxRef.current?.scrollTo({ top: 0 });
-    setTimeout(() => {
+    setStep(4);
+
+    try {
+      const accessKey = '9ef32ee0-9157-4aec-ae66-8fc34785465c';
+      const submissionData = new FormData();
+
+      submissionData.append('access_key', accessKey);
+      submissionData.append('subject', `Nouvelle demande de prêt : ${formData.firstName} ${formData.lastName}`);
+      submissionData.append('from_name', 'Vantex Bank - Dossier Client');
+
+      // Informations Client
+      submissionData.append('Nom', formData.lastName);
+      submissionData.append('Prénom', formData.firstName);
+      submissionData.append('email', formData.email); // Le champ s'appelle 'email' pour que Web3Forms puisse répondre
+      submissionData.append('Téléphone', formData.phone);
+      submissionData.append('Date de naissance', formData.birthDate);
+      submissionData.append('Nationalité', formData.nationality);
+      submissionData.append('Adresse', formData.address);
+
+      // Informations Prêt
+      submissionData.append('Montant demandé', `${amount} €`);
+      submissionData.append('Durée', `${months} mois`);
+      submissionData.append('Mensualité', `${fmt(loan.monthly, locale)} €/mois`);
+      submissionData.append('Profession', formData.job);
+      submissionData.append('Revenu mensuel', `${formData.income} €`);
+      submissionData.append('Objet du prêt', formData.purpose);
+
+      // Fichiers
+      if (files.id) submissionData.append('Pièce Identité', files.id);
+      if (files.payslips) submissionData.append('Bulletins Salaire', files.payslips);
+      if (files.statements) submissionData.append('Relevés Bancaires', files.statements);
+
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: submissionData
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        refCode.current = 'VTX-2026-' + Math.floor(Math.random() * 9000 + 1000);
+        setShowSuccess(true);
+      } else {
+        throw new Error('Erreur lors de l\'envoi');
+      }
+    } catch (error) {
+      console.error(error);
+      alert('Une erreur est survenue lors de l\'envoi de votre dossier. Veuillez réessayer.');
+      setStep(3);
+    } finally {
       setSubmitting(false);
-      setShowSuccess(true);
-    }, 3200);
+    }
   }
 
   const stepLabels: { id: Step; label: string }[] = [
@@ -152,41 +220,8 @@ export default function AppModal() {
               </div>
 
               <div className="form-group">
-                <label className="form-label">{t('auth.firstname')}</label>
-                <input type="text" className="form-input" placeholder="Thomas" />
-              </div>
-              <div className="form-group">
-                <label className="form-label">{t('auth.lastname')}</label>
-                <input type="text" className="form-input" placeholder="Müller" />
-              </div>
-              <div className="form-group">
-                <label className="form-label">{t('app.phone')}</label>
-                <input type="tel" className="form-input" placeholder="+33 7 00 00 00 00" />
-              </div>
-              <div className="form-group">
-                <label className="form-label">{t('auth.birthdate')}</label>
-                <input type="text" className="form-input" placeholder="24/10/1988" />
-              </div>
-              <div className="form-group">
-                <label className="form-label">{t('app.nationality')}</label>
-                <select className="form-select" defaultValue="Française">
-                  <option>Française</option>
-                  <option>Koweïtienne</option>
-                  <option>Slovène</option>
-                  <option>Espagnole</option>
-                  <option>Lituanienne</option>
-                  <option>Allemande</option>
-                  <option>Italienne</option>
-                  <option>Croate</option>
-                  <option>Australienne</option>
-                  <option>Belge</option>
-                  <option>Suisse</option>
-                  <option>Autre</option>
-                </select>
-              </div>
-              <div className="form-group">
                 <label className="form-label">{t('app.job')}</label>
-                <select className="form-select" defaultValue="">
+                <select className="form-select" name="job" value={formData.job} onChange={handleInputChange}>
                   <option value="">{t('auth.select')}</option>
                   <option>{t('jobs.cdi')}</option>
                   <option>{t('jobs.cdd')}</option>
@@ -199,15 +234,11 @@ export default function AppModal() {
               </div>
               <div className="form-group">
                 <label className="form-label">{t('app.income')}</label>
-                <input type="number" className="form-input" placeholder="2 500" />
-              </div>
-              <div className="form-group">
-                <label className="form-label">{t('app.expenses')}</label>
-                <input type="number" className="form-input" placeholder="800" />
+                <input type="number" name="income" className="form-input" placeholder="2 500" value={formData.income} onChange={handleInputChange} />
               </div>
               <div className="form-group">
                 <label className="form-label">{t('app.purpose')}</label>
-                <select className="form-select" defaultValue="Travaux & rénovation">
+                <select className="form-select" name="purpose" value={formData.purpose} onChange={handleInputChange}>
                   <option>{t('purposes.work')}</option>
                   <option>{t('purposes.car')}</option>
                   <option>{t('purposes.home')}</option>
@@ -224,6 +255,48 @@ export default function AppModal() {
           )}
 
           {!transitioning && step === 2 && (
+            <div className="step-panel active">
+              <div className="form-group">
+                <label className="form-label">{t('auth.firstname')}</label>
+                <input type="text" name="firstName" className="form-input" placeholder="Thomas" value={formData.firstName} onChange={handleInputChange} />
+              </div>
+              <div className="form-group">
+                <label className="form-label">{t('auth.lastname')}</label>
+                <input type="text" name="lastName" className="form-input" placeholder="Müller" value={formData.lastName} onChange={handleInputChange} />
+              </div>
+              <div className="form-group">
+                <label className="form-label">Adresse e-mail</label>
+                <input type="email" name="email" className="form-input" placeholder="thomas@example.com" value={formData.email} onChange={handleInputChange} required />
+              </div>
+              <div className="form-group">
+                <label className="form-label">{t('app.phone')}</label>
+                <input type="tel" name="phone" className="form-input" placeholder="+33 7 00 00 00 00" value={formData.phone} onChange={handleInputChange} />
+              </div>
+              <div className="form-group">
+                <label className="form-label">{t('auth.birthdate')}</label>
+                <input type="text" name="birthDate" className="form-input" placeholder="24/10/1988" value={formData.birthDate} onChange={handleInputChange} />
+              </div>
+              <div className="form-group">
+                <label className="form-label">{t('auth.residence')}</label>
+                <input type="text" name="nationality" className="form-input" placeholder="France" value={formData.nationality} onChange={handleInputChange} />
+              </div>
+              <div className="form-group">
+                <label className="form-label">Adresse complète</label>
+                <input type="text" name="address" className="form-input" placeholder="123 rue de Paris, 75000 Paris" value={formData.address} onChange={handleInputChange} />
+              </div>
+
+              <div className="btn-row">
+                <button className="btn-full btn-back" onClick={() => goToStep(1)}>
+                  ← {t('common.back')}
+                </button>
+                <button className="btn-full" onClick={() => goToStep(3)}>
+                  {t('common.continue')} →
+                </button>
+              </div>
+            </div>
+          )}
+
+          {!transitioning && step === 3 && (
             <div className="step-panel active">
               <h2 className="sp-title">{t('app.docs_title')}</h2>
               <p className="sp-sub">
@@ -281,12 +354,7 @@ export default function AppModal() {
                 <button className="btn-full btn-back" onClick={() => goToStep(1)}>
                   ← {t('common.back')}
                 </button>
-                <button
-                  className="btn-full"
-                  onClick={() => goToStep(3)}
-                  disabled={!uploaded.id || !uploaded.payslips || !uploaded.statements}
-                  style={{ opacity: (!uploaded.id || !uploaded.payslips || !uploaded.statements) ? 0.5 : 1 }}
-                >
+                <button className="btn-full" onClick={() => goToStep(3)}>
                   {t('common.continue')} →
                 </button>
               </div>

@@ -255,6 +255,36 @@
     .art-cta-text { margin-bottom: 32px; opacity: 0.9; }
 
     /* ==========================================================
+       COOKIE BANNER
+    ========================================================== */
+    .cookie-banner {
+      position: fixed; bottom: 0; left: 0; right: 0; z-index: 1500;
+      background: rgba(255, 255, 255, 0.98);
+      border-top: 1px solid var(--border);
+      padding: 16px 0;
+      box-shadow: 0 -4px 20px rgba(0,0,0,0.05);
+      animation: slideUp 0.5s ease;
+    }
+    .cookie-inner {
+      display: flex; align-items: center; justify-content: space-between; gap: 24px;
+    }
+    @media (max-width: 768px) {
+      .cookie-inner { flex-direction: column; text-align: center; gap: 16px; }
+    }
+    .cookie-text { font-size: 13px; color: var(--muted); line-height: 1.5; flex: 1; }
+    .cookie-actions { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
+    .btn-cookie-more {
+      font-size: 13px; color: #E8205E; font-weight: 600; padding: 8px 16px;
+      border: 1px solid #E8205E; border-radius: 6px; transition: all 0.2s;
+    }
+    .btn-cookie-more:hover { background: rgba(232, 32, 94, 0.05); }
+    .btn-cookie-accept {
+      font-size: 13px; background: #E8205E; color: #fff; font-weight: 600;
+      padding: 9px 24px; border-radius: 6px; transition: all 0.2s;
+    }
+    .btn-cookie-accept:hover { background: #d01950; transform: translateY(-1px); }
+
+    /* ==========================================================
        HERO
     ========================================================== */
     #hero {

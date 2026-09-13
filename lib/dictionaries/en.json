@@ -351,6 +351,20 @@
     "business": "Business loan",
     "debt": "Debt consolidation"
   },
+  "footer": {
+    "assist": "Assistance",
+    "legal": "Legal",
+    "mentions": "Legal Notice",
+    "cookies": "GDPR & Cookies",
+    "terms": "General Conditions",
+    "privacy": "Privacy Policy",
+    "rights": "All rights reserved. SAS Cap Au Nord — ORIAS 14807766.",
+    "accessibility": "Accessibility",
+    "sitemap": "Sitemap",
+    "cookie_text": "Our site uses cookies to guarantee its proper functioning and to obtain anonymous attendance statistics to optimize its ergonomics, navigation and content.",
+    "cookie_accept": "Accept",
+    "cookie_more": "Learn more"
+  },
   "legal": {
     "label": "Legal",
     "privacy_label": "Privacy",

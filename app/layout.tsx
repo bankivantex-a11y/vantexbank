@@ -7,6 +7,7 @@ import Footer from '@/components/Footer';
 import AuthModal from '@/components/AuthModal';
 import AppModal from '@/components/AppModal';
 import LoadingOverlay from '@/components/LoadingOverlay';
+import CookieBanner from '@/components/CookieBanner';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -38,8 +39,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Navbar />
           <main>{children}</main>
           <Footer />
-          <AuthModal />
           <AppModal />
+          <CookieBanner />
         </AppStateProvider>
       </body>
     </html>

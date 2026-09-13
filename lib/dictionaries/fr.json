@@ -238,7 +238,10 @@
     "privacy": "Politique de confidentialité",
     "rights": "Tous droits réservés. SAS Cap Au Nord — ORIAS 14807766.",
     "accessibility": "Accessibilité",
-    "sitemap": "Plan du site"
+    "sitemap": "Plan du site",
+    "cookie_text": "Notre site utilise des cookies pour garantir son bon fonctionnement et afin d'obtenir des statistiques de fréquentation anonymes pour optimiser son ergonomie, sa navigation et ses contenus.",
+    "cookie_accept": "Accepter",
+    "cookie_more": "En savoir plus"
   },
   "jobs": {
     "cdi": "Salarié(e) CDI",
