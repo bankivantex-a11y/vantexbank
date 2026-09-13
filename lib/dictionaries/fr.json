@@ -23,6 +23,13 @@
       "desc4": "Et pour rendre les démarches plus simples encore, une fois le crédit accepté, le client n'a plus qu'à fournir ses justificatifs en ligne et à signer électroniquement son contrat. C'est cette méthode qui permet d'obtenir son crédit le plus rapidement possible.",
       "cta": "ACCÉDER AU FORMULAIRE DE CRÉDIT"
     },
+    "advantages_title": "Nos avantages",
+    "advantages": {
+      "item1": "Formulaire de crédit en ligne ultra rapide (4 min)",
+      "item2": "Réponse de principe immédiate",
+      "item3": "Justificatifs dématérialisés et signature électronique",
+      "item4": "Assistance téléphonique si besoin"
+    },
     "faq_title": "FAQ sur le crédit rapide",
     "faq": {
       "q1": "Quelle différence entre crédit rapide et crédit express ?",

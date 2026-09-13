@@ -239,7 +239,7 @@ export default function AppModal() {
                   <input
                     type="file"
                     style={{ display: 'none' }}
-                    ref={(el) => (fileInputRefs.current[doc.key] = el)}
+                    ref={(el) => { fileInputRefs.current[doc.key] = el; }}
                     onChange={(e) => handleFileChange(doc.key, e)}
                     accept=".pdf,.jpg,.jpeg,.png"
                   />
