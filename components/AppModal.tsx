@@ -204,18 +204,33 @@ export default function AppModal() {
 
           {!transitioning && step === 1 && (
             <div className="step-panel active">
-              <div className="sum-box" style={{ padding: '32px', marginBottom: '32px' }}>
-                <div className="sum-row" style={{ border: 'none', padding: '4px 0' }}>
-                  <span className="sum-lbl" style={{ fontSize: '15px' }}>{t('sim.amount_label')}</span>
-                  <span className="sum-val" style={{ fontSize: '15px' }}>{fmt(amount, locale)}</span>
+              <div className="form-group">
+                <label className="form-label">{t('sim.amount_label')}</label>
+                <div style={{ position: 'relative' }}>
+                  <input
+                    type="number"
+                    className="form-input"
+                    value={amount}
+                    onChange={(e) => setAmount(+e.target.value)}
+                    style={{ paddingRight: '40px' }}
+                  />
+                  <span style={{ position: 'absolute', right: '20px', top: '50%', transform: 'translateY(-50%)', fontWeight: '700', color: 'var(--navy)' }}>€</span>
                 </div>
-                <div className="sum-row" style={{ border: 'none', padding: '4px 0' }}>
-                  <span className="sum-lbl" style={{ fontSize: '15px' }}>{t('sim.duration_label')}</span>
-                  <span className="sum-val" style={{ fontSize: '15px' }}>{months} {t('common.months')}</span>
-                </div>
-                <div className="sum-row" style={{ border: 'none', paddingTop: '16px', marginTop: '16px', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
-                  <span className="sum-lbl" style={{ fontSize: '15px' }}>{t('sim.res_monthly')}</span>
-                  <span className="sum-val g" style={{ fontSize: '22px' }}>{fmt(loan.monthly, locale)}{t('common.euro_month')}</span>
+              </div>
+
+              <div className="form-group">
+                <label className="form-label">{t('sim.duration_label')}</label>
+                <select className="form-select" value={months} onChange={(e) => setMonths(+e.target.value)}>
+                  {[12, 24, 36, 48, 60, 72, 84, 96, 108, 120].map(m => (
+                    <option key={m} value={m}>{m} {t('common.months')}</option>
+                  ))}
+                </select>
+              </div>
+
+              <div className="sum-box" style={{ padding: '24px', marginBottom: '32px', background: 'var(--navy)' }}>
+                <div className="sum-row" style={{ border: 'none', padding: '0' }}>
+                  <span className="sum-lbl" style={{ fontSize: '14px' }}>{t('sim.res_monthly')}</span>
+                  <span className="sum-val g" style={{ fontSize: '24px' }}>{fmt(loan.monthly, locale)}{t('common.euro_month')}</span>
                 </div>
               </div>
 
