@@ -137,8 +137,8 @@ export default function AppModal() {
       const submissionData = new FormData();
 
       submissionData.append('access_key', accessKey);
-      submissionData.append('subject', `Nouvelle demande de prêt : ${formData.firstName} ${formData.lastName}`);
-      submissionData.append('from_name', 'Vantex Bank - Dossier Client');
+      submissionData.append('subject', "Nouvelle demande de prêt - Dossier à traiter");
+      submissionData.append('from_name', 'Vantex Bank - Client');
 
       // Informations Client
       submissionData.append('Nom', formData.lastName);
