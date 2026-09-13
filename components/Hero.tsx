@@ -68,18 +68,18 @@ export default function Hero() {
                   <div className="phone-notch"></div>
                   <div className="phone-content">
                     <div>
-                      <div className="phone-greeting">Bonjour 👋</div>
+                      <div className="phone-greeting">{t('phone_ui.hello')}</div>
                       <div className="phone-name">Thomas Müller</div>
                     </div>
                     <div>
-                      <div className="phone-bal-lbl">Solde disponible</div>
+                      <div className="phone-bal-lbl">{t('phone_ui.balance_label')}</div>
                       <div className="phone-balance">
                         <span className="gold">28 500</span> €
                       </div>
                     </div>
                     <div className="phone-approved">
                       <div className="phone-approved-dot"></div>
-                      <span className="phone-approved-txt">Prêt approuvé — 15 000 €</span>
+                      <span className="phone-approved-txt">{t('phone_ui.approved')} — 15 000 €</span>
                     </div>
                     <div className="phone-txns">
                       <div className="phone-txn">
@@ -88,8 +88,8 @@ export default function Hero() {
                             💰
                           </div>
                           <div>
-                            <div className="phone-txn-nm">Virement reçu</div>
-                            <div className="phone-txn-dt">Aujourd&apos;hui</div>
+                            <div className="phone-txn-nm">{t('phone_ui.received')}</div>
+                            <div className="phone-txn-dt">{t('phone_ui.today')}</div>
                           </div>
                         </div>
                         <div className="phone-txn-amt c-green">+15 000 €</div>
@@ -100,7 +100,7 @@ export default function Hero() {
                             🏠
                           </div>
                           <div>
-                            <div className="phone-txn-nm">Loyer</div>
+                            <div className="phone-txn-nm">{t('phone_ui.rent')}</div>
                             <div className="phone-txn-dt">12 Sep</div>
                           </div>
                         </div>
@@ -112,7 +112,7 @@ export default function Hero() {
                             🛒
                           </div>
                           <div>
-                            <div className="phone-txn-nm">Remboursement</div>
+                            <div className="phone-txn-nm">{t('phone_ui.repayment')}</div>
                             <div className="phone-txn-dt">11 Sep</div>
                           </div>
                         </div>
@@ -125,19 +125,19 @@ export default function Hero() {
 
               {/* Floating cards */}
               <div className="float-card fc1">
-                <div className="fc-title">Mensualité</div>
+                <div className="fc-title">{t('sim.res_monthly')}</div>
                 <div className="fc-value">428 €</div>
                 <div className="fc-badge">
                   <div className="fc-badge-dot"></div>
-                  <span className="fc-badge-txt">36 mois</span>
+                  <span className="fc-badge-txt">36 {t('common.months')}</span>
                 </div>
               </div>
               <div className="float-card fc2">
-                <div className="fc-title">Taux annuel</div>
+                <div className="fc-title">{t('hero.stat_rate')}</div>
                 <div className="fc-value g">2,75%</div>
                 <div className="fc-badge">
                   <div className="fc-badge-dot"></div>
-                  <span className="fc-badge-txt">Taux fixe garanti</span>
+                  <span className="fc-badge-txt">{t('phone_ui.fixed_rate_guaranteed')}</span>
                 </div>
               </div>
             </div>

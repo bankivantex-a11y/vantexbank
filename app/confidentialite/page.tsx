@@ -1,39 +1,41 @@
+'use client';
+
 import Reveal from '@/components/Reveal';
+import { useAppState } from '@/components/AppState';
 
 export default function ConfidentialityPage() {
+  const { t } = useAppState();
+
   return (
     <section className="section" style={{ paddingTop: 100 }}>
       <div className="container">
         <Reveal>
-          <div className="sec-label">Confidentialité</div>
-          <h1 className="sec-title">Politique de confidentialité</h1>
+          <div className="sec-label">{t('legal.privacy_label')}</div>
+          <h1 className="sec-title">{t('legal.privacy_title')}</h1>
           <div className="legal-content" style={{ marginTop: 40, maxWidth: 800 }}>
             <p>
-              Votre vie privée est essentielle pour nous. Cette politique détaille comment nous collectons,
-              utilisons et protégeons vos informations personnelles.
+              {t('legal.privacy_intro')}
             </p>
 
-            <h3>1. Collecte des informations</h3>
+            <h3>{t('legal.privacy_s1_title')}</h3>
             <p>
-              Nous collectons des informations lorsque vous utilisez notre simulateur de prêt, remplissez un
-              formulaire de contact ou créez un compte client.
+              {t('legal.privacy_s1_text')}
             </p>
 
-            <h3>2. Utilisation des informations</h3>
-            <p>
-              Toutes les informations que nous recueillons peuvent être utilisées pour :
-              <ul>
-                <li>Personnaliser votre expérience et répondre à vos besoins individuels.</li>
-                <li>Fournir un contenu publicitaire personnalisé.</li>
-                <li>Améliorer notre site Web.</li>
-                <li>Améliorer le service client.</li>
-              </ul>
-            </p>
+            <h3>{t('legal.privacy_s2_title')}</h3>
+            <div style={{ marginBottom: 16 }}>
+              {t('legal.privacy_s2_intro')}
+            </div>
+            <ul>
+              <li>{t('legal.privacy_s2_l1')}</li>
+              <li>{t('legal.privacy_s2_l2')}</li>
+              <li>{t('legal.privacy_s2_l3')}</li>
+              <li>{t('legal.privacy_s2_l4')}</li>
+            </ul>
 
-            <h3>3. Protection des données</h3>
+            <h3 style={{ marginTop: 32 }}>{t('legal.privacy_s3_title')}</h3>
             <p>
-              Nous mettons en œuvre une variété de mesures de sécurité pour préserver la sécurité de vos informations
-              personnelles (chiffrement SSL, accès restreint aux données).
+              {t('legal.privacy_s3_text')}
             </p>
           </div>
         </Reveal>

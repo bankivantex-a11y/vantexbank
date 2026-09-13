@@ -21,17 +21,17 @@ export default function AboutPage() {
               <div className="hero-stats" style={{ marginTop: 32 }}>
                 <div className="stat-item">
                   <span className="stat-value">2004</span>
-                  <span className="stat-label">Année de création</span>
+                  <span className="stat-label">{t('about.stat_year')}</span>
                 </div>
                 <div className="stat-div"></div>
                 <div className="stat-item">
                   <span className="stat-value">50M€</span>
-                  <span className="stat-label">Capital social</span>
+                  <span className="stat-label">{t('about.stat_capital')}</span>
                 </div>
                 <div className="stat-div"></div>
                 <div className="stat-item">
                   <span className="stat-value">UE & Asie</span>
-                  <span className="stat-label">Présence internationale</span>
+                  <span className="stat-label">{t('about.stat_presence')}</span>
                 </div>
               </div>
             </Reveal>
@@ -39,7 +39,7 @@ export default function AboutPage() {
                <div style={{ borderRadius: 24, overflow: 'hidden', boxShadow: 'var(--shadow-lg)' }}>
                   <Image
                     src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&auto=format&fit=crop"
-                    alt="Bureaux Vantex Bank"
+                    alt="Vantex Bank Office"
                     width={800}
                     height={600}
                   />
@@ -49,21 +49,16 @@ export default function AboutPage() {
 
           <div style={{ marginTop: 40 }}>
             <Reveal>
-              <h2 className="sec-title">Notre Mission</h2>
+              <h2 className="sec-title">{t('about.mission')}</h2>
               <div className="sec-desc" style={{ maxWidth: 800 }}>
                 <p>
-                  Fondée avec l'ambition d'être un spécialiste du crédit rapide et du financement des particuliers, notre mission est d’accompagner chaque emprunteur vers la solution la plus adaptée à son projet et à sa situation.
+                  {t('about.mission_text1')}
                 </p>
                 <p style={{ marginTop: 16 }}>
-                  Chez Vantex Bank, vous réalisez votre demande de prêt personnel en ligne et obtenez une réponse de principe immédiate. Notre objectif est simple : vous accompagner à chaque étape pour faciliter et accélérer l'obtention de votre financement.
+                  {t('about.mission_text2')}
                 </p>
                 <p style={{ marginTop: 24, padding: '20px', background: 'var(--bg)', borderRadius: '12px', border: '1px solid var(--border)' }}>
-                  <strong>Vantex Bank (SAS Cap Au Nord)</strong> est un intermédiaire enregistré à l'<strong>ORIAS sous le numéro 14807766</strong> en qualité de mandataire non exclusif en opérations de banque et en services de paiement (MOBSP).
-                </p>
-                <p style={{ marginTop: 16 }}>
-                  <small style={{ color: 'var(--muted)' }}>
-                    Rappel légal : Aucun versement de quelque nature que ce soit ne peut être exigé d'un particulier avant l'obtention d'un ou plusieurs prêts d'argent.
-                  </small>
+                  {t('about.legal_box')}
                 </p>
               </div>
             </Reveal>

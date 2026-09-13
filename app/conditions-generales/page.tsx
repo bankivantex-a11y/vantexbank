@@ -1,53 +1,56 @@
+'use client';
+
 import Reveal from '@/components/Reveal';
+import { useAppState } from '@/components/AppState';
 
 export default function ConditionsGeneralesPage() {
+  const { t } = useAppState();
+
   return (
     <section className="section" style={{ paddingTop: 100 }}>
       <div className="container">
         <Reveal>
-          <div className="sec-label">Juridique</div>
-          <h1 className="sec-title">Conditions Générales</h1>
+          <div className="sec-label">{t('legal.label')}</div>
+          <h1 className="sec-title">{t('legal.terms_title')}</h1>
           <div className="legal-content" style={{ marginTop: 40, maxWidth: 800 }}>
             <p>
-              Les présentes conditions générales régissent l&apos;utilisation du site Vantex Bank et les services
-              associés.
+              {t('legal.terms_desc')}
             </p>
 
-            <h3>1. Objet</h3>
+            <h3>{t('legal.terms_s1_title')}</h3>
             <p>
-              Ce site a pour objet de présenter les solutions de financement et les services bancaires proposés
-              par Vantex Bank.
+              {t('legal.terms_s1_text')}
             </p>
 
-            <h3>2. Modalités du prêt personnel</h3>
+            <h3>{t('legal.terms_s2_title')}</h3>
             <p>
-              Le prêt personnel Vantex Bank permet d'emprunter le montant souhaité pour financer vos projets et de le rembourser à votre rythme selon les conditions suivantes :
+              {t('legal.terms_s2_text')}
             </p>
             <ul>
-              <li><strong>Taux :</strong> TAEG fixe compétitif.</li>
-              <li><strong>Montant :</strong> De 500 € à 75 000 €.</li>
-              <li><strong>Durée :</strong> De 12 à 72 mois.</li>
+              <li><strong>{t('legal.terms_s2_rate')}</strong> {t('legal.terms_s2_rate_val')}</li>
+              <li><strong>{t('legal.terms_s2_amount')}</strong> {t('legal.terms_s2_amount_val')}</li>
+              <li><strong>{t('legal.terms_s2_duration')}</strong> {t('legal.terms_s2_duration_val')}</li>
             </ul>
 
-            <h3>3. Avantages</h3>
+            <h3>{t('legal.terms_s3_title')}</h3>
             <p>
-              En choisissant Vantex Bank, vous bénéficiez de :
+              {t('legal.terms_s3_text')}
             </p>
             <ul>
-              <li>Formulaire de demande en ligne rapide (environ 4 minutes).</li>
-              <li>Réponse de principe immédiate après étude simplifiée.</li>
-              <li>Justificatifs dématérialisés et signature électronique sécurisée.</li>
-              <li>Assistance personnalisée si besoin.</li>
+              <li>{t('legal.terms_s3_l1')}</li>
+              <li>{t('legal.terms_s3_l2')}</li>
+              <li>{t('legal.terms_s3_l3')}</li>
+              <li>{t('legal.terms_s3_l4')}</li>
             </ul>
 
-            <h3>4. Crédit</h3>
+            <h3>{t('legal.terms_s4_title')}</h3>
             <p>
-              <strong>Un crédit vous engage et doit être remboursé. Vérifiez vos capacités de remboursement avant de vous engager.</strong>
+              <strong>{t('legal.terms_s4_text')}</strong>
             </p>
 
-            <h3>4. Propriété intellectuelle</h3>
+            <h3>{t('legal.terms_s5_title')}</h3>
             <p>
-              L&apos;ensemble des contenus présents sur ce site (textes, images, logos) est la propriété exclusive de Vantex Bank.
+              {t('legal.terms_s5_text')}
             </p>
           </div>
         </Reveal>

@@ -12,31 +12,31 @@ export default function PretImmobilierPage() {
       <section className="section" style={{ paddingTop: 90 }}>
         <div className="container">
           <Reveal>
-            <div className="sec-label">{t('services.personal.mod_dur')} Immo</div>
+            <div className="sec-label">{t('services.label')}</div>
             <h1 className="sec-title">{t('services.mortgage')}</h1>
             <p className="sec-desc">
-              Devenez propriétaire sereinement. Que ce soit pour une résidence principale, secondaire ou un investissement locatif, nous finançons votre avenir.
+              {t('pret_immobilier.desc')}
             </p>
           </Reveal>
 
           <div className="hero-inner" style={{ minHeight: 'auto', gap: 40, padding: '40px 0' }}>
             <Reveal>
               <div style={{ padding: 24, background: 'var(--bg)', borderRadius: 20 }}>
-                <h3 style={{ marginBottom: 16 }}>Nos conditions Immo</h3>
+                <h3 style={{ marginBottom: 16 }}>{t('pret_immobilier.cond_title')}</h3>
                 <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 10, fontSize: 15 }}>
-                  <li>• Taux à partir de <strong>1,95% TAEG fixe</strong></li>
-                  <li>• Financement jusqu'à <strong>1 500 000 €</strong></li>
-                  <li>• Durée modulable jusqu'à <strong>25 ans</strong></li>
-                  <li>• Sans frais de dossier cachés</li>
+                  <li>• {t('pret_immobilier.cond1')}</li>
+                  <li>• {t('pret_immobilier.cond2')}</li>
+                  <li>• {t('pret_immobilier.cond3')}</li>
+                  <li>• {t('pret_immobilier.cond4')}</li>
                 </ul>
               </div>
             </Reveal>
 
             <Reveal delay={2}>
               <div style={{ padding: 24, background: 'var(--bg2)', borderRadius: 20 }}>
-                <h3 style={{ marginBottom: 16 }}>Accompagnement</h3>
+                <h3 style={{ marginBottom: 16 }}>{t('pret_immobilier.support_title')}</h3>
                 <p style={{ fontSize: 14, color: 'var(--muted)', lineHeight: 1.6 }}>
-                  Nos experts vous guident sur les dispositifs d'aide à l'accession et optimisent votre plan de financement sous 48h.
+                  {t('pret_immobilier.support_desc')}
                 </p>
                 <div style={{ marginTop: 16, fontSize: 13, fontWeight: 'bold' }}>ORIAS : 14807766</div>
               </div>

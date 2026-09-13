@@ -34,7 +34,7 @@ export default function PretPersonnelPage() {
                   </li>
                   <li style={{ display: 'flex', justifyContent: 'space-between', paddingBottom: 8 }}>
                     <span style={{ color: 'var(--muted)' }}>{t('services.personal.mod_dur')}</span>
-                    <strong>12 à 72 mois</strong>
+                    <strong>12 à 72 {t('common.months')}</strong>
                   </li>
                 </ul>
               </div>
@@ -43,11 +43,11 @@ export default function PretPersonnelPage() {
                 <h3 style={{ marginBottom: 20, fontSize: 24 }}>{t('services.personal.adv_title')}</h3>
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
                   {[
-                    "Formulaire en ligne (4 min)",
-                    "Réponse de principe immédiate",
-                    "Justificatifs dématérialisés",
-                    "Signature électronique",
-                    "Assistance téléphonique"
+                    t('pret_personnel.adv1'),
+                    t('pret_personnel.adv2'),
+                    t('pret_personnel.adv3'),
+                    t('pret_personnel.adv4'),
+                    t('pret_personnel.adv5')
                   ].map((adv, i) => (
                     <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 10, fontSize: 14 }}>
                       <div style={{ width: 18, height: 18, borderRadius: '50%', background: 'var(--success)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 10 }}>✓</div>

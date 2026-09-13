@@ -69,7 +69,7 @@ export default function Navbar() {
             <li>
               <SmartLink href="/contact" onClick={() => setMobileMenuOpen(false)}>{t('nav.contact')}</SmartLink>
             </li>
-            <li className="mobile-only" style={{ padding: '20px 0' }}>
+            <li className="mobile-only" style={{ padding: '16px 0' }}>
               <select
                 className="form-select"
                 style={{ width: '100%', padding: '10px' }}
@@ -87,17 +87,20 @@ export default function Navbar() {
               </select>
             </li>
             <li className="mobile-only">
-              <button className="btn-ghost" style={{ width: '100%', textAlign: 'left', padding: '20px 0' }} onClick={() => { openModal('auth'); setMobileMenuOpen(false); }}>
+              <button className="btn-ghost" style={{ width: '100%', textAlign: 'left', padding: '16px 0' }} onClick={() => { openModal('auth'); setMobileMenuOpen(false); }}>
                 {t('nav.login')}
               </button>
             </li>
-            <li className="mobile-only" style={{ borderBottom: 'none', paddingTop: '20px' }}>
+            <li className="mobile-only" style={{ borderBottom: 'none', paddingTop: '16px' }}>
               <button className="btn-full" onClick={() => { openModal('auth'); setMobileMenuOpen(false); }}>
                 {t('nav.apply')}
               </button>
             </li>
           </ul>
           <div className="nav-actions">
+            <button id="navCta" className={hiddenCta ? 'hidden-cta' : ''} onClick={() => openModal('auth')}>
+              {t('nav.apply')}
+            </button>
             <select
               className="form-select"
               style={{ width: 'auto', padding: '5px 30px 5px 10px', fontSize: '12px', border: '1px solid var(--border)', backgroundPosition: 'right 8px center' }}
@@ -113,9 +116,6 @@ export default function Navbar() {
               <option value="DE">🇩🇪 DE</option>
               <option value="IT">🇮🇹 IT</option>
             </select>
-            <button id="navCta" className={hiddenCta ? 'hidden-cta' : ''} onClick={() => openModal('auth')}>
-              {t('nav.apply')}
-            </button>
             <button className="nav-toggle" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} aria-label="Toggle menu">
               {mobileMenuOpen ? (
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

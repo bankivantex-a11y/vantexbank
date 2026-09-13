@@ -7,6 +7,9 @@ import en from '@/lib/dictionaries/en.json';
 import kw from '@/lib/dictionaries/kw.json';
 import es from '@/lib/dictionaries/es.json';
 import de from '@/lib/dictionaries/de.json';
+import it from '@/lib/dictionaries/it.json';
+import sl from '@/lib/dictionaries/sl.json';
+import lt from '@/lib/dictionaries/lt.json';
 
 type ModalId = 'auth' | 'app' | null;
 type Locale = 'FR' | 'EN' | 'KW' | 'SL' | 'ES' | 'LT' | 'DE' | 'IT';
@@ -16,7 +19,10 @@ const dictionaries: Record<string, any> = {
   EN: en,
   KW: kw,
   ES: es,
-  DE: de
+  DE: de,
+  IT: it,
+  SL: sl,
+  LT: lt
 };
 
 interface AppStateValue {

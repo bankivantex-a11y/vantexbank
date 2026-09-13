@@ -39,7 +39,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <div className="footer-head">Assistance</div>
+            <div className="footer-head">{t('footer.assist')}</div>
             <ul className="footer-links">
               <li>
                 <SmartLink href="/aide">{t('nav.how')}</SmartLink>
@@ -56,31 +56,31 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <div className="footer-head">Légal</div>
+            <div className="footer-head">{t('footer.legal')}</div>
             <ul className="footer-links">
               <li>
-                <SmartLink href="/mentions-legales">Mentions légales</SmartLink>
+                <SmartLink href="/mentions-legales">{t('footer.mentions')}</SmartLink>
               </li>
               <li>
-                <SmartLink href="/cookies">RGPD &amp; Cookies</SmartLink>
+                <SmartLink href="/cookies">{t('footer.cookies')}</SmartLink>
               </li>
               <li>
-                <SmartLink href="/conditions-generales">Conditions générales</SmartLink>
+                <SmartLink href="/conditions-generales">{t('footer.terms')}</SmartLink>
               </li>
               <li>
-                <SmartLink href="/confidentialite">Politique de confidentialité</SmartLink>
+                <SmartLink href="/confidentialite">{t('footer.privacy')}</SmartLink>
               </li>
             </ul>
           </div>
         </div>
         <div className="footer-bottom">
           <span className="footer-copy">
-            © 2026 Vantex Bank. Tous droits réservés. SAS Cap Au Nord — ORIAS 14807766.
+            © 2026 Vantex Bank. {t('footer.rights')}
           </span>
           <div className="footer-legal">
-            <SmartLink href="/mentions-legales">Accessibilité</SmartLink>
+            <SmartLink href="/mentions-legales">{t('footer.accessibility')}</SmartLink>
             <SmartLink href="/cookies">Cookies</SmartLink>
-            <SmartLink href="/">Plan du site</SmartLink>
+            <SmartLink href="/">{t('footer.sitemap')}</SmartLink>
           </div>
         </div>
       </div>

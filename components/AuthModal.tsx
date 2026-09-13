@@ -4,17 +4,18 @@ import { useState } from 'react';
 import { useAppState } from './AppState';
 
 export default function AuthModal() {
-  const { activeModal, closeModal, openModal } = useAppState();
+  const { activeModal, closeModal, openModal, t } = useAppState();
   const [tab, setTab] = useState<'login' | 'register'>('login');
   const [loginEmail, setLoginEmail] = useState('');
+  const [loginPwd, setLoginPwd] = useState('');
   const [regEmail, setRegEmail] = useState('');
   const [regPwd, setRegPwd] = useState('');
 
   const isOpen = activeModal === 'auth';
 
   function handleLogin() {
-    if (!loginEmail.trim()) {
-      alert('Veuillez saisir votre e-mail.');
+    if (!loginEmail.trim() || !loginPwd) {
+      alert(t('auth.alert_login'));
       return;
     }
     closeModal();
@@ -23,7 +24,7 @@ export default function AuthModal() {
 
   function handleRegister() {
     if (!regEmail.trim() || !regPwd) {
-      alert('Veuillez remplir tous les champs.');
+      alert(t('auth.alert_register'));
       return;
     }
     closeModal();
@@ -52,82 +53,88 @@ export default function AuthModal() {
 
           <div className="auth-tabs">
             <button className={`auth-tab ${tab === 'login' ? 'active' : ''}`} onClick={() => setTab('login')}>
-              Se connecter
+              {t('auth.login_tab')}
             </button>
             <button className={`auth-tab ${tab === 'register' ? 'active' : ''}`} onClick={() => setTab('register')}>
-              Créer un compte
+              {t('auth.register_tab')}
             </button>
           </div>
 
           {tab === 'login' ? (
-            <div>
+            <div key="login-form">
               <div className="form-group">
-                <label className="form-label">Adresse e-mail</label>
+                <label className="form-label">{t('auth.email_label')}</label>
                 <input
                   type="email"
                   className="form-input"
-                  placeholder="vous@email.com"
+                  placeholder={t('auth.email_placeholder')}
                   value={loginEmail}
                   onChange={(e) => setLoginEmail(e.target.value)}
                 />
               </div>
               <div className="form-group">
-                <label className="form-label">Mot de passe</label>
-                <input type="password" className="form-input" placeholder="••••••••" />
+                <label className="form-label">{t('auth.pwd_label')}</label>
+                <input
+                  type="password"
+                  className="form-input"
+                  placeholder={t('auth.pwd_placeholder')}
+                  value={loginPwd}
+                  onChange={(e) => setLoginPwd(e.target.value)}
+                />
               </div>
               <button className="btn-full" onClick={handleLogin}>
-                Se connecter
+                {t('auth.login_btn')}
               </button>
               <div className="auth-or">
                 <div className="auth-or-line"></div>
-                <span className="auth-or-txt">ou</span>
+                <span className="auth-or-txt">{t('auth.or')}</span>
                 <div className="auth-or-line"></div>
               </div>
               <p className="auth-switch">
-                Pas de compte ?{' '}
-                <a onClick={() => setTab('register')}>Créer mon compte</a>
+                {t('auth.no_account')}{' '}
+                <a onClick={() => setTab('register')}>{t('auth.create_account')}</a>
               </p>
             </div>
           ) : (
-            <div>
+            <div key="register-form">
               <div className="form-row">
                 <div className="form-group">
-                  <label className="form-label">Prénom</label>
+                  <label className="form-label">{t('auth.firstname')}</label>
                   <input type="text" className="form-input" placeholder="Thomas" />
                 </div>
                 <div className="form-group">
-                  <label className="form-label">Nom</label>
+                  <label className="form-label">{t('auth.lastname')}</label>
                   <input type="text" className="form-input" placeholder="Müller" />
                 </div>
               </div>
               <div className="form-group">
-                <label className="form-label">E-mail</label>
+                <label className="form-label">{t('auth.email_label')}</label>
                 <input
                   type="email"
                   className="form-input"
-                  placeholder="vous@email.com"
+                  placeholder={t('auth.email_placeholder')}
                   value={regEmail}
                   onChange={(e) => setRegEmail(e.target.value)}
                 />
               </div>
               <div className="form-group">
-                <label className="form-label">Mot de passe</label>
+                <label className="form-label">{t('auth.pwd_label')}</label>
                 <input
                   type="password"
                   className="form-input"
-                  placeholder="Min. 8 caractères"
+                  placeholder={t('auth.pwd_hint')}
                   value={regPwd}
                   onChange={(e) => setRegPwd(e.target.value)}
                 />
               </div>
               <div className="form-group">
-                <label className="form-label">Date de naissance</label>
+                <label className="form-label">{t('auth.birthdate')}</label>
                 <input type="date" className="form-input" />
               </div>
               <div className="form-group">
-                <label className="form-label">Pays de résidence</label>
+                <label className="form-label">{t('auth.residence')}</label>
                 <select className="form-select" defaultValue="">
-                  <option value="">Sélectionner</option>
+                  <option value="">{t('auth.select')}</option>
                   <option>France</option>
                   <option>Belgique</option>
                   <option>Suisse</option>
@@ -144,10 +151,10 @@ export default function AuthModal() {
                 </select>
               </div>
               <button className="btn-full" onClick={handleRegister}>
-                Créer mon compte
+                {t('auth.create_account')}
               </button>
               <p className="auth-switch">
-                Déjà un compte ? <a onClick={() => setTab('login')}>Me connecter</a>
+                {t('auth.have_account')} <a onClick={() => setTab('login')}>{t('auth.login_link')}</a>
               </p>
             </div>
           )}

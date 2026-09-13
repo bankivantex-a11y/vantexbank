@@ -63,7 +63,7 @@ export default function Simulator() {
                     className={`dur-pill ${months === opt.months ? 'active' : ''}`}
                     onClick={() => setMonths(opt.months)}
                   >
-                    {opt.label}
+                    {opt.months % 12 === 0 && opt.months >= 60 ? `${opt.months / 12} ${t('common.years')}` : `${opt.months} ${t('common.months')}`}
                   </button>
                 ))}
               </div>
@@ -79,7 +79,7 @@ export default function Simulator() {
               <div className="res-lbl">{t('sim.res_monthly')}</div>
               <div className="res-val">{fmt(loan.monthly, locale)}</div>
               <div className="res-sub">
-                {t('sim.mini_duration')}: <span>{months} mois</span>
+                {t('sim.mini_duration')}: <span>{months} {t('common.months')}</span>
               </div>
               <div className="res-grid">
                 <div className="res-item">
@@ -109,16 +109,14 @@ export default function Simulator() {
               </div>
               <div className="result-mini">
                 <div className="mini-lbl">{t('sim.mini_duration')}</div>
-                <div className="mini-val">{months} mois</div>
+                <div className="mini-val">{months} {t('common.months')}</div>
               </div>
               <div className="result-mini">
                 <div className="mini-lbl">{t('sim.mini_first')}</div>
                 <div className="mini-val">{firstPaymentLabel}</div>
               </div>
             </div>
-            <p style={{ fontSize: 11, color: 'var(--muted)', lineHeight: 1.6 }}>
-              {t('sim.disclaimer')}
-            </p>
+
           </Reveal>
         </div>
       </div>
