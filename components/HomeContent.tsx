@@ -4,15 +4,17 @@ import Reveal from './Reveal';
 import { useAppState } from './AppState';
 import Image from 'next/image';
 
+import SmartLink from './SmartLink';
+
 export default function HomeContent() {
   const { t, openModal } = useAppState();
 
   const amounts = [500, 1000, 2000, 3000];
   const solutions = [
-    { title: t('home.solutions.no_proof_title'), desc: t('home.solutions.no_proof_desc'), img: '/images/souris.jpeg' },
-    { title: t('home.solutions.online_title'), desc: t('home.solutions.online_desc'), img: '/images/pret personnel.jpeg' },
-    { title: t('home.solutions.no_refusal_title'), desc: t('home.solutions.no_refusal_desc'), img: '/images/joie familiale.jpeg' },
-    { title: t('home.solutions.immediate_title'), desc: t('home.solutions.immediate_desc'), img: '/images/accord.jpeg' },
+    { title: t('home.solutions.no_proof_title'), desc: t('home.solutions.no_proof_desc'), img: '/images/souris.jpeg', href: '/credit-sans-justificatif' },
+    { title: t('home.solutions.online_title'), desc: t('home.solutions.online_desc'), img: '/images/pret personnel.jpeg', href: '/pret-en-ligne' },
+    { title: t('home.solutions.no_refusal_title'), desc: t('home.solutions.no_refusal_desc'), img: '/images/joie familiale.jpeg', href: '/credit-sans-refus' },
+    { title: t('home.solutions.immediate_title'), desc: t('home.solutions.immediate_desc'), img: '/images/accord.jpeg', href: '/credit-immediat' },
   ];
 
   return (
@@ -34,9 +36,9 @@ export default function HomeContent() {
                 <div className="amount-body">
                   <div className="amount-val">{amount}€</div>
                   <p className="amount-dur">{t('home.duration_label')}</p>
-                  <button className="amount-link" onClick={() => openModal('auth')}>
+                  <SmartLink href="/pret-personnel" className="amount-link">
                     {t('home.learn_more')}
-                  </button>
+                  </SmartLink>
                 </div>
               </Reveal>
             ))}
@@ -61,9 +63,9 @@ export default function HomeContent() {
                 <div className="sol-body">
                   <h3 className="sol-card-title">{sol.title}</h3>
                   <p className="sol-card-desc">{sol.desc}</p>
-                  <button className="sol-link" onClick={() => openModal('auth')}>
+                  <SmartLink href={sol.href} className="sol-link">
                     {t('home.solutions.read_article')}
-                  </button>
+                  </SmartLink>
                 </div>
               </Reveal>
             ))}
