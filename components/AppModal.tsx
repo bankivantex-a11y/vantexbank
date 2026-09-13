@@ -56,7 +56,36 @@ export default function AppModal() {
     }
   }, [isOpen]);
 
+  function validateStep(currentStep: Step): boolean {
+    if (currentStep === 1) {
+      if (!formData.job || !formData.income || !formData.purpose || amount <= 0) {
+        alert("Veuillez remplir tous les champs du projet.");
+        return false;
+      }
+    } else if (currentStep === 2) {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!formData.firstName || !formData.lastName || !formData.email || !formData.phone || !formData.birthDate || !formData.nationality || !formData.address) {
+        alert("Veuillez remplir toutes vos informations personnelles.");
+        return false;
+      }
+      if (!emailRegex.test(formData.email)) {
+        alert("Veuillez saisir une adresse e-mail valide.");
+        return false;
+      }
+    } else if (currentStep === 3) {
+      if (!uploaded.id || !uploaded.payslips || !uploaded.statements) {
+        alert("Veuillez téléverser tous les documents demandés.");
+        return false;
+      }
+    }
+    return true;
+  }
+
   function goToStep(target: Step) {
+    if (target > step && !validateStep(step)) {
+      return;
+    }
+
     if (target <= step) {
       setStep(target);
       boxRef.current?.scrollTo({ top: 0 });
