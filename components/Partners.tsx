@@ -10,7 +10,7 @@ const partners = [
   { name: 'Sofinco', logo: '/images/sofinco.png', h: 75, hMob: 45 },
   { name: 'Oney', logo: '/images/Oney-logo.jpg', h: 70, hMob: 42 },
   { name: 'AXA', logo: '/images/AXA-Logo.png', h: 80, hMob: 50 },
-  { name: 'Vantex', logo: '/images/vantex.webp', h: 75, hMob: 45 },
+  { name: 'Vantex', logo: '/images/favicon/logo.jpeg', h: 75, hMob: 45 },
   { name: 'Noris', logo: '/images/noris.webp', h: 70, hMob: 42 },
   { name: 'Revolut', logo: '/images/revolut.png', h: 75, hMob: 45 },
   { name: 'Franfinance', logo: '/images/franfinance-logo.jpg', h: 65, hMob: 38 },
