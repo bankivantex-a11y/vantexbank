@@ -59,8 +59,8 @@ export default function ContactPage() {
                   <div>
                     <div style={{ fontWeight: 700, color: 'var(--navy)' }}>{t('contact_page.email')}</div>
                     <div style={{ color: 'var(--muted)' }}>
-                      <a href="mailto:contact@vantexbank.com" style={{ color: 'inherit', textDecoration: 'none' }}>
-                        contact@vantexbank.com
+                      <a href="mailto:contact@bankvantex.com" style={{ color: 'inherit', textDecoration: 'none' }}>
+                        contact@bankvantex.com
                       </a>
                     </div>
                   </div>
