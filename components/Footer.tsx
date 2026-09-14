@@ -79,7 +79,7 @@ export default function Footer() {
           </span>
           <div className="footer-legal">
             <SmartLink href="/mentions-legales">{t('footer.accessibility')}</SmartLink>
-            <SmartLink href="/cookies">Cookies</SmartLink>
+            <SmartLink href="/cookies">{t('footer.cookies')}</SmartLink>
             <SmartLink href="/">{t('footer.sitemap')}</SmartLink>
           </div>
         </div>

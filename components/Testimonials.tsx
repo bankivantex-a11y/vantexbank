@@ -10,7 +10,7 @@ export default function Testimonials() {
   const testimonials = [
     {
       stars: '★★★★★',
-      amount: `${t('testimonials.loan_obtained')} 25 000 €`,
+      amount: `${t('testimonials.loan_obtained')} ${fmt(25000, locale)}`,
       text: t('testimonials.t1_text'),
       avatar: 'https://i.pravatar.cc/80?img=47',
       name: 'Sophie L.',
@@ -18,7 +18,7 @@ export default function Testimonials() {
     },
     {
       stars: '★★★★★',
-      amount: `${t('testimonials.loan_obtained')} 12 000 €`,
+      amount: `${t('testimonials.loan_obtained')} ${fmt(12000, locale)}`,
       text: t('testimonials.t2_text'),
       avatar: 'https://i.pravatar.cc/80?img=12',
       name: 'Karim M.',
@@ -26,7 +26,7 @@ export default function Testimonials() {
     },
     {
       stars: '★★★★★',
-      amount: `${t('testimonials.loan_obtained')} 50 000 €`,
+      amount: `${t('testimonials.loan_obtained')} ${fmt(50000, locale)}`,
       text: t('testimonials.t3_text'),
       avatar: 'https://i.pravatar.cc/80?img=33',
       name: 'David T.',
@@ -34,7 +34,7 @@ export default function Testimonials() {
     },
     {
       stars: '★★★★★',
-      amount: `${t('testimonials.loan_obtained')} 8 000 €`,
+      amount: `${t('testimonials.loan_obtained')} ${fmt(8000, locale)}`,
       text: t('testimonials.t4_text'),
       avatar: 'https://i.pravatar.cc/80?img=5',
       name: 'Aïcha B.',
@@ -42,7 +42,7 @@ export default function Testimonials() {
     },
     {
       stars: '★★★★★',
-      amount: `${t('testimonials.loan_obtained')} 30 000 €`,
+      amount: `${t('testimonials.loan_obtained')} ${fmt(30000, locale)}`,
       text: t('testimonials.t5_text'),
       avatar: 'https://i.pravatar.cc/80?img=25',
       name: 'Mei L.',
@@ -50,7 +50,7 @@ export default function Testimonials() {
     },
     {
       stars: '★★★★☆',
-      amount: `${t('testimonials.loan_obtained')} 18 000 €`,
+      amount: `${t('testimonials.loan_obtained')} ${fmt(18000, locale)}`,
       text: t('testimonials.t6_text'),
       avatar: 'https://i.pravatar.cc/80?img=68',
       name: 'Robert P.',

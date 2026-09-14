@@ -60,7 +60,13 @@
     "back": "Retour",
     "continue": "Continuer",
     "submit": "Soumettre",
-    "euro_month": "€/mois"
+    "euro_month": "€/mois",
+    "taeg_fixed": "TAEG fixe",
+    "orias_label": "Numéro ORIAS",
+    "orias_val": "14807766",
+    "free_num_label": "Numéro Gratuit",
+    "phone_val": "0 800 123 456",
+    "per_month": "/ mois"
   },
   "hero": {
     "title": "Votre prêt en ligne, simple & rapide",
@@ -69,7 +75,8 @@
     "cta_sim": "Simuler mon prêt",
     "stat_clients": "Clients satisfaits",
     "stat_rate": "Taux annuel fixe",
-    "stat_guarantee": "Réponse garantie"
+    "stat_guarantee": "Réponse garantie",
+    "stat_guarantee_val": "48h"
   },
   "phone_ui": {
     "hello": "Bonjour 👋",
@@ -206,7 +213,8 @@
     "next2": "Notre équipe analyse votre dossier sous 48h ouvrées et vous contacte si des documents complémentaires sont nécessaires.",
     "next3": "En cas de décision favorable, vous signez l'offre électroniquement — les fonds sont alors virés sous 72 heures.",
     "home_btn": "Retour à l'accueil",
-    "submit_btn": "Soumettre mon dossier ✓"
+    "submit_btn": "Soumettre mon dossier ✓",
+    "email_subject": "Nouvelle demande de prêt"
   },
   "errors": {
     "fill_project": "Veuillez remplir tous les champs de votre projet.",
@@ -220,8 +228,11 @@
   },
   "about": {
     "stat_year": "Année de création",
+    "stat_year_val": "2004",
     "stat_capital": "Capital social",
+    "stat_capital_val": "50M€",
     "stat_presence": "Présence internationale",
+    "stat_presence_val": "UE & Asie",
     "mission": "Notre Mission",
     "mission_text1": "Fondée avec l'ambition d'être un spécialiste du crédit rapide et du financement des particuliers, notre mission est d’accompagner chaque emprunteur vers la solution la plus adaptée à son projet et à sa situation.",
     "mission_text2": "Chez Vantex Bank, vous réalisez votre demande de prêt personnel en ligne et obtenez une réponse de principe immédiate. Notre objectif est simple : vous accompagner à chaque étape pour faciliter et accélérer l'obtention de votre financement.",

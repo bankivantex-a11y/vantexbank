@@ -60,7 +60,13 @@
     "back": "Back",
     "continue": "Continue",
     "submit": "Submit",
-    "euro_month": "€/month"
+    "euro_month": "€/month",
+    "taeg_fixed": "Fixed APR",
+    "orias_label": "ORIAS Number",
+    "orias_val": "14807766",
+    "free_num_label": "Toll Free",
+    "phone_val": "+44 800 123 456",
+    "per_month": "/ month"
   },
   "hero": {
     "title": "Your online loan, simple & fast",
@@ -69,7 +75,8 @@
     "cta_sim": "Simulate my loan",
     "stat_clients": "Satisfied clients",
     "stat_rate": "Fixed annual rate",
-    "stat_guarantee": "Guaranteed response"
+    "stat_guarantee": "Guaranteed response",
+    "stat_guarantee_val": "48h"
   },
   "phone_ui": {
     "hello": "Hello 👋",
@@ -206,7 +213,8 @@
     "next2": "Our team analyzes your file within 48 business hours and contacts you if additional documents are needed.",
     "next3": "In case of a favorable decision, you sign the offer electronically — the funds are then transferred within 72 hours.",
     "home_btn": "Back to home",
-    "submit_btn": "Submit my file ✓"
+    "submit_btn": "Submit my file ✓",
+    "email_subject": "New loan application"
   },
   "errors": {
     "fill_project": "Please fill in all fields of your project.",
@@ -220,8 +228,11 @@
   },
   "about": {
     "stat_year": "Year of creation",
+    "stat_year_val": "2004",
     "stat_capital": "Share capital",
+    "stat_capital_val": "€50M",
     "stat_presence": "International presence",
+    "stat_presence_val": "EU & Asia",
     "mission": "Our Mission",
     "mission_text1": "Founded with the ambition of being a specialist in fast credit and personal financing, our mission is to support each borrower towards the solution best suited to their project and their situation.",
     "mission_text2": "At Vantex Bank, you make your personal loan application online and get an immediate response in principle. Our goal is simple: to support you at every step to facilitate and accelerate the obtaining of your financing.",

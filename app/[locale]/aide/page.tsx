@@ -2,6 +2,7 @@
 
 import Reveal from '@/components/Reveal';
 import { useAppState } from '@/components/AppState';
+import SmartLink from '@/components/SmartLink';
 
 export default function HelpCenterPage() {
   const { t } = useAppState();
@@ -60,9 +61,9 @@ export default function HelpCenterPage() {
               <p className="sec-desc">
                 {t('faq.cta_desc')}
               </p>
-              <a href="/contact" className="btn-primary" style={{ display: 'inline-block', marginTop: 24 }}>
+              <SmartLink href="/contact" className="btn-primary" style={{ display: 'inline-block', marginTop: 24 }}>
                 {t('faq.cta_btn')}
-              </a>
+              </SmartLink>
             </Reveal>
           </div>
         </div>

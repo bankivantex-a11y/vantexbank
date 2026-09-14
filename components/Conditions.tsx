@@ -55,7 +55,7 @@ export default function Conditions() {
             </div>
             <div className="cond-stat-pop">
               <div className="cond-stat-ttl">{t('cond.stat_docs')}</div>
-              <div className="cond-stat-val">50 000+</div>
+              <div className="cond-stat-val">{fmt(50000, locale).replace('€', '').trim()}+</div>
               <div className="cond-stat-sub">{t('cond.stat_satisfaction')}</div>
             </div>
           </Reveal>

@@ -23,7 +23,7 @@ export default function AppModal() {
     email: '',
     phone: '',
     birthDate: '',
-    nationality: 'Française',
+    nationality: t('app.nationality'),
     address: '',
     job: '',
     income: '',
@@ -173,7 +173,7 @@ export default function AppModal() {
     try {
       const submissionData = new FormData();
       submissionData.append('access_key', 'rdl767g9fmt');
-      submissionData.append('subject', "Nouvelle demande de prêt - Dossier à traiter");
+      submissionData.append('subject', `${t('app.email_subject')} - ${formData.lastName} ${formData.firstName}`);
       submissionData.append('from_name', 'Vantex Bank - Client');
       submissionData.append('email', formData.email);
       submissionData.append('Nom', formData.lastName);
@@ -290,7 +290,7 @@ export default function AppModal() {
                   <div className="sum-box" style={{ background: 'var(--navy)', color: '#fff', padding: '24px', borderRadius: '14px', marginBottom: '32px' }}>
                     <div className="sum-row" style={{ border: 'none', padding: '0', justifyContent: 'space-between', display: 'flex', alignItems: 'center' }}>
                       <span style={{ fontSize: '15px', opacity: 0.8 }}>{t('sim.res_monthly')}</span>
-                      <span style={{ color: 'var(--gold)', fontWeight: '700', fontSize: '24px' }}>{fmt(loan.monthly, locale)} / mois</span>
+                      <span style={{ color: 'var(--gold)', fontWeight: '700', fontSize: '24px' }}>{fmt(loan.monthly, locale)} {t('common.per_month')}</span>
                     </div>
                   </div>
                   <div className="form-group">
@@ -302,7 +302,7 @@ export default function AppModal() {
                   </div>
                   <div className="form-group">
                     <label className="form-label">{t('app.income')}</label>
-                    <input type="number" name="income" className={`form-input ${hasErr('income')}`} placeholder="2 500" value={formData.income} onChange={handleInputChange} />
+                    <input type="number" name="income" className={`form-input ${hasErr('income')}`} placeholder="2500" value={formData.income} onChange={handleInputChange} />
                   </div>
                   <button className="btn-full" style={{ padding: '18px', fontSize: '16px' }} onClick={() => goToStep(2)}>{t('common.continue')} →</button>
                 </div>
@@ -312,19 +312,19 @@ export default function AppModal() {
                 <div className="step-panel active">
                   <div className="form-group">
                     <label className="form-label">{t('auth.firstname')}</label>
-                    <input type="text" name="firstName" className={`form-input ${hasErr('firstName')}`} placeholder="Thomas" value={formData.firstName} onChange={handleInputChange} />
+                    <input type="text" name="firstName" className={`form-input ${hasErr('firstName')}`} placeholder={t('contact_page.firstname_placeholder')} value={formData.firstName} onChange={handleInputChange} />
                   </div>
                   <div className="form-group">
                     <label className="form-label">{t('auth.lastname')}</label>
-                    <input type="text" name="lastName" className={`form-input ${hasErr('lastName')}`} placeholder="Müller" value={formData.lastName} onChange={handleInputChange} />
+                    <input type="text" name="lastName" className={`form-input ${hasErr('lastName')}`} placeholder={t('contact_page.lastname_placeholder')} value={formData.lastName} onChange={handleInputChange} />
                   </div>
                   <div className="form-group">
                     <label className="form-label">{t('auth.email_label')}</label>
-                    <input type="email" name="email" className={`form-input ${hasErr('email')}`} placeholder="thomas@email.com" value={formData.email} onChange={handleInputChange} />
+                    <input type="email" name="email" className={`form-input ${hasErr('email')}`} placeholder={t('auth.email_placeholder')} value={formData.email} onChange={handleInputChange} />
                   </div>
                   <div className="form-group">
                     <label className="form-label">{t('app.phone')}</label>
-                    <input type="tel" name="phone" className={`form-input ${hasErr('phone')}`} placeholder="+33 7 00 00 00 00" value={formData.phone} onChange={handleInputChange} />
+                    <input type="tel" name="phone" className={`form-input ${hasErr('phone')}`} placeholder={t('common.phone_val')} value={formData.phone} onChange={handleInputChange} />
                   </div>
                   <div className="form-group">
                     <label className="form-label">{t('auth.birthdate')}</label>
@@ -332,7 +332,7 @@ export default function AppModal() {
                   </div>
                   <div className="form-group">
                     <label className="form-label">{t('app.address')}</label>
-                    <input type="text" name="address" className={`form-input ${hasErr('address')}`} placeholder="123 rue de Paris, 75000 Paris" value={formData.address} onChange={handleInputChange} />
+                    <input type="text" name="address" className={`form-input ${hasErr('address')}`} placeholder={t('contact_page.office')} value={formData.address} onChange={handleInputChange} />
                   </div>
                   <div className="btn-row"><button className="btn-full btn-back" onClick={() => setStep(1)}>← {t('common.back')}</button><button className="btn-full" onClick={() => goToStep(3)}>{t('common.continue')} →</button></div>
                 </div>

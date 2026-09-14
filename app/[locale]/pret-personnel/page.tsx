@@ -26,7 +26,7 @@ export default function PretPersonnelPage() {
                 <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 12 }}>
                   <li style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid var(--border)', paddingBottom: 8 }}>
                     <span style={{ color: 'var(--muted)' }}>{t('services.personal.mod_rate')}</span>
-                    <strong>TAEG fixe</strong>
+                    <strong>{t('common.taeg_fixed')}</strong>
                   </li>
                   <li style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid var(--border)', paddingBottom: 8 }}>
                     <span style={{ color: 'var(--muted)' }}>{t('services.personal.mod_amount')}</span>
@@ -65,8 +65,8 @@ export default function PretPersonnelPage() {
                   {t('services.personal.sol_desc')}
                 </p>
                 <div style={{ marginTop: 24, padding: 16, background: 'rgba(255,255,255,0.05)', borderRadius: 12 }}>
-                  <small style={{ opacity: 0.6 }}>Numéro ORIAS</small>
-                  <div style={{ fontSize: 20, fontWeight: 'bold' }}>14807766</div>
+                  <small style={{ opacity: 0.6 }}>{t('common.orias_label')}</small>
+                  <div style={{ fontSize: 20, fontWeight: 'bold' }}>{t('common.orias_val')}</div>
                 </div>
               </div>
             </Reveal>

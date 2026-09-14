@@ -46,13 +46,13 @@ export default function Hero() {
               <div className="stat-div"></div>
               <div className="stat-item">
                 <span className="stat-value">
-                  2,75<small style={{ fontSize: 18 }}>%</small>
+                  {(2.75).toLocaleString(locale === 'EN' ? 'en-US' : 'fr-FR', { minimumFractionDigits: 2 })}<small style={{ fontSize: 18 }}>%</small>
                 </span>
                 <span className="stat-label">{t('hero.stat_rate')}</span>
               </div>
               <div className="stat-div"></div>
               <div className="stat-item">
-                <span className="stat-value">48h</span>
+                <span className="stat-value">{t('hero.stat_guarantee_val')}</span>
                 <span className="stat-label">{t('hero.stat_guarantee')}</span>
               </div>
             </div>
@@ -69,17 +69,17 @@ export default function Hero() {
                   <div className="phone-content">
                     <div>
                       <div className="phone-greeting">{t('phone_ui.hello')}</div>
-                      <div className="phone-name">Thomas Müller</div>
+                      <div className="phone-name">{t('contact_page.firstname_placeholder')} {t('contact_page.lastname_placeholder')}</div>
                     </div>
                     <div>
                       <div className="phone-bal-lbl">{t('phone_ui.balance_label')}</div>
                       <div className="phone-balance">
-                        <span className="gold">28 500</span> €
+                        <span className="gold">{fmt(28500, locale).replace('€', '').trim()}</span> €
                       </div>
                     </div>
                     <div className="phone-approved">
                       <div className="phone-approved-dot"></div>
-                      <span className="phone-approved-txt">{t('phone_ui.approved')} — 15 000 €</span>
+                      <span className="phone-approved-txt">{t('phone_ui.approved')} — {fmt(15000, locale)}</span>
                     </div>
                     <div className="phone-txns">
                       <div className="phone-txn">
@@ -92,7 +92,7 @@ export default function Hero() {
                             <div className="phone-txn-dt">{t('phone_ui.today')}</div>
                           </div>
                         </div>
-                        <div className="phone-txn-amt c-green">+15 000 €</div>
+                        <div className="phone-txn-amt c-green">+{fmt(15000, locale)}</div>
                       </div>
                       <div className="phone-txn">
                         <div className="phone-txn-row">
@@ -104,7 +104,7 @@ export default function Hero() {
                             <div className="phone-txn-dt">12 Sep</div>
                           </div>
                         </div>
-                        <div className="phone-txn-amt c-orange">-850 €</div>
+                        <div className="phone-txn-amt c-orange">-{fmt(850, locale)}</div>
                       </div>
                       <div className="phone-txn">
                         <div className="phone-txn-row">
@@ -116,7 +116,7 @@ export default function Hero() {
                             <div className="phone-txn-dt">11 Sep</div>
                           </div>
                         </div>
-                        <div className="phone-txn-amt c-grey">-234 €</div>
+                        <div className="phone-txn-amt c-grey">-{fmt(234, locale)}</div>
                       </div>
                     </div>
                   </div>
@@ -126,7 +126,7 @@ export default function Hero() {
               {/* Floating cards */}
               <div className="float-card fc1">
                 <div className="fc-title">{t('sim.res_monthly')}</div>
-                <div className="fc-value">428 €</div>
+                <div className="fc-value">{fmt(428, locale)}</div>
                 <div className="fc-badge">
                   <div className="fc-badge-dot"></div>
                   <span className="fc-badge-txt">36 {t('common.months')}</span>
@@ -134,7 +134,7 @@ export default function Hero() {
               </div>
               <div className="float-card fc2">
                 <div className="fc-title">{t('hero.stat_rate')}</div>
-                <div className="fc-value g">2,75%</div>
+                <div className="fc-value g">{(2.75).toLocaleString(locale === 'EN' ? 'en-US' : 'fr-FR', { minimumFractionDigits: 2 })}%</div>
                 <div className="fc-badge">
                   <div className="fc-badge-dot"></div>
                   <span className="fc-badge-txt">{t('phone_ui.fixed_rate_guaranteed')}</span>

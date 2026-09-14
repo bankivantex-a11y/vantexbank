@@ -32,7 +32,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <div style={{ fontWeight: 700, color: 'var(--navy)' }}>{t('contact_page.phone')}</div>
-                    <div style={{ color: 'var(--muted)' }}>0 800 123 456 (Numéro Gratuit)</div>
+                    <div style={{ color: 'var(--muted)' }}>{t('common.phone_val')} ({t('common.free_num_label')})</div>
                   </div>
                 </div>
                 <div style={{ display: 'flex', gap: 16, alignItems: 'center' }}>
@@ -50,7 +50,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <div style={{ fontWeight: 700, color: 'var(--navy)' }}>{t('contact_page.office')}</div>
-                    <div style={{ color: 'var(--muted)' }}>12 Avenue de la Banque, 75008 Paris</div>
+                    <div style={{ color: 'var(--muted)' }}>{t('legal.mentions_s2_text3')}</div>
                   </div>
                 </div>
               </div>

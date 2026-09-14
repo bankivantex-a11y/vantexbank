@@ -34,7 +34,7 @@ export default function HomeContent() {
                    <Image src="/images/joie familiale.jpeg" alt={`${amount}€`} fill style={{ objectFit: 'cover' }} />
                 </div>
                 <div className="amount-body">
-                  <div className="amount-val">{amount}€</div>
+                  <div className="amount-val">{fmt(amount, locale)}</div>
                   <p className="amount-dur">{t('home.duration_label')}</p>
                   <SmartLink href="/pret-personnel" className="amount-link">
                     {t('home.learn_more')}

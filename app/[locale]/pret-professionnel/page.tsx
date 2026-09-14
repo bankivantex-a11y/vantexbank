@@ -38,7 +38,7 @@ export default function PretProfessionnelPage() {
                 <p style={{ fontSize: 14, color: 'var(--muted)', lineHeight: 1.6 }}>
                   {t('pret_professionnel.support_desc')}
                 </p>
-                <div style={{ marginTop: 16, fontSize: 13, fontWeight: 'bold' }}>SAS Cap Au Nord - ORIAS 14807766</div>
+                <div style={{ marginTop: 16, fontSize: 13, fontWeight: 'bold' }}>SAS Cap Au Nord - {t('common.orias_label')} {t('common.orias_val')}</div>
               </div>
             </Reveal>
           </div>

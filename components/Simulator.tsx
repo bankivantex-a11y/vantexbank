@@ -105,7 +105,7 @@ export default function Simulator() {
               </div>
               <div className="result-mini">
                 <div className="mini-lbl">{t('sim.mini_rate')}</div>
-                <div className="mini-val">0,229%</div>
+                <div className="mini-val">{(0.229).toLocaleString(locale === 'EN' ? 'en-US' : 'fr-FR', { minimumFractionDigits: 3 })}%</div>
               </div>
               <div className="result-mini">
                 <div className="mini-lbl">{t('sim.mini_duration')}</div>

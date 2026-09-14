@@ -20,17 +20,17 @@ export default function AboutPage() {
               </p>
               <div className="hero-stats" style={{ marginTop: 32 }}>
                 <div className="stat-item">
-                  <span className="stat-value">2004</span>
+                  <span className="stat-value">{t('about.stat_year_val')}</span>
                   <span className="stat-label">{t('about.stat_year')}</span>
                 </div>
                 <div className="stat-div"></div>
                 <div className="stat-item">
-                  <span className="stat-value">50M€</span>
+                  <span className="stat-value">{t('about.stat_capital_val')}</span>
                   <span className="stat-label">{t('about.stat_capital')}</span>
                 </div>
                 <div className="stat-div"></div>
                 <div className="stat-item">
-                  <span className="stat-value">UE & Asie</span>
+                  <span className="stat-value">{t('about.stat_presence_val')}</span>
                   <span className="stat-label">{t('about.stat_presence')}</span>
                 </div>
               </div>
