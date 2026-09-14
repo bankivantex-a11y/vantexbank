@@ -2,16 +2,17 @@
 
 import { useRouter } from 'next/navigation';
 import { useAppState } from './AppState';
-import { ReactNode } from 'react';
+import { ReactNode, CSSProperties } from 'react';
 
 interface SmartLinkProps {
   href: string;
   children: ReactNode;
   className?: string;
+  style?: CSSProperties;
   onClick?: () => void;
 }
 
-export default function SmartLink({ href, children, className, onClick }: SmartLinkProps) {
+export default function SmartLink({ href, children, className, style, onClick }: SmartLinkProps) {
   const router = useRouter();
   const { triggerLoading, locale } = useAppState();
 
@@ -37,7 +38,7 @@ export default function SmartLink({ href, children, className, onClick }: SmartL
   };
 
   return (
-    <a href={localizedHref} className={className} onClick={handleClick}>
+    <a href={localizedHref} className={className} style={style} onClick={handleClick}>
       {children}
     </a>
   );
