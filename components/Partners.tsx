@@ -2,39 +2,50 @@
 
 import Reveal from './Reveal';
 import { useAppState } from './AppState';
+import { useEffect, useState } from 'react';
 
 const partners = [
-  { name: 'Cofidis', logo: '/images/Cofidis.png', height: '75px' },
-  { name: 'Cetelem', logo: '/images/cetelem.png', height: '65px' },
-  { name: 'Sofinco', logo: '/images/sofinco.png', height: '75px' },
-  { name: 'Oney', logo: '/images/Oney-logo.jpg', height: '70px' },
-  { name: 'AXA', logo: '/images/AXA-Logo.png', height: '80px' },
-  { name: 'Noris', logo: '/images/noris.webp', height: '70px' },
-  { name: 'Revolut', logo: '/images/revolut.png', height: '75px' },
-  { name: 'Franfinance', logo: '/images/franfinance-logo.jpg', height: '65px' },
-  { name: 'FLOA Bank', logo: '/images/floa-bank.jpg', height: '70px' },
-  { name: 'Younited Credit', logo: '/images/younited.jpeg', height: '75px' },
+  { name: 'Cofidis', logo: '/images/Cofidis.png', h: 75, hMob: 45 },
+  { name: 'Cetelem', logo: '/images/cetelem.png', h: 65, hMob: 40 },
+  { name: 'Sofinco', logo: '/images/sofinco.png', h: 75, hMob: 45 },
+  { name: 'Oney', logo: '/images/Oney-logo.jpg', h: 70, hMob: 42 },
+  { name: 'AXA', logo: '/images/AXA-Logo.png', h: 80, hMob: 50 },
+  { name: 'Noris', logo: '/images/noris.webp', h: 70, hMob: 42 },
+  { name: 'Revolut', logo: '/images/revolut.png', h: 75, hMob: 45 },
+  { name: 'Franfinance', logo: '/images/franfinance-logo.jpg', h: 65, hMob: 38 },
+  { name: 'FLOA Bank', logo: '/images/floa-bank.jpg', h: 70, hMob: 42 },
+  { name: 'Younited Credit', logo: '/images/younited.jpeg', h: 75, hMob: 45 },
 ];
 
 export default function Partners() {
   const { t } = useAppState();
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   return (
-    <section className="section" style={{ background: '#fff', padding: '60px 0', borderTop: '1px solid var(--border)' }}>
+    <section className="section" style={{ background: '#fff', padding: isMobile ? '40px 0' : '60px 0', borderTop: '1px solid var(--border)' }}>
       <div className="container">
-        <div className="sec-header center" style={{ marginBottom: '50px' }}>
+        <div className="sec-header center" style={{ marginBottom: isMobile ? '30px' : '50px' }}>
           <Reveal>
-            <h2 className="sec-title" style={{ fontSize: '24px', color: 'var(--navy)', fontFamily: 'var(--font-dm-serif)', opacity: 0.9 }}>
+            <h2 className="sec-title" style={{ fontSize: isMobile ? '20px' : '24px', color: 'var(--navy)', fontFamily: 'var(--font-dm-serif)', opacity: 0.9 }}>
               {t('home.partners_title')}
             </h2>
           </Reveal>
         </div>
         <div className="partners-list" style={{
-          display: 'flex',
-          flexWrap: 'wrap',
+          display: 'grid',
+          gridTemplateColumns: isMobile ? 'repeat(2, 1fr)' : 'repeat(auto-fit, minmax(150px, 1fr))',
           alignItems: 'center',
           justifyContent: 'center',
-          gap: '50px 80px'
+          gap: isMobile ? '30px 20px' : '50px 80px',
+          maxWidth: '1200px',
+          margin: '0 auto'
         }}>
           {partners.map((partner, i) => (
             <Reveal key={partner.name} delay={i * 0.05}>
@@ -42,23 +53,23 @@ export default function Partners() {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                minWidth: '150px'
+                padding: '0 10px'
               }}>
                 <img
                   src={partner.logo}
                   alt={partner.name}
                   style={{
-                    height: partner.height,
+                    height: isMobile ? `${partner.hMob}px` : `${partner.h}px`,
                     width: 'auto',
-                    maxWidth: '220px',
+                    maxWidth: '100%',
                     objectFit: 'contain',
                     transition: 'transform 0.3s ease'
                   }}
                   onMouseOver={(e) => {
-                    e.currentTarget.style.transform = 'scale(1.05)';
+                    if (!isMobile) e.currentTarget.style.transform = 'scale(1.05)';
                   }}
                   onMouseOut={(e) => {
-                    e.currentTarget.style.transform = 'scale(1)';
+                    if (!isMobile) e.currentTarget.style.transform = 'scale(1)';
                   }}
                 />
               </div>
