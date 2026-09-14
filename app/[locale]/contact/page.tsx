@@ -51,6 +51,7 @@ export default function ContactPage() {
                     </div>
                   </div>
                 </div>
+
                 <div style={{ display: 'flex', gap: 16, alignItems: 'center' }}>
                   <div className="step-ico-wrap" style={{ width: 50, height: 50, margin: 0 }}>
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
@@ -114,6 +115,45 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+
+      {/* Bouton Flottant WhatsApp en bas à droite */}
+      <a
+        href={`https://wa.me/${t('common.phone_val').replace(/[^0-9]/g, '')}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          position: 'fixed',
+          bottom: '30px',
+          right: '30px',
+          backgroundColor: '#25D366',
+          width: '60px',
+          height: '60px',
+          borderRadius: '50%',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          boxShadow: '0 4px 16px rgba(0, 0, 0, 0.25)',
+          zIndex: 9999,
+          transition: 'transform 0.3s ease, background-color 0.3s ease',
+          cursor: 'pointer'
+        }}
+        onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.1)'}
+        onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
+        title="Discuter sur WhatsApp"
+      >
+        <svg
+          width="34"
+          height="34"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="white"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+        </svg>
+      </a>
     </div>
   );
 }
