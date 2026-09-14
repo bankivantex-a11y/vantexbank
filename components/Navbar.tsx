@@ -1,11 +1,25 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import { usePathname, useRouter } from 'next/navigation';
 import { useAppState } from './AppState';
 import SmartLink from './SmartLink';
 
 export default function Navbar() {
   const { openModal, locale, setLocale, t } = useAppState();
+  const pathname = usePathname();
+  const router = useRouter();
+
+  const handleLocaleChange = (newLocale: string) => {
+    setLocale(newLocale as any);
+
+    // Remplacer le segment de langue dans l'URL actuelle
+    const segments = pathname.split('/');
+    segments[1] = newLocale.toLowerCase();
+    const newPath = segments.join('/');
+
+    router.push(newPath);
+  };
   const [scrolled, setScrolled] = useState(false);
   const [hiddenCta, setHiddenCta] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -82,7 +96,7 @@ export default function Navbar() {
                 className="form-select"
                 style={{ width: '100%', padding: '10px' }}
                 value={locale}
-                onChange={(e) => setLocale(e.target.value as any)}
+                onChange={(e) => handleLocaleChange(e.target.value)}
               >
                 <option value="FR">🇫🇷 Français</option>
                 <option value="EN">🇬🇧 English</option>
@@ -113,7 +127,7 @@ export default function Navbar() {
               className="form-select"
               style={{ width: 'auto', padding: '5px 30px 5px 10px', fontSize: '12px', border: '1px solid var(--border)', backgroundPosition: 'right 8px center' }}
               value={locale}
-              onChange={(e) => setLocale(e.target.value as any)}
+              onChange={(e) => handleLocaleChange(e.target.value)}
             >
               <option value="FR">🇫🇷 FR</option>
               <option value="EN">🇬🇧 EN</option>

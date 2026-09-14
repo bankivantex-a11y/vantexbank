@@ -39,31 +39,39 @@ interface AppStateValue {
   locale: Locale;
   setLocale: (l: Locale) => void;
   t: (key: string) => any;
+  dict: any;
 }
 
 const AppStateContext = createContext<AppStateValue | null>(null);
 
-export function AppStateProvider({ children }: { children: ReactNode }) {
+export function AppStateProvider({
+  children,
+  initialLocale,
+  initialDictionary
+}: {
+  children: ReactNode;
+  initialLocale?: string;
+  initialDictionary?: any;
+}) {
   const [amount, setAmount] = useState(15000);
   const [months, setMonths] = useState(36);
   const [activeModal, setActiveModal] = useState<ModalId>(null);
   const [isLoading, setIsLoading] = useState(false);
-  const [locale, setLocaleState] = useState<Locale>('FR');
+  const [locale, setLocaleState] = useState<Locale>((initialLocale as Locale) || 'FR');
+  const [currentDict, setCurrentDict] = useState(initialDictionary || dictionaries['FR']);
 
-  // Charger la langue au montage
+  // Mettre à jour le dictionnaire quand la langue change (via l'URL ou le sélecteur)
   useEffect(() => {
-    const saved = localStorage.getItem('vantex-locale') as Locale;
-    const browserLang = navigator.language.split('-')[0].toUpperCase();
-    const supported: Locale[] = ['FR', 'EN', 'KW', 'SL', 'ES', 'LT', 'DE', 'IT'];
-
-    if (saved && supported.includes(saved)) {
-      setLocaleState(saved);
-    } else if (supported.includes(browserLang as Locale)) {
-      setLocaleState(browserLang as Locale);
-    } else if (browserLang === 'AR') {
-      setLocaleState('KW');
+    if (initialLocale && initialLocale !== locale) {
+      setLocaleState(initialLocale as Locale);
     }
-  }, []);
+  }, [initialLocale]);
+
+  useEffect(() => {
+    if (initialDictionary) {
+      setCurrentDict(initialDictionary);
+    }
+  }, [initialDictionary]);
 
   const setLocale = (l: Locale) => {
     setLocaleState(l);
@@ -72,13 +80,8 @@ export function AppStateProvider({ children }: { children: ReactNode }) {
 
   const t = useMemo(() => {
     return (key: string) => {
-      const getDict = (l: string) => {
-        const d = dictionaries[l] || dictionaries['FR'];
-        return d.default || d;
-      };
-
-      const dict = getDict(locale);
-      const fallbackDict = getDict('FR');
+      const dict = currentDict?.default || currentDict || dictionaries['FR'];
+      const fallbackDict = dictionaries['FR'].default || dictionaries['FR'];
 
       const getValue = (d: any, k: string) => {
         const keys = k.split('.');
@@ -91,22 +94,9 @@ export function AppStateProvider({ children }: { children: ReactNode }) {
 
       return getValue(dict, key) || getValue(fallbackDict, key) || key;
     };
-  }, [locale]);
+  }, [locale, currentDict]);
 
   const loan = useMemo(() => calcLoan(amount, months), [amount, months]);
-
-  useEffect(() => {
-    // Synchronize simulator with form state if needed
-  }, [amount, months]);
-
-  const triggerLoading = (callback?: () => void) => {
-    setIsLoading(true);
-    const delay = 2000 + Math.random() * 1000;
-    setTimeout(() => {
-      setIsLoading(false);
-      if (callback) callback();
-    }, delay);
-  };
 
   const value: AppStateValue = {
     amount,
@@ -122,6 +112,7 @@ export function AppStateProvider({ children }: { children: ReactNode }) {
     locale,
     setLocale,
     t,
+    dict: currentDict
   };
 
   return <AppStateContext.Provider value={value}>{children}</AppStateContext.Provider>;

