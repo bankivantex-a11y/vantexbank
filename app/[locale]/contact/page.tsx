@@ -44,7 +44,11 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <div style={{ fontWeight: 700, color: 'var(--navy)' }}>{t('contact_page.phone')}</div>
-                    <div style={{ color: 'var(--muted)' }}>{t('common.phone_val')} ({t('common.free_num_label')})</div>
+                    <div style={{ color: 'var(--muted)' }}>
+                      <a href={`tel:${t('common.phone_val').replace(/\s+/g, '')}`} style={{ color: 'inherit', textDecoration: 'none' }}>
+                        {t('common.phone_val')}
+                      </a>
+                    </div>
                   </div>
                 </div>
                 <div style={{ display: 'flex', gap: 16, alignItems: 'center' }}>
@@ -53,7 +57,11 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <div style={{ fontWeight: 700, color: 'var(--navy)' }}>{t('contact_page.email')}</div>
-                    <div style={{ color: 'var(--muted)' }}>contact@vantexbank.com</div>
+                    <div style={{ color: 'var(--muted)' }}>
+                      <a href="mailto:contact@vantexbank.com" style={{ color: 'inherit', textDecoration: 'none' }}>
+                        contact@vantexbank.com
+                      </a>
+                    </div>
                   </div>
                 </div>
                 <div style={{ display: 'flex', gap: 16, alignItems: 'center' }}>
