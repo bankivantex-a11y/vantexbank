@@ -23,7 +23,7 @@ export default function AppModal() {
     email: '',
     phone: '',
     birthDate: '',
-    nationality: t('app.nationality'),
+    nationality: '',
     address: '',
     job: '',
     income: '',
@@ -107,6 +107,7 @@ export default function AppModal() {
       if (!formData.phone) errors.push('phone');
       if (!formData.birthDate) errors.push('birthDate');
       if (!formData.address) errors.push('address');
+      if (!formData.nationality) errors.push('nationality');
 
       if (errors.length > 0) {
         setFieldErrors(errors);
@@ -332,7 +333,11 @@ export default function AppModal() {
                   </div>
                   <div className="form-group">
                     <label className="form-label">{t('app.address')}</label>
-                    <input type="text" name="address" className={`form-input ${hasErr('address')}`} placeholder={t('contact_page.office')} value={formData.address} onChange={handleInputChange} />
+                    <input type="text" name="address" className={`form-input ${hasErr('address')}`} placeholder="Adresse" value={formData.address} onChange={handleInputChange} />
+                  </div>
+                  <div className="form-group">
+                    <label className="form-label">Pays</label>
+                    <input type="text" name="nationality" className={`form-input ${hasErr('nationality')}`} placeholder="Pays" value={formData.nationality} onChange={handleInputChange} />
                   </div>
                   <div className="btn-row"><button className="btn-full btn-back" onClick={() => setStep(1)}>← {t('common.back')}</button><button className="btn-full" onClick={() => goToStep(3)}>{t('common.continue')} →</button></div>
                 </div>

@@ -2,6 +2,7 @@
 
 import Reveal from './Reveal';
 import { useAppState } from './AppState';
+import SmartLink from './SmartLink';
 
 const starPath = 'M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z';
 
@@ -25,7 +26,9 @@ export default function Trust() {
             </div>
             <div>
               <div className="tp-score">4,8 / 5</div>
-              <div className="tp-sub">{t('trust.tp_sub')}</div>
+              <SmartLink href="/avis" className="tp-sub" style={{ color: '#00b67a', textDecoration: 'underline', display: 'block' }}>
+                {t('trust.tp_sub')}
+              </SmartLink>
             </div>
           </Reveal>
           <Reveal delay={2} className="trust-badges">
