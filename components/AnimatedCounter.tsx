@@ -1,8 +1,10 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import { useAppState } from './AppState';
 
 export default function AnimatedCounter({ target }: { target: number }) {
+  const { locale } = useAppState();
   const ref = useRef<HTMLSpanElement>(null);
   const [value, setValue] = useState(0);
   const started = useRef(false);
@@ -35,5 +37,5 @@ export default function AnimatedCounter({ target }: { target: number }) {
     return () => obs.disconnect();
   }, [target]);
 
-  return <span ref={ref}>{value.toLocaleString('fr-FR')}</span>;
+  return <span ref={ref}>{value.toLocaleString(locale === 'EN' ? 'en-US' : 'fr-FR')}</span>;
 }

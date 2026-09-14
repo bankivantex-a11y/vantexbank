@@ -1,4 +1,47 @@
 {
+  "home": {
+    "amounts_title": "Suchen Sie einen bestimmten Betrag?",
+    "duration_label": "Rückzahlungsdauer: 12 bis 36 Monate",
+    "learn_more": "Mehr erfahren →",
+    "solutions_title": "Suchen Sie eine spezifische Lösung?",
+    "solutions": {
+      "no_proof_title": "Kredit ohne Nachweise",
+      "no_proof_desc": "Kann man schnell einen Kredit ohne Nachweise bekommen?",
+      "online_title": "Online-Kredit",
+      "online_desc": "Den gesamten Kreditprozess online abzuwickeln, spart Zeit.",
+      "no_refusal_title": "Kredit ohne Ablehnung",
+      "no_refusal_desc": "Welche Lösung gibt es für einen Express-Kredit ohne Ablehnung?",
+      "immediate_title": "Sofortkredit",
+      "immediate_desc": "Was tun, wenn Ihr Finanzierungsbedarf nicht warten kann?",
+      "read_article": "Artikel lesen →"
+    },
+    "how_fast": {
+      "title": "Wie funktioniert der Schnellkredit der Vantex Bank?",
+      "desc1": "Der schnellste Kredit wird online beantragt. Dies ist heute die bevorzugte Lösung, um ein Projekt zu finanzieren, einen unvorhergesehenen Engpass zu überbrücken oder schnell zusätzliche Liquidität zu erhalten.",
+      "desc2": "Doch wenn ein Finanzierungsbedarf dringend wird, ist das Schwierigste nicht immer, das Geld zu bekommen. Oft geht es darum, das Institut zu finden, das in der Lage ist, den Antrag anzunehmen und die Unterlagen so schnell wie möglich zu prüfen.",
+      "desc3": "Als Spezialist für Schnellkredite hat die Vantex Bank eine Lösung entwickelt, die es ermöglicht, mehrere Institute über ein einziges Formular anzufragen. Dieser Ansatz spart wertvolle Zeit.",
+      "desc4": "Und um die Schritte noch einfacher zu machen, muss der Kunde nach der Zusage des Kredits nur noch seine Nachweise online einreichen und seinen Vertrag elektronisch unterzeichnen. Mit dieser Methode erhalten Sie Ihren Kredit so schnell wie möglich.",
+      "cta": "ZUM KREDITFORMULAR"
+    },
+    "advantages_title": "Unsere Vorteile",
+    "advantages": {
+      "item1": "Ultraschnelles Online-Kreditformular (4 Min.)",
+      "item2": "Sofortige vorläufige Zusage",
+      "item3": "Digitalisierte Nachweise und elektronische Unterschrift",
+      "item4": "Telefonische Unterstützung bei Bedarf"
+    },
+    "faq_title": "FAQ zum Schnellkredit",
+    "faq": {
+      "q1": "Was ist der Unterschied zwischen einem Schnellkredit und einem Express-Kredit?",
+      "a1": "Die Begriffe Schnellkredit und Express-Kredit bezeichnen dasselbe. Es sind kommerzielle Bezeichnungen für einen Kredit, dessen Beantragung, Prüfung und Antwort durch vereinfachte digitale Prozesse beschleunigt werden.",
+      "q2": "Welcher Kredit ist am schnellsten zu bekommen?",
+      "a2": "Wenn er bereits eröffnet ist, ist der Rahmenkredit oft die schnellste Finanzierung. Für einen Neuantrag stellt der Online-Privatkredit in der Regel den besten Kompromiss zwischen Schnelligkeit, möglichem Betrag und Kosten dar.",
+      "q3": "Kann man einen Schnellkredit online bekommen?",
+      "a3": "Ja. Bei der Vantex Bank ist es möglich, ein Formular auszufüllen, eine vorläufige Zusage zu erhalten, den Vertrag elektronisch zu unterzeichnen und die Nachweise einzureichen, ohne das Haus zu verlassen.",
+      "q4": "Wie lange dauert es, eine Antwort zu erhalten?",
+      "a4": "Die Prüfung Ihrer Unterlagen beginnt, sobald das Formular abgeschickt wurde. Eine vorläufige Zusage erfolgt in der Regel sofort, und die endgültige Bestätigung erfolgt innerhalb von 24 bis 48 Stunden nach Erhalt der Nachweise."
+    }
+  },
   "nav": {
     "how": "Funktionsweise",
     "services": "Dienstleistungen",
@@ -8,7 +51,8 @@
     "about": "Über uns",
     "contact": "Kontakt",
     "apply": "Kredit beantragen",
-    "login": "Anmelden"
+    "login": "Anmelden",
+    "logo_text": "Vantex Bank"
   },
   "common": {
     "months": "Monate",
@@ -17,7 +61,15 @@
     "back": "Zurück",
     "continue": "Weiter",
     "submit": "Absenden",
-    "euro_month": "€/Monat"
+    "euro_month": "€/Monat",
+    "taeg_fixed": "Fester effektiver Jahreszins",
+    "orias_label": "ORIAS-Nummer",
+    "orias_val": "14807766",
+    "free_num_label": "Kostenlose Nummer",
+    "phone_val": "0 800 123 456",
+    "per_month": "/ Monat",
+    "secure_loading": "Sicheres Laden...",
+    "to": "bis"
   },
   "hero": {
     "title": "Ihr Online-Kredit, einfach & schnell",
@@ -26,7 +78,18 @@
     "cta_sim": "Meinen Kredit simulieren",
     "stat_clients": "Zufriedene Kunden",
     "stat_rate": "Fester Jahreszins",
-    "stat_guarantee": "Garantierte Antwort"
+    "stat_guarantee": "Garantierte Antwort",
+    "stat_guarantee_val": "48h"
+  },
+  "phone_ui": {
+    "hello": "Hallo 👋",
+    "balance_label": "Verfügbares Guthaben",
+    "approved": "Kredit genehmigt",
+    "received": "Überweisung erhalten",
+    "rent": "Miete",
+    "repayment": "Rückzahlung",
+    "today": "Heute",
+    "fixed_rate_guaranteed": "Fester Zinssatz garantiert"
   },
   "sim": {
     "title": "Berechnen Sie Ihre monatlichen Raten",
@@ -45,6 +108,23 @@
     "mini_duration": "Gewählte Laufzeit",
     "mini_first": "1. Rate",
     "disclaimer": "* Unverbindliche Simulation. Endgültiger effektiver Jahreszins im Vertragsangebot angegeben. Vorbehaltlich der Annahme durch die Vantex Bank."
+  },
+  "cond": {
+    "label": "Voraussetzungen",
+    "title": "Bedingungen für den Kreditzugang",
+    "desc": "Die Vantex Bank ist für Einwohner von Europa und Asien zugänglich, die die folgenden Kriterien erfüllen.",
+    "item1_strong": "Volljährig sein",
+    "item1_text": "— Zum Zeitpunkt der Antragstellung mindestens 18 Jahre alt sein",
+    "item2_strong": "Wohnsitz berechtigt",
+    "item2_text": "— Wohnhaft in Europa, Asien (Kuwait...) oder Australien sein",
+    "item3_strong": "Regelmäßiges Monatseinkommen",
+    "item3_text": "— Nachweis einer regelmäßigen Vergütung (unbefristeter Vertrag, Beamter, Selbstständiger, Rentner…)",
+    "item4_strong": "Fester Jahreszins von 2,75%",
+    "item4_text": "— Garantiert für die gesamte Rückzahlungsdauer",
+    "item5_strong": "Flexible Laufzeit",
+    "item5_text": "— Zwischen 12 und 360 Monaten je nach Ihrer Rückzahlungsfähigkeit",
+    "stat_docs": "Bearbeitete Dossiers",
+    "stat_satisfaction": "↑ 94% Kundenzufriedenheit"
   },
   "trust": {
     "tp_sub": "Basierend auf 3.247 verifizierten Bewertungen",
@@ -70,13 +150,13 @@
     "login_tab": "Anmelden",
     "register_tab": "Konto erstellen",
     "email_label": "E-Mail-Adresse",
-    "email_placeholder": "sie@email.com",
+    "email_placeholder": "ihre@email.com",
     "pwd_label": "Passwort",
     "pwd_placeholder": "••••••••",
     "login_btn": "Anmelden",
     "or": "oder",
     "no_account": "Kein Konto?",
-    "create_account": "Mein Konto erstellen",
+    "create_account": "Konto erstellen",
     "firstname": "Vorname",
     "lastname": "Nachname",
     "pwd_hint": "Mind. 8 Zeichen",
@@ -90,46 +170,76 @@
   },
   "app": {
     "title": "Kreditantrag",
-    "step1": "Profil",
+    "step1": "Projekt",
+    "step_infos": "Infos",
     "step2": "Dokumente",
     "step3": "Bestätigung",
-    "step4": "Gesendet",
+    "step4": "Validierung",
     "loading": "Laden...",
-    "summary_title": "Zusammenfassung des Antrags",
+    "sending": "Sicherung der Übermittlung...",
+    "summary_title": "Zusammenfassung Ihres Antrags",
     "monthly_est": "Geschätzte monatliche Rate",
     "phone": "Telefon",
     "nationality": "Staatsangehörigkeit",
     "job": "Berufliche Situation",
-    "income": "Netto-Monatseinkommen (€)",
+    "income": "Monatliches Nettoeinkommen (€)",
     "expenses": "Monatliche Ausgaben (€)",
     "purpose": "Verwendungszweck",
+    "address": "Vollständige Adresse",
     "docs_title": "Belege",
-    "docs_desc": "Laden Sie Ihre Dokumente hoch. Sie sind durch Ende-zu-Ende-Verschlüsselung geschützt.",
+    "docs_desc": "Laden Sie Ihre Dokumente hoch (PDF oder Bild, max. 8 MB).",
     "upload_done": "Hochgeladen ✓",
     "upload_replace": "Zum Ersetzen klicken",
     "upload_cni": "Identitätsnachweis (Personalausweis oder Reisepass)",
-    "upload_cni_sub": "PDF, JPG, PNG · Max. 5 MB",
+    "upload_cni_sub": "PDF, JPG, PNG · Max. 8 MB",
     "upload_pay": "Letzte 3 Gehaltsabrechnungen",
-    "upload_pay_sub": "PDF · Max. 10 MB",
+    "upload_pay_sub": "PDF · Max. 8 MB",
     "upload_bank": "Bankauszüge (letzte 3 Monate)",
-    "upload_bank_sub": "PDF · Max. 10 MB",
+    "upload_bank_sub": "PDF · Max. 8 MB",
     "recap_title": "Zusammenfassung & Unterschrift",
-    "recap_desc": "Überprüfen Sie Ihre Informationen, bevor Sie Ihren Antrag absenden.",
+    "recap_desc": "Überprüfen Sie die Informationen in Ihrem Dossier, bevor Sie Ihren Antrag absenden.",
+    "recap_loan": "Kredit:",
+    "recap_monthly": "Monatliche Rate:",
+    "recap_email": "E-Mail:",
     "contract_title": "KREDITANTRAGSVERTRAG — VANTEX BANK",
     "contract_text": "Mit dem Absenden dieses Formulars bestätigt der Darlehensnehmer, die Allgemeinen Geschäftsbedingungen der Vantex Bank gelesen zu haben und erklärt an Eides statt, dass die gemachten Angaben richtig und vollständig sind. Der Darlehensnehmer ermächtigt die Vantex Bank, Bankvorfalldateien einzusehen und alle für die Analyse des Antrags erforderlichen Überprüfungen durchzuführen. Dieser Antrag stellt keine vertragliche Verpflichtung seitens der Vantex Bank dar. Das endgültige Angebot wird nach Analyse des vollständigen Dossiers erstellt. Der endgültige effektive Jahreszins wird im Kreditangebot angegeben. Der Darlehensnehmer hat eine gesetzliche Widerrufsfrist von 14 Kalendertagen ab Unterzeichnung des endgültigen Angebots. Vantex Bank (SAS Cap Au Nord) — Bei der ORIAS unter der Nummer 14807766 registrierter Vermittler. Grundkapital: 50.000.000 €. Sitz der Gesellschaft: 12 Avenue de la Banque, 75008 Paris, Frankreich.",
-    "chk1": "Ich habe die Allgemeinen Geschäftsbedingungen und die Datenschutzerklärung der Vantex Bank gelesen und akzeptiere sie.",
-    "chk2": "Durch Klicken auf Absenden ermächtige ich die Vantex Bank, meine Daten mit ihren Partnern für die Kreditanalyse im Rahmen der Bearbeitung meines Antrags zu teilen.",
-    "chk3": "Ich bestätige, dass ich volljährig bin (18+ Jahre), in einem berechtigten Land wohne (Europa oder Asien) und über ein festes monatliches Einkommen verfüge.",
+    "chk1": "Ich bestätige die Richtigkeit der gemachten Angaben.",
+    "chk2": "Ich akzeptiere die Bedingungen der Datenverarbeitung.",
+    "chk3": "Ich bestätige, dass ich volljährig bin (18+ Jahre).",
     "alert_checks": "Bitte markieren Sie alle Kästchen, um fortzufahren.",
     "submitting_title": "Analyse Ihres Dossiers läuft...",
     "submitting_sub": "Ein paar Sekunden genügen",
     "success_title": "Dossier erfolgreich eingereicht!",
-    "success_desc": "Ihr Antrag ist bei unseren Teams eingegangen. Sie erhalten in Kürze (innerhalb von 48 Arbeitsstunden) eine Benachrichtigung mit der Entscheidung der Vantex Bank.",
+    "success_desc": "Ihr Antrag ist erfolgreich bei unseren Teams eingegangen. Sie erhalten in Kürze (innerhalb von 48 Arbeitsstunden) eine Benachrichtigung mit der Entscheidung der Vantex Bank.",
     "ref_label": "Aktennummer",
     "next1": "Eine Bestätigungs-E-Mail mit Ihrer Aktennummer wird Ihnen in den nächsten Minuten zugesandt.",
     "next2": "Unser Team analysiert Ihr Dossier innerhalb von 48 Arbeitsstunden und kontaktiert Sie, falls zusätzliche Dokumente benötigt werden.",
     "next3": "Im Falle einer positiven Entscheidung unterzeichnen Sie das Angebot elektronisch — die Mittel werden dann innerhalb von 72 Stunden überwiesen.",
-    "home_btn": "Zurück zur Startseite"
+    "home_btn": "Zurück zur Startseite",
+    "submit_btn": "Mein Dossier absenden ✓",
+    "email_subject": "Neuer Kreditantrag"
+  },
+  "errors": {
+    "fill_project": "Bitte füllen Sie alle Felder Ihres Projekts aus.",
+    "fill_infos": "Bitte füllen Sie alle Ihre persönlichen Informationen aus.",
+    "invalid_email": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+    "min_age": "Sie müssen volljährig sein (18 Jahre oder älter).",
+    "upload_all": "Bitte laden Sie alle 3 erforderlichen Dokumente hoch.",
+    "file_too_large": "Datei zu groß (max. 8 MB).",
+    "send_error": "Fehler beim Senden:",
+    "ok_btn": "OK"
+  },
+  "about": {
+    "stat_year": "Gründungsjahr",
+    "stat_year_val": "2004",
+    "stat_capital": "Grundkapital",
+    "stat_capital_val": "50 Mio. €",
+    "stat_presence": "Internationale Präsenz",
+    "stat_presence_val": "EU & Asien",
+    "mission": "Unsere Mission",
+    "mission_text1": "Gegründet mit dem Ziel, Spezialist für Schnellkredite und Finanzierungen für Privatpersonen zu sein, ist es unsere Mission, jeden Kreditnehmer zur Lösung zu begleiten, die am besten zu seinem Projekt und seiner Situation passt.",
+    "mission_text2": "Bei der Vantex Bank stellen Sie Ihren Privatkreditantrag online und erhalten sofort eine vorläufige Zusage. Unser Ziel ist einfach: Sie bei jedem Schritt zu begleiten, um die Erlangung Ihrer Finanzierung zu erleichtern und zu beschleunigen.",
+    "legal_box": "Vantex Bank (SAS Cap Au Nord) ist ein bei der ORIAS unter der Nummer 14807766 registrierter Vermittler als nicht exklusiver Beauftragter für Bankgeschäfte und Zahlungsdienste (MOBSP)."
   },
   "services": {
     "label": "Unsere Dienstleistungen",
@@ -142,7 +252,7 @@
       "mod_dur": "Laufzeit",
       "adv_title": "Unsere Vorteile",
       "sol_title": "Eine einfache Lösung",
-      "sol_desc": "Bei der Vantex Bank stellen Sie Ihren Privatkreditantrag online und erhalten sofort eine grundsätzliche Antwort. Bei Annahme müssen Sie nur noch Ihren Vertrag elektronisch unterzeichnen und Ihre Belege hochladen.",
+      "sol_desc": "Bei der Vantex Bank stellen Sie Ihren Privatkreditantrag online und erhalten sofort eine vorläufige Zusage. Im Falle einer Zusage müssen Sie nur noch Ihren Vertrag elektronisch unterzeichnen und Ihre Belege hochladen.",
       "sim_title": "Simulieren Sie Ihren Privatkredit",
       "sim_desc": "Erhalten Sie in Sekundenschnelle eine präzise Schätzung."
     },
@@ -159,11 +269,14 @@
     "privacy": "Datenschutz",
     "rights": "Alle Rechte vorbehalten. SAS Cap Au Nord — ORIAS 14807766.",
     "accessibility": "Barrierefreiheit",
-    "sitemap": "Sitemap"
+    "sitemap": "Sitemap",
+    "cookie_text": "Unsere Website verwendet Cookies, um deren ordnungsgemäße Funktion zu gewährleisten und anonyme Besucherstatistiken zu erhalten, um Ergonomie, Navigation und Inhalte zu optimieren.",
+    "cookie_accept": "Akzeptieren",
+    "cookie_more": "Mehr erfahren"
   },
   "jobs": {
-    "cdi": "Unbefristet angestellt",
-    "cdd": "Befristet angestellt",
+    "cdi": "Angestellter (unbefristet)",
+    "cdd": "Angestellter (befristet)",
     "gov": "Beamter",
     "freelance": "Selbstständig / Freelance",
     "boss": "Unternehmer",
@@ -176,8 +289,121 @@
     "home": "Immobilienprojekt",
     "business": "Unternehmensgründung",
     "travel": "Reise / Freizeit",
-    "debt": "Kreditbündelung",
+    "debt": "Umschuldung",
     "other": "Sonstiges"
+  },
+  "fonctionnement": {
+    "title": "Wie funktioniert die Vantex Bank?",
+    "desc": "Wir haben den Kredit vereinfacht, damit Sie sich auf Ihre Projekte konzentrieren können. Eine 100% digitale, transparente und sichere Erfahrung.",
+    "unexpected": {
+      "title": "Eine Lösung für unvorhergesehene Ausgaben",
+      "desc1": "Einer der häufigsten Fälle ist das Auftreten einer unvorhergesehenen Ausgabe. Eine Autopanne, eine dringende Reparatur am Haus, der Austausch eines unverzichtbaren Haushaltsgeräts oder eine unerwartete Rechnung können ein Budget schnell aus dem Gleichgewicht bringen.",
+      "desc2": "Wenn diese Ausgaben nicht bis zum nächsten Geldeingang warten können, ermöglicht ein Minikredit, schnell über die erforderlichen Mittel zu verfügen, um die Situation zu bewältigen.",
+      "desc3": "Der Minikredit kann auch zur Finanzierung vieler anderer Käufe mit geringeren Beträgen dienen:",
+      "list1": "Ein Computer oder Smartphone",
+      "list2": "Ein Fahrrad oder Möbel",
+      "list3": "Ein Haushaltsgerät",
+      "list4": "Eine Ausbildung oder eine Reise",
+      "footer": "In solchen Situationen ermöglicht der Minikredit, eine Ausgabe über die Zeit zu strecken, ohne sofort auf Ersparnisse zurückgreifen zu müssen. Er stellt somit eine praktische Lösung dar, um ein Projekt zu verwirklichen und gleichzeitig Ihr Budget zu schonen."
+    }
+  },
+  "pret_personnel": {
+    "adv1": "Online-Formular (4 Min.)",
+    "adv2": "Sofortige vorläufige Zusage",
+    "adv3": "Digitalisierte Nachweise",
+    "adv4": "Elektronische Unterschrift",
+    "adv5": "Telefonische Unterstützung"
+  },
+  "pret_immobilier": {
+    "desc": "Werden Sie gelassen Hausbesitzer. Ob für einen Haupt- oder Zweitwohnsitz oder eine Mietinvestition, wir finanzieren Ihre Zukunft.",
+    "cond_title": "Unsere Immobilienkonditionen",
+    "cond1": "Zinssätze ab 1,95% fester effektiver Jahreszins",
+    "cond2": "Finanzierung bis zu 1.500.000 €",
+    "cond3": "Flexible Laufzeit bis zu 25 Jahre",
+    "cond4": "Ohne versteckte Bearbeitungsgebühren",
+    "support_title": "Begleitung",
+    "support_desc": "Unsere Experten beraten Sie zu Fördermöglichkeiten und optimieren Ihren Finanzierungsplan innerhalb von 48 Stunden."
+  },
+  "pret_professionnel": {
+    "label": "Business-Lösungen",
+    "desc": "Benötigen Sie Liquidität, neue Ausrüstung oder Räumlichkeiten? Die Vantex Bank begleitet Unternehmer und KMU.",
+    "cond_title": "Pro-Finanzierung",
+    "cond1": "Material- & Ausrüstungskredit",
+    "cond2": "Finanzierung von Lager & Betriebsmitteln",
+    "cond3": "Erwerb von Gewerbeimmobilien",
+    "cond4": "Vorläufige Zusage innerhalb von 72h",
+    "support_title": "Pro-Expertise",
+    "support_desc": "Ein engagierter Berater analysiert Ihr Projekt, um Ihnen eine Kreditstruktur vorzuschlagen, die auf Ihren Geschäftszyklus zugeschnitten ist."
+  },
+  "rachat_credit": {
+    "label": "Budgetmanagement",
+    "desc": "Vereinfachen Sie Ihre Finanzen, indem Sie Ihre Kredite zu einer einzigen, reduzierten monatlichen Rate zusammenfassen. Gewinnen Sie sofort Kaufkraft zurück.",
+    "why_title": "Warum umschulden?",
+    "why1": "Niedrigere monatliche Rate",
+    "why2": "Reduzierte Verschuldungsquote",
+    "why3": "Vereinfachte Bankenverwaltung",
+    "why4": "Ersparnis von bis zu 60%",
+    "analysis_title": "Kostenlose Analyse",
+    "analysis_desc": "Unsere Analysten prüfen Ihre laufenden Kredite, um Ihren neuen Vertrag zu optimieren. Vertraulichkeit garantiert."
+  },
+  "faq": {
+    "label": "Hilfezentrum",
+    "title": "Häufig gestellte Fragen (FAQ)",
+    "desc": "Hier finden Sie Antworten auf die häufigsten Fragen zu unseren Finanzdienstleistungen.",
+    "q1": "Wie bekomme ich schnell einen Minikredit?",
+    "a1": "Der Antrag auf einen Minikredit erfolgt direkt online bei der Vantex Bank. Sie müssen lediglich Ihr Dossier vervollständigen und die angeforderten Informationen übermitteln. Um die Auszahlung der Mittel zu beschleunigen, wird empfohlen, Ihren Vertrag so schnell wie möglich elektronisch zu unterzeichnen.",
+    "q2": "Wie hoch sind die Zinsen für einen Minikredit?",
+    "a2": "Der Zinssatz eines Minikredits hängt insbesondere vom geliehenen Betrag und der Rückzahlungsdauer ab. Vor jedem Abschluss ist es wichtig, den effektiven Jahreszins, die Höhe der Raten sowie die Gesamtkosten des Kredits zu prüfen, die in Ihrem personalisierten Vertrag aufgeführt sind.",
+    "q3": "Welches Gehalt ist für einen Minikredit erforderlich?",
+    "a3": "Es gibt kein striktes Mindestgehalt, um bei uns einen Minikredit zu erhalten. Die Prüfung des Dossiers berücksichtigt Ihre gesamte finanzielle Situation, insbesondere Ihre Einnahmen, Ihre Ausgaben und Ihre allgemeine Rückzahlungsfähigkeit.",
+    "q4": "Eine Lösung für unvorhergesehene Ausgaben?",
+    "a4": "Der Minikredit ist ideal, um eine unvorhergesehene Ausgabe (Autopanne, dringende Reparatur, unerwartete Rechnung) zu bewältigen oder einen kleinen Kauf (Computer, Smartphone, Reise) zu finanzieren, ohne sofort Ersparnisse mobilisieren zu müssen.",
+    "cta_title": "Haben Sie keine Antwort gefunden?",
+    "cta_desc": "Unsere Berater stehen Ihnen zur Verfügung, um Sie bei Ihren Schritten zu unterstützen.",
+    "cta_btn": "Einen Experten kontaktieren →"
+  },
+  "contact_page": {
+    "label": "Kontaktieren Sie uns",
+    "title": "Eine Leitung, die immer für Sie offen ist.",
+    "desc": "Sie können jederzeit live mit uns per Chat, Telefon oder über unsere Website sprechen. Schreiben Sie uns oder rufen Sie uns an; unsere Leitungen sind immer offen.",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "office": "Hauptsitz",
+    "form_title": "Senden Sie uns eine Nachricht",
+    "form_sub": "Alle Felder sind Pflichtfelder.",
+    "name_label": "Vor- und Nachname *",
+    "firstname_placeholder": "Vornamen",
+    "lastname_placeholder": "Nachname",
+    "email_label": "E-Mail-Adresse *",
+    "email_placeholder": "E-Mail-Adresse",
+    "message_label": "Ihre Nachricht",
+    "message_placeholder": "Neuigkeiten",
+    "send_btn": "Senden →",
+    "success_title": "Nachricht gesendet!",
+    "success_sub": "Wir werden Ihnen innerhalb von 24 Arbeitsstunden antworten.",
+    "resend_btn": "Eine weitere Nachricht senden"
+  },
+  "testimonials": {
+    "label": "Referenzen",
+    "title": "Sie vertrauen uns",
+    "desc": "Entdecken Sie die Erfahrungen unserer Kunden, die ihre Projekte mit der Vantex Bank realisiert haben.",
+    "sec_label": "Was sie sagen",
+    "sec_title": "Sie haben ihren Kredit bei der Vantex Bank erhalten",
+    "sec_desc": "Tausende Kunden vertrauen der Vantex Bank bei der Finanzierung ihrer Lebensprojekte.",
+    "verified": "Verifiziert",
+    "loan_obtained": "Kredit erhalten:",
+    "t1_text": "Dank der Vantex Bank konnte ich die Arbeiten an meinem Haus finanzieren. Ultrasinfaches Verfahren, Antwort in 36h und ein Top-Team. Ich hätte nicht gedacht, dass das online möglich ist!",
+    "t1_meta": "Lyon · Oktober 2025",
+    "t2_text": "Nach mehreren Ablehnungen bei klassischen Banken hat mir die Vantex meinen Autokredit bewilligt. Der Zinssatz ist unschlagbar und das Formular ist in 10 Minuten ausgefüllt. Sehr seriös!",
+    "t2_meta": "Brüssel · August 2025",
+    "t3_text": "Dank dieses Geschäftskredits konnte ich mein Unternehmen gründen. Dossier schnell bearbeitet, Berater verfügbar und Überweisung 3 Tage nach Unterschrift erhalten. Perfekt!",
+    "t3_meta": "Genf · Juli 2025",
+    "t4_text": "Für meine Umschuldung war die Vantex Bank die perfekte Lösung. Klares Formular, transparenter Zinssatz und ein Lächeln im Gesicht, als ich die Überweisung sah. Wirklich danke!",
+    "t4_meta": "Marseille · Juni 2025",
+    "t5_text": "Dank ihr konnte ich den Immobilienkredit bekommen, von dem ich geträumt habe. Die Plattform ist intuitiv, die Berater verfügbar und professionell. Ich empfehle sie ohne Zögern weiter.",
+    "t5_meta": "Paris · Mai 2025",
+    "t6_text": "Ein professioneller und beruhigender Service für diejenigen, die zögern, dies online zu tun. Mein Berater hat mich zurückgerufen, um jeden Schritt zu erklären. Ergebnis: Überweisung innerhalb von 72 Stunden erhalten!",
+    "t6_meta": "Amsterdam · April 2025"
   },
   "legal": {
     "label": "Rechtliches",
@@ -212,7 +438,7 @@
     "mentions_s2_text2": "Grundkapital: 50.000.000 €",
     "mentions_s2_text3": "Sitz der Gesellschaft: 12 Avenue de la Banque, 75008 Paris, Frankreich",
     "mentions_s2_text4": "Bei der ORIAS registriert unter der Nummer",
-    "mentions_s2_text5": "Eingetragen im RCS unter der Nummer 123 456 789.",
+    "mentions_s2_text5": "Eingetragen im RCS unter der Nummer 790017080.",
     "mentions_s3_title": "3. Hosting",
     "mentions_s3_text1": "Diese Website wird von Vercel Inc. gehostet.",
     "mentions_s4_title": "4. Regulierte Tätigkeit",
@@ -237,5 +463,240 @@
     "privacy_s2_l4": "Verbesserung des Kundenservices.",
     "privacy_s3_title": "3. Datenschutz",
     "privacy_s3_text": "Wir setzen eine Vielzahl von Sicherheitsmaßnahmen ein, um die Sicherheit Ihrer persönlichen Daten zu gewährleisten (SSL-Verschlüsselung, eingeschränkter Datenzugriff)."
+  },
+  "countries": [
+    "Frankreich",
+    "Belgien",
+    "Schweiz",
+    "Deutschland",
+    "Spanien",
+    "Italien",
+    "Portugal",
+    "Niederlande",
+    "Luxemburg",
+    "Japan",
+    "Südkorea",
+    "Singapur",
+    "Anderes Land in Europa / Asien"
+  ],
+  "articles": {
+    "summary": "Übersicht",
+    "online": {
+      "title": "Unser Online-Kredit zusammengefasst",
+      "intro": "Möchten Sie ein Projekt finanzieren oder eine unvorhergesehene Ausgabe decken? Unser Online-Kreditservice ermöglicht es Ihnen, Ihren Antrag schnell zu stellen, ohne sich fortbewegen zu müssen.",
+      "text1": "In wenigen Minuten füllen Sie Ihr Online-Finanzierungsformular aus und erhalten eine erste vorläufige Zusage. Wenn Ihr Dossier angenommen wird, setzen Sie Ihre Schritte direkt aus der Ferne dank der elektronischen Unterschrift und dem sicheren Hochladen Ihrer Belege fort.",
+      "text2_prefix": "Die Mission der",
+      "text2_suffix": "ist es, jeden Schritt Ihres Online-Kreditantrags zu vereinfachen, um Ihnen Zeit zu sparen und Ihnen während Ihres gesamten Prozesses Begleitung zu bieten.",
+      "features_title": "Die Hauptmerkmale",
+      "features": [
+        "Fester oder variabler effektiver Jahreszins",
+        "Leihbetrag von 500 € bis 75.000 €",
+        "Rückzahlungsdauer von 12 bis 72 Monaten"
+      ],
+      "summary_links": [
+        "Einen Online-Kredit bei der Vantex Bank beantragen",
+        "Warum einen Online-Kredit wählen?",
+        "Wie viel kostet ein Online-Kredit?",
+        "Dauer bis zum Erhalt des Geldes",
+        "Einzureichende Nachweise",
+        "Wer kann einen Online-Kredit erhalten?"
+      ],
+      "request_title": "Einen Online-Kredit bei der Vantex Bank beantragen",
+      "request_text": "Einen Online-Kreditantrag bei der Vantex Bank zu stellen, ist einfach, schnell und vollständig digitalisiert. Von Ihrem Computer, Tablet oder Smartphone aus können Sie Ihr Dossier in wenigen Minuten kostenlos und unverbindlich zusammenstellen.",
+      "steps_title": "Die Schritte Ihres Antrags",
+      "steps": [
+        [
+          "1. Füllen Sie Ihren Antrag aus:",
+          "Geben Sie den gewünschten Betrag, die Rückzahlungsdauer und Ihre Informationen an."
+        ],
+        [
+          "2. Erhalten Sie eine vorläufige Zusage:",
+          "Sobald übermittelt, erhalten Sie eine sofortige Antwort."
+        ],
+        [
+          "3. Schließen Sie Ihr Dossier ab:",
+          "Unterschreiben Sie elektronisch und übermitteln Sie Ihre Dokumente über den sicheren Bereich."
+        ],
+        [
+          "4. Erhalten Sie die Mittel:",
+          "Nach der Validierung werden die Mittel auf Ihr Konto überwiesen."
+        ]
+      ],
+      "cost_title": "Wie viel kostet ein Online-Kredit?",
+      "cost_text": "Die Kosten für einen Online-Kredit variieren je nach mehreren Parametern, insbesondere dem effektiven Jahreszins, dem geliehenen Betrag und der Rückzahlungsdauer.",
+      "headers": [
+        "Dauer",
+        "Bester fester effektiver Jahreszins",
+        "Monatliche Raten",
+        "Gesamtkosten des Kredits"
+      ],
+      "rows": [
+        [
+          "Über 12 Monate",
+          "0,90%",
+          "837,38€",
+          "48,56€"
+        ],
+        [
+          "Über 36 Monate",
+          "7,39%",
+          "309,46€",
+          "1.140,56€"
+        ],
+        [
+          "Über 60 Monate",
+          "4,90%",
+          "187,77€",
+          "1.266,20€"
+        ],
+        [
+          "Über 72 Monate",
+          "6,99%",
+          "169,41€",
+          "2.197,52€"
+        ]
+      ],
+      "docs_title": "Einzureichende Nachweise",
+      "docs_text": "Es gibt keinen Kredit ohne jeglichen Nachweis. Die üblicherweise angeforderten Dokumente sind:",
+      "docs": [
+        "Ein gültiger Identitätsnachweis",
+        "Ein aktueller Wohnsitznachweis",
+        "Ihre letzten Einkommensnachweise (Gehaltsabrechnungen, Steuerbescheid)",
+        "Eine Bankverbindung (RIB/IBAN)"
+      ],
+      "cta_title": "Bereit, Ihr Projekt zu verwirklichen?",
+      "cta_text": "Erhalten Sie eine sofortige vorläufige Zusage, indem Sie unser sicheres Formular ausfüllen.",
+      "cta_btn": "Zum Kreditformular"
+    },
+    "no_proof": {
+      "title": "Kredit ohne Nachweise: Alles verstehen",
+      "intro": "Der Begriff \"Kredit ohne Nachweise\" wird oft falsch verstanden. Er bedeutet nicht, dass keine Dokumente erforderlich sind, sondern vielmehr, dass Sie die Verwendung der Mittel nicht rechtfertigen müssen.",
+      "what_title": "Was ist ein Kredit ohne Nachweise?",
+      "what_text1": "Im Gegensatz zu einem zweckgebundenen Kredit (Auto oder Bauarbeiten), bei dem Sie eine Rechnung vorlegen müssen, lässt Ihnen der Privatkredit ohne Verwendungsnachweis die Freiheit. Sie verwenden die geliehene Summe wie Sie möchten: Reisen, Freizeit, Liquidität oder vielfältige persönliche Projekte.",
+      "what_text2_prefix": "Bei der",
+      "what_text2_suffix": "respektieren wir Ihre Privatsphäre. Sobald der Kredit bewilligt ist, stehen Ihnen die Mittel zur freien Verfügung, ohne Kontrolle Ihrer Kaufrechnungen.",
+      "summary_links": [
+        "Wie funktioniert das?",
+        "Die Vorteile des nicht zweckgebundenen Kredits",
+        "Welche Dokumente müssen noch eingereicht werden?",
+        "Ihren Antrag online stellen"
+      ],
+      "advantages_title": "Die Vorteile des nicht zweckgebundenen Kredits",
+      "advantages": [
+        [
+          "Vollständige Freiheit:",
+          "Keine Rechnung zur Freigabe der Mittel erforderlich."
+        ],
+        [
+          "Schnelligkeit:",
+          "Vereinfachte Prüfung des Dossiers, da keine Kostenvoranschläge zu prüfen sind."
+        ],
+        [
+          "Flexibilität:",
+          "Möglichkeit, mehrere kleine Projekte mit einem einzigen Kredit zu finanzieren."
+        ]
+      ],
+      "docs_title": "Unerlässliche Dokumente",
+      "docs_text": "Auch wenn die Verwendung der Mittel frei ist, muss die Bank Ihre Zahlungsfähigkeit prüfen. Sie müssen einreichen:",
+      "docs": [
+        "Identität (Personalausweis oder Reisepass)",
+        "Einkommensnachweis (zur Sicherstellung der Rückzahlung)",
+        "RIB/IBAN für die Auszahlung der Mittel"
+      ],
+      "cta_title": "Benötigen Sie finanzielle Freiheit?",
+      "cta_text": "Beantragen Sie Ihren Kredit ohne Verwendungsnachweis und erhalten Sie eine sofortige Antwort.",
+      "cta_btn": "Meinen Kredit jetzt simulieren"
+    },
+    "no_refusal": {
+      "title": "Einen Kredit ohne Ablehnung erhalten: Die Realität",
+      "intro": "Den zu 100% garantierten \"Kredit ohne Ablehnung\" gibt es rechtlich nicht. Es gibt jedoch Lösungen, um Ihre Chancen auf eine sofortige Zusage zu maximieren.",
+      "max_title": "Wie maximiere ich meine Chancen auf eine Zusage?",
+      "max_text1": "Um eine automatische Ablehnung zu vermeiden, ist es entscheidend, ein gesundes Dossier vorzulegen. Der Schlüssel liegt im Gleichgewicht zwischen Ihren Einnahmen und Ausgaben.",
+      "max_text2": "verwendet wohlwollende Analysealgorithmen, die Ihre gesamte Situation berücksichtigen und nicht nur Ihren Arbeitsvertrag.",
+      "summary_links": [
+        "Die Annahmekriterien",
+        "Tipps für ein perfektes Dossier",
+        "Statistiken zur Annahme",
+        "Meine Simulation starten"
+      ],
+      "criteria_title": "Kriterien, die eine Annahme begünstigen",
+      "criteria": [
+        [
+          "Stabilität:",
+          "Dauer in Ihrer Wohnung oder Ihrem Job."
+        ],
+        [
+          "Rückzahlungsfähigkeit:",
+          "Eine Verschuldungsquote von unter 35%."
+        ],
+        [
+          "Transparenz:",
+          "Genaue Informationen bereits im ersten Formular angeben."
+        ]
+      ],
+      "stats_title": "Statistiken und Profile",
+      "stats_text": "Nach unseren internen Studien erhöhen bestimmte Profile die Chancen auf eine positive Entscheidung erheblich:",
+      "stats": [
+        "Zu zweit zu leihen (Mitantragsteller) erhöht die Chancen um 55%.",
+        "Über eine Einlage oder Vorsorgesparnisse zu verfügen.",
+        "In den letzten 3 Monaten keine Bankvorfälle (Lastschriftrückgaben) gehabt zu haben."
+      ],
+      "cta_title": "Prüfen Sie Ihre Berechtigung kostenlos",
+      "cta_text": "Unser Simulator gibt Ihnen eine vorläufige Zusage ohne Verpflichtung und ohne Auswirkungen auf Ihre Kreditwürdigkeit.",
+      "cta_btn": "Meine Berechtigung testen"
+    },
+    "immediate": {
+      "title": "Sofortkredit: Die Dringlichkeit finanzieren",
+      "intro": "Eine Autopanne? Bedarf an Liquidität innerhalb von 48h? Der Sofortkredit ist darauf ausgelegt, auf die Unwägbarkeiten des Lebens mit Rekordgeschwindigkeit zu reagieren.",
+      "speed_title": "Schnelligkeit im Dienste Ihrer Projekte",
+      "speed_text_prefix": "Der Sofortkredit zeichnet sich durch einen ultra-vereinfachten Antragsprozess aus. Bei der",
+      "speed_text_suffix": "haben wir jeden Schritt optimiert, damit die Zeit zwischen Ihrem Bedarf und der Verfügbarkeit der Mittel so kurz wie möglich ist.",
+      "summary_links": [
+        "Die tatsächlichen Auszahlungsfristen",
+        "Wie bekommt man das Geld schnell?",
+        "Zwingende gesetzliche Bedingungen",
+        "In 2 Minuten starten"
+      ],
+      "delays_title": "Fristen bis zum Erhalt: Was man wissen sollte",
+      "delays_text": "Obwohl die Antwort sofort erfolgt, folgt die Auszahlung der Mittel strengen gesetzlichen Regeln zum Schutz des Kreditnehmers.",
+      "delays": [
+        [
+          "Vorläufige Zusage:",
+          "Sofort nach Validierung des Formulars."
+        ],
+        [
+          "Endgültige Validierung:",
+          "Innerhalb von 24 Arbeitsstunden nach Erhalt der Unterlagen."
+        ],
+        [
+          "Bereitstellung:",
+          "Ab dem 8. Tag (gesetzliche Widerrufsfrist)."
+        ]
+      ],
+      "tips_title": "3 Tipps zur Beschleunigung Ihrer Überweisung",
+      "tips": [
+        [
+          "Nutzen Sie die elektronische Unterschrift:",
+          "Vermeidet Postlaufzeiten (Gewinn von 3 bis 5 Tagen).",
+          "Bereiten Sie Ihre Nachweise vor:",
+          "Halten Sie Ihren Ausweis und RIB/IBAN digital bereit.",
+          "Prüfen Sie die Lesbarkeit:",
+          "Klare Fotos vermeiden Rückfragen und das erneute Senden von Dokumenten."
+        ]
+      ],
+      "cta_title": "Eine Dringlichkeit zu finanzieren?",
+      "cta_text": "Füllen Sie Ihr Dossier jetzt aus und erhalten Sie Ihre vorläufige Zusage in weniger als 2 Minuten.",
+      "cta_btn": "Zum Express-Formular"
+    }
+  },
+  "languages": {
+    "fr": "Französisch",
+    "en": "Englisch",
+    "kw": "Kuwait / Arabisch",
+    "sl": "Slowenisch",
+    "es": "Spanisch",
+    "lt": "Litauisch",
+    "de": "Deutsch",
+    "it": "Italienisch"
   }
 }

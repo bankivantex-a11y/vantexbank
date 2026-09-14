@@ -4,72 +4,71 @@ import Reveal from '@/components/Reveal';
 import { useAppState } from '@/components/AppState';
 
 export default function NoProofLoanPage() {
-  const { openModal } = useAppState();
+  const { openModal, t } = useAppState();
 
   return (
     <main className="art-container">
       <Reveal>
-        <h1 className="art-title">Le crédit sans justificatif : Tout comprendre</h1>
+        <h1 className="art-title">{t('articles.no_proof.title')}</h1>
         <p className="art-intro">
-          Le terme "crédit sans justificatif" est souvent mal compris. Il ne signifie pas qu'aucun document n'est requis, mais plutôt que vous n'avez pas à justifier l'utilisation des fonds.
+          {t('articles.no_proof.intro')}
         </p>
       </Reveal>
 
       <section className="art-section">
         <Reveal delay={1}>
-          <h2>Qu'est-ce qu'un crédit sans justificatif ?</h2>
+          <h2>{t('articles.no_proof.what_title')}</h2>
           <div className="art-text">
-            Contrairement à un crédit affecté (auto ou travaux) où vous devez fournir une facture, le prêt personnel sans justificatif d'utilisation vous laisse libre. Vous utilisez la somme empruntée comme bon vous semble : voyage, loisirs, trésorerie, ou projets personnels multiples.
+            {t('articles.no_proof.what_text1')}
           </div>
           <div className="art-text">
-            Chez <strong>Vantex Bank</strong>, nous respectons votre vie privée. Une fois le prêt accordé, les fonds sont à votre entière disposition sans contrôle sur vos factures d'achat.
+            {t('articles.no_proof.what_text2_prefix')} <strong>Vantex Bank</strong>, {t('articles.no_proof.what_text2_suffix')}
           </div>
         </Reveal>
       </section>
 
       <div className="art-summary">
         <Reveal>
-          <div className="art-summary-title">Sommaire</div>
+          <div className="art-summary-title">{t('articles.summary')}</div>
           <div className="art-summary-links">
-            <a href="#fonctionnement">Comment ça fonctionne ?</a>
-            <a href="#avantages">Les avantages du prêt non affecté</a>
-            <a href="#documents">Quels documents reste-t-il à fournir ?</a>
-            <a href="#demande">Faire sa demande en ligne</a>
+            {(t('articles.no_proof.summary_links') as string[]).map((label, index) => (
+              <a key={label} href={['#fonctionnement', '#avantages', '#documents', '#demande'][index]}>{label}</a>
+            ))}
           </div>
         </Reveal>
       </div>
 
       <section id="avantages" className="art-section">
         <Reveal>
-          <h2>Les avantages du prêt non affecté</h2>
+          <h2>{t('articles.no_proof.advantages_title')}</h2>
           <ul className="art-list">
-            <li><strong>Liberté totale :</strong> Aucune facture à transmettre pour débloquer les fonds.</li>
-            <li><strong>Rapidité :</strong> Etude du dossier simplifiée car pas de devis à vérifier.</li>
-            <li><strong>Flexibilité :</strong> Possibilité de financer plusieurs petits projets avec un seul prêt.</li>
+            {(t('articles.no_proof.advantages') as string[][]).map(([title, text]) => (
+              <li key={title}><strong>{title}</strong> {text}</li>
+            ))}
           </ul>
         </Reveal>
       </section>
 
       <section id="documents" className="art-section">
         <Reveal>
-          <h2>Les documents indispensables</h2>
+          <h2>{t('articles.no_proof.docs_title')}</h2>
           <div className="art-text">
-            Même si l'usage des fonds est libre, la banque doit vérifier votre solvabilité. Vous devrez fournir :
+            {t('articles.no_proof.docs_text')}
           </div>
           <ul className="art-list">
-            <li>Identité (CNI ou Passeport)</li>
-            <li>Justificatif de revenus (pour garantir le remboursement)</li>
-            <li>RIB pour le versement des fonds</li>
+            {(t('articles.no_proof.docs') as string[]).map((item) => (
+              <li key={item}>{item}</li>
+            ))}
           </ul>
         </Reveal>
       </section>
 
       <div className="art-cta-box">
         <Reveal>
-          <h2 className="art-cta-title">Besoin de liberté financière ?</h2>
-          <p className="art-cta-text">Demandez votre crédit sans justificatif d'utilisation et recevez une réponse immédiate.</p>
+          <h2 className="art-cta-title">{t('articles.no_proof.cta_title')}</h2>
+          <p className="art-cta-text">{t('articles.no_proof.cta_text')}</p>
           <button className="btn-primary" style={{ boxShadow: 'none', background: '#fff', color: 'var(--navy)' }} onClick={() => openModal('app')}>
-            Simuler mon crédit maintenant
+            {t('articles.no_proof.cta_btn')}
           </button>
         </Reveal>
       </div>

@@ -3,9 +3,10 @@
 import Image from 'next/image';
 import Reveal from './Reveal';
 import { useAppState } from './AppState';
+import { fmt } from '@/lib/loan';
 
 export default function Conditions() {
-  const { t } = useAppState();
+  const { t, locale } = useAppState();
 
   const items = [
     { strong: t('cond.item1_strong'), text: t('cond.item1_text') },

@@ -48,7 +48,7 @@ export default function AuthModal() {
         <div className="modal-inner">
           <div className="modal-logo">
             <div className="modal-logo-icon">V</div>
-            <span className="modal-logo-name">Vantex Bank</span>
+            <span className="modal-logo-name">{t('nav.logo_text') || 'Vantex Bank'}</span>
           </div>
 
           <div className="auth-tabs">
@@ -100,11 +100,11 @@ export default function AuthModal() {
               <div className="form-row">
                 <div className="form-group">
                   <label className="form-label">{t('auth.firstname')}</label>
-                  <input type="text" className="form-input" placeholder="Thomas" />
+                  <input type="text" className="form-input" placeholder={t('contact_page.firstname_placeholder')} />
                 </div>
                 <div className="form-group">
                   <label className="form-label">{t('auth.lastname')}</label>
-                  <input type="text" className="form-input" placeholder="Müller" />
+                  <input type="text" className="form-input" placeholder={t('contact_page.lastname_placeholder')} />
                 </div>
               </div>
               <div className="form-group">
@@ -135,19 +135,9 @@ export default function AuthModal() {
                 <label className="form-label">{t('auth.residence')}</label>
                 <select className="form-select" defaultValue="">
                   <option value="">{t('auth.select')}</option>
-                  <option>France</option>
-                  <option>Belgique</option>
-                  <option>Suisse</option>
-                  <option>Allemagne</option>
-                  <option>Espagne</option>
-                  <option>Italie</option>
-                  <option>Portugal</option>
-                  <option>Pays-Bas</option>
-                  <option>Luxembourg</option>
-                  <option>Japon</option>
-                  <option>Corée du Sud</option>
-                  <option>Singapour</option>
-                  <option>Autre pays Europe / Asie</option>
+                  {(t('countries') as string[]).map((country) => (
+                    <option key={country}>{country}</option>
+                  ))}
                 </select>
               </div>
               <button className="btn-full" onClick={handleRegister}>

@@ -1,4 +1,47 @@
 {
+  "home": {
+    "amounts_title": "Ieškote konkrečios sumos?",
+    "duration_label": "Grąžinimo laikotarpis: nuo 12 iki 36 mėnesių",
+    "learn_more": "Sužinoti daugiau →",
+    "solutions_title": "Ieškote konkretaus sprendimo?",
+    "solutions": {
+      "no_proof_title": "Kreditas be dokumentų",
+      "no_proof_desc": "Ar galima greitai gauti kreditą be dokumentų?",
+      "online_title": "Paskola internetu",
+      "online_desc": "Visas kredito procesas internetu leidžia sutaupyti laiko.",
+      "no_refusal_title": "Kreditas be atmetimo",
+      "no_refusal_desc": "Koks sprendimas norint gauti greitą kreditą be atmetimo?",
+      "immediate_title": "Skubus kreditas",
+      "immediate_desc": "Ką daryti, kai jūsų finansavimo poreikis negali laukti?",
+      "read_article": "Skaityti straipsnį →"
+    },
+    "how_fast": {
+      "title": "Kaip veikia greitasis „Vantex Bank“ kreditas?",
+      "desc1": "Greičiausias kreditas gaunamas internetu. Šiandien tai yra tinkamiausias sprendimas finansuoti projektą, padengti netikėtas išlaidas arba greitai gauti papildomų pinigų srautų.",
+      "desc2": "Tačiau kai finansavimo poreikis tampa skubus, sunkiausia ne visada yra gauti pinigų. Dažnai reikia nustatyti įstaigą, galinčią priimti prašymą ir kuo greičiau patvirtinti bylą.",
+      "desc3": "Kaip greitųjų kreditų specialistas, „Vantex Bank“ sukūrė sprendimą, leidžiantį pateikti užklausas kelioms įstaigoms naudojant vieną formą. Šis požiūris sutaupo brangaus laiko.",
+      "desc4": "O kad veiksmai būtų dar paprastesni, priėmus kreditą klientas tereikia internetu pateikti savo įrodymus ir pasirašyti sutartį elektroniniu būdu. Būtent šis metodas leidžia kuo greičiau gauti kreditą.",
+      "cta": "PASIEKTI PASKOLOS FORMĄ"
+    },
+    "advantages_title": "Mūsų privalumai",
+    "advantages": {
+      "item1": "Itin greita internetinė kredito forma (4 min.)",
+      "item2": "Momentinis principinis atsakymas",
+      "item3": "Skaitmeniniai įrodymai ir elektroninis parašas",
+      "item4": "Pagalba telefonu, jei reikia"
+    },
+    "faq_title": "DUK apie greitąjį kreditą",
+    "faq": {
+      "q1": "Kuo skiriasi greitasis kreditas nuo skubaus kredito?",
+      "a1": "Sąvokos greitasis kreditas ir skubus kreditas reiškia tą patį. Tai komerciniai pavadinimai, vartojami kalbant apie kreditą, kurio užklausa, bylos nagrinėjimas ir atsakymas pagreitinami dėl supaprastintų skaitmeninių kelių.",
+      "q2": "Kurį kreditą gauti greičiausia?",
+      "a2": "Kai jis jau atidarytas, atnaujinamasis kreditas dažnai yra greičiausias finansavimas. Naujai paraiškai asmeninė paskola internetu paprastai yra geriausias kompromisas tarp greičio, skolinamos sumos ir finansavimo išlaidų.",
+      "q3": "Ar galiu gauti greitąjį kreditą internetu?",
+      "a3": "Taip. „Vantex Bank“ svetainėje galima užpildyti formą, gauti principinį atsakymą, pasirašyti sutartį elektroniniu būdu ir išsiųsti įrodymus niekur nekeliaujant.",
+      "q4": "Kiek laiko užtrunka gauti atsakymą?",
+      "a4": "Jūsų bylos nagrinėjimas pradedamas iškart pateikus formą. Principinis atsakymas paprastai pateikiamas nedelsiant, o galutinis patvirtinimas įvyksta per 24–48 valandas nuo dokumentų gavimo."
+    }
+  },
   "nav": {
     "how": "Kaip tai veikia",
     "services": "Paslaugos",
@@ -8,7 +51,8 @@
     "about": "Apie mus",
     "contact": "Kontaktai",
     "apply": "Prašyti paskolos",
-    "login": "Prisijungti"
+    "login": "Prisijungti",
+    "logo_text": "Vantex Bank"
   },
   "common": {
     "months": "mėnesių",
@@ -17,7 +61,15 @@
     "back": "Atgal",
     "continue": "Tęsti",
     "submit": "Pateikti",
-    "euro_month": "€/mėn."
+    "euro_month": "€/mėn.",
+    "taeg_fixed": "Fiksuota BVKKMN",
+    "orias_label": "ORIAS numeris",
+    "orias_val": "14807766",
+    "free_num_label": "Nemokamas numeris",
+    "phone_val": "+44 800 123 456",
+    "per_month": "/ mėn.",
+    "secure_loading": "Saugus krovimas...",
+    "to": "iki"
   },
   "hero": {
     "title": "Jūsų paskola internetu, paprasta ir greita",
@@ -26,7 +78,8 @@
     "cta_sim": "Simuliuoti paskolą",
     "stat_clients": "Patenkinti klientai",
     "stat_rate": "Fiksuota metinė palūkanų norma",
-    "stat_guarantee": "Garantuotas atsakymas"
+    "stat_guarantee": "Garantuotas atsakymas",
+    "stat_guarantee_val": "48 val."
   },
   "phone_ui": {
     "hello": "Sveiki 👋",
@@ -117,12 +170,14 @@
   },
   "app": {
     "title": "Paskolos paraiška",
-    "step1": "Profilis",
+    "step1": "Projektas",
+    "step_infos": "Informacija",
     "step2": "Dokumentai",
     "step3": "Patvirtinimas",
-    "step4": "Išsiųsta",
+    "step4": "Validacija",
     "loading": "Kraunama...",
-    "summary_title": "Paraiškos santrauka",
+    "sending": "Siuntimo saugumas...",
+    "summary_title": "Jūsų paraiškos santrauka",
     "monthly_est": "Numatoma mėnesio įmoka",
     "phone": "Telefonas",
     "nationality": "Pilietybė",
@@ -130,23 +185,27 @@
     "income": "Grynosios mėnesio pajamos (€)",
     "expenses": "Mėnesio išlaidos (€)",
     "purpose": "Paskolos tikslas",
+    "address": "Visas adresas",
     "docs_title": "Patvirtinamieji dokumentai",
-    "docs_desc": "Įkelkite savo dokumentus. Jie saugomi naudojant tiesioginį šifravimą.",
+    "docs_desc": "Įkelkite savo dokumentus (PDF arba vaizdas, maks. 8 MB).",
     "upload_done": "Įkelta ✓",
     "upload_replace": "Spustelėkite, norėdami pakeisti",
     "upload_cni": "Asmens tapatybės įrodymas (asmens tapatybės kortelė arba pasas)",
-    "upload_cni_sub": "PDF, JPG, PNG · Maks. 5 MB",
+    "upload_cni_sub": "PDF, JPG, PNG · Maks. 8 MB",
     "upload_pay": "Paskutiniai 3 darbo užmokesčio lapeliai",
-    "upload_pay_sub": "PDF · Maks. 10 MB",
+    "upload_pay_sub": "PDF · Maks. 8 MB",
     "upload_bank": "Banko išrašai (paskutiniai 3 mėnesiai)",
-    "upload_bank_sub": "PDF · Maks. 10 MB",
+    "upload_bank_sub": "PDF · Maks. 8 MB",
     "recap_title": "Santrauka ir parašas",
-    "recap_desc": "Prieš pateikdami paraišką, patikrinkite savo informaciją.",
+    "recap_desc": "Prieš pateikdami paraišką, patikrinkite informaciją savo byloje.",
+    "recap_loan": "Paskola:",
+    "recap_monthly": "Mėnesio įmoka:",
+    "recap_email": "El. paštas:",
     "contract_title": "PASKOLOS PARAIŠKOS SUTARTIS — „VANTEX BANK“",
     "contract_text": "Pateikdamas šią formą, Paskolos gavėjas patvirtina, kad susipažino su bendrosiomis „Vantex Bank“ sąlygomis, ir garbės žodžiu pareiškia, kad pateikta informacija yra tiksli ir išsami. Paskolos gavėjas įgalioja „Vantex Bank“ tikrinti banko incidentų failus ir atlikti bet kokį patikrinimą, būtiną paraiškos analizei. Ši paraiška nesukuria sutartinių įsipareigojimų „Vantex Bank“ daliai. Galutinis pasiūlymas bus pateiktas išanalizavus visą bylą. Galutinė BVKKMN bus nurodyta kredito pasiūlyme. Paskolos gavėjas turi 14 kalendorinių dienų teisinį atsisakymo laikotarpį nuo galutinio pasiūlymo pasirašymo. „Vantex Bank“ (SAS Cap Au Nord) — ORIAS registruotas tarpininkas, numeris 14807766. Įstatinis kapitalas: 50 000 000 €. Buveinė: 12 Avenue de la Banque, 75008 Paryžius, Prancūzija.",
-    "chk1": "Perskaičiau ir sutinku su „Vantex Bank“ bendrosiomis sąlygomis ir privatumo politika.",
-    "chk2": "Spustelėdamas Pateikti, įgalioju „Vantex Bank“ dalytis mano duomenimis su savo kredito analizės partneriais tvarkant mano paraišką.",
-    "chk3": "Patvirtinu, kad esu pilnametis (18+ metų), gyvenu tinkamoje šalyje (Europoje arba Azijoje) ir turiu nuolatines mėnesines pajamas.",
+    "chk1": "Patvirtinu pateiktos informacijos tikslumą.",
+    "chk2": "Sutinku su duomenų tvarkymo sąlygomis.",
+    "chk3": "Patvirtinu, kad esu pilnametis (18+ metų).",
     "alert_checks": "Norėdami tęsti, pažymėkite visus laukelius.",
     "submitting_title": "Vykdoma jūsų bylos analizė...",
     "submitting_sub": "Užteks kelių sekundžių",
@@ -156,12 +215,27 @@
     "next1": "Per kelias minutes jums bus išsiųstas patvirtinimo el. laiškas su jūsų bylos numeriu.",
     "next2": "Mūsų komanda išanalizuoja jūsų bylą per 48 darbo valandas ir susisieks su jumis, jei reikės papildomų dokumentų.",
     "next3": "Palankaus sprendimo atveju pasirašote pasiūlymą elektroniniu būdu — lėšos pervedamos per 72 valandas.",
-    "home_btn": "Grįžti į pagrindinį"
+    "home_btn": "Grįžti į pagrindinį",
+    "submit_btn": "Pateikti mano bylą ✓",
+    "email_subject": "Nauja paskolos paraiška"
+  },
+  "errors": {
+    "fill_project": "Užpildykite visus savo projekto laukus.",
+    "fill_infos": "Užpildykite visą savo asmeninę informaciją.",
+    "invalid_email": "Įveskite galiojantį el. pašto adresą.",
+    "min_age": "Turite būti pilnametis (18 metų ar vyresnis).",
+    "upload_all": "Įkelkite 3 privalomus dokumentus.",
+    "file_too_large": "Failas per didelis (maks. 8 MB).",
+    "send_error": "Klaida siunčiant:",
+    "ok_btn": "GERAI"
   },
   "about": {
     "stat_year": "Įkūrimo metai",
+    "stat_year_val": "2004",
     "stat_capital": "Įstatinis kapitalas",
+    "stat_capital_val": "50 mln. €",
     "stat_presence": "Tarptautinė veikla",
+    "stat_presence_val": "ES ir Azija",
     "mission": "Mūsų misija",
     "mission_text1": "Įkurti siekiant tapti greitų paskolų ir asmeninio finansavimo specialistais, mes siekiame kiekvienam paskolos gavėjui pasiūlyti geriausiai jo projektui ir situacijai tinkantį sprendimą.",
     "mission_text2": "„Vantex Bank“ vartojimo paskolos paraišką pateikiate internetu ir iškart gaunate preliminarų atsakymą. Mūsų tikslas paprastas: padėti jums kiekviename žingsnyje, kad finansavimą gautumėte lengviau ir greičiau.",
@@ -184,7 +258,7 @@
     },
     "mortgage": "Būsto paskola",
     "business": "Verslo paskola",
-    "debt": "Skolų konsolidavimas"
+    "debt": "Kreditų konsolidavimas"
   },
   "footer": {
     "assist": "Pagalba",
@@ -195,7 +269,10 @@
     "privacy": "Privatumo politika",
     "rights": "Visos teisės saugomos. SAS Cap Au Nord — ORIAS 14807766.",
     "accessibility": "Prieinamumas",
-    "sitemap": "Svetainės medis"
+    "sitemap": "Svetainės medis",
+    "cookie_text": "Mūsų svetainėje naudojami slapukai, siekiant užtikrinti tinkamą jos veikimą ir gauti anoniminę lankomumo statistiką, kad galėtume optimizuoti jos ergonomiką, navigaciją ir turinį.",
+    "cookie_accept": "Sutinku",
+    "cookie_more": "Sužinoti daugiau"
   },
   "jobs": {
     "cdi": "Darbuotojas pagal neterminuotą sutartį",
@@ -325,7 +402,7 @@
     "t4_meta": "Marselis · 2025 m. birželis",
     "t5_text": "Būtent jų dėka gavau būsto paskolą, apie kurią svajojau. Platforma intuityvi, konsultantai pasiekiami ir profesionalūs. Rekomenduoju nedvejodama.",
     "t5_meta": "Paryžius · 2025 m. gegužė",
-    "t6_text": "Profesionalus ir patikimas aptarnavimas tiems, kurie dvejoja viską daryti internetu. Mano konsultantas paskambino man ir paaiškino kiekvieną žingsnį. Rezultatas: pervedimas gautas per 72 val.!",
+    "t6_text": "Profesionalus ir patikimas aptarnavimas tiems, kurie dvejoja viską daryti internetu. Mano konsultantas paskambino man ir paaiškino kiekvieną žingsnį. Rezultat: pervedimas gautas per 72 val.!",
     "t6_meta": "Amsterdamas · 2025 m. balandis"
   },
   "legal": {
@@ -361,7 +438,7 @@
     "mentions_s2_text2": "Įstatinis kapitalas: 50 000 000 €",
     "mentions_s2_text3": "Buveinė: 12 Avenue de la Banque, 75008 Paryžius, Prancūzija",
     "mentions_s2_text4": "Registruotas ORIAS numeriu",
-    "mentions_s2_text5": "Registruotas RCS numeriu 123 456 789.",
+    "mentions_s2_text5": "Registruotas RCS numeriu 790017080.",
     "mentions_s3_title": "3. Hostingas",
     "mentions_s3_text1": "Šią svetainę priglobia „Vercel Inc.“.",
     "mentions_s4_title": "4. Reguliuojama veikla",
@@ -375,7 +452,7 @@
     "cookies_s3_title": "3. Jūsų teisės",
     "cookies_s3_text": "Pagal BDAR turite teisę susipažinti su duomenimis ir juos ištaisyti. Dėl bet kokių prašymų kreipkitės į mūsų specializuotą pagalbą.",
     "privacy_title": "Privatumo politika",
-    "privacy_intro": "Jūsų privatumas mums yra labai svarbus. Šioje politikoje išsamiai aprašoma, kaip mes renkame, naudojame ir saugome jūsų asmeninę informaciją.",
+    "privacy_intro": "Jūsų privatumas mums yra labai svarbus. Šioje politikoje išsamiai aprašoma, kako mes renkame, naudojame ir saugome jūsų asmeninę informaciją.",
     "privacy_s1_title": "1. Informacijos rinkimas",
     "privacy_s1_text": "Renkame informaciją, kai naudojatės mūsų paskolų simuliatoriumi, pildote kontaktinę formą arba kuriate kliento paskyrą.",
     "privacy_s2_title": "2. Informacijos naudojimas",
@@ -386,5 +463,236 @@
     "privacy_s2_l4": "Gerinti klientų aptarnavimą.",
     "privacy_s3_title": "3. Duomenų apsauga",
     "privacy_s3_text": "Įdiegiame įvairias saugumo priemones, kad išlaikytume jūsų asmeninės informacijos saugumą (SSL šifravimas, ribota prieiga prie duomenų)."
+  },
+  "countries": [
+    "Prancūzija",
+    "Belgija",
+    "Šveicarija",
+    "Vokietija",
+    "Ispanija",
+    "Italija",
+    "Portugalija",
+    "Nyderlandai",
+    "Liuksemburgas",
+    "Japonija",
+    "Pietų Korėja",
+    "Singapūras",
+    "Kita Europos / Azijos šalis"
+  ],
+  "articles": {
+    "summary": "Santrauka",
+    "online": {
+      "title": "Mūsų kreditas internetu trumpai",
+      "intro": "Norite finansuoti projektą ar padengti netikėtą išlaidą? Mūsų kredito internetu paslauga leidžia greitai pateikti paraišką niekur nekeliaujant.",
+      "text1": "Per kelias minutes užpildote finansavimo formą internetu ir gaunate pirmąjį preliminarų atsakymą. Jei jūsų byla priimama, toliau viską tvarkote nuotoliniu būdu, naudodami elektroninį parašą ir saugiai įkeldami dokumentus.",
+      "text2_prefix": "Misija",
+      "text2_suffix": "yra supaprastinti kiekvieną jūsų paskolos paraiškos žingsnį internetu, kad sutaupytume jūsų laiką ir suteiktume pagalbą viso proceso metu.",
+      "features_title": "Pagrindinės savybės",
+      "features": [
+        "Fiksuota arba kintama BVKKMN",
+        "Skolinama suma nuo 500 € iki 75 000 €",
+        "Grąžinimo laikotarpis nuo 12 iki 72 mėnesių"
+      ],
+      "summary_links": [
+        "Pateikite paraišką kreditui internetu „Vantex Bank“",
+        "Kodėl verta rinktis kreditą internetu?",
+        "Kiek kainuoja paskola internetu?",
+        "Laikas per kurį gaunami pinigai",
+        "Pateikiami dokumentai",
+        "Kas gali gauti kreditą internetu?"
+      ],
+      "request_title": "Pateikite paraišką kreditui internetu „Vantex Bank“",
+      "request_text": "Pateikti paraišką kreditui internetu „Vantex Bank“ yra paprasta, greita ir visiškai skaitmenizuota. Kompiuteriu, planšete ar išmaniuoju telefonu galite parengti savo bylą per kelias minutes nemokamai ir be įsipareigojimų.",
+      "steps_title": "Jūsų paraiškos žingsniai",
+      "steps": [
+        [
+          "1. Užpildykite paraišką:",
+          "Nurodykite pageidaujamą sumą, grąžinimo laikotarpį ir savo duomenis."
+        ],
+        [
+          "2. Gaukite preliminarų atsakymą:",
+          "Pateikę paraišką, iškart gausite atsakymą."
+        ],
+        [
+          "3. Užbaikite savo bylą:",
+          "Pasirašykite elektroniniu būdu ir pateikite dokumentus saugioje erdvėje."
+        ],
+        [
+          "4. Gaukite lėšas:",
+          "Po patvirtinimo lėšos pervedamos į jūsų sąskaitą."
+        ]
+      ],
+      "cost_title": "Kiek kainuoja paskola internetu?",
+      "cost_text": "Paskolos internetu kaina priklauso nuo kelių parametrų, ypač nuo BVKKMN, pasiskolintos sumos ir grąžinimo laikotarpio.",
+      "headers": [
+        "Trukmė",
+        "Geriausia fiksuota BVKKMN",
+        "Mėnesio įmokos",
+        "Bendra kredito kaina"
+      ],
+      "rows": [
+        [
+          "Per 12 mėnesių",
+          "0,90 %",
+          "837,38 €",
+          "48,56 €"
+        ],
+        [
+          "Per 36 mėnesius",
+          "7,39 %",
+          "309,46 €",
+          "1 140,56 €"
+        ],
+        [
+          "Per 60 mėnesių",
+          "4,90 %",
+          "187,77 €",
+          "1 266,20 €"
+        ],
+        [
+          "Per 72 mėnesius",
+          "6,99 %",
+          "169,41 €",
+          "2 197,52 €"
+        ]
+      ],
+      "docs_title": "Pateikiami dokumentai",
+      "docs_text": "Kredito be jokių dokumentų nebūna. Dažniausiai prašomi dokumentai yra:",
+      "docs": [
+        "Galiojantis asmens tapatybės dokumentas",
+        "Neseną gyvenamąją vietą patvirtinantis dokumentas",
+        "Paskutiniai pajamų įrodymai (atlyginimo lapeliai, mokesčių deklaracija)",
+        "Banko sąskaitos numerio patvirtinimas (IBAN)"
+      ],
+      "cta_title": "Pasiruošę įgyvendinti savo projektą?",
+      "cta_text": "Gaukite momentinį principinį atsakymą užpildę mūsų saugią formą.",
+      "cta_btn": "Pasiekti paskolos formą"
+    },
+    "no_proof": {
+      "title": "Kreditas be dokumentų apie paskirtį: Viskas, ką reikia žinoti",
+      "intro": "Sąvoka „kreditas be dokumentų“ dažnai suprantama klaidingai. Tai nereiškia, kad nereikia jokių dokumentų, o tai, kad jums nereikia pagrįsti lėšų panaudojimo.",
+      "what_title": "Kas yra kreditas be dokumentų apie paskirtį?",
+      "what_text1": "Priešingai nei tikslinis kreditas (automobiliui ar darbams), kur turite pateikti sąskaitą, asmeninė paskola be panaudojimo įrodymo suteikia laisvę. Pasiskolintą sumą naudojate kaip norite: kelionėms, laisvalaikiui, likvidumui ar įvairiems asmeniniams projektams.",
+      "what_text2_prefix": "Mes",
+      "what_text2_suffix": "gerbiame jūsų privatumą. Suteikus paskolą, lėšos yra jūsų žinioje be pirkimo sąskaitų kontrolės.",
+      "summary_links": [
+        "Kaip tai veikia?",
+        "Netikslinės paskolos privalumai",
+        "Kokius dokumentus vis tiek reikia pateikti?",
+        "Pateikti paraišką internetu"
+      ],
+      "advantages_title": "Netikslinės paskolos privalumai",
+      "advantages": [
+        [
+          "Visiška laisvė:",
+          "Jokių sąskaitų lėšoms išmokėti."
+        ],
+        [
+          "Greitis:",
+          "Supaprastintas bylos nagrinėjimas, nes nereikia tikrinti sąmatų."
+        ],
+        [
+          "Lankstumas:",
+          "Galimybė viena paskola finansuoti kelis mažus projektus."
+        ]
+      ],
+      "docs_title": "Būtini dokumentai",
+      "docs_text": "Nors lėšų naudojimas yra laisvas, bankas turi patikrinti jūsų mokumą. Turėsite pateikti:",
+      "docs": [
+        "Tapatybę (asmens tapatybės kortelę arba pasą)",
+        "Pajamų įrodymą (grąžinimui garantuoti)",
+        "IBAN lėšų pervedimui"
+      ],
+      "cta_title": "Reikia finansinės laisvės?",
+      "cta_text": "Prašykite kredito be panaudojimo įrodymo ir gaukite momentinį atsakymą.",
+      "cta_btn": "Simuliuoti mano kreditą dabar"
+    },
+    "no_refusal": {
+      "title": "Kredito be atmetimo gavimas: Realybė",
+      "intro": "100 % garantuoto „kredito be atmetimo“ teisiškai nėra. Tačiau yra sprendimų, kaip maksimaliai padidinti savo galimybes būti patvirtintam iškart.",
+      "max_title": "Kaip maksimaliai padidinti galimybes gauti sutikimą?",
+      "max_text1": "Norint išvengti automatinio atmetimo, svarbu pateikti tvarkingą bylą. Svarbiausia yra pusiausvyra tarp jūsų pajamų ir išlaidų.",
+      "max_text2": "naudoja lanksčius analizės algoritmus, kurie atsižvelgia į visą jūsų situaciją, o ne tik į darbo sutartį.",
+      "summary_links": [
+        "Priėmimo kriterijai",
+        "Patarimai idealiai bylai",
+        "Priėmimo statistika",
+        "Pradėti mano simuliaciją"
+      ],
+      "criteria_title": "Kriterijai, skatinantys priėmimą",
+      "criteria": [
+        [
+          "Stabilumas:",
+          "Gyvenimo būste trukmė arba darbo stažas."
+        ],
+        [
+          "Galimybė grąžinti:",
+          "Įsiskolinimo lygis mažesnis nei 35 %."
+        ],
+        [
+          "Skaidrumas:",
+          "Tikslios informacijos pateikimas jau pirmoje formoje."
+        ]
+      ],
+      "stats_title": "Statistika ir profiliai",
+      "stats_text": "Mūsų vidaus tyrimų duomenimis, tam tikri profiliai žymiai padidina galimybes gauti palankią nuomonę:",
+      "stats": [
+        "Skolinimasis dviese (bendrai) padidina galimybes 55 %.",
+        "Turėti pradinį įnašą arba atsarginių santaupų.",
+        "Jokių bankinių incidentų (atmestų mokėjimų) per paskutinius 3 mėnesius."
+      ],
+      "cta_title": "Patikrinkite savo tinkamumą nemokamai",
+      "cta_text": "Mūsų simuliatorius pateikia principinį atsakymą be įsipareigojimų ir be poveikio jūsų kredito reitingui.",
+      "cta_btn": "Išbandyti mano tinkamumą"
+    },
+    "immediate": {
+      "title": "Skubus kreditas: Skubių poreikių finansavimas",
+      "intro": "Sugedo automobilis? Reikia lėšų per 48 valandas? Skubus kreditas sukurtas reaguoti į netikėtus gyvenimo įvykius rekordiniu greičiu.",
+      "speed_title": "Greitis jūsų projektų labui",
+      "speed_text_prefix": "Skubus kreditas išsiskiria itin supaprastintu paraiškos teikimo procesu. Mes",
+      "speed_text_suffix": "optimizavome kiekvieną žingsnį, kad laikas nuo jūsų poreikio iki lėšų gavimo būtų kuo trumpesnis.",
+      "summary_links": [
+        "Tikrieji išmokėjimo terminai",
+        "Kaip greitai gauti lėšas?",
+        "Privalomos teisinės sąlygos",
+        "Pradėkite per 2 minutes"
+      ],
+      "delays_title": "Gavimo terminai: Ką reikia žinoti",
+      "delays_text": "Nors atsakymas pateikiamas iškart, lėšų išmokėjimas vyksta pagal griežtas teisines taisykles, skirtas paskolos gavėjui apsaugoti.",
+      "delays": [
+        [
+          "Principinis atsakymas:",
+          "Iškart po formos patvirtinimo.",
+          "Galutinis patvirtinimas:",
+          "Per 24 darbo valandas po dokumentų gavimo.",
+          "Lėšų išmokėjimas:",
+          "Nuo 8 dienos (teisinis atsisakymo laikotarpis)."
+        ]
+      ],
+      "tips_title": "3 patarimai, kaip pagreitinti pervedimą",
+      "tips": [
+        [
+          "Naudokite elektroninį parašą:",
+          "Išvengiama pašto vėlavimų (sutaupoma nuo 3 iki 5 dienų).",
+          "Paruoškite dokumentus:",
+          "Turėkite asmens tapatybės kortelę ir IBAN skaitmeniniu formatu.",
+          "Patikrinkite įskaitomumą:",
+          "Aiškias nuotraukas turintys dokumentai padeda išvengti prašymų atsiųsti dar kartą."
+        ]
+      ],
+      "cta_title": "Skubus atvejis, kuriam reikia finansavimo?",
+      "cta_text": "Užpildykite savo bylą dabar ir gaukite principinį sutikimą per mažiau nei 2 minutes.",
+      "cta_btn": "Pasiekti skubią formą"
+    }
+  },
+  "languages": {
+    "fr": "Prancūzų",
+    "en": "Anglų",
+    "kw": "Kuveitas / Arabų",
+    "sl": "Slovėnų",
+    "es": "Ispanų",
+    "lt": "Lietuvių",
+    "de": "Vokiečių",
+    "it": "Italų"
   }
 }

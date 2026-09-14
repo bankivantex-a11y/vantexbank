@@ -11,8 +11,8 @@ import it from '@/lib/dictionaries/it.json';
 import sl from '@/lib/dictionaries/sl.json';
 import lt from '@/lib/dictionaries/lt.json';
 
-type ModalId = 'auth' | 'app' | null;
-type Locale = 'FR' | 'EN' | 'KW' | 'SL' | 'ES' | 'LT' | 'DE' | 'IT';
+export type ModalId = 'auth' | 'app' | null;
+export type Locale = 'FR' | 'EN' | 'KW' | 'SL' | 'ES' | 'LT' | 'DE' | 'IT';
 
 const dictionaries: Record<string, any> = {
   FR: fr,
@@ -78,6 +78,14 @@ export function AppStateProvider({
     localStorage.setItem('vantex-locale', l);
   };
 
+  const triggerLoading = (callback?: () => void) => {
+    setIsLoading(true);
+    setTimeout(() => {
+      setIsLoading(false);
+      if (callback) callback();
+    }, 800);
+  };
+
   const t = useMemo(() => {
     return (key: string) => {
       const dict = currentDict?.default || currentDict || dictionaries['FR'];
@@ -92,7 +100,7 @@ export function AppStateProvider({
         return val;
       };
 
-      return getValue(dict, key) || getValue(fallbackDict, key) || key;
+      return getValue(dict, key) || key;
     };
   }, [locale, currentDict]);
 

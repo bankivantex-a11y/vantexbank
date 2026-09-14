@@ -30,11 +30,11 @@ export default function PretPersonnelPage() {
                   </li>
                   <li style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid var(--border)', paddingBottom: 8 }}>
                     <span style={{ color: 'var(--muted)' }}>{t('services.personal.mod_amount')}</span>
-                    <strong>500 à 75 000€</strong>
+                    <strong>500 {t('common.to')} 75 000€</strong>
                   </li>
                   <li style={{ display: 'flex', justifyContent: 'space-between', paddingBottom: 8 }}>
                     <span style={{ color: 'var(--muted)' }}>{t('services.personal.mod_dur')}</span>
-                    <strong>12 à 72 {t('common.months')}</strong>
+                    <strong>12 {t('common.to')} 72 {t('common.months')}</strong>
                   </li>
                 </ul>
               </div>

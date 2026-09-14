@@ -51,7 +51,8 @@
     "about": "À Propos",
     "contact": "Contact",
     "apply": "Demander un prêt",
-    "login": "Se connecter"
+    "login": "Se connecter",
+    "logo_text": "Vantex Bank"
   },
   "common": {
     "months": "mois",
@@ -66,7 +67,9 @@
     "orias_val": "14807766",
     "free_num_label": "Numéro Gratuit",
     "phone_val": "0 800 123 456",
-    "per_month": "/ mois"
+    "per_month": "/ mois",
+    "secure_loading": "Chargement sécurisé...",
+    "to": "à"
   },
   "hero": {
     "title": "Votre prêt en ligne, simple & rapide",
@@ -460,5 +463,244 @@
     "privacy_s2_l4": "Améliorer le service client.",
     "privacy_s3_title": "3. Protection des données",
     "privacy_s3_text": "Nous mettons en œuvre une variety de mesures de sécurité pour préserver la sécurité de vos informations personnelles (chiffrement SSL, accès restreint aux données)."
+  },
+  "countries": [
+    "France",
+    "Belgique",
+    "Suisse",
+    "Allemagne",
+    "Espagne",
+    "Italie",
+    "Portugal",
+    "Pays-Bas",
+    "Luxembourg",
+    "Japon",
+    "Corée du Sud",
+    "Singapour",
+    "Autre pays Europe / Asie"
+  ],
+  "articles": {
+    "summary": "Sommaire",
+    "online": {
+      "title": "Notre crédit en ligne, en résumé",
+      "intro": "Vous souhaitez financer un projet ou faire face à une dépense imprévue ? Notre service de crédit en ligne vous permet d’effectuer votre demande rapidement, sans avoir à vous déplacer.",
+      "text1": "En quelques minutes, vous complétez votre formulaire de financement en ligne et obtenez une première réponse de principe. Si votre dossier est retenu, vous poursuivez vos démarches directement à distance grâce à la signature électronique et au téléchargement sécurisé de vos justificatifs.",
+      "text2_prefix": "La mission de",
+      "text2_suffix": "est de simplifier chaque étape de votre demande de prêt en ligne, afin de vous faire gagner du temps et de vous offrir un accompagnement tout au long de votre parcours.",
+      "features_title": "Les principales caractéristiques",
+      "features": [
+        "TAEG fixe ou révisable",
+        "Montant empruntable de 500 € à 75 000 €",
+        "Durée de remboursement de 12 à 72 mois"
+      ],
+      "summary_links": [
+        "Faire une demande de crédit en ligne avec Vantex Bank",
+        "Pourquoi choisir un crédit en ligne ?",
+        "Combien coûte un prêt en ligne ?",
+        "Délai pour obtenir l’argent",
+        "Les justificatifs à fournir",
+        "Qui peut obtenir un crédit en ligne ?"
+      ],
+      "request_title": "Faire une demande de crédit en ligne avec Vantex Bank",
+      "request_text": "Réaliser une demande de crédit en ligne avec Vantex Bank est simple, rapide et entièrement dématérialisé. Depuis votre ordinateur, votre tablette ou votre smartphone, vous pouvez constituer votre dossier en quelques minutes, gratuitement et sans engagement.",
+      "steps_title": "Les étapes de votre demande",
+      "steps": [
+        [
+          "1. Remplissez votre demande :",
+          "Indiquez le montant souhaité, la durée de remboursement et vos informations."
+        ],
+        [
+          "2. Recevez une réponse de principe :",
+          "Une fois transmise, vous obtenez une réponse immédiate."
+        ],
+        [
+          "3. Finalisez votre dossier :",
+          "Signez électroniquement et transmettez vos pièces via l’espace sécurisé."
+        ],
+        [
+          "4. Recevez les fonds :",
+          "Après validation, les fonds sont versés sur votre compte."
+        ]
+      ],
+      "cost_title": "Combien coûte un prêt en ligne ?",
+      "cost_text": "Le coût d’un prêt en ligne varie selon plusieurs paramètres, notamment le TAEG, le montant emprunté et la durée de remboursement.",
+      "headers": [
+        "Durée",
+        "Meilleur taux TAEG fixe",
+        "Mensualités",
+        "Coût total du crédit"
+      ],
+      "rows": [
+        [
+          "Sur 12 mois",
+          "0,90%",
+          "837,38€",
+          "48,56€"
+        ],
+        [
+          "Sur 36 mois",
+          "7,39%",
+          "309,46€",
+          "1 140,56€"
+        ],
+        [
+          "Sur 60 mois",
+          "4,90%",
+          "187,77€",
+          "1 266,20€"
+        ],
+        [
+          "Sur 72 mois",
+          "6,99%",
+          "169,41€",
+          "2 197,52€"
+        ]
+      ],
+      "docs_title": "Les justificatifs à fournir",
+      "docs_text": "Il n’existe pas de crédit sans aucun justificatif. Les pièces couramment demandées sont :",
+      "docs": [
+        "Une pièce d’identité en cours de validité",
+        "Un justificatif de domicile récent",
+        "Vos derniers justificatifs de revenus (bulletins de salaire, avis d’imposition)",
+        "Un relevé d’identité bancaire (RIB)"
+      ],
+      "cta_title": "Prêt à réaliser votre projet ?",
+      "cta_text": "Obtenez une réponse de principe immédiate en remplissant notre formulaire sécurisé.",
+      "cta_btn": "Accéder au formulaire de crédit"
+    },
+    "no_proof": {
+      "title": "Le crédit sans justificatif : Tout comprendre",
+      "intro": "Le terme \"crédit sans justificatif\" est souvent mal compris. Il ne signifie pas qu’aucun document n’est requis, mais plutôt que vous n’avez pas à justifier l’utilisation des fonds.",
+      "what_title": "Qu’est-ce qu’un crédit sans justificatif ?",
+      "what_text1": "Contrairement à un crédit affecté (auto ou travaux) où vous devez fournir une facture, le prêt personnel sans justificatif d’utilisation vous laisse libre. Vous utilisez la somme empruntée comme bon vous semble : voyage, loisirs, trésorerie, ou projets personnels multiples.",
+      "what_text2_prefix": "Chez",
+      "what_text2_suffix": "nous respectons votre vie privée. Une fois le prêt accordé, les fonds sont à votre entière disposition sans contrôle sur vos factures d’achat.",
+      "summary_links": [
+        "Comment ça fonctionne ?",
+        "Les avantages du prêt non affecté",
+        "Quels documents reste-t-il à fournir ?",
+        "Faire sa demande en ligne"
+      ],
+      "advantages_title": "Les avantages du prêt non affecté",
+      "advantages": [
+        [
+          "Liberté totale :",
+          "Aucune facture à transmettre pour débloquer les fonds."
+        ],
+        [
+          "Rapidité :",
+          "Etude du dossier simplifiée car pas de devis à vérifier."
+        ],
+        [
+          "Flexibilité :",
+          "Possibilité de financer plusieurs petits projets avec un seul prêt."
+        ]
+      ],
+      "docs_title": "Les documents indispensables",
+      "docs_text": "Même si l’usage des fonds est libre, la banque doit vérifier votre solvabilité. Vous devrez fournir :",
+      "docs": [
+        "Identité (CNI ou Passeport)",
+        "Justificatif de revenus (pour garantir le remboursement)",
+        "RIB pour le versement des fonds"
+      ],
+      "cta_title": "Besoin de liberté financière ?",
+      "cta_text": "Demandez votre crédit sans justificatif d’utilisation et recevez une réponse immédiate.",
+      "cta_btn": "Simuler mon crédit maintenant"
+    },
+    "no_refusal": {
+      "title": "Obtenir un crédit sans refus : La réalité",
+      "intro": "Le \"crédit sans refus\" garanti à 100% n’existe légalement pas. Cependant, il existe des solutions pour maximiser vos chances d’acceptation immédiate.",
+      "max_title": "Comment maximiser ses chances d’accord ?",
+      "max_text1": "Pour éviter un refus automatique, il est crucial de présenter un dossier sain. La clé réside dans l’équilibre entre vos revenus et vos charges.",
+      "max_text2": "utilise des algorithmes d’analyse bienveillants qui prennent en compte l’ensemble de votre situation, et pas seulement votre contrat de travail.",
+      "summary_links": [
+        "Les critères d’acceptation",
+        "Astuces pour un dossier parfait",
+        "Statistiques d’acceptation",
+        "Lancer ma simulation"
+      ],
+      "criteria_title": "Les critères qui favorisent l’acceptation",
+      "criteria": [
+        [
+          "Stabilité :",
+          "Une ancienneté dans votre logement ou emploi."
+        ],
+        [
+          "Capacité de remboursement :",
+          "Un taux d’endettement inférieur à 35%."
+        ],
+        [
+          "Transparence :",
+          "Fournir des informations exactes dès le premier formulaire."
+        ]
+      ],
+      "stats_title": "Statistiques et profils",
+      "stats_text": "D’après nos études internes, certains profils augmentent significativement les chances d’obtenir un avis favorable :",
+      "stats": [
+        "Emprunter à deux (co-emprunteur) augmente les chances de 55%.",
+        "Disposer d’un apport ou d’une épargne de précaution.",
+        "Ne pas avoir eu d’incidents bancaires (rejets de prélèvement) les 3 derniers mois."
+      ],
+      "cta_title": "Vérifiez votre éligibilité gratuitement",
+      "cta_text": "Notre simulateur vous donne une réponse de principe sans engagement et sans impact sur votre score de crédit.",
+      "cta_btn": "Tester mon éligibilité"
+    },
+    "immediate": {
+      "title": "Crédit Immédiat : Financer l’urgence",
+      "intro": "Une panne de voiture ? Un besoin de trésorerie sous 48h ? Le crédit immédiat est conçu pour répondre aux imprévus de la vie avec une rapidité record.",
+      "speed_title": "La rapidité au service de vos projets",
+      "speed_text_prefix": "Le crédit immédiat se distingue par un parcours de souscription ultra-simplifié. Chez",
+      "speed_text_suffix": "nous avons optimisé chaque étape pour que le délai entre votre besoin et la disponibilité des fonds soit le plus court possible.",
+      "summary_links": [
+        "Les délais réels de versement",
+        "Comment obtenir les fonds vite ?",
+        "Conditions légales obligatoires",
+        "Démarrer en 2 minutes"
+      ],
+      "delays_title": "Délais d’obtention : Ce qu’il faut savoir",
+      "delays_text": "Bien que la réponse soit immédiate, le versement des fonds suit des règles légales strictes pour protéger l’emprunteur.",
+      "delays": [
+        [
+          "Réponse de principe :",
+          "Instantanée après validation du formulaire."
+        ],
+        [
+          "Validation finale :",
+          "Sous 24h ouvrées après réception des pièces."
+        ],
+        [
+          "Mise à disposition :",
+          "À partir du 8ème jour (délai légal de rétractation)."
+        ]
+      ],
+      "tips_title": "3 astuces pour accélérer votre virement",
+      "tips": [
+        [
+          "Utilisez la signature électronique :",
+          "Évite les délais postaux (gain de 3 à 5 jours)."
+        ],
+        [
+          "Préparez vos justificatifs :",
+          "Ayez votre CNI et RIB prêts en format numérique."
+        ],
+        [
+          "Vérifiez la lisibilité :",
+          "Des photos claires évitent les demandes de renvoi de documents."
+        ]
+      ],
+      "cta_title": "Une urgence à financer ?",
+      "cta_text": "Remplissez votre dossier maintenant et recevez votre accord de principe en moins de 2 minutes.",
+      "cta_btn": "Accéder au formulaire express"
+    }
+  },
+  "languages": {
+    "fr": "Français",
+    "en": "English",
+    "kw": "Koweït / Arabe",
+    "sl": "Slovénie",
+    "es": "Espagne",
+    "lt": "Lituanie",
+    "de": "Allemagne",
+    "it": "Italie"
   }
 }

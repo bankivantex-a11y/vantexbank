@@ -3,9 +3,10 @@
 import Image from 'next/image';
 import { useAppState } from './AppState';
 import AnimatedCounter from './AnimatedCounter';
+import { fmt } from '@/lib/loan';
 
 export default function Hero() {
-  const { openModal, t } = useAppState();
+  const { openModal, t, locale } = useAppState();
 
   return (
     <section id="hero">

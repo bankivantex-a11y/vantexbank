@@ -67,7 +67,7 @@ export default function Navbar() {
             </li>
             <li>
               <div className="nav-dropdown">
-                <span className="nav-link-with-icon">Services <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 9l6 6 6-6"/></svg></span>
+                <span className="nav-link-with-icon">{t('nav.services')} <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 9l6 6 6-6"/></svg></span>
                 <div className="dropdown-content">
                   <SmartLink href="/pret-personnel" onClick={() => setMobileMenuOpen(false)}>{t('services.personal.title')}</SmartLink>
                   <SmartLink href="/pret-immobilier" onClick={() => setMobileMenuOpen(false)}>{t('services.mortgage')}</SmartLink>
@@ -98,14 +98,14 @@ export default function Navbar() {
                 value={locale}
                 onChange={(e) => handleLocaleChange(e.target.value)}
               >
-                <option value="FR">🇫🇷 Français</option>
-                <option value="EN">🇬🇧 English</option>
-                <option value="KW">🇰🇼 Koweït / Kowace</option>
-                <option value="SL">🇸🇮 Slovénie</option>
-                <option value="ES">🇪🇸 Espagne</option>
-                <option value="LT">🇱🇹 Lituanie</option>
-                <option value="DE">🇩🇪 Allemagne</option>
-                <option value="IT">🇮🇹 Italie</option>
+                <option value="FR">🇫🇷 {t('languages.fr')}</option>
+                <option value="EN">🇬🇧 {t('languages.en')}</option>
+                <option value="KW">🇰🇼 {t('languages.kw')}</option>
+                <option value="SL">🇸🇮 {t('languages.sl')}</option>
+                <option value="ES">🇪🇸 {t('languages.es')}</option>
+                <option value="LT">🇱🇹 {t('languages.lt')}</option>
+                <option value="DE">🇩🇪 {t('languages.de')}</option>
+                <option value="IT">🇮🇹 {t('languages.it')}</option>
               </select>
             </li>
             <li className="mobile-only">
@@ -136,7 +136,7 @@ export default function Navbar() {
               <option value="ES">🇪🇸 ES</option>
               <option value="LT">🇱🇹 LT</option>
               <option value="DE">🇩🇪 DE</option>
-              <option value="IT">🇮🇹 IT</option>
+              <option value="IT">🇮ᵗ IT</option>
             </select>
             <button className="nav-toggle" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} aria-label="Toggle menu">
               {mobileMenuOpen ? (

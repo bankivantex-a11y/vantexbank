@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { DM_Serif_Display, Inter } from 'next/font/google';
 import '../globals.css';
-import { AppStateProvider } from '@/components/AppState';
+import { AppStateProvider, Locale } from '@/components/AppState';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import AuthModal from '@/components/AuthModal';
@@ -25,8 +25,9 @@ const dmSerif = DM_Serif_Display({
   display: 'swap',
 });
 
-export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
-  const dict = await getDictionary(params.locale);
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const dict = await getDictionary(locale);
   return {
     title: dict.hero.title + ' | Vantex Bank',
     description: dict.hero.desc,
@@ -38,18 +39,20 @@ export default async function RootLayout({
   params
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
-  const dictionary = await getDictionary(params.locale);
+  const { locale } = await params;
+  const dictionary = await getDictionary(locale);
 
   return (
-    <html lang={params.locale} className={`${inter.variable} ${dmSerif.variable}`}>
+    <html lang={locale} className={`${inter.variable} ${dmSerif.variable}`}>
       <body>
-        <AppStateProvider initialLocale={params.locale.toUpperCase()} initialDictionary={dictionary}>
+        <AppStateProvider initialLocale={locale.toUpperCase() as Locale} initialDictionary={dictionary}>
           <LoadingOverlay />
           <Navbar />
           <main>{children}</main>
           <Footer />
+          <AuthModal />
           <AppModal />
           <CookieBanner />
         </AppStateProvider>

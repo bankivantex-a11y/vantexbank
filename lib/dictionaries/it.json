@@ -1,14 +1,58 @@
 {
+  "home": {
+    "amounts_title": "Cerchi un importo specifico?",
+    "duration_label": "Durata del rimborso: da 12 a 36 mesi",
+    "learn_more": "Scopri di più →",
+    "solutions_title": "Cerchi una soluzione specifica?",
+    "solutions": {
+      "no_proof_title": "Credito senza giustificativo",
+      "no_proof_desc": "Si può ottenere un credito rapidamente senza giustificativo?",
+      "online_title": "Prestito online",
+      "online_desc": "Svolgere l'intera procedura di credito online permette di risparmiare tempo.",
+      "no_refusal_title": "Credito senza rifiuto",
+      "no_refusal_desc": "Quale soluzione per ottenere un credito express e senza rifiuto?",
+      "immediate_title": "Credito immediato",
+      "immediate_desc": "Cosa fare quando la tua necessità di finanziamento non può aspettare?",
+      "read_article": "Leggi l'articolo →"
+    },
+    "how_fast": {
+      "title": "Come funziona il credito rapido di Vantex Bank?",
+      "desc1": "Il credito più rapido si ottiene online. Oggi è la soluzione privilegiata per finanziare un progetto, far fronte a una spesa imprevista o ottenere rapidamente della liquidità complementare.",
+      "desc2": "Tuttavia, quando una necessità di finanziamento diventa urgente, la cosa più difficile non è sempre ottenere il denaro. Si tratta spesso di identificare l'ente capace di accettare la domanda e di convalidare la pratica nel minor tempo possibile.",
+      "desc3": "In qualità di specialista del credito rapido, Vantex Bank ha sviluppato una soluzione che permette di interrogare più enti a partire da un solo modulo. Questo approccio fa risparmiare tempo prezioso.",
+      "desc4": "E per rendere le procedure ancora più semplici, una volta accettato il credito, il cliente non deve fare altro che fornire i propri giustificativi online e firmare elettronicamente il contratto. È questo metodo che permette di ottenere il credito il più rapidamente possibile.",
+      "cta": "ACCEDI AL MODULO DI CREDITO"
+    },
+    "advantages_title": "I nostri vantaggi",
+    "advantages": {
+      "item1": "Modulo di credito online ultra rapido (4 min)",
+      "item2": "Risposta di principio immediata",
+      "item3": "Giustificativi dematerializzati e firma elettronica",
+      "item4": "Assistenza telefonica se necessaria"
+    },
+    "faq_title": "FAQ sul credito rapido",
+    "faq": {
+      "q1": "Quale differenza tra credito rapido e credito express?",
+      "a1": "Le espressioni credito rapido e credito express indicano la stessa cosa. Sono denominazioni commerciali utilizzate per parlare di un credito la cui domanda, lo studio della pratica e la risposta sono accelerate grazie a percorsi digitali semplificati.",
+      "q2": "Qual è il credito più rapido da ottenere?",
+      "a2": "Quando è già aperto, il credito rotativo è spesso il finanziamento più rapido. Per una nuova domanda, il prestito personale online costituisce generalmente il miglior compromesso tra rapidità, importo mutuabile e costo del finanziamento.",
+      "q3": "Si può ottenere un credito rapido online?",
+      "a3": "Sì. Presso Vantex Bank è possibile compilare un modulo, ricevere una risposta di principio, firmare elettronicamente il contratto e trasmettere i giustificativi senza doversi spostare.",
+      "q4": "Quanto tempo ci vuole per ottenere una risposta?",
+      "a4": "Lo studio della tua pratica inizia non appena inviato il modulo. Una risposta di principio è generalmente immediata e la convalida definitiva interviene entro 24-48 ore dal ricevimento dei documenti giustificativi."
+    }
+  },
   "nav": {
-    "how": "Come funziona",
+    "how": "Funzionamento",
     "services": "Servizi",
     "sim": "Simulatore",
     "cond": "Condizioni",
     "testi": "Testimonianze",
-    "about": "Su di noi",
+    "about": "Chi siamo",
     "contact": "Contatti",
     "apply": "Richiedi un prestito",
-    "login": "Accedi"
+    "login": "Accedi",
+    "logo_text": "Vantex Bank"
   },
   "common": {
     "months": "mesi",
@@ -17,59 +61,95 @@
     "back": "Indietro",
     "continue": "Continua",
     "submit": "Invia",
-    "euro_month": "€/mese"
+    "euro_month": "€/mese",
+    "taeg_fixed": "TAEG fisso",
+    "orias_label": "Numero ORIAS",
+    "orias_val": "14807766",
+    "free_num_label": "Numero Verde",
+    "phone_val": "800 123 456",
+    "per_month": "/ mese",
+    "secure_loading": "Caricamento sicuro...",
+    "to": "a"
   },
   "hero": {
-    "title": "Il tuo prestito online, semplice e veloce",
-    "desc": "Vantex Bank ti accompagna in tutti i tuoi progetti di vita. Ottieni il tuo finanziamento in pochi passi, senza code, 100% online.",
+    "title": "Il tuo prestito online, semplice & veloce",
+    "desc": "Vantex Bank ti accompagna in tutti i tuoi progetti di vita. Ottieni il tuo finanziamento in pochi passaggi, senza code, 100% online.",
     "cta_apply": "Richiedi il mio prestito",
     "cta_sim": "Simula il mio prestito",
     "stat_clients": "Clienti soddisfatti",
-    "stat_rate": "Tasso annuale fisso",
-    "stat_guarantee": "Risposta garantita"
+    "stat_rate": "Tasso annuo fisso",
+    "stat_guarantee": "Risposta garantita",
+    "stat_guarantee_val": "48h"
+  },
+  "phone_ui": {
+    "hello": "Buongiorno 👋",
+    "balance_label": "Saldo disponibile",
+    "approved": "Prestito approvato",
+    "received": "Bonifico ricevuto",
+    "rent": "Affitto",
+    "repayment": "Rimborso",
+    "today": "Oggi",
+    "fixed_rate_guaranteed": "Tasso fisso garantito"
   },
   "sim": {
     "title": "Calcola le tue rate mensili",
-    "desc": "Regola l'importo e la durata per vedere istantaneamente il costo reale del tuo finanziamento.",
+    "desc": "Modifica l'importo e la durata per vedere istantaneamente il costo reale del tuo finanziamento.",
     "card_title": "Il mio finanziamento",
-    "card_sub": "Tasso annuale fisso: 2,75% · TAEG indicativo",
+    "card_sub": "Tasso annuo fisso: 2,75% · TAEG indicativo",
     "amount_label": "Importo desiderato",
     "duration_label": "Durata del rimborso",
-    "cta": "Fai la mia richiesta di prestito →",
+    "cta": "Fai la mia domanda di prestito →",
     "res_monthly": "Rata mensile stimata",
     "res_total": "Importo totale da rimborsare",
     "res_interest": "Costo totale degli interessi",
     "res_badge": "Tasso fisso 2,75% — Calcolato sulla tua durata",
-    "mini_capital": "Capitale preso in prestito",
+    "mini_capital": "Capitale prestato",
     "mini_rate": "Tasso mensile",
     "mini_duration": "Durata scelta",
-    "mini_first": "1a rata",
-    "disclaimer": "* Simulazione indicativa. TAEG definitivo specificato nell'offerta contrattuale. Soggetto ad accettazione da parte di Vantex Bank."
+    "mini_first": "1ª rata",
+    "disclaimer": "* Simulazione indicativa. TAEG definitivo precisato nell'offerta di contratto. Soggetto ad accettazione da parte di Vantex Bank."
+  },
+  "cond": {
+    "label": "Idoneità",
+    "title": "Condizioni di accesso al prestito",
+    "desc": "Vantex Bank è accessibile ai residenti in Europa e in Asia che soddisfano i criteri seguenti.",
+    "item1_strong": "Essere maggiorenni",
+    "item1_text": "— Avere almeno 18 anni compiuti alla data della domanda",
+    "item2_strong": "Residenza idonea",
+    "item2_text": "— Essere residente in Europa, Asia (Kuwait...), o Australia",
+    "item3_strong": "Redditi fissi mensili",
+    "item3_text": "— Giustificare una retribuzione regolare (tempo indeterminato, dipendente pubblico, autonomo, pensionato…)",
+    "item4_strong": "Tasso annuo fisso del 2,75%",
+    "item4_text": "— Garantito per tutta la durata del rimborso",
+    "item5_strong": "Durata flessibile",
+    "item5_text": "— Tra 12 e 360 mesi in base alla tua capacità di rimborso",
+    "stat_docs": "Pratiche trattate",
+    "stat_satisfaction": "↑ 94% di soddisfazione cliente"
   },
   "trust": {
     "tp_sub": "Basato su 3.247 recensioni verificate",
     "data_title": "Dati sicuri",
     "data_sub": "Crittografia SSL a 256 bit",
     "agree_title": "Istituto autorizzato",
-    "agree_sub": "Autorità bancaria dell'UE",
-    "fees_title": "Zero costi nascosti",
+    "agree_sub": "Autorità bancaria UE",
+    "fees_title": "Zero spese nascoste",
     "fees_sub": "Trasparenza totale"
   },
   "steps": {
     "label": "Il nostro processo",
     "title": "Il tuo prestito in 3 semplici passaggi",
     "desc": "Un percorso 100% digitale, sicuro e trasparente per accompagnarti dalla A alla Z.",
-    "s1_title": "Simula e compila",
-    "s1_desc": "Usa il nostro simulatore interattivo, scegli l'importo e la durata, quindi completa la tua domanda online in 10 minuti.",
-    "s2_title": "Carica i tuoi documenti",
-    "s2_desc": "Carica i tuoi documenti giustificativi in modo sicuro (carta d'identità, buste paga). Il nostro team analizza la tua pratica entro 48 ore.",
+    "s1_title": "Simula & compila",
+    "s1_desc": "Usa il nostro simulatore interattivo, scegli il tuo importo e la tua durata, quindi completa la tua pratica online in 10 minuti.",
+    "s2_title": "Deposita i tuoi documenti",
+    "s2_desc": "Carica i tuoi giustificativi in totale sicurezza (documento d'identità, buste paga). Il nostro team analizza la tua pratica entro 48 ore.",
     "s3_title": "Ricevi la tua risposta",
-    "s3_desc": "Riceverai una notifica via email. In caso di approvazione, firmi elettronicamente e i fondi vengono versati entro 72 ore lavorative."
+    "s3_desc": "Verrai informato tramite e-mail. In caso di accordo, firmi elettronicamente e i fondi vengono versati entro 72 ore lavorative."
   },
   "auth": {
     "login_tab": "Accedi",
     "register_tab": "Crea un account",
-    "email_label": "Indirizzo email",
+    "email_label": "Indirizzo e-mail",
     "email_placeholder": "tu@email.com",
     "pwd_label": "Password",
     "pwd_placeholder": "••••••••",
@@ -90,65 +170,95 @@
   },
   "app": {
     "title": "Domanda di prestito",
-    "step1": "Profilo",
+    "step1": "Progetto",
+    "step_infos": "Informazioni",
     "step2": "Documenti",
     "step3": "Conferma",
-    "step4": "Inviato",
+    "step4": "Validazione",
     "loading": "Caricamento...",
-    "summary_title": "Riepilogo della domanda",
+    "sending": "Messa in sicurezza dell'invio...",
+    "summary_title": "Sintesi della tua domanda",
     "monthly_est": "Rata mensile stimata",
     "phone": "Telefono",
     "nationality": "Nazionalità",
     "job": "Situazione professionale",
     "income": "Reddito mensile netto (€)",
     "expenses": "Spese mensili (€)",
-    "purpose": "Scopo del prestito",
+    "purpose": "Oggetto del prestito",
+    "address": "Indirizzo completo",
     "docs_title": "Documenti giustificativi",
-    "docs_desc": "Carica i tuoi documenti. Sono protetti da crittografia end-to-end.",
+    "docs_desc": "Carica i tuoi documenti (PDF o Immagine, max 8 MB).",
     "upload_done": "Caricato ✓",
     "upload_replace": "Clicca per sostituire",
     "upload_cni": "Documento d'identità (Carta d'identità o passaporto)",
-    "upload_cni_sub": "PDF, JPG, PNG · Max 5 MB",
+    "upload_cni_sub": "PDF, JPG, PNG · Max 8 MB",
     "upload_pay": "Ultime 3 buste paga",
-    "upload_pay_sub": "PDF · Max 10 MB",
+    "upload_pay_sub": "PDF · Max 8 MB",
     "upload_bank": "Estratti conto bancari (ultimi 3 mesi)",
-    "upload_bank_sub": "PDF · Max 10 MB",
-    "recap_title": "Riepilogo e firma",
-    "recap_desc": "Verifica le tue informazioni prima di inviare la domanda.",
-    "contract_title": "CONTRATTO DI RICHIESTA PRESTITO — VANTEX BANK",
-    "contract_text": "Inviando questo modulo, il mutuatario riconosce di aver letto le Condizioni Generali di Vantex Bank e dichiara sul proprio onore che le informazioni fornite sono accurate e complete. Il mutuatario autorizza Vantex Bank a consultare i file degli incidenti bancari e a eseguire ogni verifica necessaria per l'analisi della domanda. La presente domanda non costituisce un impegno contrattuale da parte di Vantex Bank. L'offerta definitiva sarà emessa dopo l'analisi del fascicolo completo. Il TAEG definitivo sarà specificato nell'offerta di credito. Il mutuatario ha un diritto di recesso legale di 14 giorni di calendario dalla firma dell'offerta definitiva. Vantex Bank (SAS Cap Au Nord) — Intermediario iscritto all'ORIAS con il numero 14807766. Capitale sociale: 50.000.000 €. Sede legale: 12 Avenue de la Banque, 75008 Parigi, Francia.",
-    "chk1": "Ho letto e accetto le Condizioni Generali e l'Informativa sulla Privacy di Vantex Bank.",
-    "chk2": "Cliccando su Invia, autorizzo Vantex Bank a condividere i miei dati con i suoi partner per l'analisi del credito nell'ambito dell'elaborazione della mia domanda.",
-    "chk3": "Certifico di essere maggiorenne (18+ anni), risiedo in un paese ammissibile (Europa o Asia) e dispongo di un reddito mensile fisso.",
-    "alert_checks": "Seleziona tutte le caselle per continuare.",
-    "submitting_title": "Analisi della pratica in corso...",
+    "upload_bank_sub": "PDF · Max 8 MB",
+    "recap_title": "Riepilogo & Firma",
+    "recap_desc": "Verifica le informazioni della tua pratica prima di inviare la domanda.",
+    "recap_loan": "Prestito:",
+    "recap_monthly": "Rata mensile:",
+    "recap_email": "Email:",
+    "contract_title": "CONTRATTO DI DOMANDA DI PRESTITO — VANTEX BANK",
+    "contract_text": "Inviando questo modulo, il Mutuatario riconosce di aver preso conoscenza delle Condizioni Generali di Vantex Bank e dichiara sul proprio onore che le informazioni fornite sono esatte e complete. Il Mutuatario autorizza Vantex Bank a consultare i file degli incidenti bancari e ad effettuare ogni verifica necessaria all'analisi della propria domanda. La presente domanda non costituisce un impegno contrattuale da parte di Vantex Bank. L'offerta definitiva sarà emessa dopo l'analisi della pratica completa. Il TAEG definitivo sarà precisato nell'offerta di credito. Il Mutuatario dispone di un termine di recesso legale di 14 giorni di calendario a decorrere dalla firma dell'offerta definitiva. Vantex Bank (SAS Cap Au Nord) — Intermediario registrato all'ORIAS con il numero 14807766. Capitale sociale: 50.000.000 €. Sede sociale: 12 Avenue de la Banque, 75008 Parigi, Francia.",
+    "chk1": "Certifico l'esattezza delle informazioni fornite.",
+    "chk2": "Accetto le condizioni di trattamento dei dati.",
+    "chk3": "Certifico di essere maggiorenne (18+ anni).",
+    "alert_checks": "Spunta tutte le caselle per continuare.",
+    "submitting_title": "Analisi della tua pratica in corso...",
     "submitting_sub": "Basteranno pochi secondi",
     "success_title": "Pratica inviata con successo!",
-    "success_desc": "La tua richiesta è stata ricevuta dai nostri team. Riceverai una notifica a breve (entro 48 ore lavorative) con la decisione di Vantex Bank.",
+    "success_desc": "La tua domanda è stata ricevuta dai nostri team. Riceverai una notifica a breve (entro 48 ore lavorative) con la decisione di Vantex Bank.",
     "ref_label": "Numero pratica",
-    "next1": "Un'email di conferma con il numero della tua pratica ti sarà inviata nei prossimi minuti.",
-    "next2": "Il nostro team analizzerà la tua pratica entro 48 ore lavorative e ti contatterà se saranno necessari documenti aggiuntivi.",
-    "next3": "In caso di decisione favorevole, firmerai l'offerta elettronicamente — i fondi saranno quindi trasferiti entro 72 ore.",
-    "home_btn": "Torna alla home"
+    "next1": "Un'e-mail di conferma con il numero della tua pratica ti sarà inviata nei prossimi minuti.",
+    "next2": "Il nostro team analizza la tua pratica entro 48 ore lavorative e ti contatta se sono necessari documenti complementari.",
+    "next3": "In caso di decisione favorevole, firmi l'offerta elettronicamente — i fondi vengono quindi versati entro 72 ore.",
+    "home_btn": "Torna alla home",
+    "submit_btn": "Invia la mia pratica ✓",
+    "email_subject": "Nuova domanda di prestito"
+  },
+  "errors": {
+    "fill_project": "Compila tutti i campi del tuo progetto.",
+    "fill_infos": "Compila tutte le tue informazioni personali.",
+    "invalid_email": "Inserisci un indirizzo e-mail valido.",
+    "min_age": "Devi essere maggiorenne (18 anni o più).",
+    "upload_all": "Carica i 3 documenti obbligatori.",
+    "file_too_large": "File troppo grande (max 8 MB).",
+    "send_error": "Errore durante l'invio:",
+    "ok_btn": "OK"
+  },
+  "about": {
+    "stat_year": "Anno di creazione",
+    "stat_year_val": "2004",
+    "stat_capital": "Capitale sociale",
+    "stat_capital_val": "50M€",
+    "stat_presence": "Presenza internazionale",
+    "stat_presence_val": "UE & Asia",
+    "mission": "La nostra Mission",
+    "mission_text1": "Fondata con l'ambizione di essere uno specialista del credito rapido e del finanziamento ai privati, la nostra missione è accompagnare ogni mutuatario verso la soluzione più adatta al suo progetto e alla sua situazione.",
+    "mission_text2": "Presso Vantex Bank, realizzi la tua domanda di prestito personale online e ottieni una risposta di principio immediata. Il nostro obiettivo è semplice: accompagnarti in ogni fase per facilitare e accelerare l'ottenimento del tuo finanziamento.",
+    "legal_box": "Vantex Bank (SAS Cap Au Nord) è un intermediario registrato all'ORIAS con il numero 14807766 in qualità di mandatario non esclusivo in operazioni bancarie e in servizi di pagamento (MOBSP)."
   },
   "services": {
-    "label": "I nostri servizi",
+    "label": "I nostri Servizi",
     "personal": {
       "title": "Prestito Personale",
-      "desc": "Hai bisogno di denaro per finanziare uno o più progetti? Il prestito personale ti permette di prendere in prestito l'importo desiderato e di rimborsarlo al tuo ritmo.",
-      "mod_title": "Termini",
+      "desc": "Hai bisogno di denaro per finanziare uno o più progetti? Il prestito personale permette di prendere in prestito l'importo desiderato e di rimborsarlo al tuo ritmo.",
+      "mod_title": "Modalità",
       "mod_rate": "Tasso",
       "mod_amount": "Importo",
       "mod_dur": "Durata",
       "adv_title": "I nostri vantaggi",
       "sol_title": "Una soluzione semplice",
-      "sol_desc": "Presso Vantex Bank, effettui la tua richiesta di prestito personale online e ottieni una risposta immediata in linea di principio. Se accettata, non devi far altro che firmare elettronicamente il tuo contratto e caricare i tuoi documenti giustificativi.",
+      "sol_desc": "Presso Vantex Bank, realizzi la tua domanda di prestito personale online e ottieni una risposta di principio immediata. In caso di accettazione, non ti resta che firmare elettronicamente il tuo contratto e caricare i tuoi documenti giustificativi.",
       "sim_title": "Simula il tuo prestito personale",
       "sim_desc": "Ottieni una stima precisa in pochi secondi."
     },
-    "mortgage": "Mutuo",
-    "business": "Prestito aziendale",
-    "debt": "Consolidamento debiti"
+    "mortgage": "Prestito immobiliare",
+    "business": "Prestito professionale",
+    "debt": "Riacquisto crediti"
   },
   "footer": {
     "assist": "Assistenza",
@@ -156,38 +266,154 @@
     "mentions": "Note legali",
     "cookies": "GDPR & Cookie",
     "terms": "Condizioni generali",
-    "privacy": "Informativa sulla privacy",
+    "privacy": "Politica sulla privacy",
     "rights": "Tutti i diritti riservati. SAS Cap Au Nord — ORIAS 14807766.",
     "accessibility": "Accessibilità",
-    "sitemap": "Mappa del sito"
+    "sitemap": "Mappa del sito",
+    "cookie_text": "Il nostro sito utilizza i cookie per garantirne il corretto funzionamento e per ottenere statistiche anonime sulle visite per ottimizzarne l'ergonomia, la navigazione e i contenuti.",
+    "cookie_accept": "Accetta",
+    "cookie_more": "Scopri di più"
   },
   "jobs": {
-    "cdi": "Lavoratore a tempo indeterminato",
-    "cdd": "Lavoratore a tempo determinato",
+    "cdi": "Dipendente a tempo indeterminato",
+    "cdd": "Dipendente a tempo determinato",
     "gov": "Dipendente pubblico",
-    "freelance": "Lavoratore autonomo / Freelance",
+    "freelance": "Autonomo / Freelance",
     "boss": "Imprenditore",
     "pro": "Libero professionista",
     "retired": "Pensionato"
   },
   "purposes": {
-    "work": "Ristrutturazione e Lavori",
+    "work": "Lavori & ristrutturazione",
     "car": "Acquisto veicolo",
     "home": "Progetto immobiliare",
     "business": "Creazione d'impresa",
     "travel": "Viaggi / Tempo libero",
-    "debt": "Consolidamento debiti",
+    "debt": "Raggruppamento crediti",
     "other": "Altro"
+  },
+  "fonctionnement": {
+    "title": "Come funziona Vantex Bank?",
+    "desc": "Abbiamo semplificato il credito affinché tu possa concentrarti sui tuoi progetti. Un'esperienza 100% digitale, trasparente e sicura.",
+    "unexpected": {
+      "title": "Una soluzione in caso di spese impreviste",
+      "desc1": "Uno dei casi più frequenti è il verificarsi di una spesa imprevista. Un guasto all'auto, una riparazione urgente in casa, la sostituzione di un elettrodomestico indispensabile o ancora una bolletta inaspettata possono squilibrare rapidamente un budget.",
+      "desc2": "Quando queste spese non possono aspettare la prossima entrata di denaro, un mini credito permette di disporre rapidamente dei fondi necessari per far fronte alla situazione.",
+      "desc3": "Il mini credito può servire anche a finanziare molti altri acquisti di piccoli importi:",
+      "list1": "Un computer o smartphone",
+      "list2": "Una bicicletta o dei mobili",
+      "list3": "Un elettrodomestico",
+      "list4": "Una formazione o un viaggio",
+      "footer": "In questo tipo di situazione, il mini credito permette di spalmare una spesa nel tempo senza dover mobilitare immediatamente i propri risparmi. Costituisce così una soluzione pratica per concretizzare un progetto preservando il proprio budget."
+    }
+  },
+  "pret_personnel": {
+    "adv1": "Modulo online (4 min)",
+    "adv2": "Risposta di principio immediata",
+    "adv3": "Giustificativi dematerializzati",
+    "adv4": "Firma elettronica",
+    "adv5": "Assistenza telefonica"
+  },
+  "pret_immobilier": {
+    "desc": "Diventa proprietario serenamente. Che si tratti di una residenza principale, secondaria o di un investimento locativo, finanziamo il tuo futuro.",
+    "cond_title": "Le nostre condizioni Immo",
+    "cond1": "Tassi a partire dall'1,95% TAEG fisso",
+    "cond2": "Finanziamento fino a 1.500.000 €",
+    "cond3": "Durata modulabile fino a 25 anni",
+    "cond4": "Senza spese di istruttoria nascoste",
+    "support_title": "Accompagnamento",
+    "support_desc": "I nostri esperti ti guidano sui dispositivi di aiuto all'acquisto e ottimizzano il tuo piano di finanziamento entro 48 ore."
+  },
+  "pret_professionnel": {
+    "label": "Soluzioni Business",
+    "desc": "Bisogno di liquidità, nuove attrezzature o locali? Vantex Bank accompagna gli imprenditori e le PMI.",
+    "cond_title": "Finanziamento Pro",
+    "cond1": "Prestito attrezzature & equipaggiamento",
+    "cond2": "Finanziamento scorte & circolante",
+    "cond3": "Acquisto muri commerciali",
+    "cond4": "Risposta di principio entro 72 ore",
+    "support_title": "Esperienza Pro",
+    "support_desc": "Un consulente dedicato analizza il tuo progetto per proporti una struttura di prestito adatta al tuo ciclo operativo."
+  },
+  "rachat_credit": {
+    "label": "Gestione del Budget",
+    "desc": "Semplifica le tue finanze raggruppando i tuoi crediti in un'unica rata mensile ridotta. Ritrova immediatamente potere d'acquisto.",
+    "why_title": "Perché raggruppare?",
+    "why1": "Rata mensile unica più bassa",
+    "why2": "Tasso di indebitamento ridotto",
+    "why3": "Gestione bancaria semplificata",
+    "why4": "Risparmio fino al 60%",
+    "analysis_title": "Analisi Gratuita",
+    "analysis_desc": "I nostri analisti studiano i tuoi crediti in corso per ottimizzare il tuo nuovo contratto. Riservatezza garantita."
+  },
+  "faq": {
+    "label": "Centro assistenza",
+    "title": "Domande Frequenti (FAQ)",
+    "desc": "Trova qui le risposte alle domande più comuni sui nostri servizi di finanziamento.",
+    "q1": "Come ottenere un mini credito rapidamente?",
+    "a1": "La domanda di mini credito si effettua direttamente online su Vantex Bank. Ti basta completare la tua pratica e trasmettere le informazioni richieste. Per accelerare il versamento dei fondi, si raccomanda di firmare il contratto elettronicamente il prima possibile.",
+    "q2": "Quali sono i tassi di un mini credito?",
+    "a2": "Il tasso di un mini credito dipende in particolare dall'importo preso in prestito e dalla durata del rimborso. Prima di ogni sottoscrizione, è importante verificare il TAEG, l'importo delle rate e il costo totale del credito che figurano sul tuo contratto personalizzato.",
+    "q3": "Quale stipendio serve per ottenere un mini credito?",
+    "a3": "Non esiste uno stipendio minimo stretto per ottenere un mini credito da noi. Lo studio della pratica tiene conto dell'insieme della tua situazione finanziaria, in particolare dei tuoi redditi, delle tue spese e della tua capacità di rimborso globale.",
+    "q4": "Una soluzione in caso di spese impreviste?",
+    "a4": "Il mini credito è ideale per far fronte a una spesa imprevista (guasto all'auto, riparazione urgente, bolletta inaspettata) o per finanziare un piccolo acquisto (computer, smartphone, viaggio) senza mobilitare immediatamente i propri risparmi.",
+    "cta_title": "Non hai trovato la tua risposta?",
+    "cta_desc": "I nostri consulenti sono a tua disposizione per accompagnarti nelle tue procedure.",
+    "cta_btn": "Contatta un esperto →"
+  },
+  "contact_page": {
+    "label": "Contattaci",
+    "title": "Una linea sempre aperta per te.",
+    "desc": "Puoi chattare con noi in diretta in qualsiasi momento via chat, per telefono o tramite il nostro sito web. Scrivici o chiamaci; le nostre linee sono sempre aperte.",
+    "phone": "Telefono",
+    "email": "Email",
+    "office": "Sede sociale",
+    "form_title": "Inviaci un messaggio",
+    "form_sub": "Tutti i campi sono obbligatori.",
+    "name_label": "Nome e cognome *",
+    "firstname_placeholder": "Nomi",
+    "lastname_placeholder": "Cognome",
+    "email_label": "Indirizzo e-mail *",
+    "email_placeholder": "Indirizzo elettronico",
+    "message_label": "il tuo messaggio",
+    "message_placeholder": "Novità",
+    "send_btn": "Invia →",
+    "success_title": "Messaggio inviato!",
+    "success_sub": "Ti risponderemo entro 24 ore lavorative.",
+    "resend_btn": "Invia un altro messaggio"
+  },
+  "testimonials": {
+    "label": "Testimonianze",
+    "title": "Si fidano di noi",
+    "desc": "Scopri le esperienze dei nostri clienti che hanno realizzato i loro progetti grazie a Vantex Bank.",
+    "sec_label": "Cosa dicono",
+    "sec_title": "Hanno ottenuto il loro prestito con Vantex Bank",
+    "sec_desc": "Migliaia di clienti si fidano di Vantex Bank per finanziare i loro progetti di vita.",
+    "verified": "Verificato",
+    "loan_obtained": "Prestito ottenuto:",
+    "t1_text": "È grazie a Vantex Bank che ho potuto finanziare i lavori di casa mia. Procedura ultra semplice, risposta in 36 ore e un team fantastico. Non avrei mai creduto che fosse possibile online!",
+    "t1_meta": "Lione · Ottobre 2025",
+    "t2_text": "Dopo diversi rifiuti nelle banche classiche, Vantex mi ha concesso il prestito auto. Il tasso è imbattibile e il modulo si compila in 10 minuti netti. Molto seri!",
+    "t2_meta": "Bruxelles · Agosto 2025",
+    "t3_text": "Ho potuto avviare la mia impresa grazie a questo prestito professionale. Pratica trattata rapidamente, consulenti disponibili e bonifico ricevuto 3 giorni dopo la firma. Perfetto!",
+    "t3_meta": "Ginevra · Luglio 2025",
+    "t4_text": "Per raggruppare i miei crediti, Vantex Bank era la soluzione perfetta. Modulo chiaro, tasso trasparente e un sorriso sulle labbra quando ho visto il bonifico. Grazie davvero!",
+    "t4_meta": "Marsiglia · Giugno 2025",
+    "t5_text": "È grazie a loro che ho potuto avere il prestito immobiliare che sognavo. La piattaforma è intuitiva, i consulenti disponibili e professionali. Lo raccomando senza esitare.",
+    "t5_meta": "Parigi · Maggio 2025",
+    "t6_text": "Un servizio professionale e rassicurante per chi esita a farlo online. Il mio consulente mi ha richiamato per spiegare ogni fase. Risultato: bonifico ricevuto entro 72 ore!",
+    "t6_meta": "Amsterdam · Aprile 2025"
   },
   "legal": {
     "label": "Legale",
     "privacy_label": "Privacy",
     "terms_title": "Condizioni Generali",
-    "terms_desc": "Le presenti condizioni generali disciplinano l'utilizzo del sito Vantex Bank e i servizi associati.",
+    "terms_desc": "Le presenti condizioni generali regolano l'utilizzo del sito Vantex Bank e i servizi associati.",
     "terms_s1_title": "1. Oggetto",
     "terms_s1_text": "Questo sito ha lo scopo di presentare le soluzioni di finanziamento e i servizi bancari offerti da Vantex Bank.",
     "terms_s2_title": "2. Modalità del prestito personale",
-    "terms_s2_text": "Il prestito personale Vantex Bank consente di prendere in prestito l'importo desiderato per finanziare i propri progetti e di rimborsarlo al proprio ritmo secondo le seguenti condizioni:",
+    "terms_s2_text": "Il prestito personale Vantex Bank permette di prendere in prestito l'importo desiderato per finanziare i tuoi progetti e di rimborsarlo al tuo ritmo secondo le seguenti condizioni:",
     "terms_s2_rate": "Tasso:",
     "terms_s2_rate_val": "TAEG fisso competitivo.",
     "terms_s2_amount": "Importo:",
@@ -195,47 +421,286 @@
     "terms_s2_duration": "Durata:",
     "terms_s2_duration_val": "Da 12 a 72 mesi.",
     "terms_s3_title": "3. Vantaggi",
-    "terms_s3_text": "Scegliendo Vantex Bank, beneficerai di:",
-    "terms_s3_l1": "Modulo di richiesta online rapido (circa 4 minuti).",
-    "terms_s3_l2": "Risposta di principio immediata dopo uno studio semplificato.",
-    "terms_s3_l3": "Documenti giustificativi dematerializzati e firma elettronica sicura.",
-    "terms_s3_l4": "Assistenza personalizzata se necessario.",
+    "terms_s3_text": "Scegliendo Vantex Bank, benefici di:",
+    "terms_s3_l1": "Modulo di domanda online rapido (circa 4 minuti).",
+    "terms_s3_l2": "Risposta di principio immediata dopo studio semplificato.",
+    "terms_s3_l3": "Giustificativi dematerializzati e firma elettronica sicura.",
+    "terms_s3_l4": "Assistenza personalizzata se necessaria.",
     "terms_s4_title": "4. Credito",
     "terms_s4_text": "Un credito ti impegna e deve essere rimborsato. Verifica le tue capacità di rimborso prima di impegnarti.",
     "terms_s5_title": "5. Proprietà intellettuale",
-    "terms_s5_text": "Tutti i contenuti presenti su questo sito (testi, immagini, loghi) sono di proprietà esclusiva di Vantex Bank.",
+    "terms_s5_text": "L'insieme dei contenuti presenti su questo sito (testi, immagini, loghi) è di proprietà esclusiva di Vantex Bank.",
     "mentions_title": "Note Legali",
     "mentions_s1_title": "1. Presentazione del sito",
-    "mentions_s1_text": "Il sito Vantex Bank è la piattaforma ufficiale di servizi bancari online di Vantex Bank S.A., dedicata al supporto finanziario dei propri clienti privati e professionali in tutto il mondo.",
+    "mentions_s1_text": "Il sito Vantex Bank è la piattaforma ufficiale di servizi bancari online di Vantex Bank S.A., dedicata al supporto finanziario dei suoi clienti privati e professionali in tutto il mondo.",
     "mentions_s2_title": "2. Editore",
     "mentions_s2_text1": "Vantex Bank (SAS Cap Au Nord)",
     "mentions_s2_text2": "Capitale sociale: 50.000.000 €",
-    "mentions_s2_text3": "Sede legale: 12 Avenue de la Banque, 75008 Parigi, Francia",
-    "mentions_s2_text4": "Iscritto all'ORIAS con il numero",
-    "mentions_s2_text5": "Iscritto al RCS con il numero 123 456 789.",
+    "mentions_s2_text3": "Sede sociale: 12 Avenue de la Banque, 75008 Parigi, Francia",
+    "mentions_s2_text4": "Registrato all'ORIAS con il numero",
+    "mentions_s2_text5": "Iscritta al RCS con il numero 790017080.",
     "mentions_s3_title": "3. Hosting",
     "mentions_s3_text1": "Questo sito è ospitato da Vercel Inc.",
     "mentions_s4_title": "4. Attività regolamentata",
-    "mentions_s4_text": "Vantex Bank è un istituto di credito e di servizi d'investimento autorizzato dall'Autorità di Controllo Prudenziale e di Risoluzione (ACPR).",
+    "mentions_s4_text": "Vantex Bank è un istituto di credito e di servizi di investimento autorizzato dall'Autorità di Controllo Prudenziale e di Risoluzione (ACPR).",
     "cookies_title": "GDPR & Cookie",
-    "cookies_intro": "In Vantex Bank (SAS Cap Au Nord), attribuiamo un'importanza fondamentale alla protezione dei vostri dati personali. In qualità di intermediario iscritto con il numero ORIAS 14807766, rispettiamo scrupolosamente gli standard europei.",
+    "cookies_intro": "Presso Vantex Bank (SAS Cap Au Nord), attribuiamo un'importanza capitale alla protezione dei tuoi dati personali. In qualità di intermediario registrato con il numero ORIAS 14807766, rispettiamo scrupolosamente le norme europee.",
     "cookies_s1_title": "1. Utilizzo dei dati (GDPR)",
-    "cookies_s1_text": "Le informazioni raccolte durante la vostra richiesta (importo del prestito, informazioni personali, documenti giustificativi) vengono elaborate esclusivamente per analizzare la vostra capacità di rimborso e gestire la vostra pratica.",
+    "cookies_s1_text": "Le informazioni raccolte durante la tua domanda (importo del prestito, informazioni personali, documenti giustificativi) sono trattate unicamente per analizzare la tua capacità di rimborso e gestire la tua pratica.",
     "cookies_s2_title": "2. Firma elettronica",
-    "cookies_s2_text": "Utilizziamo sistemi di firma elettronica certificati per garantire l'integrità dei vostri contratti di credito.",
-    "cookies_s3_title": "3. I vostri diritti",
-    "cookies_s3_text": "In conformità con il GDPR, avete il diritto di accesso e rettifica. Per qualsiasi richiesta, contattate la nostra assistenza dedicata.",
-    "privacy_title": "Informativa sulla privacy",
-    "privacy_intro": "La vostra privacy è essenziale per noi. Questa politica descrive in dettaglio come raccogliamo, utilizziamo e proteggiamo le vostre informazioni personali.",
+    "cookies_s2_text": "Utilizziamo sistemi di firma elettronica certificati per garantire l'integrità dei tuoi contratti di credito.",
+    "cookies_s3_title": "3. I tuoi diritti",
+    "cookies_s3_text": "Conformemente al GDPR, disponi di un diritto di accesso e rettifica. Per ogni richiesta, contatta la nostra assistenza dedicata.",
+    "privacy_title": "Politica sulla privacy",
+    "privacy_intro": "La tua privacy è essenziale per noi. Questa politica dettaglia come raccogliamo, utilizziamo e proteggiamo le tue informazioni personali.",
     "privacy_s1_title": "1. Raccolta delle informazioni",
-    "privacy_s1_text": "Raccogliamo informazioni quando utilizzate il nostro simulatore di prestito, compilate un modulo di contatto o create un account cliente.",
+    "privacy_s1_text": "Raccogliamo informazioni quando utilizzi il nostro simulatore di prestito, compili un modulo di contatto o crei un account cliente.",
     "privacy_s2_title": "2. Utilizzo delle informazioni",
     "privacy_s2_intro": "Tutte le informazioni che raccogliamo possono essere utilizzate per:",
-    "privacy_s2_l1": "Personalizzare la vostra esperienza e rispondere alle vostre esigenze individuali.",
-    "privacy_s2_l2": "Fornire contenuti pubblicitari personalizzati.",
-    "privacy_s2_l3": "Migliorare il nostro sito web.",
+    "privacy_s2_l1": "Personalizzare la tua esperienza e rispondere alle tue necessità individuali.",
+    "privacy_s2_l2": "Fornire un contenuto pubblicitario personalizzato.",
+    "privacy_s2_l3": "Migliorare il nostro sito Web.",
     "privacy_s2_l4": "Migliorare il servizio clienti.",
     "privacy_s3_title": "3. Protezione dei dati",
-    "privacy_s3_text": "Implementiamo una varietà di misure di sicurezza per preservare la sicurezza delle vostre informazioni personali (crittografia SSL, accesso limitato ai dati)."
+    "privacy_s3_text": "Mettiamo in atto una varietà di misure di sicurezza per preservare la sicurezza delle tue informazioni personali (crittografia SSL, accesso limitato ai dati)."
+  },
+  "countries": [
+    "Francia",
+    "Belgio",
+    "Svizzera",
+    "Germania",
+    "Spagna",
+    "Italia",
+    "Portogallo",
+    "Paesi Bassi",
+    "Lussemburgo",
+    "Giappone",
+    "Corea del Sud",
+    "Singapore",
+    "Altro paese Europa / Asia"
+  ],
+  "articles": {
+    "summary": "Sommario",
+    "online": {
+      "title": "Il nostro credito online, in sintesi",
+      "intro": "Desideri finanziare un progetto o far fronte a una spesa imprevista? Il nostro servizio di credito online ti permette di effettuare la tua domanda rapidamente, senza doverti spostare.",
+      "text1": "In pochi minuti, completi il tuo modulo di finanziamento online e ottieni una prima risposta di principio. Se la tua pratica viene accettata, prosegui le tue procedure direttamente a distanza grazie alla firma elettronica e al caricamento sicuro dei tuoi giustificativi.",
+      "text2_prefix": "La missione di",
+      "text2_suffix": "è semplificare ogni fase della tua domanda di prestito online, al fine di farti risparmiare tempo e offrirti un accompagnamento lungo tutto il tuo percorso.",
+      "features_title": "Le caratteristiche principali",
+      "features": [
+        "TAEG fisso o variabile",
+        "Importo mutuabile da 500 € a 75.000 €",
+        "Durata del rimborso da 12 a 72 mesi"
+      ],
+      "summary_links": [
+        "Fare una domanda di credito online con Vantex Bank",
+        "Perché scegliere un credito online?",
+        "Quanto costa un prestito online?",
+        "Termine per ottenere il denaro",
+        "I giustificativi da fornire",
+        "Chi può ottenere un credito online?"
+      ],
+      "request_title": "Fare una domanda di credito online con Vantex Bank",
+      "request_text": "Realizzare una domanda di credito online con Vantex Bank è semplice, rapido e interamente dematerializzato. Dal tuo computer, tablet o smartphone, puoi costituire la tua pratica in pochi minuti, gratuitamente e senza impegno.",
+      "steps_title": "Le fasi della tua domanda",
+      "steps": [
+        [
+          "1. Compila la tua domanda:",
+          "Indica l'importo desiderato, la durata del rimborso e le tue informazioni."
+        ],
+        [
+          "2. Ricevi una risposta di principio:",
+          "Una volta inviata, ottieni una risposta immediata."
+        ],
+        [
+          "3. Finalizza la tua pratica:",
+          "Firma elettronicamente e trasmetti i tuoi documenti tramite lo spazio sicuro."
+        ],
+        [
+          "4. Ricevi i fondi:",
+          "Dopo la convalida, i fondi vengono versati sul tuo conto."
+        ]
+      ],
+      "cost_title": "Quanto costa un prestito online?",
+      "cost_text": "Il costo di un prestito online varia in base a diversi parametri, in particolare il TAEG, l'importo preso in prestito e la durata del rimborso.",
+      "headers": [
+        "Durata",
+        "Miglior tasso TAEG fisso",
+        "Rate mensili",
+        "Costo totale del credito"
+      ],
+      "rows": [
+        [
+          "Su 12 mesi",
+          "0,90%",
+          "837,38€",
+          "48,56€"
+        ],
+        [
+          "Su 36 mesi",
+          "7,39%",
+          "309,46€",
+          "1.140,56€"
+        ],
+        [
+          "Su 60 mesi",
+          "4,90%",
+          "187,77€",
+          "1.266,20€"
+        ],
+        [
+          "Su 72 mesi",
+          "6,99%",
+          "169,41€",
+          "2.197,52€"
+        ]
+      ],
+      "docs_title": "I giustificativi da fornire",
+      "docs_text": "Non esiste credito senza alcun giustificativo. I documenti comunemente richiesti sono:",
+      "docs": [
+        "Un documento d'identità in corso di validità",
+        "Un giustificativo di domicilio recente",
+        "I tuoi ultimi giustificativi di reddito (buste paga, avviso di accertamento)",
+        "Un codice IBAN"
+      ],
+      "cta_title": "Pronto a realizzare il tuo progetto?",
+      "cta_text": "Ottieni una risposta di principio immediata compilando il nostro modulo sicuro.",
+      "cta_btn": "Accedi al modulo di credito"
+    },
+    "no_proof": {
+      "title": "Il credito senza giustificativo: Tutto quello che devi sapere",
+      "intro": "Il termine \"credito senza giustificativo\" è spesso malinteso. Non significa che non sia richiesto alcun documento, ma piuttosto che non devi giustificare l'utilizzo dei fondi.",
+      "what_title": "Cos'è un credito senza giustificativo?",
+      "what_text1": "Contrariamente a un credito finalizzato (auto o lavori) dove devi fornire una fattura, il prestito personale senza giustificativo di utilizzo ti lascia libero. Utilizzi la somma presa in prestito come meglio credi: viaggi, tempo libero, liquidità o molteplici progetti personali.",
+      "what_text2_prefix": "Presso",
+      "what_text2_suffix": "rispettiamo la tua privacy. Una volta accordato il prestito, i fondi sono a tua completa disposizione senza controlli sulle tue fatture d'acquisto.",
+      "summary_links": [
+        "Come funziona?",
+        "I vantaggi del prestito non finalizzato",
+        "Quali documenti restano da fornire?",
+        "Fare la domanda online"
+      ],
+      "advantages_title": "I vantaggi del prestito non finalizzato",
+      "advantages": [
+        [
+          "Libertà totale:",
+          "Nessuna fattura da trasmettere per sbloccare i fondi."
+        ],
+        [
+          "Rapidità:",
+          "Studio della pratica semplificato perché non ci sono preventivi da verificare."
+        ],
+        [
+          "Flessibilità:",
+          "Possibilità di finanziare più piccoli progetti con un solo prestito."
+        ]
+      ],
+      "docs_title": "I documenti indispensabili",
+      "docs_text": "Anche se l'uso dei fondi è libero, la banca deve verificare la tua solvibilità. Dovrai fornire:",
+      "docs": [
+        "Identità (Carta d'identità o Passaporto)",
+        "Giustificativo di reddito (per garantire il rimborso)",
+        "Codice IBAN per il versamento dei fondi"
+      ],
+      "cta_title": "Bisogno di libertà finanziaria?",
+      "cta_text": "Richiedi il tuo credito senza giustificativo di utilizzo e ricevi una risposta immediata.",
+      "cta_btn": "Simula il mio credito ora"
+    },
+    "no_refusal": {
+      "title": "Ottenere un credito senza rifiuto: La realtà",
+      "intro": "Il \"credito senza rifiuto\" garantito al 100% non esiste legalmente. Tuttavia, esistono soluzioni per massimizzare le tue possibilità di accettazione immediata.",
+      "max_title": "Come massimizzare le proprie possibilità di accordo?",
+      "max_text1": "Per evitare un rifiuto automatico, è cruciale presentare una pratica sana. La chiave risiede nell'equilibrio tra i tuoi redditi e le tue spese.",
+      "max_text2": "utilizza algoritmi di analisi benevoli che tengono conto dell'insieme della tua situazione, e non solo del tuo contratto di lavoro.",
+      "summary_links": [
+        "I criteri di accettazione",
+        "Astuzie per una pratica perfetta",
+        "Statistiche di accettazione",
+        "Lancia la mia simulazione"
+      ],
+      "criteria_title": "I criteri che favoriscono l'accettazione",
+      "criteria": [
+        [
+          "Stabilità:",
+          "Un'anzianità nel tuo alloggio o lavoro."
+        ],
+        [
+          "Capacità di rimborso:",
+          "Un tasso di indebitamento inferiore al 35%."
+        ],
+        [
+          "Trasparenza:",
+          "Fornire informazioni esatte fin dal primo modulo."
+        ]
+      ],
+      "stats_title": "Statistiche e profili",
+      "stats_text": "Secondo i nostri studi interni, certi profili aumentano significativamente le possibilità di ottenere un parere favorevole:",
+      "stats": [
+        "Chiedere in due (co-mutuatario) aumenta le possibilità del 55%.",
+        "Disporre di un acconto o di un risparmio precauzionale.",
+        "Non aver avuto incidenti bancari (rifiuti di addebito) negli ultimi 3 mesi."
+      ],
+      "cta_title": "Verifica la tua idoneità gratuitamente",
+      "cta_text": "Il nostro simulatore ti dà una risposta di principio senza impegno e senza impatto sul tuo punteggio di credito.",
+      "cta_btn": "Testa la mia idoneità"
+    },
+    "immediate": {
+      "title": "Credito Immediato: Finanziare l'urgenza",
+      "intro": "Un guasto all'auto? Un bisogno di liquidità entro 48 ore? Il credito immediato è progettato per rispondere agli imprevisti della vita con una rapidità record.",
+      "speed_title": "La rapidità al servizio dei tuoi progetti",
+      "speed_text_prefix": "Il credito immediato si distingue per un percorso di sottoscrizione ultra-semplificato. Presso",
+      "speed_text_suffix": "abbiamo ottimizzato ogni fase affinché il tempo tra il tuo bisogno e la disponibilità dei fondi sia il più breve possibile.",
+      "summary_links": [
+        "I tempi reali di versamento",
+        "Come ottenere i fondi velocemente?",
+        "Condizioni legali obbligatorie",
+        "Inizia in 2 minuti"
+      ],
+      "delays_title": "Tempi di ottenimento: Cosa bisogna sapere",
+      "delays_text": "Sebbene la risposta sia immediata, il versamento dei fondi segue regole legali strette per proteggere il mutuatario.",
+      "delays": [
+        [
+          "Risposta di principio:",
+          "Istantanea dopo la convalida del modulo."
+        ],
+        [
+          "Validazione finale:",
+          "Entro 24 ore lavorative dopo il ricevimento dei documenti."
+        ],
+        [
+          "Messa a disposizione:",
+          "A partire dall'8° giorno (termine legale di recesso)."
+        ]
+      ],
+      "tips_title": "3 astuzie per accelerare il tuo bonifico",
+      "tips": [
+        [
+          "Usa la firma elettronica:",
+          "Evita i tempi postali (guadagno da 3 a 5 giorni)."
+        ],
+        [
+          "Prepara i tuoi giustificativi:",
+          "Tieni pronti il documento d'identità e l'IBAN in formato digitale."
+        ],
+        [
+          "Verifica la leggibilità:",
+          "Foto chiare evitano richieste di rinvio dei documenti."
+        ]
+      ],
+      "cta_title": "Un'urgenza da finanziare?",
+      "cta_text": "Compila la tua pratica ora e ricevi il tuo accordo di principio in meno di 2 minuti.",
+      "cta_btn": "Accedi al modulo express"
+    }
+  },
+  "languages": {
+    "fr": "Francese",
+    "en": "Inglese",
+    "kw": "Kuwait / Arabo",
+    "sl": "Sloveno",
+    "es": "Spagnolo",
+    "lt": "Lituano",
+    "de": "Tedesco",
+    "it": "Italiano"
   }
 }

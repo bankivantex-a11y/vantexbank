@@ -12,6 +12,7 @@ const dictionaries = {
 };
 
 export const getDictionary = async (locale: string) => {
+  if (!locale) return dictionaries.fr();
   const lang = locale.toLowerCase();
   if (lang in dictionaries) {
     return (dictionaries as any)[lang]();

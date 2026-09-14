@@ -51,7 +51,8 @@
     "about": "About",
     "contact": "Contact",
     "apply": "Apply for a loan",
-    "login": "Login"
+    "login": "Login",
+    "logo_text": "Vantex Bank"
   },
   "common": {
     "months": "months",
@@ -66,7 +67,9 @@
     "orias_val": "14807766",
     "free_num_label": "Toll Free",
     "phone_val": "+44 800 123 456",
-    "per_month": "/ month"
+    "per_month": "/ month",
+    "secure_loading": "Secure loading...",
+    "to": "to"
   },
   "hero": {
     "title": "Your online loan, simple & fast",
@@ -451,5 +454,253 @@
     "privacy_s2_l4": "Improve customer service.",
     "privacy_s3_title": "3. Data protection",
     "privacy_s3_text": "We implement a variety of security measures to preserve the security of your personal information (SSL encryption, restricted access to data)."
+  },
+  "countries": [
+    "France",
+    "Belgium",
+    "Switzerland",
+    "Germany",
+    "Spain",
+    "Italy",
+    "Portugal",
+    "Netherlands",
+    "Luxembourg",
+    "Japan",
+    "South Korea",
+    "Singapore",
+    "Other Europe / Asia country"
+  ],
+  "articles": {
+    "summary": "Summary",
+    "online": {
+      "title": "Our online loan, in brief",
+      "intro": "Do you want to finance a project or cover an unexpected expense? Our online credit service lets you submit your request quickly, without having to travel.",
+      "text1": "In a few minutes, you complete your online financing form and receive an initial decision in principle. If your file is accepted, you continue the process remotely with electronic signature and secure upload of your supporting documents.",
+      "text2_prefix": "The mission of",
+      "text2_suffix": "is to simplify every step of your online loan request, save you time and support you throughout your journey.",
+      "features_title": "Main features",
+      "features": [
+        "Fixed or variable APR",
+        "Borrowable amount from €500 to €75,000",
+        "Repayment period from 12 to 72 months"
+      ],
+      "summary_links": [
+        "Apply for online credit with Vantex Bank",
+        "Why choose online credit?",
+        "How much does an online loan cost?",
+        "Timeframe to receive the money",
+        "Documents to provide",
+        "Who can get online credit?"
+      ],
+      "request_title": "Apply for online credit with Vantex Bank",
+      "request_text": "Applying for online credit with Vantex Bank is simple, fast and fully digital. From your computer, tablet or smartphone, you can build your file in a few minutes, free of charge and with no commitment.",
+      "steps_title": "The steps of your request",
+      "steps": [
+        [
+          "1. Complete your request:",
+          "Enter the desired amount, repayment period and your information."
+        ],
+        [
+          "2. Receive a decision in principle:",
+          "Once submitted, you receive an immediate response."
+        ],
+        [
+          "3. Finalize your file:",
+          "Sign electronically and send your documents through the secure area."
+        ],
+        [
+          "4. Receive the funds:",
+          "After validation, the funds are paid into your account."
+        ]
+      ],
+      "cost_title": "How much does an online loan cost?",
+      "cost_text": "The cost of an online loan varies according to several parameters, including APR, borrowed amount and repayment period.",
+      "headers": [
+        "Duration",
+        "Best fixed APR rate",
+        "Monthly payments",
+        "Total credit cost"
+      ],
+      "rows": [
+        [
+          "Over 12 months",
+          "0.90%",
+          "€837.38",
+          "€48.56"
+        ],
+        [
+          "Over 36 months",
+          "7.39%",
+          "€309.46",
+          "€1,140.56"
+        ],
+        [
+          "Over 60 months",
+          "4.90%",
+          "€187.77",
+          "€1,266.20"
+        ],
+        [
+          "Over 72 months",
+          "6.99%",
+          "€169.41",
+          "€2,197.52"
+        ]
+      ],
+      "docs_title": "Documents to provide",
+      "docs_text": "There is no credit without any supporting document. Commonly requested documents are:",
+      "docs": [
+        "A valid identity document",
+        "A recent proof of address",
+        "Your latest income documents (payslips, tax notice)",
+        "A bank account statement (RIB)"
+      ],
+      "cta_title": "Ready to make your project happen?",
+      "cta_text": "Get an immediate decision in principle by filling out our secure form.",
+      "cta_btn": "Access the credit form"
+    },
+    "no_proof": {
+      "title": "Credit without proof: understand everything",
+      "intro": "The term \"credit without proof\" is often misunderstood. It does not mean that no document is required, but rather that you do not have to justify how you use the funds.",
+      "what_title": "What is credit without proof?",
+      "what_text1": "Unlike assigned credit (car or home improvement), where you must provide an invoice, a personal loan without proof of use leaves you free. You use the borrowed sum as you wish: travel, leisure, cash flow or multiple personal projects.",
+      "what_text2_prefix": "At",
+      "what_text2_suffix": "we respect your privacy. Once the loan is granted, the funds are fully available to you without checks on your purchase invoices.",
+      "summary_links": [
+        "How does it work?",
+        "Advantages of an unrestricted loan",
+        "Which documents still need to be provided?",
+        "Apply online"
+      ],
+      "advantages_title": "Advantages of an unrestricted loan",
+      "advantages": [
+        [
+          "Total freedom:",
+          "No invoice to send to release the funds."
+        ],
+        [
+          "Speed:",
+          "Simplified file review because there is no quote to verify."
+        ],
+        [
+          "Flexibility:",
+          "Possibility to finance several small projects with a single loan."
+        ]
+      ],
+      "docs_title": "Essential documents",
+      "docs_text": "Even if the use of funds is free, the bank must check your solvency. You will need to provide:",
+      "docs": [
+        "Identity document (ID card or passport)",
+        "Proof of income (to guarantee repayment)",
+        "Bank details for the transfer of funds"
+      ],
+      "cta_title": "Need financial freedom?",
+      "cta_text": "Apply for your credit without proof of use and receive an immediate response.",
+      "cta_btn": "Simulate my credit now"
+    },
+    "no_refusal": {
+      "title": "Getting credit without refusal: the reality",
+      "intro": "A 100% guaranteed \"credit without refusal\" does not legally exist. However, there are solutions to maximize your chances of immediate acceptance.",
+      "max_title": "How to maximize your chances of approval?",
+      "max_text1": "To avoid an automatic refusal, it is crucial to present a healthy file. The key lies in the balance between your income and expenses.",
+      "max_text2": "uses considerate analysis algorithms that take your whole situation into account, not only your employment contract.",
+      "summary_links": [
+        "Acceptance criteria",
+        "Tips for a perfect file",
+        "Acceptance statistics",
+        "Launch my simulation"
+      ],
+      "criteria_title": "Criteria that support acceptance",
+      "criteria": [
+        [
+          "Stability:",
+          "Seniority in your housing or job."
+        ],
+        [
+          "Repayment capacity:",
+          "A debt ratio below 35%."
+        ],
+        [
+          "Transparency:",
+          "Provide accurate information from the first form."
+        ]
+      ],
+      "stats_title": "Statistics and profiles",
+      "stats_text": "According to our internal studies, some profiles significantly increase the chances of obtaining a favorable opinion:",
+      "stats": [
+        "Borrowing as two people (co-borrower) increases chances by 55%.",
+        "Having a contribution or precautionary savings.",
+        "Having no bank incidents (rejected debits) in the last 3 months."
+      ],
+      "cta_title": "Check your eligibility for free",
+      "cta_text": "Our simulator gives you a decision in principle with no commitment and no impact on your credit score.",
+      "cta_btn": "Test my eligibility"
+    },
+    "immediate": {
+      "title": "Immediate Credit: financing urgency",
+      "intro": "Car breakdown? Need cash within 48 hours? Immediate credit is designed to respond to life’s unexpected events with record speed.",
+      "speed_title": "Speed serving your projects",
+      "speed_text_prefix": "Immediate credit stands out through an ultra-simplified subscription journey. At",
+      "speed_text_suffix": "we have optimized every step so the delay between your need and the availability of funds is as short as possible.",
+      "summary_links": [
+        "Real payment timeframes",
+        "How to get funds quickly?",
+        "Mandatory legal conditions",
+        "Start in 2 minutes"
+      ],
+      "delays_title": "Timeframes: what you need to know",
+      "delays_text": "Although the response is immediate, the payment of funds follows strict legal rules to protect the borrower.",
+      "delays": [
+        [
+          "Decision in principle:",
+          "Instant after form validation."
+        ],
+        [
+          "Final validation:",
+          "Within 24 business hours after receipt of documents."
+        ],
+        [
+          "Availability:",
+          "From the 8th day (legal withdrawal period)."
+        ]
+      ],
+      "tips_title": "3 tips to speed up your transfer",
+      "tips": [
+        [
+          "Use electronic signature:",
+          "Avoids postal delays (saves 3 to 5 days)."
+        ],
+        [
+          "Prepare your documents:",
+          "Have your ID and bank details ready in digital format."
+        ],
+        [
+          "Check readability:",
+          "Clear photos avoid requests to resend documents."
+        ]
+      ],
+      "cta_title": "An emergency to finance?",
+      "cta_text": "Fill out your file now and receive your decision in principle in less than 2 minutes.",
+      "cta_btn": "Access the express form"
+    }
+  },
+  "jobs": {
+    "cdi": "Permanent employee",
+    "cdd": "Fixed-term employee",
+    "gov": "Civil servant",
+    "freelance": "Self-employed / Freelancer",
+    "boss": "Business owner",
+    "pro": "Liberal profession",
+    "retired": "Retired"
+  },
+  "languages": {
+    "fr": "French",
+    "en": "English",
+    "kw": "Kuwait / Arabic",
+    "sl": "Slovenian",
+    "es": "Spanish",
+    "lt": "Lithuanian",
+    "de": "German",
+    "it": "Italian"
   }
 }

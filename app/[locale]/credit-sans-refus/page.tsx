@@ -4,72 +4,71 @@ import Reveal from '@/components/Reveal';
 import { useAppState } from '@/components/AppState';
 
 export default function NoRefusalPage() {
-  const { openModal } = useAppState();
+  const { openModal, t } = useAppState();
 
   return (
     <main className="art-container">
       <Reveal>
-        <h1 className="art-title">Obtenir un crédit sans refus : La réalité</h1>
+        <h1 className="art-title">{t('articles.no_refusal.title')}</h1>
         <p className="art-intro">
-          Le "crédit sans refus" garanti à 100% n'existe légalement pas. Cependant, il existe des solutions pour maximiser vos chances d'acceptation immédiate.
+          {t('articles.no_refusal.intro')}
         </p>
       </Reveal>
 
       <section className="art-section">
         <Reveal delay={1}>
-          <h2>Comment maximiser ses chances d'accord ?</h2>
+          <h2>{t('articles.no_refusal.max_title')}</h2>
           <div className="art-text">
-            Pour éviter un refus automatique, il est crucial de présenter un dossier sain. La clé réside dans l'équilibre entre vos revenus et vos charges.
+            {t('articles.no_refusal.max_text1')}
           </div>
           <div className="art-text">
-            <strong>Vantex Bank</strong> utilise des algorithmes d'analyse bienveillants qui prennent en compte l'ensemble de votre situation, et pas seulement votre contrat de travail.
+            <strong>Vantex Bank</strong> {t('articles.no_refusal.max_text2')}
           </div>
         </Reveal>
       </section>
 
       <div className="art-summary">
         <Reveal>
-          <div className="art-summary-title">Sommaire</div>
+          <div className="art-summary-title">{t('articles.summary')}</div>
           <div className="art-summary-links">
-            <a href="#criteres">Les critères d'acceptation</a>
-            <a href="#astuces">Astuces pour un dossier parfait</a>
-            <a href="#chances">Statistiques d'acceptation</a>
-            <a href="#demande">Lancer ma simulation</a>
+            {(t('articles.no_refusal.summary_links') as string[]).map((label, index) => (
+              <a key={label} href={['#criteres', '#astuces', '#chances', '#demande'][index]}>{label}</a>
+            ))}
           </div>
         </Reveal>
       </div>
 
       <section id="criteres" className="art-section">
         <Reveal>
-          <h2>Les critères qui favorisent l'acceptation</h2>
+          <h2>{t('articles.no_refusal.criteria_title')}</h2>
           <ul className="art-list">
-            <li><strong>Stabilité :</strong> Une ancienneté dans votre logement ou emploi.</li>
-            <li><strong>Capacité de remboursement :</strong> Un taux d'endettement inférieur à 35%.</li>
-            <li><strong>Transparence :</strong> Fournir des informations exactes dès le premier formulaire.</li>
+            {(t('articles.no_refusal.criteria') as string[][]).map(([title, text]) => (
+              <li key={title}><strong>{title}</strong> {text}</li>
+            ))}
           </ul>
         </Reveal>
       </section>
 
       <section id="chances" className="art-section">
         <Reveal>
-          <h2>Statistiques et profils</h2>
+          <h2>{t('articles.no_refusal.stats_title')}</h2>
           <div className="art-text">
-            D'après nos études internes, certains profils augmentent significativement les chances d'obtenir un avis favorable :
+            {t('articles.no_refusal.stats_text')}
           </div>
           <ul className="art-list">
-            <li>Emprunter à deux (co-emprunteur) augmente les chances de <strong>55%</strong>.</li>
-            <li>Disposer d'un apport ou d'une épargne de précaution.</li>
-            <li>Ne pas avoir eu d'incidents bancaires (rejets de prélèvement) les 3 derniers mois.</li>
+            {(t('articles.no_refusal.stats') as string[]).map((item) => (
+              <li key={item}>{item}</li>
+            ))}
           </ul>
         </Reveal>
       </section>
 
       <div className="art-cta-box">
         <Reveal>
-          <h2 className="art-cta-title">Vérifiez votre éligibilité gratuitement</h2>
-          <p className="art-cta-text">Notre simulateur vous donne une réponse de principe sans engagement et sans impact sur votre score de crédit.</p>
+          <h2 className="art-cta-title">{t('articles.no_refusal.cta_title')}</h2>
+          <p className="art-cta-text">{t('articles.no_refusal.cta_text')}</p>
           <button className="btn-primary" style={{ boxShadow: 'none', background: '#fff', color: 'var(--navy)' }} onClick={() => openModal('app')}>
-            Tester mon éligibilité
+            {t('articles.no_refusal.cta_btn')}
           </button>
         </Reveal>
       </div>

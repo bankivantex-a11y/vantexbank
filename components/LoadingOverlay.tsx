@@ -3,7 +3,7 @@
 import { useAppState } from './AppState';
 
 export default function LoadingOverlay() {
-  const { isLoading } = useAppState();
+  const { isLoading, t } = useAppState();
 
   if (!isLoading) return null;
 
@@ -27,7 +27,7 @@ export default function LoadingOverlay() {
         color: 'var(--navy)',
         textAlign: 'center'
       }}>
-        Chargement sécurisé...
+        {t('common.secure_loading')}
       </div>
     </div>
   );

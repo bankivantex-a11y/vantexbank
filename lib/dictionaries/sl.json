@@ -1,4 +1,47 @@
 {
+  "home": {
+    "amounts_title": "Iščete določen znesek?",
+    "duration_label": "Doba odplačevanja: 12 do 36 mesecev",
+    "learn_more": "Več o tem →",
+    "solutions_title": "Iščete specifično rešitev?",
+    "solutions": {
+      "no_proof_title": "Kredit brez dokazil",
+      "no_proof_desc": "Ali lahko hitro dobite kredit brez dokazil?",
+      "online_title": "Spletno posojilo",
+      "online_desc": "Celoten postopek kredita na spletu prihrani čas.",
+      "no_refusal_title": "Kredit brez zavrnitve",
+      "no_refusal_desc": "Kakšna je rešitev za ekspresni kredit brez zavrnitve?",
+      "immediate_title": "Takojšen kredit",
+      "immediate_desc": "Kaj storiti, ko vaše potrebe po financiranju ne morejo čakati?",
+      "read_article": "Preberi članek →"
+    },
+    "how_fast": {
+      "title": "Kako deluje hitri kredit Vantex Bank?",
+      "desc1": "Najhitrejši kredit dobite na spletu. Danes je to prednostna rešitev za financiranje projekta, soočanje z nepredvidenimi stroški ali hitro pridobitev dodatnega denarnega toka.",
+      "desc2": "Vendar, ko postane potreba po financiranju nujna, najtežji del ni vedno dobiti denar. Pogosto gre za identifikacijo organa, ki je sposoben sprejeti zahtevo in potrditi datoteko čim hitreje.",
+      "desc3": "Kot specialist za hitre kredite je Vantex Bank razvila rešitev, ki omogoča poizvedbo pri več organizacijah iz enega samega obrazca. Ta pristop prihrani dragocen čas.",
+      "desc4": "In da bi bili koraki še preprostejši, mora stranka, ko je kredit sprejet, le predložiti svoja dokazila na spletu in elektronsko podpisati pogodbo. Ravno ta metoda omogoča čim hitrejšo pridobitev kredita.",
+      "cta": "DOSTOP DO OBRAZCA ZA POSOJILO"
+    },
+    "advantages_title": "Naše prednosti",
+    "advantages": {
+      "item1": "Izjemno hiter spletni obrazec za kredit (4 min)",
+      "item2": "Takojšnja načelna odločitev",
+      "item3": "Digitalna dokazila in elektronski podpis",
+      "item4": "Telefonska pomoč, če je potrebna"
+    },
+    "faq_title": "Pogosta vprašanja o hitrem kreditu",
+    "faq": {
+      "q1": "Kakšna je razlika med hitrim kreditom in ekspresnim kreditom?",
+      "a1": "Izraza hitri kredit in ekspresni kredit pomenita isto stvar. To so komercialna imena, ki se uporabljajo za kredit, katerega zahteva, preučitev spisa in odgovor so pospešeni zahvaljujoč poenostavljenim digitalnim potem.",
+      "q2": "Kateri kredit je najhitreje dobiti?",
+      "a2": "Ko je že odprt, je revolving kredit pogosto najhitrejše financiranje. Za novo vlogo spletno osebno posojilo običajno predstavlja najboljši kompromis med hitrostjo, zneskom, ki si ga je mogoče izposoditi, in stroški financiranja.",
+      "q3": "Ali lahko dobim hitri kredit na spletu?",
+      "a3": "Da. Pri Vantex Bank je mogoče izpolniti obrazec, prejeti načelno odločitev, elektronsko podpisati pogodbo in poslati dokazila brez potovanja.",
+      "q4": "Koliko časa traja, da dobim odgovor?",
+      "a4": "Preučevanje vašega spisa se začne takoj po oddaji obrazca. Načelna odločitev je običajno takojšnja, končna potrditev pa se zgodi v 24 do 48 urah po prejemu dokazil."
+    }
+  },
   "nav": {
     "how": "Kako deluje",
     "services": "Storitve",
@@ -8,7 +51,8 @@
     "about": "O nas",
     "contact": "Kontakt",
     "apply": "Zaprosi za posojilo",
-    "login": "Prijava"
+    "login": "Prijava",
+    "logo_text": "Vantex Bank"
   },
   "common": {
     "months": "mesecev",
@@ -17,7 +61,15 @@
     "back": "Nazaj",
     "continue": "Nadaljuj",
     "submit": "Oddaj",
-    "euro_month": "€/mesec"
+    "euro_month": "€/mesec",
+    "taeg_fixed": "Fiksna EOM",
+    "orias_label": "Številka ORIAS",
+    "orias_val": "14807766",
+    "free_num_label": "Brezplačna številka",
+    "phone_val": "+44 800 123 456",
+    "per_month": "/ mesec",
+    "secure_loading": "Varno nalaganje...",
+    "to": "do"
   },
   "hero": {
     "title": "Vaše spletno posojilo, preprosto in hitro",
@@ -26,7 +78,8 @@
     "cta_sim": "Simuliraj posojilo",
     "stat_clients": "Zadovoljne stranke",
     "stat_rate": "Fiksna letna obrestna mera",
-    "stat_guarantee": "Zajamčen odgovor"
+    "stat_guarantee": "Zajamčen odgovor",
+    "stat_guarantee_val": "48h"
   },
   "phone_ui": {
     "hello": "Pozdravljeni 👋",
@@ -118,11 +171,13 @@
   "app": {
     "title": "Vloga za posojilo",
     "step1": "Profil",
+    "step_infos": "Informacije",
     "step2": "Dokumenti",
     "step3": "Potrditev",
-    "step4": "Poslano",
+    "step4": "Validacija",
     "loading": "Nalaganje...",
-    "summary_title": "Povzetek vloge",
+    "sending": "Zavarovanje pošiljanja...",
+    "summary_title": "Povzetek vaše vloge",
     "monthly_est": "Ocenjeni mesečni obrok",
     "phone": "Telefon",
     "nationality": "Državljanstvo",
@@ -130,23 +185,27 @@
     "income": "Neto mesečni dohodek (€)",
     "expenses": "Mesečni stroški (€)",
     "purpose": "Namen posojila",
+    "address": "Celoten naslov",
     "docs_title": "Dokazila",
-    "docs_desc": "Naložite dokumente. Zaščiteni so s končnim šifriranjem.",
+    "docs_desc": "Naložite dokumente (PDF ali slika, največ 8 MB).",
     "upload_done": "Naloženo ✓",
     "upload_replace": "Kliknite za zamenjavo",
     "upload_cni": "Dokazilo o identiteti (osebna izkaznica ali potni list)",
-    "upload_cni_sub": "PDF, JPG, PNG · Največ 5 MB",
+    "upload_cni_sub": "PDF, JPG, PNG · Največ 8 MB",
     "upload_pay": "Zadnje 3 plačilne liste",
-    "upload_pay_sub": "PDF · Največ 10 MB",
+    "upload_pay_sub": "PDF · Največ 8 MB",
     "upload_bank": "Bančni izpiski (zadnji 3 meseci)",
-    "upload_bank_sub": "PDF · Največ 10 MB",
+    "upload_bank_sub": "PDF · Največ 8 MB",
     "recap_title": "Povzetek in podpis",
-    "recap_desc": "Pred oddajo vloge preverite svoje podatke.",
+    "recap_desc": "Pred oddajo vloge preverite podatke v svoji mapi.",
+    "recap_loan": "Posojilo:",
+    "recap_monthly": "Mesečni obrok:",
+    "recap_email": "E-pošta:",
     "contract_title": "POGODBA O VLOGI ZA POSOJILO — VANTEX BANK",
     "contract_text": "Z oddajo tega obrazca posojilojemalec potrjuje, da se je seznanil s Splošnimi pogoji Vantex Bank, in pod kazensko odgovornostjo izjavlja, da so navedeni podatki točni in popolni. Posojilojemalec pooblašča Vantex Bank, da vpogleda v evidence bančnih dogodkov in opravi kakršno koli preverjanje, potrebno za analizo vloge. Ta vloga ne predstavlja pogodbeno obveznost s strani Vantex Bank. Končna ponudba bo izdana po analizi celotne dokumentacije. Končna EOM bo navedena v ponudbi za kredit. Posojilojemalec ima zakonski odstopni rok 14 koledarskih dni od podpisa končne ponudbe. Vantex Bank (SAS Cap Au Nord) — Posrednik, registriran pri ORIAS pod številko 14807766. Osnovni kapital: 50.000.000 €. Sedež podjetja: 12 Avenue de la Banque, 75008 Pariz, Francija.",
-    "chk1": "Prebral sem in se strinjam s Splošnimi pogoji in Politiko zasebnosti Vantex Bank.",
-    "chk2": "S klikom na Oddaj pooblaščam Vantex Bank, da moje podatke deli s svojimi partnerji za analizo kredita v okviru obdelave moje vloge.",
-    "chk3": "Potrjujem, da sem polnoletna oseba (18+ let), prebivam v upravičeni državi (Evropa ali Azija) in imam redne mesečne prihodke.",
+    "chk1": "Potrjujem točnost navedenih podatkov.",
+    "chk2": "Strinjam se s pogoji obdelave podatkov.",
+    "chk3": "Potrjujem, da sem polnoletna oseba (18+ let).",
     "alert_checks": "Prosimo, označite vsa polja za nadaljevanje.",
     "submitting_title": "Analiza vaše dokumentacije je v teku...",
     "submitting_sub": "Trajalo bo le nekaj sekund",
@@ -156,12 +215,27 @@
     "next1": "Potrditveno e-poštno sporočilo s številko vaše vloge vam bo poslano v naslednjih nekaj minutah.",
     "next2": "Naša ekipa bo vašo dokumentacijo analizirala v 48 delovnih urah in vas kontaktirala, če bodo potrebni dodatni dokumenti.",
     "next3": "V primeru ugodne odločitve ponudbo podpišete elektronsko — sredstva so nato nakazana v 72 urah.",
-    "home_btn": "Nazaj na domov"
+    "home_btn": "Nazaj na domov",
+    "submit_btn": "Oddaj mojo mapo ✓",
+    "email_subject": "Nova vloga za posojilo"
+  },
+  "errors": {
+    "fill_project": "Izpolnite vsa polja svojega projekta.",
+    "fill_infos": "Izpolnite vse svoje osebne podatke.",
+    "invalid_email": "Vnesite veljaven e-poštni naslov.",
+    "min_age": "Biti morate polnoletni (18 let ali več).",
+    "upload_all": "Naložite 3 obvezne dokumente.",
+    "file_too_large": "Datoteka je prevelika (največ 8 MB).",
+    "send_error": "Napaka pri pošiljanju:",
+    "ok_btn": "V REDU"
   },
   "about": {
     "stat_year": "Leto ustanovitve",
+    "stat_year_val": "2004",
     "stat_capital": "Osnovni kapital",
+    "stat_capital_val": "50M €",
     "stat_presence": "Mednarodna prisotnost",
+    "stat_presence_val": "EU in Azija",
     "mission": "Naše poslanstvo",
     "mission_text1": "Ustanovljeni z ambicijo biti specialist za hitre kredite in financiranje posameznikov, je naše poslanstvo spremljati vsakega kreditojemalca do rešitve, ki najbolj ustreza njegovemu projektu in situaciji.",
     "mission_text2": "Pri Vantex Bank vlogo za osebno posojilo oddate prek spleta in takoj prejmete načelni odgovor. Naš cilj je preprost: podpirati vas na vsakem koraku, da olajšamo in pospešimo pridobitev vašega financiranja.",
@@ -195,7 +269,10 @@
     "privacy": "Politika zasebnosti",
     "rights": "Vse pravice pridržane. SAS Cap Au Nord — ORIAS 14807766.",
     "accessibility": "Dostopnost",
-    "sitemap": "Zemljevid strani"
+    "sitemap": "Zemljevid strani",
+    "cookie_text": "Naše spletno mesto uporablja piškotke za zagotavljanje njegovega pravilnega delovanja in za pridobivanje anonimne statistike obiskanosti za optimizacijo njegove ergonomije, navigacije in vsebine.",
+    "cookie_accept": "Sprejmi",
+    "cookie_more": "Več o tem"
   },
   "jobs": {
     "cdi": "Zaposlen za nedoločen čas",
@@ -292,7 +369,7 @@
     "phone": "Telefon",
     "email": "E-pošta",
     "office": "Sedež podjetja",
-    "form_title": "Pošljite nam sporoعilo",
+    "form_title": "Pošljite nam sporočilo",
     "form_sub": "Vsa polja so obvezna.",
     "name_label": "Ime in priimek *",
     "firstname_placeholder": "Imena",
@@ -323,7 +400,7 @@
     "t3_meta": "Ženeva · julij 2025",
     "t4_text": "Vantex Bank je bila popolna rešitev za združitev mojih kreditov. Jasen obrazec, pregledna obrestna mera in nasmeh na obrazu, ko sem videla nakazilo. Res hvala!",
     "t4_meta": "Marseille · junij 2025",
-    "t5_text": "Zahvaljujoč njim sem lahko dobila stanovanjsko posojilo, o katerem sem sanjala. Platforma je intuitivna, svetovalci pa so na voljo in strokovni. Priporočam brez oklevanja.",
+    "t5_text": "Zahvaljujoč njim sem lahko dobila stanovanjsko posojilo, o katerem sem sanjala. Platforma je intuityvna, svetovalci pa so na voljo in strokovni. Priporočam brez oklevanja.",
     "t5_meta": "Pariz · maj 2025",
     "t6_text": "Strokovna in pomirjujoča storitev za tiste, ki oklevajo glede spletnega poslovanja. Moj svetovalec me je poklical in mi razložil vsak korak. Rezultat: nakazilo v 72 urah!",
     "t6_meta": "Amsterdam · april 2025"
@@ -361,7 +438,7 @@
     "mentions_s2_text2": "Osnovni kapital: 50.000.000 €",
     "mentions_s2_text3": "Sedež podjetja: 12 Avenue de la Banque, 75008 Pariz, Francija",
     "mentions_s2_text4": "Registriran pri ORIAS pod številko",
-    "mentions_s2_text5": "Vpisan v RCS pod številko 123 456 789.",
+    "mentions_s2_text5": "Vpisan v RCS pod številko 790017080.",
     "mentions_s3_title": "3. Gostovanje",
     "mentions_s3_text1": "To spletno mesto gosti Vercel Inc.",
     "mentions_s4_title": "4. Regulirana dejavnost",
@@ -386,5 +463,244 @@
     "privacy_s2_l4": "Izboljšanje storitev za stranke.",
     "privacy_s3_title": "3. Varovanje podatkov",
     "privacy_s3_text": "Izvajamo različne varnostne ukrepe za ohranjanje varnosti vaših osebnih podatkov (šifriranje SSL, omejen dostop do podatkov)."
+  },
+  "countries": [
+    "Francija",
+    "Belgija",
+    "Švica",
+    "Nemčija",
+    "Španija",
+    "Italija",
+    "Portugalska",
+    "Nizozemska",
+    "Luksemburg",
+    "Japonska",
+    "Južna Koreja",
+    "Singapur",
+    "Druga država v Evropi / Aziji"
+  ],
+  "articles": {
+    "summary": "Povzetek",
+    "online": {
+      "title": "Naš spletni kredit na kratko",
+      "intro": "Želite financirati projekt ali pokriti nepredviden strošek? Naša storitev spletnega kreditiranja vam omogoča hitro oddajo vloge, ne da bi se vam bilo treba kam odpraviti.",
+      "text1": "V nekaj minutah izpolnite svoj spletni obrazec za financiranje in prejmete prvi načelni odgovor. Če je vaš spis sprejet, nadaljujete svoje korake neposredno na daljavo zahvaljujoč elektronskemu podpisu in varnemu nalaganju vaših dokazil.",
+      "text2_prefix": "Poslanstvo",
+      "text2_suffix": "je poenostaviti vsak korak vaše vloge za posojilo na spletu, da vam prihranimo čas in vam ponudimo podporo skozi celoten postopek.",
+      "features_title": "Glavne značilnosti",
+      "features": [
+        "Fiksna ali spremenljiva EOM",
+        "Znesek izposoje od 500 € do 75.000 €",
+        "Doba odplačevanja od 12 do 72 mesecev"
+      ],
+      "summary_links": [
+        "Oddajte vlogo za spletni kredit pri Vantex Bank",
+        "Zakaj izbrati spletni kredit?",
+        "Koliko stane spletno posojilo?",
+        "Rok za prejem denarja",
+        "Dokazila, ki jih je treba predložiti",
+        "Kdo lahko pridobi spletni kredit?"
+      ],
+      "request_title": "Oddajte vlogo za spletni kredit pri Vantex Bank",
+      "request_text": "Oddaja vloge za spletni kredit pri Vantex Bank je preprosta, hitra in popolnoma digitalizirana. S svojega računalnika, tablice ali pametnega telefona lahko svojo mapo sestavite v nekaj minutah, brezplačno in brez obveznosti.",
+      "steps_title": "Koraki vaše vloge",
+      "steps": [
+        [
+          "1. Izpolnite svojo vlogo:",
+          "Navedite želeni znesek, dobo odplačevanja in svoje podatke."
+        ],
+        [
+          "2. Prejmite načelni odgovor:",
+          "Ko je posredovano, prejmete takojšen odgovor."
+        ],
+        [
+          "3. Zaključite svojo mapo:",
+          "Podpišite elektronsko in posredujte svoje dokumente prek varnega prostora."
+        ],
+        [
+          "4. Prejmite sredstva:",
+          "Po preverjanju so sredstva nakazana na vaš račun."
+        ]
+      ],
+      "cost_title": "Koliko stane spletno posojilo?",
+      "cost_text": "Stroški spletnega posojila se razlikujejo glede na več parametrov, zlasti EOM, izposojeni znesek in dobo odplačevanja.",
+      "headers": [
+        "Trajanje",
+        "Najboljša fiksna obrestna mera EOM",
+        "Mesečni obroki",
+        "Skupni stroški kredita"
+      ],
+      "rows": [
+        [
+          "V 12 mesecih",
+          "0,90 %",
+          "837,38 €",
+          "48,56 €"
+        ],
+        [
+          "V 36 mesecih",
+          "7,39 %",
+          "309,46 €",
+          "1.140,56 €"
+        ],
+        [
+          "V 60 mesecih",
+          "4,90 %",
+          "187,77 €",
+          "1.266,20 €"
+        ],
+        [
+          "V 72 mesecih",
+          "6,99 %",
+          "169,41 €",
+          "2.197,52 €"
+        ]
+      ],
+      "docs_title": "Dokazila, ki jih je treba predložiti",
+      "docs_text": "Ni kredita brez kakršnega koli dokazila. Običajno zahtevani dokumenti so:",
+      "docs": [
+        "Veljaven osebni dokument",
+        "Nedavno dokazilo o prebivališču",
+        "Vaši zadnji dokazili o dohodku (plačilne liste, davčna odločba)",
+        "Potrdilo o številki bančnega računa (IBAN)"
+      ],
+      "cta_title": "Ste pripravljeni na uresničitev svojega projekta?",
+      "cta_text": "Pridobite takojšen načelni odgovor z izpolnitvijo našega varnega obrazca.",
+      "cta_btn": "Dostop do obrazca za posojilo"
+    },
+    "no_proof": {
+      "title": "Kredit brez dokazil o namenu: Vse, kar morate vedeti",
+      "intro": "Izraz \"kredit brez dokazil\" se pogosto napačno razume. Ne pomeni, da ni potreben noben dokument, temveč da vam ni treba utemeljevati uporabe sredstev.",
+      "what_title": "Kaj je kredit brez dokazil o namenu?",
+      "what_text1": "Za razliko od namenskega kredita (za avto ali dela), kjer morate predložiti račun, vam osebno posojilo brez dokazila o uporabi pušča proste roke. Izposojeni znesek uporabite, kakor želite: za potovanja, prosti čas, likvidnost ali različne osebne projekte.",
+      "what_text2_prefix": "V",
+      "what_text2_suffix": "spoštujemo vašo zasebnost. Ko je posojilo odobreno, so vam sredstva na voljo brez nadzora nad vašimi nakupnimi računi.",
+      "summary_links": [
+        "Kako deluje?",
+        "Prednosti nenamenskega posojila",
+        "Katere dokumente je še treba predložiti?",
+        "Oddajte vlogo na spletu"
+      ],
+      "advantages_title": "Prednosti nenamenskega posojila",
+      "advantages": [
+        [
+          "Popolna svoboda:",
+          "Brez računov za sprostitev sredstev."
+        ],
+        [
+          "Hitrost:",
+          "Poenostavljena obravnava mape, ker ni predračunov za preverjanje."
+        ],
+        [
+          "Prilagodljivost:",
+          "Možnost financiranja več majhnih projektov z enim posojilom."
+        ]
+      ],
+      "docs_title": "Nujni dokumenti",
+      "docs_text": "Čeprav je uporaba sredstev prosta, mora banka preveriti vašo plačilno sposobnost. Predložiti boste morali:",
+      "docs": [
+        "Identiteto (osebna izkaznica ali potni list)",
+        "Dokazilo o dohodku (za zagotovitev odplačevanja)",
+        "IBAN za nakazilo sredstev"
+      ],
+      "cta_title": "Potrebujete finančno svobodo?",
+      "cta_text": "Zaprosite za svoj kredit brez dokazila o uporabi in prejmite takojšen odgovor.",
+      "cta_btn": "Simuliraj moj kredit zdaj"
+    },
+    "no_refusal": {
+      "title": "Pridobitev kredita brez zavrnitve: Realnost",
+      "intro": "100-odstotno zajamčen \"kredit brez zavrnitve\" pravno ne obstaja. Vendar pa obstajajo rešitve za čim večje možnosti za takojšnjo odobritev.",
+      "max_title": "Kako povečati možnosti za odobritev?",
+      "max_text1": "Da bi se izognili samodejni zavrnitvi, je ključnega pomena predložiti urejeno mapo. Ključ je v ravnovesju med vašimi prihodki in odhodki.",
+      "max_text2": "uporablja prijazne algoritme analize, ki upoštevajo celoto vašega stanja in ne le vaše pogodbe o zaposlitvi.",
+      "summary_links": [
+        "Kriteriji za odobritev",
+        "Nasveti za popolno mapo",
+        "Statistika odobritev",
+        "Začni svojo simulacijo"
+      ],
+      "criteria_title": "Kriteriji, ki spodbujajo odobritev",
+      "criteria": [
+        [
+          "Stabilnost:",
+          "Dolžina bivanja v vašem stanovanju ali delovna doba."
+        ],
+        [
+          "Sposobnost odplačevanja:",
+          "Stopnja zadolženosti pod 35 %."
+        ],
+        [
+          "Preglednost:",
+          "Navedba točnih podatkov že v prvem obrazcu."
+        ]
+      ],
+      "stats_title": "Statistika in profili",
+      "stats_text": "Po naših notranjih študijah nekateri profili znatno povečajo možnosti za pridobitev ugodnega mnenja:",
+      "stats": [
+        "Izposoja v dvoje (sokreditojemalec) poveča možnosti za 55 %.",
+        "Imeti polog ali varnostne prihranke.",
+        "Brez bančnih incidentov (zavrnjene direktne obremenitve) v zadnjih 3 mesecih."
+      ],
+      "cta_title": "Brezplačno preverite svojo upravičenost",
+      "cta_text": "Naš simulator vam poda načelni odgovor brez obveznosti in brez vpliva na vašo kreditno oceno.",
+      "cta_btn": "Preizkusi mojo upravičenost"
+    },
+    "immediate": {
+      "title": "Takojšen kredit: Financiranje nujnih primerov",
+      "intro": "Okvara avtomobila? Potreba po likvidnosti v 48 urah? Takojšen kredit je zasnovan za odzivanje na nepredvidene življenjske dogodke z rekordno hitrostjo.",
+      "speed_title": "Hitrost v službi vaših projektov",
+      "speed_text_prefix": "Takojšen kredit odlikuje izjemno poenostavljen postopek sklenitve. V",
+      "speed_text_suffix": "smo optimizirali vsak korak, da bi bil čas med vašo potrebo in razpoložljivostjo sredstev čim krajši.",
+      "summary_links": [
+        "Dejanski roki za nakazilo",
+        "Kako hitro priti do sredstev?",
+        "Obvezni zakonski pogoji",
+        "Začnite v 2 minutah"
+      ],
+      "delays_title": "Roki za pridobitev: Kaj morate vedeti",
+      "delays_text": "Čeprav je odgovor takojšen, nakazilo sredstev sledi strogim zakonskim pravilom za zaščito kreditojemalca.",
+      "delays": [
+        [
+          "Načelni odgovor:",
+          "Takoj po potrditvi obrazca."
+        ],
+        [
+          "Končna potrditev:",
+          "V 24 delovnih urah po prejemu dokumentov."
+        ],
+        [
+          "Razpoložljivost:",
+          "Od 8. dne dalje (zakonski odstopni rok)."
+        ]
+      ],
+      "tips_title": "3 nasveti za pospešitev vašega nakazila",
+      "tips": [
+        [
+          "Uporabite elektronski podpis:",
+          "Prepreči poštne zamude (prihranek od 3 do 5 dni)."
+        ],
+        [
+          "Pripravite svoja dokazila:",
+          "Imejte svojo osebno izkaznico in IBAN pripravljena v digitalni obliki."
+        ],
+        [
+          "Preverite čitljivost:",
+          "Jasne fotografije preprečijo zahteve po ponovnem pošiljanju dokumentov."
+        ]
+      ],
+      "cta_title": "Nujen primer za financiranje?",
+      "cta_text": "Izpolnite svojo mapo zdaj in prejmite svojo načelno odobritev v manj kot 2 minutah.",
+      "cta_btn": "Dostop do obrazca ekspres"
+    }
+  },
+  "languages": {
+    "fr": "Francoščina",
+    "en": "Angleščina",
+    "kw": "Kuvajt / Arabščina",
+    "sl": "Slovenščina",
+    "es": "Španščina",
+    "lt": "Litovščina",
+    "de": "Nemščina",
+    "it": "Italijanščina"
   }
 }

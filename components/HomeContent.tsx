@@ -3,11 +3,12 @@
 import Reveal from './Reveal';
 import { useAppState } from './AppState';
 import Image from 'next/image';
+import { fmt } from '@/lib/loan';
 
 import SmartLink from './SmartLink';
 
 export default function HomeContent() {
-  const { t, openModal } = useAppState();
+  const { t, openModal, locale } = useAppState();
 
   const amounts = [500, 1000, 2000, 3000];
   const solutions = [
@@ -97,7 +98,7 @@ export default function HomeContent() {
                    </ul>
                 </div>
 
-                <button className="btn-primary" style={{ marginTop: '32px' }} onClick={() => openModal('auth')}>
+                <button className="btn-primary" style={{ marginTop: '32px' }} onClick={() => openModal('app')}>
                   {t('home.how_fast.cta')}
                 </button>
               </Reveal>
