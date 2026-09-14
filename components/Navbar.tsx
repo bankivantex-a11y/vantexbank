@@ -136,7 +136,7 @@ export default function Navbar() {
               <option value="ES">🇪🇸 ES</option>
               <option value="LT">🇱🇹 LT</option>
               <option value="DE">🇩🇪 DE</option>
-              <option value="IT">🇮ᵗ IT</option>
+              <option value="IT">🇮🇹 IT</option>
             </select>
             <button className="nav-toggle" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} aria-label="Toggle menu">
               {mobileMenuOpen ? (
