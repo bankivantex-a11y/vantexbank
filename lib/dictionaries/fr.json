@@ -478,6 +478,8 @@
     "Japon",
     "Corée du Sud",
     "Singapour",
+    "Croatie",
+    "Lettonie",
     "Autre pays Europe / Asie"
   ],
   "articles": {
@@ -702,6 +704,8 @@
     "es": "Espagne",
     "lt": "Lituanie",
     "de": "Allemagne",
-    "it": "Italie"
+    "it": "Italie",
+    "hr": "Croatie",
+    "lv": "Lettonie"
   }
 }

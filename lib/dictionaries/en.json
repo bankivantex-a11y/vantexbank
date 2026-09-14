@@ -469,6 +469,8 @@
     "Japan",
     "South Korea",
     "Singapore",
+    "Croatia",
+    "Latvia",
     "Other Europe / Asia country"
   ],
   "articles": {
@@ -702,6 +704,8 @@
     "es": "Spanish",
     "lt": "Lithuanian",
     "de": "German",
-    "it": "Italian"
+    "it": "Italian",
+    "hr": "Croatian",
+    "lv": "Latvian"
   }
 }

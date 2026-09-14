@@ -106,6 +106,8 @@ export default function Navbar() {
                 <option value="LT">🇱🇹 {t('languages.lt')}</option>
                 <option value="DE">🇩🇪 {t('languages.de')}</option>
                 <option value="IT">🇮🇹 {t('languages.it')}</option>
+                <option value="HR">🇭🇷 {t('languages.hr')}</option>
+                <option value="LV">🇱🇻 {t('languages.lv')}</option>
               </select>
             </li>
             <li className="mobile-only">
@@ -137,6 +139,8 @@ export default function Navbar() {
               <option value="LT">🇱🇹 LT</option>
               <option value="DE">🇩🇪 DE</option>
               <option value="IT">🇮🇹 IT</option>
+              <option value="HR">🇭🇷 HR</option>
+              <option value="LV">🇱🇻 LV</option>
             </select>
             <button className="nav-toggle" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} aria-label="Toggle menu">
               {mobileMenuOpen ? (

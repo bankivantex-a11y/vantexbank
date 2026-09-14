@@ -8,9 +8,21 @@ export default function ContactPage() {
   const { t } = useAppState();
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSubmitted(true);
+    const formData = new FormData(e.currentTarget);
+    try {
+      const response = await fetch('https://formspree.io/f/mqpkvoze', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: formData
+      });
+      if (response.ok) {
+        setSubmitted(true);
+      }
+    } catch (err) {
+      console.error(err);
+    }
   };
 
   return (
@@ -74,17 +86,17 @@ export default function ContactPage() {
                     <div className="form-group">
                       <label className="form-label">{t('contact_page.name_label')}</label>
                       <div className="form-row">
-                        <input type="text" className="form-input" placeholder={t('contact_page.firstname_placeholder')} required />
-                        <input type="text" className="form-input" placeholder={t('contact_page.lastname_placeholder')} required />
+                        <input type="text" name="firstname" className="form-input" placeholder={t('contact_page.firstname_placeholder')} required />
+                        <input type="text" name="lastname" className="form-input" placeholder={t('contact_page.lastname_placeholder')} required />
                       </div>
                     </div>
                     <div className="form-group">
                       <label className="form-label">{t('contact_page.email_label')}</label>
-                      <input type="email" className="form-input" placeholder={t('contact_page.email_placeholder')} required />
+                      <input type="email" name="email" className="form-input" placeholder={t('contact_page.email_placeholder')} required />
                     </div>
                     <div className="form-group">
                       <label className="form-label">{t('contact_page.message_label')}</label>
-                      <textarea className="form-input" style={{ minHeight: 120, resize: 'vertical' }} placeholder={t('contact_page.message_placeholder')} required></textarea>
+                      <textarea name="message" className="form-input" style={{ minHeight: 120, resize: 'vertical' }} placeholder={t('contact_page.message_placeholder')} required></textarea>
                     </div>
                     <button type="submit" className="btn-sim">{t('contact_page.send_btn')}</button>
                   </form>

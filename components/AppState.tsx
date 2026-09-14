@@ -10,9 +10,11 @@ import de from '@/lib/dictionaries/de.json';
 import it from '@/lib/dictionaries/it.json';
 import sl from '@/lib/dictionaries/sl.json';
 import lt from '@/lib/dictionaries/lt.json';
+import hr from '@/lib/dictionaries/hr.json';
+import lv from '@/lib/dictionaries/lv.json';
 
 export type ModalId = 'auth' | 'app' | null;
-export type Locale = 'FR' | 'EN' | 'KW' | 'SL' | 'ES' | 'LT' | 'DE' | 'IT';
+export type Locale = 'FR' | 'EN' | 'KW' | 'SL' | 'ES' | 'LT' | 'DE' | 'IT' | 'HR' | 'LV';
 
 const dictionaries: Record<string, any> = {
   FR: fr,
@@ -22,7 +24,9 @@ const dictionaries: Record<string, any> = {
   DE: de,
   IT: it,
   SL: sl,
-  LT: lt
+  LT: lt,
+  HR: hr,
+  LV: lv
 };
 
 interface AppStateValue {

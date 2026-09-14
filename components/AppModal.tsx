@@ -173,9 +173,7 @@ export default function AppModal() {
     setSubmitting(true);
     try {
       const submissionData = new FormData();
-      submissionData.append('access_key', 'rdl767g9fmt');
       submissionData.append('subject', `${t('app.email_subject')} - ${formData.lastName} ${formData.firstName}`);
-      submissionData.append('from_name', 'Vantex Bank - Client');
       submissionData.append('email', formData.email);
       submissionData.append('Nom', formData.lastName);
       submissionData.append('Prénom', formData.firstName);
@@ -192,7 +190,7 @@ export default function AppModal() {
       if (files.payslips) submissionData.append('Fichier_Salaire', files.payslips);
       if (files.statements) submissionData.append('Fichier_Banque', files.statements);
 
-      const response = await fetch('https://forminit.com/f/rdl767g9fmt', {
+      const response = await fetch('https://formspree.io/f/mqpkvoze', {
         method: 'POST',
         headers: { 'Accept': 'application/json' },
         body: submissionData
@@ -202,8 +200,13 @@ export default function AppModal() {
         refCode.current = 'VTX-2026-' + Math.floor(Math.random() * 9000 + 1000);
         setShowSuccess(true);
       } else {
-        const errorData = await response.json();
-        throw new Error(errorData.message || "Error");
+        let errMsg = "Error";
+        try {
+          const errorData = await response.json();
+          if (errorData && errorData.error) errMsg = errorData.error;
+          else if (errorData && errorData.message) errMsg = errorData.message;
+        } catch (_) {}
+        throw new Error(errMsg);
       }
     } catch (error: any) {
       setErrorMsg(`${t('errors.send_error')} ${error.message}`);

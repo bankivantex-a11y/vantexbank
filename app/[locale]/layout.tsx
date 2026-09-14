@@ -31,6 +31,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     title: dict.hero.title + ' | Vantex Bank',
     description: dict.hero.desc,
+    icons: {
+      icon: '/images/favicon/logo.png',
+      shortcut: '/images/favicon/logo.png',
+      apple: '/images/favicon/logo.png',
+    }
   };
 }
 
