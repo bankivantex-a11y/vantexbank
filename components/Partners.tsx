@@ -4,14 +4,16 @@ import Reveal from './Reveal';
 import { useAppState } from './AppState';
 
 const partners = [
-  { name: 'Cofidis', logo: 'https://logo.clearbit.com/cofidis.fr' },
-  { name: 'Cetelem', logo: 'https://logo.clearbit.com/cetelem.fr' },
-  { name: 'Sofinco', logo: 'https://logo.clearbit.com/sofinco.fr' },
-  { name: 'Oney', logo: 'https://logo.clearbit.com/oney.fr' },
-  { name: 'Revolut', logo: 'https://logo.clearbit.com/revolut.com' },
-  { name: 'Franfinance', logo: 'https://logo.clearbit.com/franfinance.fr' },
-  { name: 'FLOA Bank', logo: 'https://logo.clearbit.com/floabank.fr' },
-  { name: 'Younited Credit', logo: 'https://logo.clearbit.com/younited-credit.com' },
+  { name: 'Cofidis', logo: '/images/Cofidis.png', height: '75px' },
+  { name: 'Cetelem', logo: '/images/cetelem.png', height: '65px' },
+  { name: 'Sofinco', logo: '/images/sofinco.png', height: '75px' },
+  { name: 'Oney', logo: '/images/Oney-logo.jpg', height: '70px' },
+  { name: 'AXA', logo: '/images/AXA-Logo.png', height: '80px' },
+  { name: 'Noris', logo: '/images/noris.webp', height: '70px' },
+  { name: 'Revolut', logo: '/images/revolut.png', height: '75px' },
+  { name: 'Franfinance', logo: '/images/franfinance-logo.jpg', height: '65px' },
+  { name: 'FLOA Bank', logo: '/images/floa-bank.jpg', height: '70px' },
+  { name: 'Younited Credit', logo: '/images/younited.jpeg', height: '75px' },
 ];
 
 export default function Partners() {
@@ -20,48 +22,43 @@ export default function Partners() {
   return (
     <section className="section" style={{ background: '#fff', padding: '60px 0', borderTop: '1px solid var(--border)' }}>
       <div className="container">
-        <div className="sec-header center">
+        <div className="sec-header center" style={{ marginBottom: '50px' }}>
           <Reveal>
-            <h2 className="sec-title" style={{ fontSize: '24px', color: 'var(--navy)', marginBottom: '40px', fontFamily: 'var(--font-dm-serif)' }}>
+            <h2 className="sec-title" style={{ fontSize: '24px', color: 'var(--navy)', fontFamily: 'var(--font-dm-serif)', opacity: 0.9 }}>
               {t('home.partners_title')}
             </h2>
           </Reveal>
         </div>
-        <div className="partners-grid" style={{
+        <div className="partners-list" style={{
           display: 'flex',
           flexWrap: 'wrap',
           alignItems: 'center',
           justifyContent: 'center',
-          gap: '30px 50px'
+          gap: '50px 80px'
         }}>
           {partners.map((partner, i) => (
-            <Reveal key={partner.name} delay={i * 0.1}>
+            <Reveal key={partner.name} delay={i * 0.05}>
               <div className="partner-item" style={{
-                height: '40px',
-                width: '100px',
-                position: 'relative',
                 display: 'flex',
                 alignItems: 'center',
-                justifyContent: 'center'
+                justifyContent: 'center',
+                minWidth: '150px'
               }}>
                 <img
                   src={partner.logo}
                   alt={partner.name}
                   style={{
-                    maxHeight: '100%',
-                    maxWidth: '100%',
+                    height: partner.height,
+                    width: 'auto',
+                    maxWidth: '220px',
                     objectFit: 'contain',
-                    filter: 'grayscale(100%) brightness(0.8)',
-                    opacity: 0.6,
-                    transition: 'all 0.3s ease'
+                    transition: 'transform 0.3s ease'
                   }}
                   onMouseOver={(e) => {
-                    e.currentTarget.style.filter = 'none';
-                    e.currentTarget.style.opacity = '1';
+                    e.currentTarget.style.transform = 'scale(1.05)';
                   }}
                   onMouseOut={(e) => {
-                    e.currentTarget.style.filter = 'grayscale(100%) brightness(0.8)';
-                    e.currentTarget.style.opacity = '0.6';
+                    e.currentTarget.style.transform = 'scale(1)';
                   }}
                 />
               </div>

@@ -10,7 +10,12 @@ import SmartLink from './SmartLink';
 export default function HomeContent() {
   const { t, openModal, locale } = useAppState();
 
-  const amounts = [500, 1000, 2000, 3000];
+  const amounts = [
+    { val: 500, img: '/images/joie familiale.jpeg' },
+    { val: 1000, img: '/images/1000.jpeg' },
+    { val: 2000, img: '/images/2000.jpeg' },
+    { val: 3000, img: '/images/3000.jpeg' },
+  ];
   const solutions = [
     { title: t('home.solutions.no_proof_title'), desc: t('home.solutions.no_proof_desc'), img: '/images/souris.jpeg', href: '/credit-sans-justificatif' },
     { title: t('home.solutions.online_title'), desc: t('home.solutions.online_desc'), img: '/images/pret personnel.jpeg', href: '/pret-en-ligne' },
@@ -29,13 +34,13 @@ export default function HomeContent() {
             </Reveal>
           </div>
           <div className="amounts-grid">
-            {amounts.map((amount, i) => (
-              <Reveal key={amount} delay={i} className="amount-card">
+            {amounts.map((item, i) => (
+              <Reveal key={item.val} delay={i} className="amount-card">
                 <div className="amount-img">
-                   <Image src="/images/joie familiale.jpeg" alt={`${amount}€`} fill style={{ objectFit: 'cover' }} />
+                   <Image src={item.img} alt={`${item.val}€`} fill style={{ objectFit: 'cover' }} />
                 </div>
                 <div className="amount-body">
-                  <div className="amount-val">{fmt(amount, locale)}</div>
+                  <div className="amount-val">{fmt(item.val, locale)}</div>
                   <p className="amount-dur">{t('home.duration_label')}</p>
                   <SmartLink href="/pret-personnel" className="amount-link">
                     {t('home.learn_more')}
