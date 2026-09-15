@@ -48,6 +48,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       canonical: `${baseUrl}/${locale}`,
       languages: languageAlternates,
     },
+    verification: {
+      google: 'rLLJF6kR8dT1wX0lt58aiR89ZfGY41ZnARxgZNzuRM4',
+    },
     openGraph: {
       title,
       description,
