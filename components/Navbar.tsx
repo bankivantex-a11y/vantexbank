@@ -53,10 +53,43 @@ export default function Navbar() {
 
   return (
     <nav id="navbar" className={`${scrolled ? 'scrolled' : ''} ${mobileMenuOpen ? 'mobile-open' : ''}`}>
+      {/* Couche d'arrière-plan avec courbes lumineuses bleues / cyan */}
+      <div className="nav-bg-glow-layer" aria-hidden="true">
+        <svg className="nav-swoosh-svg" viewBox="0 0 1440 100" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="neonCyanGlow" x1="0%" y1="100%" x2="100%" y2="0%">
+              <stop offset="0%" stopColor="#0284c7" stopOpacity="0" />
+              <stop offset="25%" stopColor="#0369a1" stopOpacity="0.25" />
+              <stop offset="60%" stopColor="#38bdf8" stopOpacity="0.85" />
+              <stop offset="100%" stopColor="#60a5fa" stopOpacity="0.95" />
+            </linearGradient>
+            <filter id="glowFilter" x="-20%" y="-40%" width="140%" height="180%">
+              <feGaussianBlur stdDeviation="7" result="blur1" />
+              <feGaussianBlur stdDeviation="3" result="blur2" />
+              <feMerge>
+                <feMergeNode in="blur1" />
+                <feMergeNode in="blur2" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+          </defs>
+          {/* Halo diffus en haut à droite */}
+          <ellipse cx="1200" cy="15" rx="320" ry="85" fill="rgba(30, 64, 175, 0.45)" filter="url(#glowFilter)" />
+          {/* Courbe électrique lumineuse inférieure */}
+          <path d="M 220 100 Q 680 96 1040 55 T 1440 24" fill="none" stroke="url(#neonCyanGlow)" strokeWidth="2.5" filter="url(#glowFilter)" />
+          {/* Courbe supérieure subtile */}
+          <path d="M 800 0 Q 1100 25 1440 70" fill="none" stroke="rgba(56, 189, 248, 0.28)" strokeWidth="1.5" filter="url(#glowFilter)" />
+        </svg>
+      </div>
+
       <div className="container">
         <div className="nav-inner">
           <SmartLink href="/" className="nav-logo" onClick={() => setMobileMenuOpen(false)}>
-            <img src="/images/virxyd-logo.png" alt="Virxyd Logo" style={{ height: '45px', width: 'auto' }} />
+            <img
+              src="/images/virxyd-brand-header.png"
+              alt="Virxyd Logo"
+              className="nav-brand-img"
+            />
           </SmartLink>
           <ul className={`nav-links ${mobileMenuOpen ? 'active' : ''}`}>
             <li>
@@ -90,7 +123,7 @@ export default function Navbar() {
             </li>
             <li className="mobile-only" style={{ padding: '16px 0' }}>
               <select
-                className="form-select"
+                className="form-select mobile-lang-select"
                 style={{ width: '100%', padding: '10px' }}
                 value={locale}
                 onChange={(e) => handleLocaleChange(e.target.value)}
@@ -119,12 +152,12 @@ export default function Navbar() {
             </li>
           </ul>
           <div className="nav-actions">
-            <button id="navCta" className={hiddenCta ? 'hidden-cta' : ''} onClick={() => openModal('app')}>
+            <button id="navCta" className={`desktop-only-cta ${hiddenCta ? 'hidden-cta' : ''}`} onClick={() => openModal('app')}>
               {t('nav.apply')}
             </button>
             <select
-              className="form-select"
-              style={{ width: 'auto', padding: '5px 30px 5px 10px', fontSize: '12px', border: '1px solid var(--border)', backgroundPosition: 'right 8px center' }}
+              className="form-select desktop-lang"
+              style={{ width: 'auto', padding: '6px 32px 6px 12px', fontSize: '12px', backgroundPosition: 'right 8px center' }}
               value={locale}
               onChange={(e) => handleLocaleChange(e.target.value)}
             >
@@ -141,16 +174,16 @@ export default function Navbar() {
             </select>
             <button className="nav-toggle" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} aria-label="Toggle menu">
               {mobileMenuOpen ? (
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" strokeWidth="2.5" strokeLinecap="round">
                   <line x1="18" y1="6" x2="6" y2="18" />
                   <line x1="6" y1="6" x2="18" y2="18" />
                 </svg>
               ) : (
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <line x1="3" y1="12" x2="21" y2="12" />
-                  <line x1="3" y1="6" x2="21" y2="6" />
-                  <line x1="3" y1="18" x2="21" y2="18" />
-                </svg>
+                <div className="ham-lines">
+                  <span className="ham-bar"></span>
+                  <span className="ham-bar"></span>
+                  <span className="ham-bar"></span>
+                </div>
               )}
             </button>
           </div>
