@@ -1,4 +1,10 @@
 import nodemailer from 'nodemailer';
+import dns from 'dns';
+
+// Forcer la résolution IPv4 en premier pour éviter les erreurs getaddrinfo ENOTFOUND sur Windows/Node
+if (dns && dns.setDefaultResultOrder) {
+  dns.setDefaultResultOrder('ipv4first');
+}
 
 export interface ContactData {
   firstName: string;
@@ -30,39 +36,46 @@ export interface MailAttachment {
   contentType?: string;
 }
 
-const SMTP_HOST = process.env.SMTP_HOST || 'smtp.hostinger.com';
-const SMTP_PORT = Number(process.env.SMTP_PORT) || 465;
-const SMTP_SECURE = process.env.SMTP_SECURE ? process.env.SMTP_SECURE === 'true' : SMTP_PORT === 465;
-const SMTP_USER = process.env.SMTP_USER || 'contact@virxyd.com';
-const SMTP_PASS = process.env.SMTP_PASS || '';
-const DEFAULT_FROM = process.env.SMTP_FROM || `"Virxyd" <${SMTP_USER}>`;
-const RECEIVER_EMAIL = process.env.CONTACT_RECEIVER || 'contact@virxyd.com';
+function getSmtpConfig() {
+  const host = process.env.SMTP_HOST || 'smtp.hostinger.com';
+  const port = Number(process.env.SMTP_PORT) || 465;
+  const secure = process.env.SMTP_SECURE !== undefined ? process.env.SMTP_SECURE === 'true' : port === 465;
+  const user = (process.env.SMTP_USER || 'contact@virxyd.com').trim();
+  const pass = (process.env.SMTP_PASS || '').trim();
+  const from = (process.env.SMTP_FROM || `"Virxyd" <${user}>`).trim();
+  const receiver = (process.env.CONTACT_RECEIVER || 'contact@virxyd.com').trim();
+
+  return { host, port, secure, user, pass, from, receiver };
+}
 
 function createTransporter() {
+  const config = getSmtpConfig();
   return nodemailer.createTransport({
-    host: SMTP_HOST,
-    port: SMTP_PORT,
-    secure: SMTP_SECURE,
+    host: config.host,
+    port: config.port,
+    secure: config.secure,
     auth: {
-      user: SMTP_USER,
-      pass: SMTP_PASS,
+      user: config.user,
+      pass: config.pass,
     },
     tls: {
-      rejectUnauthorized: true,
+      rejectUnauthorized: false,
     },
   });
 }
 
 function isSmtpConfigured(): boolean {
-  return Boolean(SMTP_PASS && SMTP_PASS !== 'votre_mot_de_passe_ici');
+  const { pass } = getSmtpConfig();
+  return Boolean(pass && pass !== 'votre_mot_de_passe_ici');
 }
 
 /**
  * Envoi d'un message de contact :
- * 1. Notification vers contact@virxyd.com
+ * 1. Notification prioritaire vers contact@virxyd.com
  * 2. Accusé de réception automatique vers l'expéditeur
  */
 export async function sendContactMail(data: ContactData) {
+  const { from: DEFAULT_FROM, receiver: RECEIVER_EMAIL } = getSmtpConfig();
   const { firstName, lastName, email, message } = data;
   const fullName = `${firstName} ${lastName}`.trim();
   const dateStr = new Date().toLocaleDateString('fr-FR', {
@@ -209,11 +222,24 @@ export async function sendContactMail(data: ContactData) {
     `,
   };
 
-  // Envoi des deux emails
-  const [adminResult, userResult] = await Promise.all([
-    transporter.sendMail(adminMailOptions),
-    transporter.sendMail(userAckMailOptions),
-  ]);
+  // 1. Envoyer impérativement l'email à l'équipe Virxyd (contact@virxyd.com)
+  let adminResult;
+  try {
+    adminResult = await transporter.sendMail(adminMailOptions);
+    console.log('[SMTP] Message reçu transmis à contact@virxyd.com avec succès:', adminResult.messageId);
+  } catch (err: any) {
+    console.error('[SMTP ERROR] Échec de l\'envoi vers contact@virxyd.com:', err);
+    throw new Error(`Erreur serveur SMTP : ${err.message}`);
+  }
+
+  // 2. Tenter l'envoi de l'accusé de réception automatique au visiteur
+  let userResult;
+  try {
+    userResult = await transporter.sendMail(userAckMailOptions);
+    console.log('[SMTP] Accusé de réception envoyé au visiteur:', email, userResult.messageId);
+  } catch (err: any) {
+    console.warn('[SMTP WARN] Impossible d\'envoyer l\'accusé de réception (adresse visiteur potentiellement invalide):', err.message);
+  }
 
   return { success: true, adminResult, userResult };
 }
@@ -224,6 +250,7 @@ export async function sendContactMail(data: ContactData) {
  * 2. Accusé de réception avec référence de dossier vers le demandeur
  */
 export async function sendApplicationMail(data: ApplicationData, attachments: MailAttachment[] = []) {
+  const { from: DEFAULT_FROM, receiver: RECEIVER_EMAIL } = getSmtpConfig();
   const {
     firstName,
     lastName,
@@ -414,10 +441,24 @@ export async function sendApplicationMail(data: ApplicationData, attachments: Ma
     `,
   };
 
-  const [adminResult, userResult] = await Promise.all([
-    transporter.sendMail(adminMailOptions),
-    transporter.sendMail(userAckMailOptions),
-  ]);
+  // 1. Envoyer impérativement le dossier complet à contact@virxyd.com
+  let adminResult;
+  try {
+    adminResult = await transporter.sendMail(adminMailOptions);
+    console.log('[SMTP] Dossier de prêt transmis à contact@virxyd.com avec succès:', adminResult.messageId);
+  } catch (err: any) {
+    console.error('[SMTP ERROR] Échec de l\'envoi du dossier vers contact@virxyd.com:', err);
+    throw new Error(`Erreur serveur SMTP : ${err.message}`);
+  }
+
+  // 2. Tenter l'envoi de l'accusé de réception automatique au demandeur
+  let userResult;
+  try {
+    userResult = await transporter.sendMail(userAckMailOptions);
+    console.log('[SMTP] Accusé de réception dossier envoyé au demandeur:', email, userResult.messageId);
+  } catch (err: any) {
+    console.warn('[SMTP WARN] Impossible d\'envoyer l\'accusé de réception du dossier (adresse potentiellement invalide):', err.message);
+  }
 
   return { success: true, adminResult, userResult, refCode };
 }

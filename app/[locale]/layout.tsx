@@ -28,9 +28,48 @@ const dmSerif = DM_Serif_Display({
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   const dict = await getDictionary(locale);
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://virxyd.com';
+  const locales = ['fr', 'en', 'kw', 'sl', 'es', 'lt', 'de', 'it', 'hr', 'lv'];
+
+  // Construire dynamiquement les liens hreflang pour Google
+  const languageAlternates: Record<string, string> = {};
+  locales.forEach((l) => {
+    languageAlternates[l] = `${baseUrl}/${l}`;
+  });
+
+  const title = dict.hero.title + ' | Virxyd';
+  const description = dict.hero.desc;
+
   return {
-    title: dict.hero.title + ' | Virxyd',
-    description: dict.hero.desc,
+    title,
+    description,
+    metadataBase: new URL(baseUrl),
+    alternates: {
+      canonical: `${baseUrl}/${locale}`,
+      languages: languageAlternates,
+    },
+    openGraph: {
+      title,
+      description,
+      url: `${baseUrl}/${locale}`,
+      siteName: 'Virxyd',
+      locale: locale,
+      type: 'website',
+      images: [
+        {
+          url: '/images/virxyd-brand-glow.png',
+          width: 1200,
+          height: 630,
+          alt: 'Virxyd Financement',
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: ['/images/virxyd-brand-glow.png'],
+    },
     icons: {
       icon: '/images/favicon/virxyd.png',
       shortcut: '/images/favicon/virxyd.png',

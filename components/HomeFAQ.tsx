@@ -15,8 +15,26 @@ export default function HomeFAQ() {
     { q: t('home.faq.q4'), a: t('home.faq.a4') },
   ];
 
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': faqs.map((faq) => ({
+      '@type': 'Question',
+      'name': faq.q,
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': faq.a,
+      },
+    })),
+  };
+
   return (
     <section className="section" style={{ background: 'var(--bg)' }}>
+      {/* Données structurées pour Google Rich Snippets */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <div className="container">
         <div className="sec-header center">
           <Reveal>

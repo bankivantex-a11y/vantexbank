@@ -14,11 +14,22 @@ export default function ContactPage() {
     e.preventDefault();
     setErrorMsg(null);
     setIsSubmitting(true);
-    const formData = new FormData(e.currentTarget);
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    const payload = {
+      firstname: formData.get('firstname'),
+      lastname: formData.get('lastname'),
+      email: formData.get('email'),
+      message: formData.get('message'),
+    };
     try {
       const response = await fetch('/api/contact', {
         method: 'POST',
-        body: formData
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+        },
+        body: JSON.stringify(payload),
       });
       const result = await response.json();
       if (response.ok && result.success) {
@@ -28,7 +39,7 @@ export default function ContactPage() {
       }
     } catch (err: any) {
       console.error(err);
-      setErrorMsg('Erreur de connexion au serveur. Veuillez réessayer.');
+      setErrorMsg('Erreur de communication avec le serveur. Veuillez réessayer.');
     } finally {
       setIsSubmitting(false);
     }
