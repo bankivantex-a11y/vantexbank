@@ -19,7 +19,7 @@ export default function AvisPage() {
     text: [
       "Excellent service, fonds reçus en 48h comme promis.",
       "Plateforme très intuitive et conseillers à l'écoute.",
-      "J'ai pu réaliser mes travaux sans stress, merci Vantex.",
+      "J'ai pu réaliser mes travaux sans stress, merci Virxyd.",
       "Le meilleur taux que j'ai trouvé sur le marché actuellement.",
       "Procédure 100% en ligne très pratique et rapide.",
       "Un grand merci pour l'accompagnement personnalisé.",

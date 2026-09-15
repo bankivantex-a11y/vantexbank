@@ -12,13 +12,10 @@ export default function Footer() {
         <div className="footer-grid">
           <div>
             <SmartLink href="/" className="nav-logo">
-              <div className="nav-logo-icon">V</div>
-              <span className="nav-logo-text">
-                Vantex <span>Bank</span>
-              </span>
+              <img src="/images/virxyd-logo.png" alt="Virxyd Logo" style={{ height: '40px', width: 'auto' }} />
             </SmartLink>
             <p className="footer-desc">
-              Vantex Bank, {t('hero.desc').substring(0, 100)}...
+              Virxyd, {t('hero.desc').substring(0, 100)}...
             </p>
           </div>
           <div>
@@ -75,7 +72,7 @@ export default function Footer() {
         </div>
         <div className="footer-bottom">
           <span className="footer-copy">
-            © 2026 Vantex Bank. {t('footer.rights')}
+            © 2026 Virxyd. {t('footer.rights')}
           </span>
           <div className="footer-legal">
             <SmartLink href="/mentions-legales">{t('footer.accessibility')}</SmartLink>

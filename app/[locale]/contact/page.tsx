@@ -7,21 +7,30 @@ import { useAppState } from '@/components/AppState';
 export default function ContactPage() {
   const { t } = useAppState();
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setErrorMsg(null);
+    setIsSubmitting(true);
     const formData = new FormData(e.currentTarget);
     try {
-      const response = await fetch('https://formspree.io/f/mqpkvoze', {
+      const response = await fetch('/api/contact', {
         method: 'POST',
-        headers: { 'Accept': 'application/json' },
         body: formData
       });
-      if (response.ok) {
+      const result = await response.json();
+      if (response.ok && result.success) {
         setSubmitted(true);
+      } else {
+        setErrorMsg(result.error || 'Une erreur est survenue lors de l\'envoi.');
       }
-    } catch (err) {
+    } catch (err: any) {
       console.error(err);
+      setErrorMsg('Erreur de connexion au serveur. Veuillez réessayer.');
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -59,8 +68,8 @@ export default function ContactPage() {
                   <div>
                     <div style={{ fontWeight: 700, color: 'var(--navy)' }}>{t('contact_page.email')}</div>
                     <div style={{ color: 'var(--muted)' }}>
-                      <a href="mailto:contact@bankvantex.com" style={{ color: 'inherit', textDecoration: 'none' }}>
-                        contact@bankvantex.com
+                      <a href="mailto:contact@virxyd.com" style={{ color: 'inherit', textDecoration: 'none' }}>
+                        contact@virxyd.com
                       </a>
                     </div>
                   </div>
@@ -107,7 +116,14 @@ export default function ContactPage() {
                       <label className="form-label">{t('contact_page.message_label')}</label>
                       <textarea name="message" className="form-input" style={{ minHeight: 120, resize: 'vertical' }} placeholder={t('contact_page.message_placeholder')} required></textarea>
                     </div>
-                    <button type="submit" className="btn-sim">{t('contact_page.send_btn')}</button>
+                    {errorMsg && (
+                      <div style={{ padding: '10px 14px', backgroundColor: '#fef2f2', border: '1px solid #fecaca', borderRadius: '8px', color: '#b91c1c', fontSize: '14px', marginBottom: '16px' }}>
+                        ⚠️ {errorMsg}
+                      </div>
+                    )}
+                    <button type="submit" className="btn-sim" disabled={isSubmitting} style={{ opacity: isSubmitting ? 0.7 : 1, cursor: isSubmitting ? 'not-allowed' : 'pointer' }}>
+                      {isSubmitting ? (t('app.sending') || 'Envoi en cours...') : t('contact_page.send_btn')}
+                    </button>
                   </form>
                 )}
               </div>

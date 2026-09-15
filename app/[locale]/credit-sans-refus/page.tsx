@@ -22,7 +22,7 @@ export default function NoRefusalPage() {
             {t('articles.no_refusal.max_text1')}
           </div>
           <div className="art-text">
-            <strong>Vantex Bank</strong> {t('articles.no_refusal.max_text2')}
+            <strong>Virxyd</strong> {t('articles.no_refusal.max_text2')}
           </div>
         </Reveal>
       </section>

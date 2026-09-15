@@ -48,7 +48,7 @@ export default function Conditions() {
             <div className="cond-img-wrap">
               <Image
                 src="https://images.unsplash.com/photo-1758518727592-706e80ebc354?w=600&h=500&fit=crop&crop=top&auto=format"
-                alt="Vantex Bank Advisor"
+                alt="Virxyd Advisor"
                 width={600}
                 height={500}
                 loading="lazy"

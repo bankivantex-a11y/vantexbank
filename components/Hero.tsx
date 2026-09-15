@@ -147,7 +147,7 @@ export default function Hero() {
             <div className="hero-person">
               <Image
                 src="https://images.unsplash.com/photo-1758518729371-5ee28c4ddf60?w=400&h=500&fit=crop&crop=top&auto=format"
-                alt="Clients satisfaits Vantex Bank"
+                alt="Clients satisfaits Virxyd"
                 width={400}
                 height={500}
                 priority

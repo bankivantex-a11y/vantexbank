@@ -47,8 +47,7 @@ export default function AuthModal() {
         </button>
         <div className="modal-inner">
           <div className="modal-logo">
-            <div className="modal-logo-icon">V</div>
-            <span className="modal-logo-name">{t('nav.logo_text') || 'Vantex Bank'}</span>
+            <img src="/images/virxyd-logo.png" alt="Virxyd Logo" style={{ height: '35px', width: 'auto' }} />
           </div>
 
           <div className="auth-tabs">

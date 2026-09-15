@@ -16,10 +16,10 @@
       "read_article": "Pročitajte članak →"
     },
     "how_fast": {
-      "title": "Kako funkcionira brzi kredit Vantex Bank?",
+      "title": "Kako funkcionira brzi kredit Virxyd ?",
       "desc1": "Najbrži kredit se dobiva online. To je danas preferirano rješenje za financiranje projekta, suočavanje s neočekivanim troškovima ili brzi dolazak do dodatne gotovine.",
       "desc2": "Ipak, kada potreba za financiranjem postane hitna, najteže nije uvijek dobiti novac. Često se radi o identificiranju organizacije sposobne prihvatiti zahtjev i potvrditi datoteku u najkraćem mogućem roku.",
-      "desc3": "Kao stručnjak za brze kredite, Vantex Bank je razvila rješenje koje vam omogućuje da ispitate nekoliko organizacija iz jednog obrasca. Ovaj pristup štedi dragocjeno vrijeme.",
+      "desc3": "Kao stručnjak za brze kredite, Virxyd je razvila rješenje koje vam omogućuje da ispitate nekoliko organizacija iz jednog obrasca. Ovaj pristup štedi dragocjeno vrijeme.",
       "desc4": "A kako bi koraci bili još jednostavniji, nakon što je kredit prihvaćen, klijent samo treba dostaviti svoje prateće dokumente online i elektronički potpisati svoj ugovor. Upravo ta metoda omogućuje dobivanje kredita što je brže moguće.",
       "cta": "PRISTUPITE OBRASCU ZA KREDIT"
     },
@@ -38,7 +38,7 @@
       "q2": "Koji je kredit najbrže dobiti?",
       "a2": "Kada je već otvoren, revolving kredit često je najbrže financiranje. Za novi zahtjev, online osobni zajam općenito je najbolji kompromis između brzine, iznosa koji se može posuditi i troškova financiranja.",
       "q3": "Može li se dobiti brzi kredit online?",
-      "a3": "Da. U Vantex Bank moguće je ispuniti obrazac, dobiti odgovor o načelnom prihvaćanju, elektronički potpisati ugovor i poslati prateće dokumente bez putovanja.",
+      "a3": "Da. U Virxyd moguće je ispuniti obrazac, dobiti odgovor o načelnom prihvaćanju, elektronički potpisati ugovor i poslati prateće dokumente bez putovanja.",
       "q4": "Koliko vremena je potrebno za odgovor?",
       "a4": "Proučavanje vašeg dosjea počinje čim pošaljete obrazac. Odgovor o načelnom prihvaćanju obično je trenutan, a konačna potvrda događa se u roku od 24 do 48 sati nakon primitka pratećih dokumenata."
     }
@@ -53,7 +53,7 @@
     "contact": "Kontakt",
     "apply": "Zatražite zajam",
     "login": "Prijava",
-    "logo_text": "Vantex Bank"
+    "logo_text": "Virxyd"
   },
   "common": {
     "months": "mjeseci",
@@ -74,7 +74,7 @@
   },
   "hero": {
     "title": "Vaš online zajam, jednostavan i brz",
-    "desc": "Vantex Bank vas prati u svim vašim životnim projektima. Ostvarite svoje financiranje u nekoliko koraka, bez čekanja u redu, 100% online.",
+    "desc": "Virxyd vas prati u svim vašim životnim projektima. Ostvarite svoje financiranje u nekoliko koraka, bez čekanja u redu, 100% online.",
     "cta_apply": "Zatraži moj zajam",
     "cta_sim": "Simuliraj moj zajam",
     "stat_clients": "Zadovoljni klijenti",
@@ -108,12 +108,12 @@
     "mini_rate": "Mjesečna stopa",
     "mini_duration": "Odabrano trajanje",
     "mini_first": "1. rata",
-    "disclaimer": "* Indikativna simulacija. Konačni EKS naveden u ponudi ugovora. Podložno prihvaćanju od strane Vantex Bank."
+    "disclaimer": "* Indikativna simulacija. Konačni EKS naveden u ponudi ugovora. Podložno prihvaćanju od strane Virxyd ."
   },
   "cond": {
     "label": "Podobnost",
     "title": "Uvjeti za pristup zajmu",
-    "desc": "Vantex Bank je dostupna stanovnicima Europe i Azije koji ispunjavaju dolje navedene kriterije.",
+    "desc": "Virxyd je dostupna stanovnicima Europe i Azije koji ispunjavaju dolje navedene kriterije.",
     "item1_strong": "Biti punoljetan/na",
     "item1_text": "— Imati najmanje 18 godina na datum podnošenja zahtjeva",
     "item2_strong": "Podobno prebivalište",
@@ -202,8 +202,8 @@
     "recap_loan": "Zajam:",
     "recap_monthly": "Mjesečna rata:",
     "recap_email": "E-mail:",
-    "contract_title": "UGOVOR O ZAHTJEVU ZA ZAJAM — VANTEX BANK",
-    "contract_text": "Podnošenjem ovog obrasca, Zajmoprimac potvrđuje da je upoznat s Općim uvjetima Vantex Bank i pod punom materijalnom i kaznenom odgovornošću izjavljuje da su dostavljeni podaci točni i potpuni. Zajmoprimac ovlašćuje Vantex Bank da konzultira datoteke bankovnih incidenata i izvrši bilo kakvu provjeru potrebnu za analizu njegovog zahtjeva. Ovaj zahtjev ne predstavlja ugovornu obvezu Vantex Bank. Konačna ponuda bit će izdana nakon analize cjelokupnog dosjea. Konačni EKS bit će naveden u ponudi kredita. Zajmoprimac ima zakonski rok za odustajanje od 14 kalendarskih dana od potpisivanja konačne ponude. Vantex Bank (SAS Cap Au Nord) — Posrednik registriran pri ORIAS-u pod brojem 14807766. Temeljni kapital: 50.000.000 €. Sjedište: 12 Avenue de la Banque, 75008 Pariz, Francuska.",
+    "contract_title": "UGOVOR O ZAHTJEVU ZA ZAJAM — VIRXYD",
+    "contract_text": "Podnošenjem ovog obrasca, Zajmoprimac potvrđuje da je upoznat s Općim uvjetima Virxyd i pod punom materijalnom i kaznenom odgovornošću izjavljuje da su dostavljeni podaci točni i potpuni. Zajmoprimac ovlašćuje Virxyd da konzultira datoteke bankovnih incidenata i izvrši bilo kakvu provjeru potrebnu za analizu njegovog zahtjeva. Ovaj zahtjev ne predstavlja ugovornu obvezu Virxyd . Konačna ponuda bit će izdana nakon analize cjelokupnog dosjea. Konačni EKS bit će naveden u ponudi kredita. Zajmoprimac ima zakonski rok za odustajanje od 14 kalendarskih dana od potpisivanja konačne ponude. Virxyd (SAS Cap Au Nord) — Posrednik registriran pri ORIAS-u pod brojem 14807766. Temeljni kapital: 50.000.000 €. Sjedište: 12 Avenue de la Banque, 75008 Pariz, Francuska.",
     "chk1": "Potvrđujem točnost navedenih podataka.",
     "chk2": "Prihvaćam uvjete obrade podataka.",
     "chk3": "Potvrđujem da sam punoljetan/na (18+ godina).",
@@ -211,10 +211,10 @@
     "submitting_title": "Analiza vašeg dosjea u tijeku...",
     "submitting_sub": "Bit će dovoljno nekoliko sekundi",
     "success_title": "Dosje uspješno podnesen!",
-    "success_desc": "Naši su timovi zaprimili vaš zahtjev. U kratkom roku (unutar 48 radnih sati) primit ćete obavijest s odlukom Vantex Bank.",
+    "success_desc": "Naši su timovi zaprimili vaš zahtjev. U kratkom roku (unutar 48 radnih sati) primit ćete obavijest s odlukom Virxyd .",
     "ref_label": "Broj predmeta",
     "next1": "E-mail potvrde s brojem vašeg predmeta bit će vam poslan u sljedećih nekoliko minuta.",
-    "next2": "Naš tim analizira vaš dosje u roku od 48 radnih sati i kontaktirat će vas ako budu potrebni dodatni dokumenti.",
+    "next2": "Naš tim analizira vaš dosje u roku od 48 radnih sati and vous contacte si des documents complémentaires sont nécessaires.",
     "next3": "U slučaju povoljne odluke, ponudu potpisujete elektronički — sredstva se potom doznačuju u roku od 72 sata.",
     "home_btn": "Povratak na početnu",
     "submit_btn": "Pošalji moj dosje ✓",
@@ -236,11 +236,11 @@
     "stat_capital": "Temeljni kapital",
     "stat_capital_val": "50M€",
     "stat_presence": "Međunarodna prisutnost",
-    "stat_presence_val": "EU i Azija",
+    "stat_presence_val": "EU i Asie",
     "mission": "Naša misija",
     "mission_text1": "Osnovana s ambicijom da bude stručnjak za brze kredite i financiranje pojedinaca, naša misija je pratiti svakog zajmoprimca prema rješenju koje najbolje odgovara njegovom projektu i situaciji.",
-    "mission_text2": "U Vantex Bank podnosite zahtjev za osobni zajam online i dobivate trenutni odgovor o načelnom prihvaćanju. Naš cilj je jednostavan: pratiti vas u svakom koraku kako bismo olakšali i ubrzali dobivanje vašeg financiranja.",
-    "legal_box": "Vantex Bank (SAS Cap Au Nord) je posrednik registriran pri ORIAS-u pod brojem 14807766 kao neisključivi zastupnik u bankarskim operacijama i uslugama plaćanja (MOBSP)."
+    "mission_text2": "U Virxyd podnosite zahtjev za osobni zajam online i dobivate trenutni odgovor o načelnom prihvaćanju. Naš cilj je jednostavan: pratiti vas u svakom koraku kako bismo olakšali i ubrzali dobivanje vašeg financiranja.",
+    "legal_box": "Virxyd (SAS Cap Au Nord) je posrednik registriran pri ORIAS-u pod brojem 14807766 kao neisključivi zastupnik u bankarskim operacijama i uslugama plaćanja (MOBSP)."
   },
   "services": {
     "label": "Naše usluge",
@@ -253,7 +253,7 @@
       "mod_dur": "Trajanje",
       "adv_title": "Naše prednosti",
       "sol_title": "Jednostavno rješenje",
-      "sol_desc": "U Vantex Bank podnosite zahtjev za osobni zajam online i dobivate trenutni odgovor o načelnom prihvaćanju. U slučaju prihvaćanja, preostaje vam samo elektronički potpisati ugovor i prenijeti prateće dokumente.",
+      "sol_desc": "U Virxyd podnosite zahtjev za osobni zajam online i dobivate trenutni odgovor o načelnom prihvaćanju. U slučaju prihvaćanja, preostaje vam samo elektronički potpisati ugovor i prenijeti prateće dokumente.",
       "sim_title": "Simulirajte svoj osobni zajam",
       "sim_desc": "Dobijte preciznu procjenu u nekoliko sekundi."
     },
@@ -294,7 +294,7 @@
     "other": "Ostalo"
   },
   "fonctionnement": {
-    "title": "Kako funkcionira Vantex Bank?",
+    "title": "Kako funkcionira Virxyd ?",
     "desc": "Pojednostavili smo kreditiranje kako biste se mogli usredotočiti na svoje projekte. 100% digitalno, transparentno i sigurno iskustvo.",
     "unexpected": {
       "title": "Rješenje u slučaju neočekivanih troškova",
@@ -327,7 +327,7 @@
   },
   "pret_professionnel": {
     "label": "Poslovna rješenja",
-    "desc": "Trebate gotovinu, novu opremu ili prostore? Vantex Bank prati poduzetnike i male i srednje tvrtke.",
+    "desc": "Trebate gotovinu, novu opremu ili prostore? Virxyd prati poduzetnike i male i srednje tvrtke.",
     "cond_title": "Poslovno financiranje",
     "cond1": "Zajam za materijal i opremu",
     "cond2": "Financiranje zaliha i obrtnih sredstava",
@@ -352,7 +352,7 @@
     "title": "Često postavljana pitanja (FAQ)",
     "desc": "Ovdje pronađite odgovore na najčešća pitanja o našim uslugama financiranja.",
     "q1": "Kako brzo dobiti mini kredit?",
-    "a1": "Zahtjev za mini kredit podnosi se izravno online na Vantex Bank. Dovoljno je ispuniti svoj dosje i poslati tražene informacije. Da biste ubrzali isplatu sredstava, preporučuje se što brže elektronički potpisati ugovor.",
+    "a1": "Zahtjev za mini kredit podnosi se izravno online na Virxyd . Dovoljno je ispuniti svoj dosje i poslati tražene informacije. Da biste ubrzali isplatu sredstava, preporučuje se što brže elektronički potpisati ugovor.",
     "q2": "Koje su stope mini kredita?",
     "a2": "Stopa mini kredita ovisi posebno o posuđenom iznosu i roku otplate. Prije bilo kakve pretplate važno je provjeriti EKS, iznos rata kao i ukupni trošak kredita koji se nalaze na vašem personaliziranom ugovoru.",
     "q3": "Kolika je plaća potrebna za dobivanje mini kredita?",
@@ -387,19 +387,19 @@
   "testimonials": {
     "label": "Svjedočanstva",
     "title": "Oni nam vjeruju",
-    "desc": "Otkrijte iskustva naših klijenata koji su realizirali svoje projekte zahvaljujući Vantex Bank.",
+    "desc": "Otkrijte iskustva naših klijenata koji su realizirali svoje projekte zahvaljujući Virxyd .",
     "sec_label": "Što kažu",
-    "sec_title": "Dobili su svoj zajam u Vantex Bank",
-    "sec_desc": "Tisuće klijenata vjeruje Vantex Bank u financiranju svojih životnih projekata.",
+    "sec_title": "Dobili su svoj zajam u Virxyd ",
+    "sec_desc": "Tisuće klijenata vjeruje Virxyd u financiranju svojih životnih projekata.",
     "verified": "Provjereno",
     "loan_obtained": "Dobiveni zajam:",
-    "t1_text": "Zahvaljujući Vantex Bank uspio sam financirati radove na svojoj kući. Ultra jednostavna procedura, odgovor u 36 sati i vrhunski tim. Nisam vjerovao da je to moguće online!",
+    "t1_text": "Zahvaljujući Virxyd uspio sam financirati radove na svojoj kući. Ultra jednostavna procedura, odgovor u 36 sati i vrhunski tim. Nisam vjerovao da je to moguće online!",
     "t1_meta": "Split · Kolovoz 2026",
-    "t2_text": "Nakon nekoliko odbijanja u klasičnim bankama, Vantex mi je odobrio auto zajam. Stopa je nenadmašna i obrazac se ispuni za točno 10 minuta. Vrlo ozbiljno!",
+    "t2_text": "Nakon nekoliko odbijanja u klasičnim bankama, Virxyd mi je odobrio auto zajam. Stopa je nenadmašna i obrazac se ispuni za točno 10 minuta. Vrlo ozbiljno!",
     "t2_meta": "Zagreb · Srpanj 2026",
     "t3_text": "Uspio sam pokrenuti svoju tvrtku zahvaljujući ovom poslovnom zajmu. Dosje obrađen brzo, savjetnici dostupni, a prijenos primljen u 3 dana nakon potpisa. Savršeno!",
     "t3_meta": "Dubrovnik · Lipanj 2026",
-    "t4_text": "Za konsolidaciju mojih kredita, Vantex Bank je bila savršeno rješenje. Jasan obrazac, transparentna stopa i osmijeh na licu kad sam vidio prijenos. Zaista hvala!",
+    "t4_text": "Za konsolidaciju mojih kredita, Virxyd bila je savršeno rješenje. Jasan obrazac, transparentna stopa i osmijeh na licu kad sam vidio prijenos. Zaista hvala!",
     "t4_meta": "Rijeka · Svibanj 2026",
     "t5_text": "Zahvaljujući ovome uspio sam dobiti stambeni zajam o kojem sam sanjao. Platforma je intuitivna, savjetnici dostupni i profesionalni. Preporučujem bez oklijevanja.",
     "t5_meta": "Zadar · Travanj 2026",
@@ -416,11 +416,11 @@
     "Portugal",
     "Nizozemska",
     "Luxembourg",
-    "Japan",
+    "Japon",
     "Južna Koreja",
     "Singapur",
-    "Hrvatska",
-    "Latvija",
+    "Croatia",
+    "Letonia",
     "Ostale zemlje Europe / Azije"
   ],
   "languages": {

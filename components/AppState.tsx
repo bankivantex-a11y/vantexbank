@@ -79,7 +79,7 @@ export function AppStateProvider({
 
   const setLocale = (l: Locale) => {
     setLocaleState(l);
-    localStorage.setItem('vantex-locale', l);
+    localStorage.setItem('virxyd-locale', l);
   };
 
   const triggerLoading = (callback?: () => void) => {

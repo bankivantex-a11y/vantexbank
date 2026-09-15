@@ -1,6 +1,6 @@
-# Vantex Bank — Plateforme de Financement en Ligne
+# Virxyd — Plateforme de Financement en Ligne
 
-Plateforme bancaire moderne développée avec Next.js 14 (App Router + TypeScript), offrant des solutions de crédit rapide, sécurisé et 100% en ligne.
+Plateforme de financement moderne développée avec Next.js 14 (App Router + TypeScript), offrant des solutions de crédit rapide, sécurisé et 100% en ligne.
 
 ## Fonctionnalités
 

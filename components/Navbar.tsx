@@ -56,10 +56,7 @@ export default function Navbar() {
       <div className="container">
         <div className="nav-inner">
           <SmartLink href="/" className="nav-logo" onClick={() => setMobileMenuOpen(false)}>
-            <div className="nav-logo-icon">V</div>
-            <span className="nav-logo-text">
-              Vantex <span>Bank</span>
-            </span>
+            <img src="/images/virxyd-logo.png" alt="Virxyd Logo" style={{ height: '45px', width: 'auto' }} />
           </SmartLink>
           <ul className={`nav-links ${mobileMenuOpen ? 'active' : ''}`}>
             <li>

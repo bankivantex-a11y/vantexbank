@@ -16,12 +16,12 @@
       "read_article": "Leer el artículo →"
     },
     "how_fast": {
-      "title": "¿Cómo funciona el crédito rápido de Vantex Bank?",
+      "title": "¿Cómo funciona el crédito rápido de Virxyd ?",
       "desc1": "El crédito más rápido se obtiene en línea. Hoy en día es la solución preferida para financiar un proyecto, afrontar un gasto imprevisto o disponer rápidamente de liquidez adicional.",
       "desc2": "Sin embargo, cuando una necesidad de financiación se vuelve urgente, lo más difícil no siempre es conseguir el dinero. A menudo se trata de identificar al organismo capaz de aceptar la solicitud y validar el expediente lo antes posible.",
-      "desc3": "Como especialista en crédito rápido, Vantex Bank ha desarrollado una solución que permite consultar a varios organismos a partir de un único formulario. Este enfoque ahorra un tiempo valioso.",
+      "desc3": "Como especialista en crédito rápido, Virxyd ha desarrollado una solución que permite consultar a varios organismos a partir de un único formulario. Este enfoque ahorra un tiempo valioso.",
       "desc4": "Y para simplificar aún más los trámites, una vez aceptado el crédito, el cliente no tiene más que aportar sus justificantes en línea y firmar electrónicamente su contrato. Es este método el que permite obtener su crédito lo más rápidamente posible.",
-      "cta": "ACCEDER AL FORMULARIO DE CRÉDITO"
+      "cta": "ACCÉDER AL FORMULARIO DE CRÉDITO"
     },
     "advantages_title": "Nuestras ventajas",
     "advantages": {
@@ -38,7 +38,7 @@
       "q2": "¿Cuál es el crédito más rápido de obtener?",
       "a2": "Cuando ya está abierto, el crédito renovable suele ser la financiación más rápida. Para una nueva solicitud, el préstamo personal en línea constituye generalmente el mejor compromiso entre rapidez, importe financiable y coste de la financiación.",
       "q3": "¿Se puede obtener un crédito rápido en línea?",
-      "a3": "Sí. En Vantex Bank, es posible rellenar un formulario, recibir una respuesta de principio, firmar electrónicamente el contrato y transmitir los justificantes sin desplazarse.",
+      "a3": "Sí. En Virxyd , es posible rellenar un formulario, recibir una respuesta de principio, firmar electrónicamente el contrato y transmitir los justificantes sin desplazarse.",
       "q4": "¿Cuánto tiempo se tarda en obtener una respuesta?",
       "a4": "El estudio de su expediente comienza en cuanto se envía el formulario. Una respuesta de principio suele ser inmediata, y la validación definitiva se produce entre 24 y 48 horas después de recibir los documentos justificativos."
     }
@@ -53,7 +53,7 @@
     "contact": "Contacto",
     "apply": "Solicitar préstamo",
     "login": "Iniciar sesión",
-    "logo_text": "Vantex Bank"
+    "logo_text": "Virxyd"
   },
   "common": {
     "months": "meses",
@@ -74,7 +74,7 @@
   },
   "hero": {
     "title": "Su préstamo en línea, sencillo y rápido",
-    "desc": "Vantex Bank le acompaña en todos sus proyectos de vida. Obtenga su financiación en pocos pasos, sin esperas, 100% en línea.",
+    "desc": "Virxyd le acompaña en todos sus proyectos de vida. Obtenga su financiación en pocos pasos, sin esperas, 100% en línea.",
     "cta_apply": "Solicitar mi préstamo",
     "cta_sim": "Simular mi préstamo",
     "stat_clients": "Clientes satisfechos",
@@ -108,16 +108,16 @@
     "mini_rate": "Tasa mensual",
     "mini_duration": "Plazo elegido",
     "mini_first": "1ª cuota",
-    "disclaimer": "* Simulación indicativa. TAE definitiva especificada en la oferta del contrato. Sujeto a aceptación por parte de Vantex Bank."
+    "disclaimer": "* Simulación indicativa. TAE definitiva especificada en la oferta del contrato. Sujeto a aceptación por parte de Virxyd ."
   },
   "cond": {
     "label": "Elegibilidad",
     "title": "Condiciones de acceso al préstamo",
-    "desc": "Vantex Bank está disponible para residentes de Europa y Asia que cumplan los siguientes criterios.",
+    "desc": "Virxyd está disponible para residentes de Europa y Asia que cumplan los siguientes criterios.",
     "item1_strong": "Ser mayor de edad",
     "item1_text": "— Tener al menos 18 años cumplidos en la fecha de la solicitud",
     "item2_strong": "Residencia elegible",
-    "item2_text": "— Ser residente en Europa, Asia (Kuwait...), o Australia",
+    "item2_text": "— Ser residente en Europa, Asie (Koweït...), o Australia",
     "item3_strong": "Ingresos mensuales fijos",
     "item3_text": "— Acreditar una remuneración regular (contrato indefinido, funcionario, autónomo, jubilado…)",
     "item4_strong": "Tasa anual fija del 2,75%",
@@ -202,8 +202,8 @@
     "recap_loan": "Préstamo:",
     "recap_monthly": "Cuota mensual:",
     "recap_email": "Correo electrónico:",
-    "contract_title": "CONTRATO DE SOLICITUD DE PRÉSTAMO — VANTEX BANK",
-    "contract_text": "Al enviar este formulario, el Prestatario reconoce haber leído las Condiciones Generales de Vantex Bank y declara bajo su honor que la información proporcionada es exacta y completa. El Prestatario autoriza a Vantex Bank a consultar los ficheros de incidentes bancarios y a realizar cualquier verificación necesaria para el análisis de su solicitud. Esta solicitud no constituye un compromiso contractual por parte de Vantex Bank. La oferta definitiva se emitirá tras el análisis del expediente completo. La TAE definitiva se especificará en la oferta de crédito. El Prestatario dispone de un plazo legal de desistimiento de 14 días naturales a partir de la firma de la oferta definitiva. Vantex Bank (SAS Cap Au Nord) — Intermediario registrado en ORIAS con el número 14807766. Capital social: 50.000.000 €. Sede social: 12 Avenue de la Banque, 75008 París, Francia.",
+    "contract_title": "CONTRATO DE SOLICITUD DE PRÉSTAMO — VIRXYD",
+    "contract_text": "Al enviar este formulario, el Prestatario reconoce haber leído las Condiciones Generales de Virxyd y declara bajo su honor que la información proporcionada es exacta y completa. El Prestatario autoriza a Virxyd a consultar los ficheros de incidentes bancarios y a realizar cualquier verificación necesaria para el análisis de su solicitud. Esta solicitud no constituye un compromiso contractual por parte de Virxyd . La oferta definitiva se emitirá tras el análisis del expediente completo. La TAE definitiva se especificará en la oferta de crédito. El Prestatario dispone de un plazo legal de desistimiento de 14 días naturales a partir de la firma de la oferta definitiva. Virxyd (SAS Cap Au Nord) — Intermediario registrado en ORIAS con el número 14807766. Capital social: 50.000.000 €. Sede social: 12 Avenue de la Banque, 75008 París, Francia.",
     "chk1": "Certifico la exactitud de la información proporcionada.",
     "chk2": "Acepto las condiciones de tratamiento de datos.",
     "chk3": "Certifico que soy mayor de edad (18+ años).",
@@ -211,7 +211,7 @@
     "submitting_title": "Análisis de su expediente en curso...",
     "submitting_sub": "Unos segundos serán suficientes",
     "success_title": "¡Expediente enviado con éxito!",
-    "success_desc": "Su solicitud ha sido recibida correctamente por nuestros equipos. Recibirá una notificación en breve (en un plazo de 48 horas hábiles) con la decisión de Vantex Bank.",
+    "success_desc": "Su solicitud ha sido recibida correctamente por nuestros equipos. Recibirá una notificación en breve (en un plazo de 48 horas hábiles) con la decisión de Virxyd .",
     "ref_label": "Número de expediente",
     "next1": "Se le enviará un correo electrónico de confirmación con su número de expediente en los próximos minutos.",
     "next2": "Nuestro equipo analiza su expediente en un plazo de 48 horas hábiles y se pondrá en contacto con usted si necesita documentos adicionales.",
@@ -236,11 +236,11 @@
     "stat_capital": "Capital social",
     "stat_capital_val": "50M€",
     "stat_presence": "Presencia internacional",
-    "stat_presence_val": "UE y Asia",
+    "stat_presence_val": "UE y Asie",
     "mission": "Nuestra misión",
-    "mission_text1": "Fundada con la ambición de ser un especialista en crédito rápido y financiación a particulares, nuestra misión es acompañar a cada prestatario hacia la solución que mejor se adapte a su proyecto y a su situación.",
-    "mission_text2": "En Vantex Bank, usted realiza su solicitud de préstamo personal en línea y obtiene una respuesta de principio inmediata. Nuestro objetivo es sencillo: acompañarle en cada paso para facilitar y agilizar la obtención de su financiación.",
-    "legal_box": "Vantex Bank (SAS Cap Au Nord) es un intermediario registrado en ORIAS con el número 14807766 como agente no exclusivo en operaciones bancarias y servicios de pago (MOBSP)."
+    "mission_text1": "Fundada con la ambición de ser un especialista en crédito rápido y financiación a particulares, nuestra misión es acompañar cada prestatario hacia la solución que mejor se adapte a su proyecto y a su situación.",
+    "mission_text2": "En Virxyd , usted realiza su solicitud de préstamo personal en línea y obtiene una respuesta de principio inmediata. Nuestro objetivo es sencillo: acompañarle en cada paso para facilitar y agilizar la obtención de su financiación.",
+    "legal_box": "Virxyd (SAS Cap Au Nord) es un intermediario registrado en ORIAS con el número 14807766 como agente no exclusivo en operaciones bancarias y servicios de pago (MOBSP)."
   },
   "services": {
     "label": "Nuestros servicios",
@@ -253,7 +253,7 @@
       "mod_dur": "Plazo",
       "adv_title": "Nuestras ventajas",
       "sol_title": "Una solución sencilla",
-      "sol_desc": "En Vantex Bank, usted realiza su solicitud de préstamo personal en línea y obtiene una respuesta de principio inmediata. En caso de aceptación, solo tiene que firmar electrónicamente su contrato y subir sus documentos justificativos.",
+      "sol_desc": "En Virxyd , usted realiza su solicitud de préstamo personal en línea y obtiene una respuesta de principio inmediata. En caso de aceptación, solo tiene que firmar electrónicamente su contrato y subir sus documentos justificativos.",
       "sim_title": "Simule su préstamo personal",
       "sim_desc": "Obtenga una estimación precisa en pocos segundos."
     },
@@ -294,7 +294,7 @@
     "other": "Otros"
   },
   "fonctionnement": {
-    "title": "¿Cómo funciona Vantex Bank?",
+    "title": "¿Cómo funciona Virxyd ?",
     "desc": "Hemos simplificado el crédito para que pueda concentrarse en sus proyectos. Una experiencia 100% digital, transparente y segura.",
     "unexpected": {
       "title": "Una solución en caso de gastos imprevistos",
@@ -305,7 +305,7 @@
       "list2": "Una bicicleta o mobiliario",
       "list3": "Un electrodoméstico",
       "list4": "Una formación o un viaje",
-      "footer": "En este tipo de situaciones, el minicrédito permite fraccionar un gasto en el tiempo sin tener que movilizar inmediatamente sus ahorros. Constituye así una solución práctica para concretar un proyecto preservando su presupuesto."
+      "footer": "En este tipo de situación, el minicrédito permite fraccionar un gasto en el tiempo sin tener que movilizar inmediatamente sus ahorros. Constituye así una solución práctica para concretar un proyecto preservando su presupuesto."
     }
   },
   "pret_personnel": {
@@ -327,7 +327,7 @@
   },
   "pret_professionnel": {
     "label": "Soluciones para negocios",
-    "desc": "¿Necesita liquidez, nuevo equipo o locales? Vantex Bank acompaña a los emprendedores y a las pymes.",
+    "desc": "¿Necesita liquidez, nuevo equipo o locales? Virxyd acompaña a los emprendedores y a las pymes.",
     "cond_title": "Financiación Pro",
     "cond1": "Préstamo para material y equipo",
     "cond2": "Financiación de stock y circulante",
@@ -352,7 +352,7 @@
     "title": "Preguntas frecuentes (FAQ)",
     "desc": "Encuentre aquí las respuestas a las preguntas más comunes sobre nuestros servicios de financiación.",
     "q1": "¿Cómo obtener un minicrédito rápidamente?",
-    "a1": "La solicitud de minicrédito se realiza directamente en línea en Vantex Bank. Solo tiene que completar su expediente y transmitir la información solicitada. Para acelerar el desembolso de los fondos, se recomienda firmar el contrato electrónicamente lo antes posible.",
+    "a1": "La solicitud de minicrédito se realiza directamente en línea en Virxyd . Solo tiene que completar su expediente y transmitir la información solicitada. Para acelerar el desembolso de los fondos, se recomienda firmar el contrato electrónicamente lo antes posible.",
     "q2": "¿Cuáles son las tasas de un minicrédito?",
     "a2": "La tasa de un minicrédito depende principalmente del importe prestado y del plazo de devolución. Antes de cualquier suscripción, es importante verificar la TAE, el importe de las cuotas y el coste total del crédito que figuran en su contrato personalizado.",
     "q3": "¿Qué salario se necesita para obtener un minicrédito?",
@@ -387,42 +387,42 @@
   "testimonials": {
     "label": "Testimonios",
     "title": "Confían en nosotros",
-    "desc": "Descubra las experiencias de nuestros clientes que han realizado sus proyectos gracias a Vantex Bank.",
+    "desc": "Descubra las experiencias de nuestros clientes que han realizado sus proyectos gracias a Virxyd .",
     "sec_label": "Lo que dicen",
-    "sec_title": "Obtuvieron su préstamo con Vantex Bank",
-    "sec_desc": "Miles de clientes confían en Vantex Bank para financiar sus proyectos de vida.",
+    "sec_title": "Obtuvieron su préstamo con Virxyd ",
+    "sec_desc": "Miles de clientes confían en Virxyd para financiar sus proyectos de vida.",
     "verified": "Verificado",
     "loan_obtained": "Préstamo obtenido:",
-    "t1_text": "Gracias a Vantex Bank pude financiar las reformas de mi casa. Un procedimiento ultrasencillo, respuesta en 36h y un equipo excelente. ¡No creía que fuera posible hacerlo todo en línea!",
+    "t1_text": "Gracias a Virxyd pude financiar las reformas de mi casa. Un procedimiento ultrasencillo, respuesta en 36h y un equipo excelente. ¡No creía que fuera posible hacerlo todo en línea!",
     "t1_meta": "Lyon · Octubre 2025",
-    "t2_text": "Tras varios rechazos en bancos clásicos, Vantex me concedió mi préstamo para el coche. La tasa es imbatible y el formulario se rellena en 10 minutos cronometrados. ¡Muy serios!",
+    "t2_text": "Tras varios rechazos en bancos clásicos, Virxyd me concedió mi préstamo para el coche. La tasa es imbatible y el formulario se rellena en 10 minutos cronometrados. ¡Muy serios!",
     "t2_meta": "Bruselas · Agosto 2025",
     "t3_text": "Pude lanzar mi empresa gracias a este préstamo profesional. Expediente tramitado rápidamente, asesores disponibles y transferencia recibida en 3 días tras la firma. ¡Perfecto!",
     "t3_meta": "Ginebra · Julio 2025",
-    "t4_text": "Para reagrupar mis créditos, Vantex Bank fue la solución perfecta. Formulario claro, tasa transparente y una sonrisa en la cara cuando vi la transferencia. ¡Muchas gracias de verdad!",
+    "t4_text": "Para reagrupar mis créditos, Virxyd fue la solución perfecta. Formulario claro, tasa transparente y una sonrisa en la cara cuando vi la transferencia. ¡Muchas gracias de verdad!",
     "t4_meta": "Marsella · Junio 2025",
     "t5_text": "Gracias a ellos pude tener el préstamo hipotecario que soñaba. La plataforma es intuitiva, los asesores disponibles y profesionales. Lo recomiendo sin dudarlo.",
     "t5_meta": "París · Mayo 2025",
-    "t6_text": "Un servicio profesional y tranquilizador para quienes dudan en hacerlo en línea. Mi asesor me llamó para explicarme cada paso. Resultado: ¡transferencia recibida en 72 horas!",
+    "t6_text": "Un servicio profesional y tranquilizador para quienes duden en hacerlo en línea. Mi asesor me llamó para explicarme cada paso. Resultado: ¡transferencia recibida en 72 horas!",
     "t6_meta": "Ámsterdam · Abril 2025"
   },
   "legal": {
     "label": "Jurídico",
     "privacy_label": "Privacidad",
     "terms_title": "Condiciones Generales",
-    "terms_desc": "Las presentes condiciones generales regulan el uso del sitio de Vantex Bank y los servicios asociados.",
+    "terms_desc": "Las presentes condiciones generales regulan el uso del sitio de Virxyd y los servicios asociados.",
     "terms_s1_title": "1. Objeto",
-    "terms_s1_text": "Este sitio tiene como objeto presentar las soluciones de financiación y los servicios bancarios ofrecidos por Vantex Bank.",
+    "terms_s1_text": "Este sitio tiene como objeto presentar las soluciones de financiación y los servicios bancarios ofrecidos por Virxyd .",
     "terms_s2_title": "2. Modalidades del préstamo personal",
-    "terms_s2_text": "El préstamo personal de Vantex Bank permite solicitar el importe deseado para financiar sus proyectos y devolverlo a su ritmo según las siguientes condiciones:",
+    "terms_s2_text": "El préstamo personal de Virxyd permite solicitar el importe deseado para financiar sus proyectos y devolverlo a su ritmo según las siguientes condiciones:",
     "terms_s2_rate": "Tasa:",
     "terms_s2_rate_val": "TAE fija competitiva.",
     "terms_s2_amount": "Importe:",
     "terms_s2_amount_val": "De 500 € a 75.000 €.",
     "terms_s2_duration": "Plazo:",
-    "terms_s2_duration_val": "De 12 a 72 meses.",
+    "terms_s2_duration_val": "De 12 à 72 meses.",
     "terms_s3_title": "3. Ventajas",
-    "terms_s3_text": "Al elegir Vantex Bank, se beneficia de:",
+    "terms_s3_text": "Al elegir Virxyd , se beneficia de:",
     "terms_s3_l1": "Formulario de solicitud en línea rápido (aprox. 4 minutos).",
     "terms_s3_l2": "Respuesta de principio inmediata tras estudio simplificado.",
     "terms_s3_l3": "Justificantes digitalizados y firma electrónica segura.",
@@ -430,12 +430,12 @@
     "terms_s4_title": "4. Crédito",
     "terms_s4_text": "Un crédito le compromete y debe ser devuelto. Verifique su capacidad de reembolso antes de comprometerse.",
     "terms_s5_title": "5. Propiedad intelectual",
-    "terms_s5_text": "El conjunto de contenidos presentes en este sitio (textos, imágenes, logotipos) es propiedad exclusiva de Vantex Bank.",
+    "terms_s5_text": "El conjunto de contenidos presentes en este sitio (textos, imágenes, logotipos) es propiedad exclusiva de Virxyd .",
     "mentions_title": "Aviso Legal",
     "mentions_s1_title": "1. Presentación del sitio",
-    "mentions_s1_text": "El sitio Vantex Bank es la plataforma oficial de servicios bancarios en línea de Vantex Bank S.A., dedicada al acompañamiento financiero de sus clientes particulares y profesionales en todo el mundo.",
+    "mentions_s1_text": "El sitio Virxyd es la plateforme oficial de servicios bancarios en línea de Virxyd S.A., dedicada al acompañamiento financiero de sus clientes particulares y profesionales en todo el mundo.",
     "mentions_s2_title": "2. Editor",
-    "mentions_s2_text1": "Vantex Bank (SAS Cap Au Nord)",
+    "mentions_s2_text1": "Virxyd (SAS Cap Au Nord)",
     "mentions_s2_text2": "Capital social: 50.000.000 €",
     "mentions_s2_text3": "Sede social: 12 Avenue de la Banque, 75008 París, Francia",
     "mentions_s2_text4": "Registrado en ORIAS con el número",
@@ -443,9 +443,9 @@
     "mentions_s3_title": "3. Alojamiento",
     "mentions_s3_text1": "Este sitio está alojado por Vercel Inc.",
     "mentions_s4_title": "4. Actividad regulada",
-    "mentions_s4_text": "Vantex Bank es un establecimiento de crédito y de servicios de inversión autorizado por la Autoridad de Control Prudencial y de Resolución (ACPR).",
+    "mentions_s4_text": "Virxyd es un establecimiento de crédito y de servicios de inversión autorizado por la Autoridad de Control Prudencial y de Resolución (ACPR).",
     "cookies_title": "RGPD y Cookies",
-    "cookies_intro": "En Vantex Bank (SAS Cap Au Nord), damos una importancia capital a la protección de sus datos personales. Como intermediario registrado bajo el número ORIAS 14807766, respetamos escrupulosamente las normas europeas.",
+    "cookies_intro": "En Virxyd (SAS Cap Au Nord), damos una importancia capital a la protección de sus datos personales. Como intermediario registrado bajo el número ORIAS 14807766, respetamos escrupulosamente las normas europeas.",
     "cookies_s1_title": "1. Uso de los datos (RGPD)",
     "cookies_s1_text": "La información recogida durante su solicitud (importe del préstamo, datos personales, documentos justificativos) se trata únicamente para analizar su capacidad de reembolso y tramitar su expediente.",
     "cookies_s2_title": "2. Firma electrónica",
@@ -476,8 +476,10 @@
     "Países Bajos",
     "Luxemburgo",
     "Japón",
-    "Corea del Sur",
+    "Corea del Sud",
     "Singapur",
+    "Croacia",
+    "Letonia",
     "Otro país de Europa / Asia"
   ],
   "articles": {
@@ -495,15 +497,15 @@
         "Plazo de devolución de 12 a 72 meses"
       ],
       "summary_links": [
-        "Solicitar un crédito en línea con Vantex Bank",
+        "Solicitar un crédito en línea con Virxyd ",
         "¿Por qué elegir un crédito en línea?",
         "¿Cuánto cuesta un préstamo en línea?",
         "Plazo para obtener el dinero",
         "Justificantes a aportar",
         "¿Quién puede obtener un crédito en línea?"
       ],
-      "request_title": "Solicitar un crédito en línea con Vantex Bank",
-      "request_text": "Realizar una solicitud de crédito en línea con Vantex Bank es sencillo, rápido y totalmente digitalizado. Desde su ordenador, tableta o smartphone, puede constituir su expediente en pocos minutos, de forma gratuita y sin compromiso.",
+      "request_title": "Solicitar un crédito en línea con Virxyd ",
+      "request_text": "Realizar una solicitud de crédito en línea con Virxyd es sencillo, rápido y totalmente digitalizado. Desde su ordenador, tableta o smartphone, puede constituir su expediente en pocos minutos, de forma gratuita y sin compromiso.",
       "steps_title": "Los pasos de su solicitud",
       "steps": [
         [
@@ -689,7 +691,7 @@
           "Fotos claras evitan solicitudes de reenvío de documentos."
         ]
       ],
-      "cta_title": "¿Una urgencia que financiar?",
+      "cta_title": "¿Une urgencia que financiar?",
       "cta_text": "Complete su expediente ahora y reciba su acuerdo de principio en menos de 2 minutos.",
       "cta_btn": "Acceder al formulario exprés"
     }

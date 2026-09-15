@@ -19,7 +19,7 @@ export default function ImmediateLoanPage() {
         <Reveal delay={1}>
           <h2>{t('articles.immediate.speed_title')}</h2>
           <div className="art-text">
-            {t('articles.immediate.speed_text_prefix')} <strong>Vantex Bank</strong>, {t('articles.immediate.speed_text_suffix')}
+            {t('articles.immediate.speed_text_prefix')} <strong>Virxyd</strong>, {t('articles.immediate.speed_text_suffix')}
           </div>
         </Reveal>
       </section>

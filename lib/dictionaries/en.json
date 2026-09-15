@@ -16,10 +16,10 @@
       "read_article": "Read article →"
     },
     "how_fast": {
-      "title": "How does Vantex Bank's fast credit work?",
+      "title": "How does Virxyd's fast credit work?",
       "desc1": "The fastest credit is obtained online. It is now the preferred solution for financing a project, facing an unexpected expense or quickly obtaining additional cash flow.",
       "desc2": "However, when a financing need becomes urgent, the hardest part is not always getting the money. It's often identifying the body capable of accepting the request and validating the file as quickly as possible.",
-      "desc3": "As a specialist in fast credit, Vantex Bank has developed a solution that allows multiple organizations to be queried from a single form. This approach saves valuable time.",
+      "desc3": "As a specialist in fast credit, Virxyd has developed a solution that allows multiple organizations to be queried from a single form. This approach saves valuable time.",
       "desc4": "And to make the steps even simpler, once the credit is accepted, the client only has to provide their supporting documents online and sign their contract electronically. It is this method that makes it possible to obtain credit as quickly as possible.",
       "cta": "ACCESS THE LOAN FORM"
     },
@@ -38,7 +38,7 @@
       "q2": "What is the fastest credit to get?",
       "a2": "When it's already open, revolving credit is often the fastest financing. For a new application, an online personal loan usually constitutes the best compromise between speed, amount that can be borrowed and cost of financing.",
       "q3": "Can I get a fast credit online?",
-      "a3": "Yes. At Vantex Bank, it is possible to fill out a form, receive a decision in principle, sign the contract electronically and transmit supporting documents without traveling.",
+      "a3": "Yes. At Virxyd, it is possible to fill out a form, receive a decision in principle, sign the contract electronically and transmit supporting documents without traveling.",
       "q4": "How long does it take to get a response?",
       "a4": "The study of your file starts as soon as the form is submitted. A decision in principle is generally immediate, and the final validation occurs within 24h to 48h after receipt of the supporting documents."
     }
@@ -53,7 +53,7 @@
     "contact": "Contact",
     "apply": "Apply for a loan",
     "login": "Login",
-    "logo_text": "Vantex Bank"
+    "logo_text": "Virxyd"
   },
   "common": {
     "months": "months",
@@ -74,7 +74,7 @@
   },
   "hero": {
     "title": "Your online loan, simple & fast",
-    "desc": "Vantex Bank supports you in all your life projects. Get your financing in a few steps, no waiting line, 100% online.",
+    "desc": "Virxyd supports you in all your life projects. Get your financing in a few steps, no waiting line, 100% online.",
     "cta_apply": "Apply for my loan",
     "cta_sim": "Simulate my loan",
     "stat_clients": "Satisfied clients",
@@ -108,12 +108,12 @@
     "mini_rate": "Monthly rate",
     "mini_duration": "Chosen duration",
     "mini_first": "1st installment",
-    "disclaimer": "* Indicative simulation. Final APR specified in the contract offer. Subject to acceptance by Vantex Bank."
+    "disclaimer": "* Indicative simulation. Final APR specified in the contract offer. Subject to acceptance by Virxyd."
   },
   "cond": {
     "label": "Eligibility",
     "title": "Loan Access Conditions",
-    "desc": "Vantex Bank is accessible to residents of Europe and Asia meeting the criteria below.",
+    "desc": "Virxyd is accessible to residents of Europe and Asia meeting the criteria below.",
     "item1_strong": "Be of legal age",
     "item1_text": "— Must be at least 18 years old at the date of the request",
     "item2_strong": "Eligible residence",
@@ -202,8 +202,8 @@
     "recap_loan": "Loan:",
     "recap_monthly": "Monthly payment:",
     "recap_email": "Email:",
-    "contract_title": "LOAN APPLICATION CONTRACT — VANTEX BANK",
-    "contract_text": "By submitting this form, the Borrower acknowledges having read the General Conditions of Vantex Bank and declares on their honor that the information provided is accurate and complete. The Borrower authorizes Vantex Bank to consult bank incident files and to perform any verification necessary for the analysis of their application. This application does not constitute a contractual commitment on the part of Vantex Bank. The final offer will be issued after analysis of the complete file. The final APR will be specified in the credit offer. The Borrower has a legal withdrawal period of 14 calendar days from the signing of the final offer. Vantex Bank (SAS Cap Au Nord) — Intermediary registered with ORIAS under number 14807766. Share capital: €50,000,000. Registered office: 12 Avenue de la Banque, 75008 Paris, France.",
+    "contract_title": "LOAN APPLICATION CONTRACT — VIRXYD",
+    "contract_text": "By submitting this form, the Borrower acknowledges having read the General Conditions of Virxyd and declares on their honor that the information provided is accurate and complete. The Borrower authorizes Virxyd to consult bank incident files and to perform any verification necessary for the analysis of their application. This application does not constitute a contractual commitment on the part of Virxyd. The final offer will be issued after analysis of the complete file. The final APR will be specified in the credit offer. The Borrower has a legal withdrawal period of 14 calendar days from the signing of the final offer. Virxyd (SAS Cap Au Nord) — Intermediary registered with ORIAS under number 14807766. Share capital: €50,000,000. Registered office: 12 Avenue de la Banque, 75008 Paris, France.",
     "chk1": "I certify the accuracy of the information provided.",
     "chk2": "I accept the data processing conditions.",
     "chk3": "I certify that I am of legal age (18+ years).",
@@ -211,7 +211,7 @@
     "submitting_title": "Analysis of your file in progress...",
     "submitting_sub": "A few seconds will be enough",
     "success_title": "File submitted successfully!",
-    "success_desc": "Your application has been received by our teams. You will receive a notification shortly (within 48 business hours) with Vantex Bank's decision.",
+    "success_desc": "Your application has been received by our teams. You will receive a notification shortly (within 48 business hours) with Virxyd's decision.",
     "ref_label": "File number",
     "next1": "A confirmation email with your file number will be sent to you in the next few minutes.",
     "next2": "Our team analyzes your file within 48 business hours and contacts you if additional documents are needed.",
@@ -239,8 +239,8 @@
     "stat_presence_val": "EU & Asia",
     "mission": "Our Mission",
     "mission_text1": "Founded with the ambition of being a specialist in fast credit and personal financing, our mission is to support each borrower towards the solution best suited to their project and their situation.",
-    "mission_text2": "At Vantex Bank, you make your personal loan application online and get an immediate response in principle. Our goal is simple: to support you at every step to facilitate and accelerate the obtaining of your financing.",
-    "legal_box": "Vantex Bank (SAS Cap Au Nord) is an intermediary registered with ORIAS under number 14807766 as a non-exclusive agent in banking operations and payment services (MOBSP)."
+    "mission_text2": "At Virxyd, you make your personal loan application online and get an immediate response in principle. Our goal is simple: to support you at every step to facilitate and accelerate the obtaining of your financing.",
+    "legal_box": "Virxyd (SAS Cap Au Nord) is an intermediary registered with ORIAS under number 14807766 as a non-exclusive agent in banking operations and payment services (MOBSP)."
   },
   "purposes": {
     "work": "Renovation & Work",
@@ -252,7 +252,7 @@
     "other": "Other"
   },
   "fonctionnement": {
-    "title": "How does Vantex Bank work?",
+    "title": "How does Virxyd work?",
     "desc": "We have simplified credit so you can focus on your projects. A 100% digital, transparent and secure experience.",
     "unexpected": {
       "title": "A solution for unexpected expenses",
@@ -285,7 +285,7 @@
   },
   "pret_professionnel": {
     "label": "Business Solutions",
-    "desc": "Need cash flow, new equipment or premises? Vantex Bank supports entrepreneurs and SMEs.",
+    "desc": "Need cash flow, new equipment or premises? Virxyd supports entrepreneurs and SMEs.",
     "cond_title": "Pro Financing",
     "cond1": "Equipment & material loan",
     "cond2": "Inventory & working capital financing",
@@ -310,7 +310,7 @@
     "title": "Frequently Asked Questions (FAQ)",
     "desc": "Find here the answers to the most common questions about our financing services.",
     "q1": "How to get a mini credit quickly?",
-    "a1": "The mini credit application is made directly online at Vantex Bank. You just need to complete your file and transmit the requested information. To speed up the payment of funds, it is recommended to sign your contract electronically as soon as possible.",
+    "a1": "The mini credit application is made directly online at Virxyd. You just need to complete your file and transmit the requested information. To speed up the payment of funds, it is recommended to sign your contract electronically as soon as possible.",
     "q2": "What are the rates of a mini credit?",
     "a2": "The rate of a mini credit depends in particular on the amount borrowed and the repayment period. Before any subscription, it is important to check the APR, the amount of the installments as well as the total cost of the credit which appear on your personalized contract.",
     "q3": "What salary do I need to get a mini credit?",
@@ -345,19 +345,19 @@
   "testimonials": {
     "label": "Testimonials",
     "title": "They trust us",
-    "desc": "Discover the experiences of our clients who have realized their projects thanks to Vantex Bank.",
+    "desc": "Discover the experiences of our clients who have realized their projects thanks to Virxyd.",
     "sec_label": "What they say",
-    "sec_title": "They got their loan with Vantex Bank",
-    "sec_desc": "Thousands of clients trust Vantex Bank to finance their life projects.",
+    "sec_title": "They got their loan with Virxyd",
+    "sec_desc": "Thousands of clients trust Virxyd to finance their life projects.",
     "verified": "Verified",
     "loan_obtained": "Loan obtained:",
-    "t1_text": "It's thanks to Vantex Bank that I was able to finance the work on my house. Ultra simple procedure, response in 36 hours, and a top team. I wouldn't have thought it was possible online!",
+    "t1_text": "It's thanks to Virxyd that I was able to finance the work on my house. Ultra simple procedure, response in 36 hours, and a top team. I wouldn't have thought it was possible online!",
     "t1_meta": "Lyon · October 2025",
-    "t2_text": "After several refusals in traditional banks, Vantex granted me my car loan. The rate is unbeatable and the form is filled in 10 minutes flat. Very serious!",
+    "t2_text": "After several refusals in traditional banks, Virxyd granted me my car loan. The rate is unbeatable and the form is filled in 10 minutes flat. Very serious!",
     "t2_meta": "Brussels · August 2025",
     "t3_text": "I was able to launch my business thanks to this professional loan. File processed quickly, advisors available, and transfer received 3 days after signing. Perfect!",
     "t3_meta": "Geneva · July 2025",
-    "t4_text": "To group my credits, Vantex Bank was the perfect solution. Clear form, transparent rate, and a smile on my face when I saw the transfer. Truly thank you!",
+    "t4_text": "To group my credits, Virxyd was the perfect solution. Clear form, transparent rate, and a smile on my face when I saw the transfer. Truly thank you!",
     "t4_meta": "Marseille · June 2025",
     "t5_text": "It's thanks to this one that I was able to have the mortgage loan I dreamed of. The platform is intuitive, the advisors available and professional. I recommend without hesitation.",
     "t5_meta": "Paris · May 2025",
@@ -375,7 +375,7 @@
       "mod_dur": "Duration",
       "adv_title": "Our advantages",
       "sol_title": "A simple solution",
-      "sol_desc": "At Vantex Bank, you make your personal loan application online and get an immediate response in principle. If accepted, all you have to do is electronically sign your contract and upload your supporting documents.",
+      "sol_desc": "At Virxyd, you make your personal loan application online and get an immediate response in principle. If accepted, all you have to do is electronically sign your contract and upload your supporting documents.",
       "sim_title": "Simulate your personal loan",
       "sim_desc": "Get a precise estimation in seconds."
     },
@@ -401,11 +401,11 @@
     "label": "Legal",
     "privacy_label": "Privacy",
     "terms_title": "General Conditions",
-    "terms_desc": "These general conditions govern the use of the Vantex Bank website and associated services.",
+    "terms_desc": "These general conditions govern the use of the Virxyd website and associated services.",
     "terms_s1_title": "1. Object",
-    "terms_s1_text": "This site aims to present the financing solutions and banking services offered by Vantex Bank.",
+    "terms_s1_text": "This site aims to present the financing solutions and banking services offered by Virxyd.",
     "terms_s2_title": "2. Personal loan modalities",
-    "terms_s2_text": "The Vantex Bank personal loan allows you to borrow the desired amount to finance your projects and to repay it at your own pace according to the following conditions:",
+    "terms_s2_text": "The Virxyd personal loan allows you to borrow the desired amount to finance your projects and to repay it at your own pace according to the following conditions:",
     "terms_s2_rate": "Rate:",
     "terms_s2_rate_val": "Competitive fixed APR.",
     "terms_s2_amount": "Amount:",
@@ -413,7 +413,7 @@
     "terms_s2_duration": "Duration:",
     "terms_s2_duration_val": "From 12 to 72 months.",
     "terms_s3_title": "3. Advantages",
-    "terms_s3_text": "By choosing Vantex Bank, you benefit from:",
+    "terms_s3_text": "By choosing Virxyd, you benefit from:",
     "terms_s3_l1": "Fast online application form (about 4 minutes).",
     "terms_s3_l2": "Immediate decision in principle after simplified study.",
     "terms_s3_l3": "Dematerialized supporting documents and secure electronic signature.",
@@ -421,12 +421,12 @@
     "terms_s4_title": "4. Credit",
     "terms_s4_text": "A credit commits you and must be repaid. Check your repayment capacity before committing.",
     "terms_s5_title": "5. Intellectual property",
-    "terms_s5_text": "All content present on this site (text images, logos) is the exclusive property of Vantex Bank.",
+    "terms_s5_text": "All content present on this site (text images, logos) is the exclusive property of Virxyd.",
     "mentions_title": "Legal Notice",
     "mentions_s1_title": "1. Site presentation",
-    "mentions_s1_text": "The Vantex Bank site is the official online banking services platform of Vantex Bank S.A., dedicated to the financial support of its private and professional clients around the world.",
+    "mentions_s1_text": "The Virxyd site is the official online banking services platform of Virxyd S.A., dedicated to the financial support of its private and professional clients around the world.",
     "mentions_s2_title": "2. Publisher",
-    "mentions_s2_text1": "Vantex Bank (SAS Cap Au Nord)",
+    "mentions_s2_text1": "Virxyd (SAS Cap Au Nord)",
     "mentions_s2_text2": "Share capital: €50,000,000",
     "mentions_s2_text3": "Registered office: 12 Avenue de la Banque, 75008 Paris, France",
     "mentions_s2_text4": "Registered with ORIAS under number",
@@ -434,9 +434,9 @@
     "mentions_s3_title": "3. Hosting",
     "mentions_s3_text1": "This site is hosted by Vercel Inc.",
     "mentions_s4_title": "4. Regulated activity",
-    "mentions_s4_text": "Vantex Bank is a credit and investment services institution authorized by the Prudential Supervision and Resolution Authority (ACPR).",
+    "mentions_s4_text": "Virxyd is a credit and investment services institution authorized by the Prudential Supervision and Resolution Authority (ACPR).",
     "cookies_title": "GDPR & Cookies",
-    "cookies_intro": "At Vantex Bank (SAS Cap Au Nord), we attach capital importance to the protection of your personal data. As an intermediary registered under number ORIAS 14807766, we scrupulously respect European standards.",
+    "cookies_intro": "At Virxyd (SAS Cap Au Nord), we attach capital importance to the protection of your personal data. As an intermediary registered under number ORIAS 14807766, we scrupulously respect European standards.",
     "cookies_s1_title": "1. Use of data (GDPR)",
     "cookies_s1_text": "The information collected during your request (loan amount, personal information, supporting documents) is processed only to analyze your repayment capacity and process your file.",
     "cookies_s2_title": "2. Electronic signature",
@@ -488,15 +488,15 @@
         "Repayment period from 12 to 72 months"
       ],
       "summary_links": [
-        "Apply for online credit with Vantex Bank",
+        "Apply for online credit with Virxyd",
         "Why choose online credit?",
         "How much does an online loan cost?",
         "Timeframe to receive the money",
         "Documents to provide",
         "Who can get online credit?"
       ],
-      "request_title": "Apply for online credit with Vantex Bank",
-      "request_text": "Applying for online credit with Vantex Bank is simple, fast and fully digital. From your computer, tablet or smartphone, you can build your file in a few minutes, free of charge and with no commitment.",
+      "request_title": "Apply for online credit with Virxyd",
+      "request_text": "Applying for online credit with Virxyd is simple, fast and fully digital. From your computer, tablet or smartphone, you can build your file in a few minutes, free of charge and with no commitment.",
       "steps_title": "The steps of your request",
       "steps": [
         [

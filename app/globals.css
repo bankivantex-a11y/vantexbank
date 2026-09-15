@@ -817,7 +817,7 @@
     .field-error { border: 2px solid #EF4444 !important; background: #FEF2F2 !important; }
 
     /* Responsive Form Fonts */
-    @media (max-width: 1024px) {
+    @media (max-width: 1200px) {
       .app-modal-box { max-width: 90%; }
       .sp-title { font-size: 22px; }
       .form-label { font-size: 13px; }
@@ -953,7 +953,7 @@
     }
     .dropdown-content a:hover { background: var(--bg); color: var(--blue) !important; }
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1200px) {
       .nav-dropdown .dropdown-content {
         position: static; opacity: 1; visibility: visible; transform: none;
         box-shadow: none; border: none; padding: 5px 0 15px 20px; display: block;
@@ -975,7 +975,7 @@
     /* ==========================================================
        RESPONSIVE
     ========================================================== */
-    @media (max-width: 1024px) {
+    @media (max-width: 1200px) {
       #navbar.mobile-open {
         height: 100dvh;
         background: #fff;

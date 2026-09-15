@@ -22,7 +22,7 @@ export default function NoProofLoanPage() {
             {t('articles.no_proof.what_text1')}
           </div>
           <div className="art-text">
-            {t('articles.no_proof.what_text2_prefix')} <strong>Vantex Bank</strong>, {t('articles.no_proof.what_text2_suffix')}
+            {t('articles.no_proof.what_text2_prefix')} <strong>Virxyd</strong>, {t('articles.no_proof.what_text2_suffix')}
           </div>
         </Reveal>
       </section>

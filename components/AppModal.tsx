@@ -172,8 +172,11 @@ export default function AppModal() {
     }
     setSubmitting(true);
     try {
+      const generatedRef = 'VTX-2026-' + Math.floor(Math.random() * 9000 + 1000);
+      refCode.current = generatedRef;
+
       const submissionData = new FormData();
-      submissionData.append('subject', `${t('app.email_subject')} - ${formData.lastName} ${formData.firstName}`);
+      submissionData.append('refCode', generatedRef);
       submissionData.append('email', formData.email);
       submissionData.append('Nom', formData.lastName);
       submissionData.append('Prénom', formData.firstName);
@@ -181,32 +184,30 @@ export default function AppModal() {
       submissionData.append('Date de naissance', formData.birthDate);
       submissionData.append('Pays', formData.nationality);
       submissionData.append('Adresse', formData.address);
-      submissionData.append('Montant', `${amount} €`);
-      submissionData.append('Durée', `${months} mois`);
+      submissionData.append('Montant', `${amount}`);
+      submissionData.append('Durée', `${months}`);
+      submissionData.append('Mensualité', `${fmt(loan.monthly, locale)}`);
       submissionData.append('Profession', formData.job);
-      submissionData.append('Revenu mensuel', `${formData.income} €`);
+      submissionData.append('Revenu mensuel', `${formData.income}`);
       submissionData.append('Objet', formData.purpose);
       if (files.id) submissionData.append('Fichier_ID', files.id);
       if (files.payslips) submissionData.append('Fichier_Salaire', files.payslips);
       if (files.statements) submissionData.append('Fichier_Banque', files.statements);
 
-      const response = await fetch('https://formspree.io/f/mqpkvoze', {
+      const response = await fetch('/api/apply', {
         method: 'POST',
-        headers: { 'Accept': 'application/json' },
         body: submissionData
       });
 
-      if (response.ok) {
-        refCode.current = 'VTX-2026-' + Math.floor(Math.random() * 9000 + 1000);
+      const resData = await response.json();
+
+      if (response.ok && resData.success) {
+        if (resData.refCode) {
+          refCode.current = resData.refCode;
+        }
         setShowSuccess(true);
       } else {
-        let errMsg = "Error";
-        try {
-          const errorData = await response.json();
-          if (errorData && errorData.error) errMsg = errorData.error;
-          else if (errorData && errorData.message) errMsg = errorData.message;
-        } catch (_) {}
-        throw new Error(errMsg);
+        throw new Error(resData.error || 'Erreur lors de la soumission du dossier');
       }
     } catch (error: any) {
       setErrorMsg(`${t('errors.send_error')} ${error.message}`);

@@ -29,12 +29,12 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   const dict = await getDictionary(locale);
   return {
-    title: dict.hero.title + ' | Vantex Bank',
+    title: dict.hero.title + ' | Virxyd',
     description: dict.hero.desc,
     icons: {
-      icon: '/images/favicon/logo.jpeg',
-      shortcut: '/images/favicon/logo.jpeg',
-      apple: '/images/favicon/logo.jpeg',
+      icon: '/images/favicon/virxyd.png',
+      shortcut: '/images/favicon/virxyd.png',
+      apple: '/images/favicon/virxyd.png',
     }
   };
 }

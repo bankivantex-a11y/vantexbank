@@ -22,7 +22,7 @@ export default function OnlineLoanPage() {
             {t('articles.online.text1')}
           </div>
           <div className="art-text">
-            {t('articles.online.text2_prefix')} <strong>Vantex Bank</strong> {t('articles.online.text2_suffix')}
+            {t('articles.online.text2_prefix')} <strong>Virxyd</strong> {t('articles.online.text2_suffix')}
           </div>
         </Reveal>
       </section>

@@ -16,10 +16,10 @@
       "read_article": "Lasīt rakstu →"
     },
     "how_fast": {
-      "title": "Kā darbojas Vantex Bank ātrais kredīts?",
+      "title": "Kā darbojas Virxyd ātrais kredīts?",
       "desc1": "Ātrākais kredīts tiek saņemts tiešsaistē. Šodien tas ir vēlamais risinājums projekta finansēšanai, neparedzētu izdevumu segšanai vai papildu skaidras naudas ātrai iegūšanai.",
       "desc2": "Tomēr, kad finansējuma vajadzība kļūst steidzama, grūtākais ne vienmēr ir iegūt naudu. Bieži vien ir jāidentificē organizācija, kas spēj pieņemt pieprasījumu un apstiprināt pieteikumu pēc iespējas īsākā laikā.",
-      "desc3": "Kā ātro kredītu speciālists Vantex Bank ir izstrādājis risinājumu, kas ļauj aptaujāt vairākas organizācijas no vienas veidlapas. Šī pieeja ietaupa dārgo laiku.",
+      "desc3": "Kā ātro kredītu speciālists Virxyd ir izstrādājis risinājumu, kas ļauj aptaujāt vairākas organizācijas no vienas veidlapas. Šī pieeja ietaupa dārgo laiku.",
       "desc4": "Un, lai padarītu soļus vēl vienkāršākus, pēc kredīta apstiprināšanas klientam ir tikai tiešsaistē jāiesniedz apliecinošie dokumenti un elektroniski jāparaksta līgums. Tieši šī metode ļauj saņemt kredītu pēc iespējas ātrāk.",
       "cta": "PIEKĻŪT KREDĪTA VEIDLAPAI"
     },
@@ -38,7 +38,7 @@
       "q2": "Kuru kredītu ir visātrāk saņemt?",
       "a2": "Ja tas jau ir atvērts, atjaunojamais kredīts bieži vien ir ātrākais finansējums. Jaunam pieprasījumam tiešsaistes patēriņa kredīts parasti ir labākais kompromiss starp ātrumu, aizdodamo summu un finansēšanas izmaksām.",
       "q3": "Vai tiešsaistē var saņemt ātro kredītu?",
-      "a3": "Jā. Vantex Bank ir iespējams aizpildīt veidlapu, saņemt principiālu atbildi, elektroniski parakstīt līgumu un nosūtīt apliecinošos dokumentus bez pārvietošanās.",
+      "a3": "Jā. Virxyd ir iespējams aizpildīt veidlapu, saņemt principiālu atbildi, elektroniski parakstīt līgumu un nosūtīt apliecinošos dokumentus bez pārvietošanās.",
       "q4": "Cik ilgs laiks nepieciešams atbildei?",
       "a4": "Jūsu pieteikuma izpēte sākas, tiklīdz esat iesniedzis veidlapu. Principiāla atbilde parasti ir tūlītēja, un galīgais apstiprinājums notiek 24 līdz 48 stundu laikā pēc apliecinošo dokumentu saņemšanas."
     }
@@ -53,7 +53,7 @@
     "contact": "Kontakti",
     "apply": "Pieteikties aizdevumam",
     "login": "Pieslēgties",
-    "logo_text": "Vantex Bank"
+    "logo_text": "Virxyd"
   },
   "common": {
     "months": "mēneši",
@@ -74,7 +74,7 @@
   },
   "hero": {
     "title": "Jūsu tiešsaistes aizdevums, vienkāršs un ātrs",
-    "desc": "Vantex Bank pavada jūs visos jūsu dzīves projektos. Iegūstiet finansējumu dažos soļos, bez gaidīšanas rindā, 100% tiešsaistē.",
+    "desc": "Virxyd pavada jūs visos jūsu dzīves projektos. Iegūstiet finansējumu dažos soļos, bez gaidīšanas rindā, 100% tiešsaistē.",
     "cta_apply": "Pieprasīt manu aizdevumu",
     "cta_sim": "Simulēt manu aizdevumu",
     "stat_clients": "Apmierināti klienti",
@@ -108,12 +108,12 @@
     "mini_rate": "Mēneša likme",
     "mini_duration": "Izvēlētais ilgums",
     "mini_first": "1. maksājums",
-    "disclaimer": "* Indikatīva simulācija. Galīgā GPL norādīta līguma piedāvājumā. Atkarīgs no Vantex Bank apstiprinājuma."
+    "disclaimer": "* Indikatīva simulācija. Galīgā GPL norādīta līguma piedāvājumā. Atkarīgs no Virxyd apstiprinājuma."
   },
   "cond": {
     "label": "Atbilstība",
     "title": "Kredīta pieejamības nosacījumi",
-    "desc": "Vantex Bank ir pieejama Eiropas un Āzijas iedzīvotājiem, kuri atbilst tālāk norādītajiem kritērijiem.",
+    "desc": "Virxyd ir pieejama Eiropas un Āzijas iedzīvotājiem, kuri atbilst tālāk norādītajiem kritērijiem.",
     "item1_strong": "Būt pilngadīgam",
     "item1_text": "— Pieteikšanās dienā jābūt vismaz 18 gadus vecam",
     "item2_strong": "Atbilstoša dzīvesvieta",
@@ -202,8 +202,8 @@
     "recap_loan": "Kredīts:",
     "recap_monthly": "Mēneša maksājums:",
     "recap_email": "E-pasts:",
-    "contract_title": "KREDĪTA PIETEIKUMA LĪGUMS — VANTEX BANK",
-    "contract_text": "Iesniedzot šo veidlapu, Aizņēmējs apliecina, ka ir iepazinies ar Vantex Bank Vispārējiem noteikumiem un godprātīgi paziņo, ka sniegtā informācija ir precīza un pilnīga. Aizņēmējs pilnvaro Vantex Bank iepazīties ar bankas incidentu failiem un veikt jebkādu pārbaudi, kas nepieciešama viņa pieteikuma analīzei. Šis pieteikums neuzliek Vantex Bank līgumsaistības. Galīgais piedāvājums tiks izsniegts pēc pilna pieteikuma analīzes. Galīgā GPL tiks norādīta kredīta piedāvājumā. Aizņēmējam ir likumā noteiktas atteikuma tiesības 14 kalendāro dienu laikā pēc galīgā piedāvājuma parakstīšanas. Vantex Bank (SAS Cap Au Nord) — Starpnieks, kas reģistrēts ORIAS ar numuru 14807766. Pamatkapitāls: 50 000 000 €. Galvenā mītne: 12 Avenue de la Banque, 75008 Parīze, Francija.",
+    "contract_title": "KREDĪTA PIETEIKUMA LĪGUMS — VIRXYD",
+    "contract_text": "Iesniedzot šo veidlapu, Aizņēmējs apliecina, ka ir iepazinies ar Virxyd Vispārējiem noteikumiem un godprātīgi paziņo, ka sniegtā informācija ir precīza un pilnīga. Aizņēmējs pilnvaro Virxyd iepazīties ar bankas incidentu failiem un veikt jebkādu pārbaudi, kas nepieciešama viņa pieteikuma analīzei. Šis pieteikums neuzliek Virxyd līgumsaistības. Galīgais piedāvājums tiks izsniegts pēc pilna pieteikuma analīzes. Galīgā GPL tiks norādīta kredīta piedāvājumā. Aizņēmējam ir likumā noteiktas atteikuma tiesības 14 kalendāro dienu laikā pēc galīgā piedāvājuma parakstīšanas. Virxyd (SAS Cap Au Nord) — Starpnieks, kas reģistrēts ORIAS ar numuru 14807766. Pamatkapitāls: 50 000 000 €. Galvenā mītne: 12 Avenue de la Banque, 75008 Parīze, Francija.",
     "chk1": "Es apliecinu sniegtās informācijas pareizību.",
     "chk2": "Es piekrītu datu apstrādes noteikumiem.",
     "chk3": "Es apliecinu, ka esmu pilngadīgs (18+ gadi).",
@@ -211,10 +211,10 @@
     "submitting_title": "Jūsu pieteikuma analīze notiek...",
     "submitting_sub": "Pietiks ar dažām sekundēm",
     "success_title": "Pieteikums veiksmīgi iesniegts!",
-    "success_desc": "Mūsu komandas ir saņēmušas jūsu pieprasījumu. Īsā laikā (48 darba stundu laikā) jūs saņemsiet paziņojumu ar Vantex Bank lēmumu.",
+    "success_desc": "Mūsu komandas ir saņēmušas jūsu pieprasījumu. Īsā laikā (48 darba stundu laikā) jūs saņemsiet paziņojumu ar Virxyd lēmumu.",
     "ref_label": "Pieteikuma numurs",
     "next1": "Apstiprinājuma e-pasts ar jūsu pieteikuma numuru tiks nosūtīts dažu nākamo minūšu laikā.",
-    "next2": "Mūsu komanda analizē jūsu pieteikumu 48 darba stundu laikā un sazināsies ar jums, ja būs nepieciešami papildu dokumenti.",
+    "next2": "Mūsu komanda analizē jūsu pieteikumu 48 darba stundu laikā and vous contacte si des documents complémentaires sont nécessaires.",
     "next3": "Labvēlīga lēmuma gadījumā jūs parakstāt piedāvājumu elektroniski — pēc tam līdzekļi tiek pārskaitīti 72 stundu laikā.",
     "home_btn": "Atpakaļ uz sākumu",
     "submit_btn": "Iesniegt manu pieteikumu ✓",
@@ -236,11 +236,11 @@
     "stat_capital": "Pamatkapitāls",
     "stat_capital_val": "50M€",
     "stat_presence": "Starptautiskā klātbūtne",
-    "stat_presence_val": "ES un Āzija",
+    "stat_presence_val": "ES un Asie",
     "mission": "Mūsu misija",
     "mission_text1": "Dibināta ar vēmi būt ātro kredītu un privātpersonu finansēšanas speciālistam, mūsu misija ir pavadīt ikvienu aizņēmēju uz viņa projektam un situācijai piemērotāko risinājumu.",
-    "mission_text2": "Vantex Bank jūs veicat pieteikumu patēriņa kredītam tiešsaistē un saņemat tūlītēju principiālu atbildi. Mūsu mērķis ir vienkāršs: pavadīt jūs ikvienā solī, lai atvieglotu un paātrinātu finansējuma saņemšanu.",
-    "legal_box": "Vantex Bank (SAS Cap Au Nord) ir starpnieks, kas reģistrēts ORIAS ar numuru 14807766 kā neekskluzīvs banku operāciju un maksājumu pakalpojumu aģents (MOBSP)."
+    "mission_text2": "Bei Virxyd stellen Sie Ihren Privatkreditantrag online und erhalten sofort eine vorläufige Zusage. Unser Ziel ist einfach: Sie bei jedem Schritt zu begleiten, um die Erlangung Ihrer Finanzierung zu erleichtern und zu beschleunigen.",
+    "legal_box": "Virxyd (SAS Cap Au Nord) ir starpnieks, kas reģistrēts ORIAS ar numuru 14807766 kā neekskluzīvs banku operāciju un maksājumu pakalpojumu aģents (MOBSP)."
   },
   "services": {
     "label": "Mūsu pakalpojumi",
@@ -253,7 +253,7 @@
       "mod_dur": "Ilgums",
       "adv_title": "Mūsu priekšrocības",
       "sol_title": "Vienkāršs risinājums",
-      "sol_desc": "Vantex Bank jūs veicat pieteikumu patēriņa kredītam tiešsaistē un saņemat tūlītēju principiālu atbildi. Apstiprināšanas gadījumā jums atliek tikai elektroniski parakstīt līgumu un augšupielādēt apliecinošos dokumentus.",
+      "sol_desc": "Bei Virxyd stellen Sie Ihren Privatkreditantrag online und erhalten sofort eine vorläufige Zusage. Im Falle einer Zusage müssen Sie nur noch Ihren Vertrag elektronisch unterzeichnen und Ihre Belege hochladen.",
       "sim_title": "Simulējiet savu patēriņa kredītu",
       "sim_desc": "Saņemiet precīzu aprēķinu dažu sekunžu laikā."
     },
@@ -294,7 +294,7 @@
     "other": "Cits"
   },
   "fonctionnement": {
-    "title": "Kā darbojas Vantex Bank?",
+    "title": "Kā darbojas Virxyd ?",
     "desc": "Mēs esam vienkāršojuši kreditēšanu, lai jūs varētu koncentrēties uz saviem projektiem. 100% digitāla, caurredzama un droša pieredze.",
     "unexpected": {
       "title": "Risinājums neparedzētu izdevumu gadījumā",
@@ -305,7 +305,7 @@
       "list2": "Velosipēds vai mēbeles",
       "list3": "Sadzīves tehnika",
       "list4": "Apmācības vai ceļojums",
-      "footer": "Šāda veida situācijā mini kredīts ļauj sadalīt izdevumus laikā, tūlīt neizmantojot uzkrājumus. Tādējādi tas ir praktisks risinājums projekta īstenošanai, vienlaikus saglabājot jūsu budžetu."
+      "footer": "Šāda veida situācijā mini kredists ļauj sadalīt izdevumus laikā, tūlīt neizmantojot uzkrājumus. Tādējādi tas ir praktisks risinājums projekta īstenošanai, vienlaikus saglabājot jūsu budžetu."
     }
   },
   "pret_personnel": {
@@ -327,7 +327,7 @@
   },
   "pret_professionnel": {
     "label": "Biznesa risinājumi",
-    "desc": "Nepieciešama skaidra nauda, jauns aprīkojums vai telpas? Vantex Bank atbalsta uzņēmējus un MVU.",
+    "desc": "Nepieciešama skaidra nauda, jauns aprīkojums vai telpas? Virxyd atbalsta uzņēmējus un MVU.",
     "cond_title": "Finansējums uzņēmumiem",
     "cond1": "Materiālu un aprīkojuma aizdevums",
     "cond2": "Krājumu un apgrozāmo līdzekļu finansēšana",
@@ -352,7 +352,7 @@
     "title": "Bieži uzdotie jautājumi (FAQ)",
     "desc": "Šeit atrodiet atbildes uz biežāk uzdotajiem jautājumiem par mūsu finansēšanas pakalpojumiem.",
     "q1": "Kā ātri saņemt mini kredītu?",
-    "a1": "Mini kredīta pieteikums tiek veikts tieši tiešsaistē Vantex Bank vietnē. Jums tikai jāaizpilda savs pieteikums un jānosūta pieprasītā informācija. Lai paātrinātu līdzekļu izmaksu, ieteicams pēc iespējas ātrāk elektroniski parakstīt līgumu.",
+    "a1": "La demande de mini crédit s'effectue directement en ligne sur Virxyd . Jums tikai jāaizpilda savs pieteikums un jānosūta pieprasītā informācija. Lai paātrinātu līdzekļu izmaksu, ieteicams pēc iespējas ātrāk elektroniski parakstīt līgumu.",
     "q2": "Kādas ir mini kredīta likmes?",
     "a2": "Mini kredīta likme ir atkarīga no aizņemtās summas un atmaksas termiņa. Pirms jebkāda līguma noslēgšanas ir svarīgi pārbaudīt GPL, maksājumu summu, kā arī kopējās kredīta izmaksas, kas norādītas jūsu personalizētajā līgumā.",
     "q3": "Kāda alga ir nepieciešama, lai saņemtu mini kredītu?",
@@ -387,19 +387,19 @@
   "testimonials": {
     "label": "Atsauksmes",
     "title": "Viņi mums uzticas",
-    "desc": "Atklājiet mūsu klientu pieredzi, kuri ir īstenojuši savus projektus, pateicoties Vantex Bank.",
+    "desc": "Atklājiet mūsu klientu pieredzi, kuri ir īstenojuši savus projektus, pateicoties Virxyd .",
     "sec_label": "Ko viņi saka",
-    "sec_title": "Viņi saņēma kredītu Vantex Bank",
-    "sec_desc": "Tūkstošiem klientu uzticas Vantex Bank savu dzīves projektu finansēšanā.",
+    "sec_title": "Viņi saņēma kredītu Virxyd ",
+    "sec_desc": "Tūkstošiem klientu uzticas Virxyd savu dzīves projektu finansēšanā.",
     "verified": "Pārbaudīts",
     "loan_obtained": "Saņemtais kredīts:",
-    "t1_text": "Pateicoties Vantex Bank, es varēju finansēt darbus savā mājā. Ultra vienkārša procedūra, atbilde 36 stundu laikā un lieliska komanda. Es nebūtu ticējusi, ka tas ir iespējams tiešsaistē!",
+    "t1_text": "Pateicoties Virxyd , es varēju finansēt darbus savā mājā. Ultra vienkārša procedūra, atbilde 36 stundu laikā un lieliska komanda. Es nebūtu ticējusi, ka tas ir iespējams tiešsaistē!",
     "t1_meta": "Rīga · Augusts 2026",
-    "t2_text": "Pēc vairākiem atteikumiem klasiskajās bankās Vantex man piešķīra auto kredītu. Likme ir nepārspējama, un veidlapa tiek aizpildīta tieši 10 minūtēs. Ļoti nopietni!",
+    "t2_text": "Pēc vairākiem atteikumiem klasiskajās bankās Virxyd man piešķīra auto kredītu. Likme ir nepārspējama, un veidlapa tiek aizpildīta tieši 10 minūtēs. Ļoti nopietni!",
     "t2_meta": "Jūrmala · Jūlijs 2026",
     "t3_text": "Pateicoties šim uzņēmuma kredītam, es varēju izveidot savu uzņēmumu. Pieteikums apstrādāts ātri, konsultanti pieejami, un pārskaitījums saņemts 3 dienas pēc parakstīšanas. Ideāli!",
     "t3_meta": "Liepāja · Jūnijs 2026",
-    "t4_text": "Kredītu apvienošanai Vantex Bank bija ideāls risinājums. Skaidra veidlapa, caurredzama likme un smaids sejā, kad ieraudzīju pārskaitījumu. Tiešām paldies!",
+    "t4_text": "Kredītu apvienošanai Virxyd bija ideāls risinājums. Skaidra veidlapa, caurredzama likme un smaids sejā, kad ieraudzīju pārskaitījumu. Tiešām paldies!",
     "t4_meta": "Ventspils · Maijs 2026",
     "t5_text": "Pateicoties šim, es varēju saņemt hipotekāro kredītu, par kuru sapņoju. Platforma ir intuitīva, konsultanti pieejami un profesionāli. Iesaku bez vilcināšanās.",
     "t5_meta": "Daugavpils · Aprīlis 2026",
@@ -407,21 +407,21 @@
     "t6_meta": "Jelgava · Marts 2026"
   },
   "countries": [
-    "Francija",
-    "Beļģija",
-    "Šveice",
-    "Vācija",
-    "Spānija",
-    "Itālija",
-    "Portugāle",
-    "Nīderlande",
-    "Luksemburga",
-    "Japāna",
-    "Dienvidkoreja",
-    "Singapūra",
-    "Horvātija",
-    "Latvija",
-    "Cita Eiropas / Āzijas valsts"
+    "Prancūzija",
+    "Belgija",
+    "Šveicarija",
+    "Vokietija",
+    "Ispanija",
+    "Italija",
+    "Portugalija",
+    "Nyderlandai",
+    "Liuksemburgas",
+    "Japonija",
+    "Pietų Korėja",
+    "Singapūras",
+    "Croatia",
+    "Letonia",
+    "Kita Europos / Azijos šalis"
   ],
   "languages": {
     "fr": "Franču",
