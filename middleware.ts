@@ -7,7 +7,18 @@ const defaultLocale = 'fr';
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  // Vérifier si le chemin contient déjà une langue supportée
+  // 1. Exclure explicitement les fichiers SEO et statiques du middleware
+  if (
+    pathname === '/robots.txt' ||
+    pathname === '/sitemap.xml' ||
+    pathname.startsWith('/images/') ||
+    pathname.startsWith('/api/') ||
+    pathname.includes('.') // Exclut tous les fichiers avec une extension (.png, .ico, etc.)
+  ) {
+    return;
+  }
+
+  // 2. Vérifier si le chemin contient déjà une langue supportée
   const pathnameHasLocale = locales.some(
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
   );
